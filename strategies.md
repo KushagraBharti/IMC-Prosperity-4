@@ -58,13 +58,14 @@ Main limitations:
 
 ## Round 1 Strategy Families
 
-The Round 1 artifacts in this repo fall into five clear families:
+The Round 1 artifacts in this repo fall into six clear families:
 
 - `167536`: older symmetric two-product market maker with conservative local `50`-lot limits and no explicit pepper target inventory
 - `current_trader`, `scratch_alpha_01`, and `184591`: the main two-product microstructure market-maker family with `80`-lot limits and an explicit long-biased pepper target position
 - `214011` and `218688`: pepper-only long-biased trend-accumulation family
 - `218869`: osmium-only market-making extraction
 - `219274`: explicit combination of the `218869` osmium module and the `218688` pepper module
+- `aggressive_hybrid_v1` and `aggressive_hybrid_v2`: post-hoc research candidates that try to combine the strongest observed osmium and pepper ideas while accounting for the repo's portal-versus-local mismatch guidance
 
 That family structure is not a guess. It is directly visible in the code and in the portal outputs:
 
@@ -73,6 +74,174 @@ That family structure is not a guess. It is directly visible in the code and in 
 - `214011.py` and `218688.py` are the same pepper-only strategy except that `218688.py` raises the configured product limits from `50` to `80`
 - `219274.py` combines the osmium logic used in `218869.py` with the pepper logic used in `218688.py`
 - the official portal profit of `219274` is exactly `218869 + 218688`, which strongly suggests that the combined file is just the additive merger of those independent single-product legs on the recorded evaluation window
+- `aggressive_hybrid_v1.py` is a new research-only composite that starts from the `184591` osmium family and the `218688` pepper carry thesis rather than matching any one official artifact
+- `aggressive_hybrid_v2.py` is the second-pass refinement of that same research composite and is explicitly informed by `repo.md` and `workflow.md` guidance about avoiding overreliance on generous passive inside-spread fills
+
+## Aggressive Hybrid V1
+
+Stable name:
+
+- `round1_aggressive_hybrid_v1`
+
+Path:
+
+- `ROUND1/strategies/aggressive_hybrid_v1.py`
+
+Status:
+
+- research candidate
+- first aggressive merge attempt after analyzing the official `184591`, `218688`, `218869`, and `219274` artifacts in depth
+- not promoted to `current_trader.py`
+
+Design goal:
+
+- keep the stronger observed osmium microstructure extraction from the `184591`-style two-product family
+- keep the stronger observed pepper carry thesis from the `218688` / `219274` pepper-only family
+- remove as much unnecessary pepper de-risking as possible
+- optimize for maximum upside rather than for conservative simulator stability
+
+Fair-value model for osmium:
+
+- fixed base fair at `10000.0`
+- alpha combines:
+- `0.95 * (wall_mid - mid)`
+- `2.85 * top_of_book_imbalance`
+- `0.35 * wall_mid_trend`
+- `0.45 * imbalance_trend`
+- `0.20 * short_mid_trend`
+- alpha clipped to `[-4.5, 4.5]`
+- fair is `10000 + alpha`
+- target inventory is no longer always flat; it becomes `clip(round(alpha * 7), -30, 30)`
+- reservation price is `fair - (position - target_position) * 0.11`
+
+Fair-value model for pepper:
+
+- reconstructs structural drift as `anchor + 0.001 * timestamp`
+- updates anchor with smoothing `0.12`
+- separates entry and exit economics:
+- `forward_fair = base_fair + 8.0 + alpha`
+- `unwind_fair = base_fair + alpha`
+- alpha combines:
+- `1.15 * (wall_mid - mid)`
+- `3.25 * top_of_book_imbalance`
+- `0.60 * wall_mid_trend`
+- `0.65 * imbalance_trend`
+- `0.20 * short_mid_trend`
+- `0.40` constant carry bias
+- alpha clipped to `[-5.5, 5.5]`
+
+Target inventory model:
+
+- pepper is explicitly long-seeking rather than symmetric
+- raw target is:
+- `58 + round(clip(alpha, -3, 3) * 10) + round(max(0, imbalance) * 6)`
+- clipped into `[28, 78]`
+- after `timestamp >= 980000`, target is capped down to `48`
+- strict long-only post-filter prevents the strategy from crossing below zero pepper inventory
+
+Execution model:
+
+- osmium:
+- sweeps `2`, `3`, or `4` levels depending on alpha magnitude
+- takes displayed liquidity when edge exceeds `1.0` or when inventory needs to move toward target at non-negative edge
+- adds flattening clips once inventory breaches `76`
+- posts layered passive bid and ask quotes inside the spread, with size tied to target-position gap and signal strength
+- pepper:
+- sweeps up to `4` ask levels when behind target or strongly bullish
+- buys either on positive forward edge or when still below target at slightly negative edge
+- sells only to trim an existing long when unwind edge is attractive or inventory is materially above target
+- keeps a strong inside-spread passive bid working when below target
+- only offers passively when already above target or in endgame
+
+What kind of strategy this is:
+
+- osmium is an alpha-tilted inventory-aware market maker
+- pepper is an aggressive long-carry accumulator with opportunistic trimming
+- the whole file is a deliberately aggressive two-product hybrid, not a conservative balanced market maker
+
+Strengths:
+
+- much more direct expression of the official pepper carry thesis than `184591`
+- keeps an actively trading osmium leg instead of going pepper-only
+- uses official-style `80` limits for both products
+
+Main risks:
+
+- still relies materially on passive pepper accumulation
+- not portal-validated
+- can overstate edge locally if a replay engine is overly generous on inside-spread pepper fills
+
+Observed local cross-check result:
+
+- Kevin total profit: `170807`
+- Rust total profit: `170449`
+- Kevin product split by day-level stdout sums: `150335` pepper and `20472` osmium
+- Rust product split: `150335` pepper and `20114` osmium
+- practical conclusion: this is the strongest local research candidate created so far, but the repo rules still require treating those totals as diagnostic rather than as portal truth
+
+## Aggressive Hybrid V2
+
+Stable name:
+
+- `round1_aggressive_hybrid_v2`
+
+Path:
+
+- `ROUND1/strategies/aggressive_hybrid_v2.py`
+
+Status:
+
+- research candidate
+- second aggressive pass
+- not promoted over `aggressive_hybrid_v1`
+
+Why it exists:
+
+- this file was created after re-reading `repo.md` and `workflow.md`
+- the explicit goal was to make the aggression more portal-aware by relying less on public-simulator-friendly passive inside-spread farming and more on stronger inventory-taking and carry expression
+
+How it differs from V1:
+
+- keeps the same broad architecture and product split
+- pulls osmium closer to the healthier `v1` layering and skew profile after the first second-pass attempt degraded both products
+- raises pepper baseline carry ambition relative to the official files:
+- `forward_fair` premium is `8.5`
+- base target is `62`
+- target slope is `10.5`
+- target floor is raised to `36`
+- late target cap is raised to `56`
+- changes pepper catch-up logic so it will buy while below target at more negative displayed edge than `v1`, especially when the target gap is large
+- reduces the most simulator-sensitive passive bid improvement from `7` to `5` so more of the extra aggression comes from deliberate taking and target pressure instead of assuming ideal passive fills
+
+Execution model:
+
+- osmium remains a layered alpha-tilted market maker with `1`-tick inside quoting, bounded target inventory, and explicit flattening near hard risk
+- pepper remains long-only, but its buy logic is more willing to force inventory catch-up when below target
+- pepper sell logic stays reluctant and mainly trims when significantly above target or in endgame
+
+What was learned from it:
+
+- the repo's portal-gap guidance was directionally useful
+- the first naive second pass, which made the strategy more aggressive mostly by improving passive placement, was the wrong move
+- the corrected `v2` shifts the extra aggression toward target inventory and taker behavior instead
+
+Observed local cross-check result:
+
+- Kevin total profit: `168234`
+- Rust total profit: `168106`
+- Kevin product split by day-level stdout:
+- day `-2`: `54239` pepper, `7169` osmium
+- day `-1`: `51892` pepper, `7203` osmium
+- day `0`: `42685` pepper, `5046` osmium
+- Rust product split:
+- `148845` pepper
+- `19261` osmium
+
+Practical conclusion:
+
+- `v2` is materially better than the first broken second-pass attempt
+- but it still does not beat `v1` on either Kevin or Rust
+- the correct takeaway is that the second pass produced useful design information but not a clear successor candidate
 
 ## Current Trader
 
