@@ -15,8 +15,9 @@ $dataRoots = Sync-ToolData -Round $roundConfig.Key
 
 Ensure-KevinEnvironment
 
+$dayList = @($Days)
 $dayArgs = Convert-DayArgs -RoundConfig $roundConfig -Days $Days
-$label = if ($Days.Count -gt 0) { $Days -join "_" } else { "all_days" }
+$label = if ($dayList.Count -gt 0) { $dayList -join "_" } else { "all_days" }
 $runDir = New-RunDirectory -Kind "backtests" -Tool "kevin" -Round $roundConfig.Key -Label $label
 $outPath = Join-Path $runDir "kevin.log"
 $summaryPath = Join-Path $runDir "run.json"

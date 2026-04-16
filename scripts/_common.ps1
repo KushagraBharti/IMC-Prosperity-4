@@ -258,17 +258,20 @@ function Sync-ToolData {
 
     $kevinTarget = Join-Path $outputRoot ("tool-data\kevin\round{0}" -f $roundConfig.RoundNum)
     $xeeshanTarget = Join-Path $outputRoot ("tool-data\xeeshan\round{0}" -f $roundConfig.RoundNum)
+    $rustTarget = Join-Path $outputRoot ("tool-data\rust\round{0}" -f $roundConfig.RoundNum)
 
-    New-Item -ItemType Directory -Force -Path $kevinTarget, $xeeshanTarget | Out-Null
+    New-Item -ItemType Directory -Force -Path $kevinTarget, $xeeshanTarget, $rustTarget | Out-Null
 
     foreach ($file in @($csvFiles.Prices + $csvFiles.Trades)) {
         Copy-Item -Force -Path $file.FullName -Destination (Join-Path $kevinTarget $file.Name)
         Copy-Item -Force -Path $file.FullName -Destination (Join-Path $xeeshanTarget $file.Name)
+        Copy-Item -Force -Path $file.FullName -Destination (Join-Path $rustTarget $file.Name)
     }
 
     return [pscustomobject]@{
         KevinRoot   = (Join-Path $outputRoot "tool-data\kevin")
         XeeshanRoot = (Join-Path $outputRoot "tool-data\xeeshan")
+        RustRoundDir = $rustTarget
     }
 }
 

@@ -65,6 +65,17 @@ def parse_text_log(path: Path) -> dict[str, Any]:
 
 def parse_json_payload(path: Path) -> dict[str, Any]:
     payload = json.loads(path.read_text(encoding="utf-8"))
+    if "final_pnl_total" in payload and "final_pnl_by_product" in payload:
+        return {
+            "path": str(path),
+            "type": "rust_metrics",
+            "positions": {},
+            "profit_by_product": {key: float(value) for key, value in (payload.get("final_pnl_by_product") or {}).items()},
+            "total_profit": float(payload.get("final_pnl_total", 0.0)),
+            "trade_count": int(payload.get("own_trade_count", 0)),
+            "strategy": payload.get("trader_path"),
+        }
+
     if "activitiesLog" in payload:
         activities = parse_activity_csv(payload["activitiesLog"])
         positions = {}

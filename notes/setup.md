@@ -7,6 +7,8 @@ This workspace keeps the trading repo separate from the open-source tooling clon
 
 Cloned tools:
 
+- `rust-backtester`
+  - source: `https://github.com/GeyzsoN/prosperity_rust_backtester`
 - `chris-monte-carlo`
   - source: `https://github.com/chrispyroberts/imc-prosperity-4`
 - `kevin-backtester`
@@ -31,6 +33,7 @@ What bootstrap does:
 - installs the visualizer dependencies
 - creates mirrored round-data directories for tools that expect package-style resource layouts
 - prepares Chris's Python environment and warns if Rust/Cargo is still missing
+- verifies that Rust/Cargo is available for the Rust replay backtester and Chris Monte Carlo
 
 Round-local strategy layout:
 
