@@ -2,78 +2,80 @@
 
 This repo is the working research and execution workspace for `IMC Prosperity 4`.
 
-## Top-Level Layout
+## Structure
 
 - `TUTORIAL_ROUND/`
-  Tutorial round data, official submission bundles, and the current tutorial strategy.
+  Tutorial data, official bundles, round-local research, and the active tutorial strategy.
 - `ROUND1/`
-  Round 1 data, official submission bundles, research scripts, scratch strategies, and the current Round 1 strategy.
+  Round 1 data, official bundles, round-local research, and the active Round 1 strategy.
 - `config/`
-  Local config for paths, rounds, defaults, and tool integration.
+  Local paths, round metadata, defaults, and tool wiring.
 - `scripts/`
-  Thin wrappers around the external backtesters, visualizers, packaging flow, and comparison tools.
+  Thin wrappers around OSS backtesters, visualizers, packaging, comparison, and official-gap investigation.
 - `outputs/`
-  Generated backtests, stress runs, investigation artifacts, submission-ready files, and visualizer handoff files.
-- `notes/`
-  Internal setup and workflow notes.
+  Generated runs, investigations, packaged submissions, and visualizer handoff files.
+- `prosperity.md`
+  Competition reference and meta-model.
+- `strategies.md`
+  Running strategy registry by round.
+- `workflow.md`
+  Practical development workflow, including how to treat portal-vs-local gaps.
 - `main.py`
-  One-command runner for the integrated local workflow.
+  One-command local runner.
 
-## Where To Work
+## Where To Edit
 
-- Edit the active tutorial strategy in `TUTORIAL_ROUND/strategies/current_trader.py`.
-- Edit the active Round 1 strategy in `ROUND1/strategies/current_trader.py`.
-- Keep experiments in round-local scratch folders like `ROUND1/scratch_alpha_01/`.
-- Keep round-specific research code in `ROUND1/research/` and future `ROUND*/research/` folders.
+- Active tutorial strategy:
+  `TUTORIAL_ROUND/strategies/current_trader.py`
+- Active Round 1 strategy:
+  `ROUND1/strategies/current_trader.py`
 
-## Official Submission Artifacts
+Use round-local folders for everything else:
 
-Each official portal result is stored as a bundle containing:
+- `ROUND*/research/` for notebooks, analysis code, and investigation notes
+- `ROUND*/official_submissions/` for downloaded portal bundles
+- `ROUND*/strategies/archive/` for frozen candidates
 
-- the submitted `.py`
-- the portal `.log`
-- the portal `.json`
+Do not treat `official_submissions` as editable code. Treat them as ground-truth artifacts.
 
-Current examples:
+## Integrated Tools
 
-- `ROUND1/official_submissions/167536/`
-- `ROUND1/official_submissions/184591/`
-- `ROUND1/official_submissions/214011/`
-
-These are important because they are the closest thing to ground truth for what the portal actually evaluated.
-
-## Tooling
-
-External OSS tools live outside this repo under:
+External OSS repos live under:
 
 - `C:\Users\kushagra\OneDrive\Documents\CS Projects\prosperity-tools`
 
-Current integrated tools:
+Integrated tools:
 
 - `xeeshan-backtester`
 - `kevin-backtester`
 - `rust-backtester`
-- `kevin-visualizer`
 - `gsgill7-visualizer`
+- `kevin-visualizer`
 - `chris-monte-carlo`
 
-Note: These aren't super accurate, and shouldn't be used at ground-truth results.
+Roles:
+
+- `Rust` is the best current local replay baseline.
+- `Kevin` and `Xeeshan` are cross-check replay engines.
+- `gsgill7` is the default visual inspection tool.
+- `Kevin` visualizer is a secondary viewer.
+- `Chris` is for tutorial-only robustness testing, not portal matching.
 
 ## Core Commands
 
-Bootstrap local environments:
+Bootstrap environments:
 
 ```powershell
 .\scripts\bootstrap-tools.ps1
 ```
 
-Run the integrated local flow:
+Run all local tools for a round:
 
 ```powershell
-python main.py --round round1 --strategy ROUND1\scratch_alpha_01\trader.py
+python main.py --round round1 --strategy ROUND1\strategies\current_trader.py
 ```
 
-Run the replay engines individually:
+Run replay engines individually:
 
 ```powershell
 .\scripts\bt-xeeshan.ps1 round1
@@ -81,38 +83,106 @@ Run the replay engines individually:
 .\scripts\bt-rust.ps1 round1
 ```
 
-Open the visualizers:
+Open visualizers:
 
 ```powershell
 .\scripts\viz-gsgill.ps1
 .\scripts\viz-kevin.ps1
 ```
 
-Package a candidate for submission:
-
-```powershell
-.\scripts\package-submission.ps1 round1 -Label candidate
-```
-
-Compare two runs or an official bundle versus a local run:
+Compare runs:
 
 ```powershell
 .\scripts\compare-runs.ps1 ROUND1\official_submissions\184591 outputs\backtests\...
 ```
 
-## Navigation Rules
+Package a candidate:
 
-- Treat `ROUND*/official_submissions/` as reference artifacts, not active code.
-- Treat `ROUND*/strategies/current_trader.py` as the active editable strategy for that round.
-- Treat `outputs/` as generated files. Read from it freely, but do not hand-edit generated artifacts.
-- Use `strategies.md` as the running registry of what each strategy is trying to do.
-- Use `prosperity.md` as the competition reference, not Discord memory.
+```powershell
+.\scripts\package-submission.ps1 round1 -Label candidate
+```
 
-## Practical Workflow
+Investigate official-vs-local gaps:
 
-1. Start from the active round strategy.
-2. Make a small change.
-3. Run Xeeshan, Kevin, and Rust locally.
-4. Compare the runs, especially product split, trade count, and inventory behavior.
-5. Use the portal as the real judge for serious candidates.
-6. Archive the winning strategy before the next major change.
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\investigate-official.ps1 -OfficialArtifact ROUND1\official_submissions\184591\184591.log -Round round1 -Strategy ROUND1\strategies\current_trader.py
+```
+
+## What Is Reliable
+
+Reliable:
+
+- official portal bundles
+- official product split and final portal PnL
+- relative behavior seen repeatedly across multiple local replay engines
+- trade-count, inventory-path, and fill-pattern debugging
+
+Not reliable:
+
+- any single OSS backtester as a portal-equivalent scorer
+- absolute local PnL for fill-sensitive strategies
+- tiny quote-placement optimizations chosen only from replay totals
+
+## Main Gap Between Portal And OSS Backtesters
+
+The repo investigation so far found three important causes of mismatch:
+
+1. `Official evaluation windows may differ from the public round CSVs.`
+   Official bundles include an `activitiesLog` that can imply a book path different from the public `prices_*.csv` files for the same nominal round/day.
+
+2. `The portal uses a different within-tick matching model.`
+   Public replay engines begin filling some passive inside-spread quotes earlier or more often than the portal does, especially in `INTARIAN_PEPPER_ROOT`.
+
+3. `Many strategies are highly sensitive to passive inside-spread fills.`
+   If the strategy depends on those fills for edge, local and official PnL can diverge hard even when the code is identical.
+
+This means:
+
+- a local replay can be directionally useful while still being numerically wrong
+- portal mismatch is not automatically a wrapper bug
+- “all / worse / none” trade-match settings help characterize the gap but do not eliminate it
+
+## What We Fixed
+
+We did not make OSS backtesters match the portal perfectly.
+
+We did make the problem measurable:
+
+- extract official portal windows into replayable local datasets
+- rerun Kevin, Xeeshan, and Rust on that exact official window
+- classify own fills relative to the displayed spread
+- identify the first timestamp where local and official fills diverge
+
+Relevant scripts:
+
+- `scripts/extract_official_window.py`
+- `scripts/analyze_fill_patterns.py`
+- `scripts/compare_fill_sequences.py`
+- `scripts/investigate-official.ps1`
+
+Investigation outputs live under:
+
+- `outputs/investigation/`
+
+## How To Use The Toolchain Correctly
+
+Use local tools to:
+
+- eliminate obviously bad ideas
+- inspect inventory and overtrading
+- compare product-level PnL
+- see whether an idea only works in one simulator
+- understand where fills come from
+
+Use the portal to:
+
+- rank serious candidates
+- validate any fill-sensitive strategy
+- decide what is actually submission-worthy
+
+Design preference:
+
+- prefer strategies that are decent across `Rust`, `Kevin`, `Xeeshan`, and the portal
+- distrust strategies that only work because one replay engine is generous on passive fills
+
+The full operating rules for that process are in `workflow.md`.
