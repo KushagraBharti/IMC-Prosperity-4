@@ -270,6 +270,8 @@ In this repo, the main integrated tools are:
 - `Kevin` visualizer
 - `Chris` Monte Carlo backtester
 
+Note: Public backtesters aren't super accurate and shouldn't be treated as ground truth.
+
 ## What Local Backtesters Are Good For
 
 Local backtesters are useful, but only if they are used correctly.

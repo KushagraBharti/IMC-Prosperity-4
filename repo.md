@@ -57,6 +57,8 @@ Current integrated tools:
 - `gsgill7-visualizer`
 - `chris-monte-carlo`
 
+Note: These aren't super accurate, and shouldn't be used at ground-truth results.
+
 ## Core Commands
 
 Bootstrap local environments:
