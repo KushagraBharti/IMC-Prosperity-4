@@ -1,0 +1,9 @@
+{
+  "activeRound": "round1",
+  "defaultBacktester": "xeeshan",
+  "crossCheckBacktester": "kevin",
+  "defaultVisualizer": "gsgill",
+  "latestLogPath": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\outputs\\visualizer-inbox\\latest.log",
+  "latestRunInfoPath": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\outputs\\visualizer-inbox\\latest-run.json",
+  "outputRoot": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\outputs"
+}

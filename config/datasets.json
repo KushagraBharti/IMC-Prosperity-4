@@ -1,0 +1,22 @@
+{
+  "rounds": {
+    "tutorial": {
+      "key": "tutorial",
+      "label": "Tutorial Round",
+      "roundNumber": 0,
+      "root": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\TUTORIAL_ROUND",
+      "strategyCurrent": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\TUTORIAL_ROUND\\strategies\\current_trader.py",
+      "strategyArchiveDir": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\TUTORIAL_ROUND\\strategies\\archive",
+      "officialSubmissionDir": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\TUTORIAL_ROUND\\official_submissions"
+    },
+    "round1": {
+      "key": "round1",
+      "label": "Round 1",
+      "roundNumber": 1,
+      "root": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND1",
+      "strategyCurrent": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND1\\strategies\\current_trader.py",
+      "strategyArchiveDir": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND1\\strategies\\archive",
+      "officialSubmissionDir": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND1\\official_submissions"
+    }
+  }
+}
