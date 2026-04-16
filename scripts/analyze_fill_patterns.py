@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
@@ -17,13 +18,21 @@ def parse_trade_history(path: Path) -> list[dict[str, Any]]:
 
     if path.suffix.lower() == ".json":
         payload = json.loads(text)
-        return payload.get("tradeHistory", []) or []
+        trades = payload.get("tradeHistory", []) or []
+        if trades:
+            return trades
+        sibling_log = path.with_suffix(".log")
+        if sibling_log.exists():
+            sibling_payload = json.loads(sibling_log.read_text(encoding="utf-8"))
+            return sibling_payload.get("tradeHistory", []) or []
+        return []
 
     marker = "Trade History:\n"
     if marker not in text:
         return []
 
     blob = text.split(marker, 1)[1].strip()
+    blob = re.sub(r",(\s*[}\]])", r"\1", blob)
     return json.loads(blob)
 
 
@@ -80,7 +89,11 @@ def classify_fill(price: int, side: str, best_bid: int | None, best_ask: int | N
     return "unclassified"
 
 
-def summarize(trades: list[dict[str, Any]], quotes: dict[int, dict[str, tuple[int | None, int | None]]]) -> dict[str, Any]:
+def summarize(
+    trades: list[dict[str, Any]],
+    quotes: dict[int, dict[str, tuple[int | None, int | None]]],
+    include_non_submission: bool,
+) -> dict[str, Any]:
     summary: dict[str, Any] = {
         "trade_count": 0,
         "by_product": {},
@@ -94,6 +107,8 @@ def summarize(trades: list[dict[str, Any]], quotes: dict[int, dict[str, tuple[in
         timestamp = int(trade["timestamp"])
         price = int(float(trade["price"]))
         side = infer_side(trade)
+        if not include_non_submission and side == "unknown":
+            continue
         best_bid, best_ask = quotes.get(timestamp, {}).get(symbol, (None, None))
         bucket = classify_fill(price, side, best_bid, best_ask)
 
@@ -116,12 +131,17 @@ def main() -> None:
     parser.add_argument("--round-dir", required=True, help="Round directory containing prices/trades CSVs, e.g. ROUND1")
     parser.add_argument("--round-number", required=True, type=int, help="Round number, e.g. 1")
     parser.add_argument("--day", required=True, type=int, help="Day number to load price quotes for")
+    parser.add_argument(
+        "--include-non-submission",
+        action="store_true",
+        help="Include tradeHistory rows that do not involve SUBMISSION.",
+    )
     args = parser.parse_args()
 
     artifact = Path(args.artifact)
     trades = parse_trade_history(artifact)
     quotes = load_quotes(Path(args.round_dir), args.round_number, args.day)
-    summary = summarize(trades, quotes)
+    summary = summarize(trades, quotes, include_non_submission=args.include_non_submission)
 
     print(json.dumps(summary, indent=2, sort_keys=True))
 
