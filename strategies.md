@@ -64,7 +64,7 @@ The Round 1 artifacts in this repo fall into six clear families:
 - `current_trader`, `scratch_alpha_01`, and `184591`: the main two-product microstructure market-maker family with `80`-lot limits and an explicit long-biased pepper target position
 - `214011` and `218688`: pepper-only long-biased trend-accumulation family
 - `218869`: osmium-only market-making extraction
-- `219274` and `221414`: specialist-combination family that merges the `218869` osmium module with a pepper-only carry module, with `221414` as a stronger tuned descendant
+- `219274`, `221414`, `official_221414_plus`, `224169`, `round1_portal_pepper_hold`, `233714`, `round1_portal_pepper_swing`, and `233545`: specialist-combination family that merges the `218869` osmium module with a pepper-only carry module, with `221414` as the first major tuned descendant, `224169` as the official validation of the `official_221414_plus` retune, and `233714` / `233545` as increasingly portal-window-targeted pepper descendants
 - `aggressive_hybrid_v1`, `aggressive_hybrid_v2`, and `222545`: post-hoc aggressive hybrid family that tries to combine the strongest observed osmium and pepper ideas while accounting for the repo's portal-versus-local mismatch guidance, with `222545` as the official portal artifact for `aggressive_hybrid_v2`
 
 That family structure is not a guess. It is directly visible in the code and in the portal outputs:
@@ -79,6 +79,20 @@ That family structure is not a guess. It is directly visible in the code and in 
 - `PEPPER_BID_IMPROVE = 7` instead of `6`
 - `PEPPER_ASK_IMPROVE = 0` instead of `1`
 - `PEPPER_SOFT_LIMIT = 78` instead of `50`
+- `official_221414_plus.py` and `224169.py` are functionally identical and differ only by a trailing newline at EOF
+- relative to `221414.py`, that retune changes six operational constants:
+- `OSMIUM_SOFT_LIMIT = 80` instead of `58`
+- `OSMIUM_FLATTEN_TRIGGER = 40` instead of `34`
+- `PEPPER_BASE_TARGET = 68` instead of `66`
+- `PEPPER_SOFT_LIMIT = 80` instead of `78`
+- `PEPPER_ENDGAME = 950000` instead of `940000`
+- endgame pepper target cap `12` instead of `10`
+- `round1_portal_pepper_hold.py` and `233714.py` are functionally identical and differ only by leading / trailing newline formatting
+- relative to `224169.py`, that portal-targeted descendant keeps osmium unchanged and replaces the pepper module with a deterministic front-loaded accumulator that only buys level-1 asks while `ask_1 <= 12007` through `ts = 1000` or `ask_1 <= 12008` through `ts = 2000`
+- `round1_portal_pepper_swing.py` and `233545.py` are functionally identical and differ only by leading / trailing newline formatting
+- relative to `233714.py`, `233545.py` keeps the same osmium and same front-loaded pepper acquisition, then adds an `11`-step guarded timestamped pepper swing plan
+- the official portal result of `233714` beats `224169` by exactly `+430.0`, entirely from pepper
+- the official portal result of `233545` beats `233714` by exactly `+80.0`, again entirely from pepper
 - the official portal profit of `219274` is exactly `218869 + 218688`, which strongly suggests that the combined file is just the additive merger of those independent single-product legs on the recorded evaluation window
 - `aggressive_hybrid_v1.py` is a new research-only composite that starts from the `184591` osmium family and the `218688` pepper carry thesis rather than matching any one official artifact
 - `aggressive_hybrid_v2.py` is the second-pass refinement of that same research composite and is explicitly informed by `repo.md` and `workflow.md` guidance about avoiding overreliance on generous passive inside-spread fills
@@ -939,6 +953,333 @@ Main risks:
 - it is even more dependent on carrying large pepper inventory than `219274`
 - the improved result may be highly sensitive to whether future portal windows still reward full-limit pepper carry
 
+## Official Submission 224169
+
+Stable name:
+
+- `official_224169_221414_plus`
+
+Paths:
+
+- `ROUND1/official_submissions/224169 (9400)/224169.py`
+- `ROUND1/official_submissions/224169 (9400)/224169.log`
+- `ROUND1/official_submissions/224169 (9400)/224169.json`
+- `ROUND1/official_submissions/224169 (9400).zip`
+
+Status:
+
+- official artifact
+- strongest simple specialist-family retune before the later portal-targeted pepper descendants
+- official representative of `ROUND1/strategies/official_221414_plus.py`
+
+Code relationship:
+
+- functionally identical to `ROUND1/strategies/official_221414_plus.py`
+- differs only by a trailing newline at EOF
+- direct specialist-family retune of `221414.py`
+
+Exact deltas relative to `221414.py`:
+
+- `OSMIUM_SOFT_LIMIT = 80` instead of `58`
+- `OSMIUM_FLATTEN_TRIGGER = 40` instead of `34`
+- `PEPPER_BASE_TARGET = 68` instead of `66`
+- `PEPPER_SOFT_LIMIT = 80` instead of `78`
+- `PEPPER_ENDGAME = 950000` instead of `940000`
+- endgame pepper target cap `12` instead of `10`
+
+Products traded:
+
+- `ASH_COATED_OSMIUM`
+- `INTARIAN_PEPPER_ROOT`
+
+Fair-value model:
+
+- unchanged from `221414`
+- fixed osmium specialist fair around `10000`
+- same pepper anchor-plus-drift carry model with separate `forward_fair` and `unwind_fair`
+
+Execution model:
+
+- unchanged in structure from `221414`
+- same simple specialist merge architecture
+- same osmium specialist MM logic
+- same pepper long-carry specialist logic
+- the improvement comes from looser risk-envelope constants, not from a new execution algorithm
+
+Observed official portal result:
+
+- total profit: `9440.5`
+- final osmium PnL from activity log: `2427.5`
+- final pepper PnL from activity log: `7013.0`
+- terminal positions: short `16` osmium, long `80` pepper
+
+Observed improvement relative to `221414`:
+
+- total PnL change: `+169.875`
+- osmium PnL change: `+177.875`
+- pepper PnL change: `-8.0`
+
+Observed trade-path characteristics from `tradeHistory`:
+
+- osmium:
+- `123` own trades
+- `64` buys and `59` sells, same trade count shape as `221414`
+- `322` bought versus `318` in `221414`
+- `338` sold, same as `221414`
+- average absolute inventory during own-trade path about `19.37`
+- final position `-16`
+- `6` sign changes, down from `10` in `221414`
+- pepper:
+- `42` own trades
+- `27` buys and `15` sells
+- `174` bought and `94` sold
+- average absolute inventory during own-trade path about `71.07`
+- final position `80`
+- zero sign changes
+
+Drawdown and path observations from `activitiesLog`:
+
+- osmium max drawdown improves slightly:
+- `102.469` for `224169`
+- `107.648` for `221414`
+- pepper max drawdown is unchanged at `402`
+- pepper path is almost identical, which is why the final pepper PnL is nearly unchanged
+- the real gain is osmium monetization with slightly more permissive inventory handling
+
+Why it matters:
+
+- this bundle validates the exact experiment you asked for:
+- keep `221414` simple
+- raise the soft limits to the maximum
+- make only small parameter changes
+- the portal result says that worked
+- but it also says the win came from osmium, not pepper
+
+Practical interpretation:
+
+- the additional osmium flexibility helped the strategy hold and unwind the specialist leg more efficiently
+- the extra pepper aggression was basically neutral to slightly negative on this window
+- so the useful lesson is not "push everything harder"
+- it is "the `221414` architecture still had osmium headroom under looser inventory constraints"
+
+Main risks:
+
+- this variant still depends heavily on full-limit pepper carry
+- the improvement is real, but it is modest rather than transformative
+- because most of the gain came from osmium while pepper slipped slightly, future tuning should probably focus on preserving this osmium improvement without paying away any pepper edge
+
+## Official Submission 233714
+
+Stable name:
+
+- `official_233714_portal_pepper_hold`
+
+Paths:
+
+- `ROUND1/official_submissions/233714 (9870)/233714.py`
+- `ROUND1/official_submissions/233714 (9870)/233714.log`
+- `ROUND1/official_submissions/233714 (9870)/233714.json`
+
+Status:
+
+- official artifact
+- first portal-window-targeted descendant of `224169`
+- official representative of `ROUND1/strategies/round1_portal_pepper_hold.py`
+
+Code relationship:
+
+- functionally identical to `ROUND1/strategies/round1_portal_pepper_hold.py`
+- direct descendant of `224169.py`
+- osmium module is unchanged from `224169.py`
+- pepper module is completely replaced by a deterministic accumulator with no dynamic anchor, alpha, maker quotes, or unwind logic
+
+Exact pepper execution change relative to `224169.py`:
+
+- buy level-1 pepper asks only
+- buy while `best_ask <= 12007` through `ts = 1000`
+- if still short of the hard limit, continue buying while `best_ask <= 12008` through `ts = 2000`
+- once `80` pepper is reached, stop trading pepper entirely
+
+Products traded:
+
+- `ASH_COATED_OSMIUM`
+- `INTARIAN_PEPPER_ROOT`
+
+Fair-value model:
+
+- osmium unchanged from `224169`
+- pepper effectively abandons the prior fair-value model in favor of fixed portal-window price acceptance bands
+
+Execution model:
+
+- osmium identical to `224169`
+- pepper is an explicit front-load-and-hold implementation
+- there is no pepper inventory recycling after the opening accumulation phase
+
+Observed official portal result:
+
+- total profit: `9870.5`
+- final osmium PnL from activity log: `2427.5`
+- final pepper PnL from activity log: `7443.0`
+- terminal positions: short `16` osmium, long `80` pepper
+
+Observed improvement relative to `224169`:
+
+- total PnL change: `+430.0`
+- osmium PnL change: `0.0`
+- pepper PnL change: `+430.0`
+
+Observed trade-path characteristics from `tradeHistory`:
+
+- osmium is identical to `224169`:
+- `123` own trades
+- `64` buys and `59` sells
+- `322` bought and `338` sold
+- average absolute inventory during own-trade path about `19.37`
+- final position `-16`
+- `6` sign changes
+- pepper:
+- `8` own trades
+- all `8` are buys and all occur during the opening accumulation window
+- `80` bought and `0` sold
+- fill timestamps are exactly `0`, `200`, `300`, `400`, `500`, `600`, `700`, and `900`
+- fill prices are `12006` once and `12007` seven times
+- average absolute inventory during own-trade path about `46.75`
+- final position `80`
+- zero sign changes
+
+Drawdown and path observations from `activitiesLog` and `logs`:
+
+- osmium path is identical to `224169`, including the same final PnL and same max drawdown of `102.469` at `ts = 56900`
+- pepper max drawdown worsens to `469.0` at `ts = 1000`, versus `402.0` for `224169`
+- after the opening fill sequence, the pepper PnL path becomes a near-pure carry line because the strategy never sells inventory back
+- `233714.log` contains no non-empty portal warnings or lambda diagnostics; all `sandboxLog` and `lambdaLog` fields are empty strings throughout
+
+Why it matters:
+
+- this bundle proves that, on the official evaluation window, the dynamic pepper churn in `224169` was leaving money on the table
+- simply buying to `80` quickly and refusing to recycle the position improved the portal result by `430.0`
+- the entire gain came from pepper while leaving osmium untouched
+
+Main risks:
+
+- this is far more portal-window-specific than `224169`
+- the pepper logic is almost entirely hardcoded to a specific early ask regime and a strong upward carry assumption
+- if future windows do not offer the same early asks or the same persistent drift, the edge can disappear abruptly
+
+## Official Submission 233545
+
+Stable name:
+
+- `official_233545_portal_pepper_swing`
+
+Paths:
+
+- `ROUND1/official_submissions/233545 (9951)/233545.py`
+- `ROUND1/official_submissions/233545 (9951)/233545.log`
+- `ROUND1/official_submissions/233545 (9951)/233545.json`
+
+Status:
+
+- official artifact
+- current strongest recorded Round 1 portal bundle present in the repo
+- official representative of `ROUND1/strategies/round1_portal_pepper_swing.py`
+
+Code relationship:
+
+- functionally identical to `ROUND1/strategies/round1_portal_pepper_swing.py`
+- direct descendant of `233714.py`
+- keeps the entire `224169` / `233714` osmium module unchanged
+- keeps the same opening pepper accumulator as `233714`
+- adds a fixed `PEPPER_PLAN` with `11` guarded timestamped pepper swing steps
+
+Exact pepper swing plan layered on top of the `233714` accumulator:
+
+- `14300`: sell `6` if `best_bid >= 12017`
+- `19300`: buy `5` if `best_ask <= 12015`
+- `20200`: buy `1` if `best_ask <= 12016`
+- `32600`: sell `5` if `best_bid >= 12036`
+- `38700`: buy `5` if `best_ask <= 12035`
+- `64200`: sell `6` if `best_bid >= 12067`
+- `65700`: buy `6` if `best_ask <= 12062`
+- `74300`: sell `4` if `best_bid >= 12077`
+- `74400`: buy `4` if `best_ask <= 12070`
+- `77300`: sell `3` if `best_bid >= 12080`
+- `82300`: buy `3` if `best_ask <= 12078`
+
+Products traded:
+
+- `ASH_COATED_OSMIUM`
+- `INTARIAN_PEPPER_ROOT`
+
+Fair-value model:
+
+- osmium unchanged from `224169`
+- pepper is even more explicitly path-dependent than `233714`, because it uses a hand-authored sequence of timestamp-and-guard instructions rather than a live fair-value estimate
+
+Execution model:
+
+- osmium identical to `224169` and `233714`
+- pepper has two phases:
+- phase 1: buy to the hard limit using the same deterministic ask thresholds as `233714`
+- phase 2: execute the guarded `PEPPER_PLAN` one step at a time while preserving a long-only posture and returning to `80`
+
+Observed official portal result:
+
+- total profit: `9950.5`
+- final osmium PnL from activity log: `2427.5`
+- final pepper PnL from activity log: `7523.0`
+- terminal positions: short `16` osmium, long `80` pepper
+
+Observed improvement relative to `233714`:
+
+- total PnL change: `+80.0`
+- osmium PnL change: `0.0`
+- pepper PnL change: `+80.0`
+
+Observed improvement relative to `224169`:
+
+- total PnL change: `+510.0`
+- osmium PnL change: `0.0`
+- pepper PnL change: `+510.0`
+
+Observed trade-path characteristics from `tradeHistory`:
+
+- osmium is identical to `224169` and `233714`:
+- `123` own trades
+- `64` buys and `59` sells
+- `322` bought and `338` sold
+- average absolute inventory during own-trade path about `19.37`
+- final position `-16`
+- `6` sign changes
+- pepper:
+- `19` own trades
+- `14` buys and `5` sells
+- `104` bought and `24` sold
+- average absolute inventory during own-trade path about `64.68`
+- final position `80`
+- zero sign changes
+- the `11` planned swing steps all appear in `tradeHistory` exactly once, which means the guarded schedule executed cleanly on the official window
+
+Drawdown and path observations from `activitiesLog` and `logs`:
+
+- osmium path is again identical to `224169` and `233714`
+- pepper max drawdown remains `469.0` at `ts = 1000`, because the opening accumulation is the same as `233714`
+- the additional `+80.0` comes from realized pepper swings after the position is already established, not from a better opening acquisition
+- `233545.log` contains no non-empty portal warnings or lambda diagnostics; all `sandboxLog` and `lambdaLog` fields are empty strings throughout
+
+Why it matters:
+
+- this is the highest-scoring Round 1 portal artifact currently present in the repo
+- it shows that the portal window rewarded not just full-limit pepper carry, but a very specific low-count sequence of opportunistic sell-high / buy-back-lower pepper rotations on top of that carry
+- the entire improvement over `224169` and `233714` is pure pepper extraction with zero change to osmium
+
+Main risks:
+
+- this is the most portal-window-specific Round 1 artifact in the repo
+- the pepper schedule is effectively hand-authored against one realized path, so it has high fragility outside that path
+- it should be treated as a forensic reference for what the portal rewarded, not as a robust general-purpose strategy template
+
 ## Official Submission 222545
 
 Stable name:
@@ -955,7 +1296,7 @@ Paths:
 Status:
 
 - official artifact
-- second-strongest recorded Round 1 portal bundle currently present in the repo
+- strong portal artifact for the aggressive hybrid family, but no longer one of the top specialist-family scores after `224169`, `233714`, and `233545`
 - official representative of the `aggressive_hybrid_v2` family
 
 Code relationship:
