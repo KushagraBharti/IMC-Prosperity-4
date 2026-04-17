@@ -14,6 +14,8 @@ For quick orientation, the main official Round 1 totals documented in this file 
 
 - `233545`: `9950.5`
 - `233714`: `9870.5`
+- `242135 pt2`: `9870.5`
+- `242135 pt3`: `9870.5`
 - `224169`: `9440.5`
 - `221414`: `9270.625`
 - `222545`: `8837.75`
@@ -24,7 +26,7 @@ For quick orientation, the main official Round 1 totals documented in this file 
 - `167536`: `2974.2734375`
 - `218869`: `2249.625`
 
-That ranking already captures most of the Round 1 evolution. The middle phase of the repo is about discovering that pepper should be carried harder. The late phase is about discovering that, on the recorded portal window, hardcoded early pepper accumulation and small scheduled pepper swings beat the cleaner dynamic pepper specialist. Osmium improves more slowly and mostly through inventory-envelope tuning rather than through a sequence of big conceptual rewrites.
+That ranking already captures most of the Round 1 evolution. The middle phase of the repo is about discovering that pepper should be carried harder. The late phase is about discovering that, on the recorded portal window, hardcoded early pepper accumulation and small scheduled pepper swings beat the cleaner dynamic pepper specialist. The very late phase then tests whether a more general non-hardcoded accumulator can recover the same portal score; in these official bundles it can tie the simple hold version, but it does not exceed it. Osmium improves more slowly and mostly through inventory-envelope tuning rather than through a sequence of big conceptual rewrites.
 
 ## Documentation Conventions
 
@@ -60,6 +62,8 @@ The Round 1 strategy tree is easier to understand if it is read as a sequence of
 The second discovery is that better pepper performance did not come from increasingly complicated signal stacks alone. The large improvement from `184591` through `221414`, `224169`, `233714`, and `233545` is mostly a change in posture: the code becomes progressively more comfortable holding meaningful long pepper inventory, buying earlier in the session, and selling less often. In other words, later pepper strategies win because they express the carry thesis more directly, not because they found some magical extra alpha term.
 
 The third discovery is that the best late portal scores are partly path-specific. `233714` and `233545` are excellent Round 1 files, but they are excellent because they exploit the observed early-session portal window very hard with explicit accumulation rules and, in the swing version, a scheduled trim-and-rebuy plan. That makes them strong references for what actually won Round 1 in this repo, but weaker references for what should be generalized blindly to a different environment.
+
+The fourth discovery is that the repo can get surprisingly close to that same late portal behavior without hardcoding timestamps and guard prices into the pepper leg. The `round1_strategy_C` / `242135 pt2` branch replaces the literal opening script with a very aggressive live fair-value accumulator and still ties `233714` on the official portal. The `round1_strategy_D` / `242135 pt3` branch then adds a tiny micro-trim overlay, but on the official bundle it does not improve the score at all. That is a useful nuance: hand-authored pepper rules were not the only way to reach the hold score, but they were still the only way in this repo to beat it cleanly.
 
 ## Research Baseline
 
@@ -420,6 +424,90 @@ Why it matters: This is the highest-scoring portal artifact in the registry and 
 Practical takeaway: Use this file to understand what the recorded portal path rewarded, not as the default template for a reusable Round 1 strategy.
 
 Results: total `9950.5`, pepper `7523.0`, osmium `2427.5`, from `ROUND1/official_submissions/233545 (9951)/233545.json` and `233545.log`.
+
+## round1_strategy_C_aggressive_accumulator_v2
+
+Location: `ROUND1/strategies/round1_strategy_C_aggressive_accumulator_v2.py`
+
+Overview: This file is a fully dynamic two-product strategy that keeps the proven `224169` osmium specialist intact and replaces the hardcoded pepper opening script with an aggressive non-hardcoded carry accumulator. The goal is very specific: recover the economics of the portal-window hold winner without using explicit timestamp-and-price rules. In other words, it tries to get long pepper quickly because the product drifts upward, but it wants the decision to come from live fair value, live microstructure, and live inventory state rather than from a hand-authored opening playbook.
+
+Pepper strategy: Pepper uses a live anchor and a live drift model, `base_fair = anchor + 0.001 * timestamp`, where the anchor is updated from observed mids after stripping out the structural drift. On top of that it adds a fairly aggressive alpha made from wall-mid deviation, top-of-book imbalance, wall-mid trend, imbalance trend, and short mid trend, clipped to a bounded range. Entry fair is `forward_fair = base_fair + 8.5 + alpha`, so the strategy deliberately pays above structural fair to establish carry. Inventory logic is equally aggressive. The base target is `78`, the minimum target is `64`, the maximum target is `80`, and positive imbalance can still add a further target bonus, so the file spends most of its time trying to live nearly max long. Execution is purposely simple and pessimistic-fill-friendly: it sweeps only ask-side liquidity, checks only the best ask level, accepts zero edge as sufficient, and in large catch-up states will even buy with displayed edge down to `-1.0`. Buy size rises with the remaining gap to target and receives an extra bonus on strong edge. There is effectively no passive pepper quoting because the passive trigger is set to `999` and passive max size to `0`, so the intended edge comes from visible aggressive accumulation, not from optimistic inside-spread fills. The pepper leg is long-only and has no normal sell path.
+
+Osmium strategy: Osmium is unchanged from the `224169` / `233714` / `233545` specialist family. It still trades a stationary fair near `10000`, computes alpha from wall-mid deviation, imbalance, and short trend, converts that into a bounded target inventory and inventory-skewed reservation price, sweeps up to three levels when the signal is strong, flattens more assertively once inventory exceeds `40`, and posts passive quotes one tick inside the spread with inventory-aware size. This matters because it keeps the osmium baseline fixed, so the section's result is almost entirely a pepper statement.
+
+Additional details: This file is byte-identical to official submission `ROUND1/official_submissions/242135 (9871 pt2)/242135.py`. In lineage terms, it is best read as the more aggressive, less passive-fill-dependent continuation of the earlier non-hardcoded accumulator idea. Relative to the simpler non-hardcoded branch, it raises the forward premium to `8.5`, fixes the target near the hard limit, reduces pepper sweep depth to the top ask only, removes real passive bidding, and turns the whole pepper leg into a pure live accumulator.
+
+Why it matters: This is one of the most informative late Round 1 files in the repo because it shows that a non-hardcoded pepper model can tie the portal hold score. That does not make it more portable than the simpler balanced strategies, but it does mean the portal score was not achievable only through literal opening-window scripts.
+
+Practical takeaway: If the question is "what is the strongest live-model pepper accumulator in the repo that is not explicitly scripted around fixed timestamps and guards," this is the reference file.
+
+Results: total `9870.5`, pepper `7443.0`, osmium `2427.5`, using the identical official `242135 pt2` artifact.
+
+## Official Submission 242135 pt2
+
+Location: `ROUND1/official_submissions/242135 (9871 pt2)/242135.py`
+
+Overview: This is the official portal validation of the aggressive non-hardcoded accumulator. The bundle keeps the exact same osmium specialist used by the best late Round 1 branches, but the pepper leg is a live model rather than a hardcoded hold schedule. The strategy still wants almost full pepper inventory almost immediately; the difference is that it uses dynamic fair value and dynamic catch-up logic to decide when to buy.
+
+Pepper strategy: Pepper computes a drifting live base fair from a smoothed anchor plus `0.001 * timestamp`, then adds a high-conviction alpha from deviation, imbalance, wall-mid trend, imbalance trend, and short mid trend. Entry fair is `base_fair + 8.5 + alpha`, which bakes structural urgency directly into the model. Target inventory is almost always near the cap because the base target is `78`, the minimum is `64`, and positive imbalance can push the target to `80`. The execution path is deliberately one-sided. The file only takes the best ask, never runs a standard sell path, and uses negative-edge catch-up thresholds when the gap to target is large. That means the bundle is still economically a hold strategy, but the trigger mechanism is general model state rather than a literal opening-time guard. Passive pepper quotes are disabled in practice, so the result comes from aggressive visible buys.
+
+Osmium strategy: Osmium is the same live specialist as `224169` and `233714`: fair around `10000`, bounded directional lean, multi-level sweep logic, flattening beyond `40`, soft-risk gating at `80`, and inside-spread passive quotes. Because osmium is unchanged, the meaningful interpretation of this bundle lies on the pepper side.
+
+Additional details: The official result ties `233714` exactly at both total and product level: total `9870.5`, pepper `7443.0`, osmium `2427.5`. That is a strong and somewhat surprising result. It means the repo was able to reproduce the simple hold score with a more general live accumulator rather than with explicit early price bands. At the same time, it did not beat `233714`, so the official evidence does not support the stronger claim that the live model is superior on this portal path.
+
+Interpretation notes:
+- Change versus `233714`: `0.0`
+- Pepper change versus `233714`: `0.0`
+- Osmium change versus `233714`: `0.0`
+- Same score does not mean same algorithm. It means two materially different pepper implementations landed on the same official outcome.
+
+Why it matters: This bundle is the clearest proof in the repo that hardcoded accumulation was not strictly necessary to reach the hold score.
+
+Practical takeaway: Use this file when you want the strongest official example of "portal-level pepper accumulation without explicit timestamp scripting."
+
+Results: total `9870.5`, pepper `7443.0`, osmium `2427.5`, from `ROUND1/official_submissions/242135 (9871 pt2)/242135.json` and `242135.log`.
+
+## round1_strategy_D_aggressive_accumulator_microtrim
+
+Location: `ROUND1/strategies/round1_strategy_D_aggressive_accumulator_microtrim.py`
+
+Overview: This file keeps the same live osmium specialist and almost the same live pepper accumulator as strategy C, but adds a tiny, highly selective pepper sell overlay. The core thesis is unchanged: get long quickly and stay long. The new idea is only to allow very small trims when pepper looks unusually rich relative to structural fair and the local microstructure turns hostile enough to justify taking a small amount off.
+
+Pepper strategy: Pepper still uses a live anchor, live drift, and live alpha from deviation, imbalance, wall-mid trend, imbalance trend, and short mid trend. It still sets `forward_fair = base_fair + 8.5 + alpha`, still targets a book near the hard limit with base target `78` clipped into `[64, 80]`, still sweeps only the best ask, and still allows mildly negative displayed edge when it is trying to catch up. The new nuance is the trim branch. If the file did not just buy, position is at least `80` exactly, residual price versus structural base fair is at least `5.0`, deviation is negative enough, and imbalance is negative enough, then the strategy is allowed to sell a maximum of `2` units across the top two bid levels, but only if those bids are rich enough versus `trim_fair = base_fair + 1.5 + 0.10 * alpha`. That trim floor of `78` means the strategy never really abandons the long book. It is trying to shave tiny excess inventory off local spikes, not run a proper recycling program. Outside that tiny branch, the pepper leg remains a one-way accumulator.
+
+Osmium strategy: Osmium is again the unchanged `224169`-family specialist: live stationary fair, bounded target inventory, multi-level taker logic, flattening beyond `40`, and passive one-tick-improved quotes. Nothing meaningful changed on the osmium side.
+
+Additional details: This file is byte-identical to `ROUND1/official_submissions/242135 (9871 pt3)/242273.py`, even though the folder label and the internal file number do not match. The algorithm is best understood as "strategy C plus a two-lot emergency trim overlay." That distinction matters because it explains why the file still belongs to the accumulator family rather than to the scripted swing family. The trim logic is reactive and model-driven, not timestamp-authored.
+
+Why it matters: This file is the repo's cleanest test of whether a microscopic amount of tactical selling can improve the aggressive live accumulator without mutating it into a full swing trader.
+
+Practical takeaway: If someone wants the accumulator family with one extra safety valve for rich pepper spikes, this is the file to read.
+
+Results: total `9870.5`, pepper `7443.0`, osmium `2427.5`, using the identical official `242135 pt3` artifact.
+
+## Official Submission 242135 pt3
+
+Location: `ROUND1/official_submissions/242135 (9871 pt3)/242273.py`
+
+Overview: This is the official portal artifact for the micro-trim accumulator. The folder label calls it `242135 pt3`, but the actual code, JSON, and log inside the folder are numbered `242273`; the strategy itself is the same as `round1_strategy_D_aggressive_accumulator_microtrim.py`. Conceptually, it is an aggressive live pepper accumulator with one very small tactical sell branch layered on top.
+
+Pepper strategy: Pepper still does almost everything the pure aggressive accumulator does. It estimates a live drifting base fair from an adaptive anchor, adds a strong alpha stack, uses `forward_fair = base_fair + 8.5 + alpha`, targets inventory very near the hard limit, sweeps only ask-one, and uses permissive catch-up thresholds to get long fast. The only substantive addition is an extremely selective trim path. The bundle may sell at most `2` lots, only when position is already at least `78 + 2`, residual price versus structural fair is at least `5.0`, deviation is negative, imbalance is negative, and the top bid is rich enough versus `trim_fair`. There is no companion reload script and no broad sell program. The intent is not to trade around the book actively; it is to shave tiny excess off unusually rich local spikes and otherwise remain a carry accumulator.
+
+Osmium strategy: Osmium is the same specialist used by `224169`, `233714`, `233545`, and `242135 pt2`: signal-driven fair around `10000`, bounded target inventory, taker sweeps, flattening clips beyond `40`, and one-tick-improved passive quotes. As with the previous late official bundles, the osmium leg is not where the differentiation lies.
+
+Additional details: The official result is identical to both `233714` and `242135 pt2`: total `9870.5`, pepper `7443.0`, osmium `2427.5`. That means the micro-trim overlay added no measurable official value on this portal path. That is an important negative result. It does not show the trim logic is wrong in principle; it shows that, in this bundle and on this path, the extra nuance was neutral rather than additive.
+
+Interpretation notes:
+- Change versus `242135 pt2`: `0.0`
+- Change versus `233714`: `0.0`
+- The bundle is algorithmically different from both, but officially indistinguishable in score.
+- This is evidence against over-reading tiny tactical pepper overlays when the base accumulator is already near optimal on the path.
+
+Why it matters: This official bundle closes the loop on the live-accumulator branch. It shows that once the non-hardcoded accumulator already tied the hold score, adding a tiny reactive trim overlay did not push the score higher.
+
+Practical takeaway: Read this as a useful null result: a bit more pepper nuance did not beat the simpler accumulator on the official portal.
+
+Results: total `9870.5`, pepper `7443.0`, osmium `2427.5`, from `ROUND1/official_submissions/242135 (9871 pt3)/242273.json` and `242273.log`.
 
 ## Aggressive Hybrid V1
 
