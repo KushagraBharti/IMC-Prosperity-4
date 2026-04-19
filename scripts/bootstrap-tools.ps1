@@ -12,6 +12,7 @@ Ensure-KevinEnvironment
 Write-Host "Syncing local round data mirrors..."
 Sync-ToolData -Round tutorial | Out-Null
 Sync-ToolData -Round round1 | Out-Null
+Sync-ToolData -Round round2 | Out-Null
 
 if (-not (Get-CargoExecutable)) {
     Write-Warning "Rust/Cargo is not installed. The Rust replay backtester and Chris's Monte Carlo tool will not run until cargo is available."

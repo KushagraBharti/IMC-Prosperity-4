@@ -36,6 +36,9 @@ function Normalize-RoundKey {
         "1" { return "round1" }
         "round1" { return "round1" }
         "round_1" { return "round1" }
+        "2" { return "round2" }
+        "round2" { return "round2" }
+        "round_2" { return "round2" }
         default { return $normalized }
     }
 }
@@ -53,7 +56,7 @@ function Get-RoundConfig {
 
     $roundConfig = $config.Datasets.rounds.PSObject.Properties[$roundKey]
     if ($null -eq $roundConfig) {
-        throw "Unknown round key '$Round'. Valid values: tutorial, round1."
+        throw "Unknown round key '$Round'. Valid values: tutorial, round1, round2."
     }
 
     return [pscustomobject]@{

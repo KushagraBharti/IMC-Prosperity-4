@@ -17,6 +17,15 @@
       "strategyCurrent": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND1\\strategies\\current_trader.py",
       "strategyArchiveDir": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND1\\strategies\\archive",
       "officialSubmissionDir": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND1\\official_submissions"
+    },
+    "round2": {
+      "key": "round2",
+      "label": "Round 2",
+      "roundNumber": 2,
+      "root": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND2",
+      "strategyCurrent": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND2\\strategies\\current_trader.py",
+      "strategyArchiveDir": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND2\\strategies\\archive",
+      "officialSubmissionDir": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND2\\official_submissions"
     }
   }
 }

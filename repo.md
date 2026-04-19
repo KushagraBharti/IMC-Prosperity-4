@@ -8,6 +8,8 @@ This repo is the working research and execution workspace for `IMC Prosperity 4`
   Tutorial data, official bundles, round-local research, and the active tutorial strategy.
 - `ROUND1/`
   Round 1 data, official bundles, round-local research, and the active Round 1 strategy.
+- `ROUND2/`
+  Round 2 data, official bundles, round-local research, and the active Round 2 strategy.
 - `config/`
   Local paths, round metadata, defaults, and tool wiring.
 - `scripts/`
@@ -29,6 +31,8 @@ This repo is the working research and execution workspace for `IMC Prosperity 4`
   `TUTORIAL_ROUND/strategies/current_trader.py`
 - Active Round 1 strategy:
   `ROUND1/strategies/current_trader.py`
+- Active Round 2 strategy:
+  `ROUND2/strategies/current_trader.py`
 
 Use round-local folders for everything else:
 
@@ -75,12 +79,22 @@ Run all local tools for a round:
 python main.py --round round1 --strategy ROUND1\strategies\current_trader.py
 ```
 
+```powershell
+python main.py --round round2 --strategy ROUND2\strategies\current_trader.py
+```
+
 Run replay engines individually:
 
 ```powershell
 .\scripts\bt-xeeshan.ps1 round1
 .\scripts\bt-kevin.ps1 round1
 .\scripts\bt-rust.ps1 round1
+```
+
+```powershell
+.\scripts\bt-xeeshan.ps1 round2
+.\scripts\bt-kevin.ps1 round2
+.\scripts\bt-rust.ps1 round2
 ```
 
 Open visualizers:
@@ -100,6 +114,10 @@ Package a candidate:
 
 ```powershell
 .\scripts\package-submission.ps1 round1 -Label candidate
+```
+
+```powershell
+.\scripts\package-submission.ps1 round2 -Label candidate
 ```
 
 Investigate official-vs-local gaps:
