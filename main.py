@@ -46,7 +46,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--round",
         default=defaults.get("activeRound", "round1"),
-        help="Replay round for the replay backtesters. Examples: tutorial, round1, round2.",
+        help="Replay round for the replay backtesters. Examples: tutorial, round1, round2, round3.",
     )
     parser.add_argument(
         "--days",
@@ -131,6 +131,8 @@ def normalize_round_key(round_key: str) -> str:
         return "round1"
     if normalized in {"2", "round2", "round_2"}:
         return "round2"
+    if normalized in {"3", "round3", "round_3"}:
+        return "round3"
     return normalized
 
 
@@ -138,7 +140,7 @@ def main() -> int:
     args = parse_args()
 
     round_key = normalize_round_key(args.round)
-    replay_args = build_replay_args(args.round, args.days, args.strategy)
+    replay_args = build_replay_args(round_key, args.days, args.strategy)
     xeeshan_args = replay_args + ["-MatchTrades", args.match_trades_xeeshan]
     kevin_args = replay_args + ["-MatchTrades", args.match_trades_kevin]
     rust_args = replay_args + ["-TradeMatchMode", args.match_trades_rust]

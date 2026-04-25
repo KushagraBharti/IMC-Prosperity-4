@@ -10,6 +10,8 @@ This repo is the working research and execution workspace for `IMC Prosperity 4`
   Round 1 data, official bundles, round-local research, and the active Round 1 strategy.
 - `ROUND2/`
   Round 2 data, official bundles, round-local research, and the active Round 2 strategy.
+- `ROUND3/`
+  Round 3 data, official bundles, round-local research, and the active Round 3 strategy.
 - `config/`
   Local paths, round metadata, defaults, and tool wiring.
 - `scripts/`
@@ -33,6 +35,8 @@ This repo is the working research and execution workspace for `IMC Prosperity 4`
   `ROUND1/strategies/current_trader.py`
 - Active Round 2 strategy:
   `ROUND2/strategies/current_trader.py`
+- Active Round 3 strategy:
+  `ROUND3/strategies/current_trader.py`
 
 Use round-local folders for everything else:
 

@@ -25,6 +25,8 @@ The short version:
   `ROUND1/strategies/current_trader.py`
 - Round 2:
   `ROUND2/strategies/current_trader.py`
+- Round 3:
+  `ROUND3/strategies/current_trader.py`
 
 Keep candidate variants in round-local folders, not in the active file.
 
@@ -63,6 +65,15 @@ Use the same commands with `round2` when working in Round 2:
 .\scripts\viz-gsgill.ps1
 ```
 
+Use the same commands with `round3` when working in Round 3:
+
+```powershell
+.\scripts\bt-rust.ps1 round3
+.\scripts\bt-kevin.ps1 round3
+.\scripts\bt-xeeshan.ps1 round3
+.\scripts\viz-gsgill.ps1
+```
+
 Integrated run:
 
 ```powershell
@@ -71,6 +82,10 @@ python main.py --round round1 --strategy ROUND1\strategies\current_trader.py
 
 ```powershell
 python main.py --round round2 --strategy ROUND2\strategies\current_trader.py
+```
+
+```powershell
+python main.py --round round3 --strategy ROUND3\strategies\current_trader.py
 ```
 
 ## What Local Replay Is Good For
