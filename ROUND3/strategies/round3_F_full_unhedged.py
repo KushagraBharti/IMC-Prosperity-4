@@ -86,7 +86,7 @@ class Trader:
 
     ENABLE_HYDROGEL = True
     ENABLE_OPTIONS = True
-    ENABLE_HEDGE = True
+    ENABLE_HEDGE = False
     ENABLE_VELVET_MM = True
 
     HYDROGEL_AGGRESSION = 1.00
@@ -607,3 +607,4 @@ class Trader:
 
     def clip(self, value: float, low: float, high: float) -> float:
         return max(low, min(high, value))
+

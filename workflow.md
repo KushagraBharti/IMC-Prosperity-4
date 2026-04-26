@@ -243,6 +243,12 @@ Before replacing a candidate that looks promising:
 .\scripts\package-submission.ps1 round1 -Label candidate
 ```
 
+Use the active round key when archiving later rounds:
+
+```powershell
+.\scripts\package-submission.ps1 round3 -Label candidate
+```
+
 Also copy or move stable variants into:
 
 - `ROUND*/strategies/archive/`

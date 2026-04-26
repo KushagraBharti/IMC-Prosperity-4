@@ -87,6 +87,10 @@ python main.py --round round1 --strategy ROUND1\strategies\current_trader.py
 python main.py --round round2 --strategy ROUND2\strategies\current_trader.py
 ```
 
+```powershell
+python main.py --round round3 --strategy ROUND3\strategies\current_trader.py
+```
+
 Run replay engines individually:
 
 ```powershell
@@ -99,6 +103,12 @@ Run replay engines individually:
 .\scripts\bt-xeeshan.ps1 round2
 .\scripts\bt-kevin.ps1 round2
 .\scripts\bt-rust.ps1 round2
+```
+
+```powershell
+.\scripts\bt-xeeshan.ps1 round3
+.\scripts\bt-kevin.ps1 round3
+.\scripts\bt-rust.ps1 round3
 ```
 
 Open visualizers:
@@ -122,6 +132,10 @@ Package a candidate:
 
 ```powershell
 .\scripts\package-submission.ps1 round2 -Label candidate
+```
+
+```powershell
+.\scripts\package-submission.ps1 round3 -Label candidate
 ```
 
 Investigate official-vs-local gaps:

@@ -89,9 +89,9 @@ class Trader:
     ENABLE_HEDGE = True
     ENABLE_VELVET_MM = True
 
-    HYDROGEL_AGGRESSION = 1.00
-    OPTION_AGGRESSION = 1.00
-    HEDGE_BAND = 28
+    HYDROGEL_AGGRESSION = 1.25
+    OPTION_AGGRESSION = 1.35
+    HEDGE_BAND = 20
     HISTORY_LIMIT = 80
 
     def run(self, state: TradingState):
@@ -607,3 +607,4 @@ class Trader:
 
     def clip(self, value: float, low: float, high: float) -> float:
         return max(low, min(high, value))
+
