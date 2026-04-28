@@ -6,7 +6,7 @@ Round 2 finished with a new total score of **422,674 XIRECS** for team **ALCARAZ
 
 The final Round 2 result was driven more by the manual challenge than by the algorithm. The manual result ranked **236th** for the round and contributed about two thirds of the Round 2 PnL. The algorithmic result ranked **2803rd** and contributed about one third of the Round 2 PnL. This was the opposite shape from a pure algo-led round: the final team result depended heavily on getting the manual allocation mostly right.
 
-The final algorithmic package is stored in `ROUND2-final/algo_submission/final-algo`. It contains the final code file `360502.py`, the official result file `360502.json`, and the execution log `360502.log`. The code is a Round 2 adaptation of the Round 1 approach: it keeps the same two products, keeps the aggressive long-only Pepper accumulator, simplifies/reworks the Osmium market-making logic, and adds a Round 2 market access fee bid through `Trader.bid()`. The code bid **651 XIRECS** for market access. The raw execution result in the JSON was **81,359.0**, and the log explicitly states that the platform deducted the **651.00** bid, storing the displayed final algorithmic profit as **80,708.00**.
+The final algorithmic package is stored in `ROUND2-final/algo_submission/final-algo`. It contains the final code file `360502.py`, the official result file `360502.json`, and the execution log `360502.log`. The code is a Round 2 adaptation of the Round 1 approach: it keeps the same two products, keeps the aggressive long-only Pepper accumulator, simplifies/reworks the Osmium market-making logic, and adds a Round 2 market access fee bid through `Trader.bid()`. The code bid **651 XIRECS** for market access. The raw execution result in the JSON was **81,359.0**; the displayed final algorithmic profit was **80,708.00** after subtracting the **651.00** market access bid.
 
 At a product level, the algorithm was again dominated by **INTARIAN_PEPPER_ROOT**. Pepper produced **79,361.0** product-level PnL, while **ASH_COATED_OSMIUM** produced only **1,998.0** product-level PnL. The algorithm did what it was designed to do on Pepper: it bought to the +80 limit early and held the structural carry for the rest of the round. Osmium was positive, but much weaker than Round 1 and much less important to the final score.
 
@@ -33,9 +33,7 @@ The important interpretation is that Round 2 was a strong total-score round desp
 
 ### 2.2 Algorithmic Trading Result
 
-The screenshot displays algorithmic trading PnL as **+80,708 XIRECS**. The exact result files explain how that number was produced. In `360502.json`, the raw execution `profit` is **81,359.0**. In `360502.log`, the only non-empty sandbox log message says:
-
-`Deducting bid 651.00 from current execution 360502 profit 81359.0. Result will be stored as final profit of 80708.00`
+The screenshot displays algorithmic trading PnL as **+80,708 XIRECS**. The exact result files explain how that number was produced. In `360502.json`, the raw execution `profit` is **81,359.0**. The submitted code's `bid()` method returns **651**, and subtracting that market access bid reconciles the screenshot:
 
 So the algorithmic accounting is:
 
@@ -102,11 +100,11 @@ The JSON result reports:
 - Round: **2**
 - Status: **FINISHED**
 - Raw profit before market access fee: **81,359.0**
-- Final displayed profit after fee: **80,708.0**, based on the log deduction
+- Final displayed profit after fee: **80,708.0**, based on the submitted `bid()` value
 - Final Pepper position: **+80**
 - Final Osmium position: **+80**
 
-The `.json` file contains the product-level activities log and sampled graph log. The `.log` file contains the same activities log plus the timestamped sandbox/lambda logs and the trade history. Unlike Round 1, the Round 2 log did not contain repeated position-limit warnings. It contained only one non-empty sandbox message, and that message was the expected market-access-fee deduction.
+The `.json` file contains the product-level activities log and sampled graph log. The `.log` file contains the same activities log plus the timestamped log array and the trade history. The Round 2 log contained **0** non-empty platform messages, so there were no recorded position-limit warnings, runtime errors, or fee-deduction messages in the artifact itself.
 
 ### 3.2 Hand Trade Submission
 
@@ -166,7 +164,7 @@ The strategy also has two different limit filters:
 - `ensure_within_limits` is used for Osmium and permits both long and short positions within the 80-unit limit.
 - `enforce_long_only_limit` is used for Pepper and permits only positions from 0 to +80.
 
-The Round 2 `ensure_within_limits` implementation is more careful than the sequential Round 1 version. It separates buy orders from sell orders, tracks remaining buy and sell capacity, and trims order quantities if needed. It also prioritizes better prices first: lower prices for buys and higher prices for sells. This is likely why the Round 2 log avoided the repeated Osmium limit warnings that appeared in Round 1.
+The Round 2 `ensure_within_limits` implementation is more careful than the sequential Round 1 version. It separates buy orders from sell orders, tracks remaining buy and sell capacity, and trims order quantities if needed. It also prioritizes better prices first: lower prices for buys and higher prices for sells. The official log is clean, though Round 2 still ended with Osmium at the long limit.
 
 ### 4.3 ASH_COATED_OSMIUM Strategy
 
@@ -303,7 +301,7 @@ Another limitation is that Pepper did not benefit much from active optimization 
 
 ### 5.5 Osmium: Where It Did Well
 
-Osmium did at least finish positive. It contributed **1,998.0** raw PnL and reached a maximum of **2,009.9375** near timestamp **995,700**. It also avoided the repeated position-limit warnings that appeared in Round 1. The Round 2 log had only one non-empty sandbox entry, and that entry was the fee deduction, not an error or order-limit warning.
+Osmium did at least finish positive. It contributed **1,998.0** raw PnL and reached a maximum of **2,009.9375** near timestamp **995,700**. The Round 2 log had **0** non-empty platform entries, so there were no recorded errors or order-limit warnings.
 
 The improved order filtering is a real positive. The Round 2 `ensure_within_limits` function trims order quantities by remaining buy and sell capacity and prioritizes better prices first. This produced a cleaner execution log. Even though Osmium was less profitable than in Round 1, it was technically cleaner from a platform-compliance perspective.
 
@@ -358,11 +356,9 @@ The most important bucket is the first one. Osmium bought **80** units in the op
 
 ### 5.8 Log Health and Market Access Fee Diagnostics
 
-Round 2 log health was much cleaner than Round 1. There were **10,000** timestamped log entries, but only **1** non-empty sandbox/lambda message. That message was not an error. It was the fee deduction:
+Round 2 log health was clean. There were **10,000** timestamped log entries and **0** non-empty platform messages.
 
-`Deducting bid 651.00 from current execution 360502 profit 81359.0. Result will be stored as final profit of 80708.00`
-
-There were no repeated warnings about exceeding product limits. This is a meaningful improvement from Round 1, where Osmium produced many position-limit warnings. The final Round 2 code was therefore cleaner operationally, even though its Osmium PnL was weaker.
+There were no recorded warnings about exceeding product limits. The final Round 2 code was therefore clean operationally, even though its Osmium PnL was weaker and its final Osmium inventory was still at the long cap.
 
 The market access bid itself was small relative to the algorithmic result. A **651** fee reduced raw algorithmic profit by about **0.8%**. Since the final score still remained above 80k, the fee was not damaging. However, the logs alone do not prove that the extra access was worth more than 651. The fee was cheap enough that it did not need to create a large benefit to be acceptable.
 
@@ -416,7 +412,7 @@ The main manual tradeoff was speed. A higher speed allocation may have improved 
 
 The biggest success in the algorithm was preserving the Pepper carry thesis. Pepper again behaved like the dominant structural edge. The strategy bought to **+80** early and held the position, producing **79,361.0** product-level PnL. Without Pepper, the algorithmic submission would have been weak.
 
-The second success was operational cleanliness. The Round 2 algo avoided the repeated order-limit warnings that appeared in Round 1. The only non-empty log message was the expected **651** market access fee deduction. The code's revised limit filtering likely helped.
+The second success was operational cleanliness. The Round 2 algo produced **0** non-empty platform log messages. The code's revised limit filtering likely helped, though the final Osmium inventory remained a risk concern.
 
 The third and most important Round 2 success was the manual allocation. The **18 / 57 / 25** allocation produced **164,664** PnL and ranked **236th**. It more than doubled the algorithmic contribution and was the main reason Round 2 added **245,372** total XIRECS.
 

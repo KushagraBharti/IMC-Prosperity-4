@@ -12,6 +12,8 @@ This repo is the working research and execution workspace for `IMC Prosperity 4`
   Round 2 data, official bundles, round-local research, and the active Round 2 strategy.
 - `ROUND3/`
   Round 3 data, official bundles, round-local research, and the active Round 3 strategy.
+- `ROUND4/`
+  Round 4 data, official bundles, round-local research, and the active Round 4 strategy.
 - `config/`
   Local paths, round metadata, defaults, and tool wiring.
 - `scripts/`
@@ -37,6 +39,8 @@ This repo is the working research and execution workspace for `IMC Prosperity 4`
   `ROUND2/strategies/current_trader.py`
 - Active Round 3 strategy:
   `ROUND3/strategies/current_trader.py`
+- Active Round 4 strategy:
+  `ROUND4/strategies/current_trader.py`
 
 Use round-local folders for everything else:
 
@@ -63,8 +67,9 @@ Integrated tools:
 
 Roles:
 
-- `Rust` is the best current local replay baseline.
-- `Kevin` and `Xeeshan` are cross-check replay engines.
+- `Kevin` is the default replay engine.
+- `Xeeshan` is the cross-check replay engine.
+- `Rust` is available as an optional replay engine, but it is slow enough to skip in routine Round 4 testing.
 - `gsgill7` is the default visual inspection tool.
 - `Kevin` visualizer is a secondary viewer.
 - `Chris` is for tutorial-only robustness testing, not portal matching.
@@ -91,6 +96,10 @@ python main.py --round round2 --strategy ROUND2\strategies\current_trader.py
 python main.py --round round3 --strategy ROUND3\strategies\current_trader.py
 ```
 
+```powershell
+python main.py --round round4 --strategy ROUND4\strategies\current_trader.py
+```
+
 Run replay engines individually:
 
 ```powershell
@@ -109,6 +118,11 @@ Run replay engines individually:
 .\scripts\bt-xeeshan.ps1 round3
 .\scripts\bt-kevin.ps1 round3
 .\scripts\bt-rust.ps1 round3
+```
+
+```powershell
+.\scripts\bt-xeeshan.ps1 round4
+.\scripts\bt-kevin.ps1 round4
 ```
 
 Open visualizers:
@@ -136,6 +150,10 @@ Package a candidate:
 
 ```powershell
 .\scripts\package-submission.ps1 round3 -Label candidate
+```
+
+```powershell
+.\scripts\package-submission.ps1 round4 -Label candidate
 ```
 
 Investigate official-vs-local gaps:

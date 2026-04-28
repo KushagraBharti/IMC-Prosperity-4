@@ -27,6 +27,8 @@ The short version:
   `ROUND2/strategies/current_trader.py`
 - Round 3:
   `ROUND3/strategies/current_trader.py`
+- Round 4:
+  `ROUND4/strategies/current_trader.py`
 
 Keep candidate variants in round-local folders, not in the active file.
 
@@ -34,18 +36,18 @@ Keep candidate variants in round-local folders, not in the active file.
 
 Use the tools in this order:
 
-1. `Rust`
-   Best current local replay baseline.
-2. `Kevin`
-   Cross-check replay engine.
-3. `Xeeshan`
+1. `Kevin`
+   Default replay engine.
+2. `Xeeshan`
    Cross-check replay engine with slightly different assumptions.
-4. `gsgill7` visualizer
+3. `gsgill7` visualizer
    Primary visual inspection layer.
-5. `Kevin` visualizer
+4. `Kevin` visualizer
    Secondary visual inspection layer.
-6. `Chris`
+5. `Chris`
    Tutorial-only robustness testing, not a Round 1 truth proxy.
+6. `Rust`
+   Optional slow replay engine. Skip it for routine Round 4 testing unless you explicitly need a third local check.
 
 Typical commands:
 
@@ -74,6 +76,14 @@ Use the same commands with `round3` when working in Round 3:
 .\scripts\viz-gsgill.ps1
 ```
 
+Use the same Kevin/Xeeshan flow with `round4` when working in Round 4:
+
+```powershell
+.\scripts\bt-kevin.ps1 round4
+.\scripts\bt-xeeshan.ps1 round4
+.\scripts\viz-gsgill.ps1
+```
+
 Integrated run:
 
 ```powershell
@@ -86,6 +96,10 @@ python main.py --round round2 --strategy ROUND2\strategies\current_trader.py
 
 ```powershell
 python main.py --round round3 --strategy ROUND3\strategies\current_trader.py
+```
+
+```powershell
+python main.py --round round4 --strategy ROUND4\strategies\current_trader.py
 ```
 
 ## What Local Replay Is Good For
@@ -158,7 +172,7 @@ When building a new strategy, prefer:
 - fair-value logic that still works with fewer passive fills
 - inventory control that does not rely on ideal exits
 - quoting logic that remains acceptable under pessimistic fill assumptions
-- simple execution rules that survive across `Rust`, `Kevin`, and `Xeeshan`
+- simple execution rules that survive across `Kevin` and `Xeeshan`
 
 Be careful with:
 
@@ -205,7 +219,7 @@ Look under:
 
 Before submitting, check these:
 
-- total PnL across `Rust`, `Kevin`, and `Xeeshan`
+- total PnL across `Kevin` and `Xeeshan`
 - per-product PnL split
 - own trade count
 - whether gains come from one fragile fill pattern
@@ -246,7 +260,7 @@ Before replacing a candidate that looks promising:
 Use the active round key when archiving later rounds:
 
 ```powershell
-.\scripts\package-submission.ps1 round3 -Label candidate
+.\scripts\package-submission.ps1 round4 -Label candidate
 ```
 
 Also copy or move stable variants into:

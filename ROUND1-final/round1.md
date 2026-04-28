@@ -6,7 +6,7 @@ Round 1 finished with a combined total of **177,302 XIRECS** for team **ALCARAZG
 
 The final Round 1 package is stored in `ROUND1-final`. The algorithmic submission is the `final-algo` package under `ROUND1-final/algo_submission`, containing the Python strategy file, the JSON result export, the log export, and the zip archive. The manual trading submission is represented by the final two manual orders visible in the result screenshots: a buy in **DRYLAND_FLAX** and a buy in **EMBER_MUSHROOM**. Together, those manual trades contributed almost half of the total Round 1 PnL and were the decisive reason the final round score was so strong.
 
-At a high level, the algorithm combined two different approaches. For **INTARIAN_PEPPER_ROOT**, it used a long-only structural carry strategy that tried to accumulate close to the maximum allowed long position and profit from the persistent upward drift in fair value. For **ASH_COATED_OSMIUM**, it used a more active market-making and mean-reversion specialist centered around a stable fair value near 10,000. The result logs show that Pepper was the dominant algorithmic profit source, while Osmium added a smaller but still meaningful secondary contribution. The main algorithmic weakness was not the final PnL, which was solid, but execution quality and risk cleanliness: the logs contain repeated sandbox warnings that Osmium orders exceeded the 80-unit position limit before platform-side handling.
+At a high level, the algorithm combined two different approaches. For **INTARIAN_PEPPER_ROOT**, it used a long-only structural carry strategy that tried to accumulate close to the maximum allowed long position and profit from the persistent upward drift in fair value. For **ASH_COATED_OSMIUM**, it used a more active market-making and mean-reversion specialist centered around a stable fair value near 10,000. The result logs show that Pepper was the dominant algorithmic profit source, while Osmium added a smaller but still meaningful secondary contribution. The main algorithmic weakness was not the final PnL, which was solid, but risk posture: Osmium ended close to the long position limit despite being intended as a two-sided market-making component.
 
 ## 2. Final Results
 
@@ -66,7 +66,7 @@ It contains:
 - `272192.log`: the execution log export, including activities log, per-timestamp logs, and trade history.
 - `final-algo.zip`: the archived final algo package.
 
-The JSON and log files are both large single-line JSON payloads. The `.json` file contains the exact official result summary, including `round`, `status`, `profit`, `activitiesLog`, `graphLog`, and final `positions`. The `.log` file contains the submission ID, the same activities log, a timestamped logs array, and the full trade history. The lambda logs are mostly empty, which means the strategy was not printing internal debugging output during the run, but the sandbox logs contain important execution warnings discussed later.
+The JSON and log files are both large single-line JSON payloads. The `.json` file contains the exact official result summary, including `round`, `status`, `profit`, `activitiesLog`, `graphLog`, and final `positions`. The `.log` file contains the submission ID, the same activities log, a timestamped logs array, and the full trade history. The timestamped log entries are empty, which means the strategy was not printing internal debugging output and the official artifact contains no platform warning messages.
 
 ### 3.2 Hand Trade Submission
 
@@ -215,7 +215,7 @@ Osmium's path was profitable but less smooth. It started at **0.0**, reached a m
 - 800,000-899,999: **9,562.1875**
 - 900,000-999,999: **9,923.8125**
 
-Osmium added value, but it was more volatile and less mechanically predictable than Pepper. Its contribution was still useful because it added nearly 10k PnL without destroying the Pepper edge, but it also introduced most of the execution warnings.
+Osmium added value, but it was more volatile and less mechanically predictable than Pepper. Its contribution was still useful because it added nearly 10k PnL without destroying the Pepper edge, but it also carried the main inventory-control concern.
 
 ### 5.3 Pepper: Where It Did Well
 
@@ -243,27 +243,9 @@ The reason this worked is likely that the Osmium model used multiple book-pressu
 
 ### 5.6 Osmium: Weaknesses and Issues
 
-The biggest issue in the final logs is the repeated sandbox warning:
+The official `.log` artifact contains **10,000** timestamped log entries and **0** non-empty platform messages. There were no recorded runtime errors, sandbox warnings, lambda logs, or position-limit warning messages.
 
-`Orders for product ASH_COATED_OSMIUM exceeded limit of 80 set`
-
-There were **55** non-empty sandbox log entries, all of them related to Osmium exceeding the 80-unit order/position constraint. These warnings occurred across several windows:
-
-- 0-99,999: **2** warnings
-- 100,000-199,999: **15** warnings
-- 200,000-299,999: **8** warnings
-- 300,000-399,999: **3** warnings
-- 400,000-499,999: **1** warning
-- 500,000-599,999: **11** warnings
-- 600,000-699,999: **6** warnings
-- 800,000-899,999: **7** warnings
-- 900,000-999,999: **2** warnings
-
-This does not mean the final recorded position violated the limit; the final position was **+78**, and the result completed successfully. It does mean the strategy generated order sets that the sandbox considered too aggressive relative to the limit at those timestamps. The likely cause is that the strategy updates its internal simulated `position` after aggressive take orders, but then recalculates capacities and adds flattening/passive orders in a way that can still create a total submitted order set exceeding what the platform allows when considered simultaneously.
-
-This matters because platform-side rejection or filtering can change realized behavior. If an order is rejected, the strategy's intended sequence may not execute as expected. Even when the final PnL is good, repeated warnings are a sign that the execution layer needs stricter pre-submit validation. A cleaner strategy would aggregate all proposed Osmium orders by product and side, simulate worst-case fills more conservatively, and ensure the entire submitted order list cannot breach the position limit under platform rules.
-
-Osmium also ended at **+78**, very close to the maximum long limit. For a strategy that is supposed to be a two-sided specialist, this is a warning sign. It suggests that near the end of the round, the strategy was still carrying large directional exposure rather than flattening or reducing risk. That exposure was profitable here, but it made the final state less controlled than ideal.
+The main Osmium issue is therefore not platform cleanliness; it is inventory posture. Osmium ended at **+78**, very close to the maximum long limit. For a strategy that is supposed to be a two-sided specialist, this is a warning sign. It suggests that near the end of the round, the strategy was still carrying large directional exposure rather than flattening or reducing risk. That exposure was profitable here, but it made the final state less controlled than ideal.
 
 ### 5.7 Trade History Diagnostics
 
@@ -353,7 +335,7 @@ The third major success was the manual trade. The manual submission was exceptio
 
 The algorithmic rank was much weaker than the manual rank. A +89k algo result was profitable, but **2683rd** indicates that the field had many stronger or comparable algorithmic submissions. The algorithm was good enough to contribute strongly to the total score, but it was not elite relative to the competition.
 
-The Osmium execution warnings were the clearest technical issue. The strategy completed successfully and ended within limits, but generating 55 sandbox warnings about exceeding the Osmium limit is not clean. This should be fixed in any future version because rejected or clipped orders can create unpredictable behavior.
+The Osmium ending inventory was the clearest technical issue. The strategy completed successfully and the official log was clean, but ending at **+78** on a nominally two-sided market-making product is not clean risk management. This should be improved in any future version by making the flattening logic more decisive late in the round.
 
 The algorithm also ended with large long inventory in both products. Pepper ending at +80 was intentional and correct for this round. Osmium ending at +78 is less ideal because Osmium was supposed to be a market-making specialist. A more polished version might include stronger late-round inventory control or a stricter flattening policy.
 
@@ -365,7 +347,7 @@ The first lesson is to separate primary edge from secondary edge. In Round 1, Pe
 
 The second lesson is that fill certainty can matter more than theoretical price improvement. Pepper avoided passive quoting and aggressively accumulated. That was the right choice because missing the long position would have been much more expensive than paying a few ticks of spread.
 
-The third lesson is that execution validation needs to be stricter. Even profitable strategies should not generate repeated sandbox warnings. Before submitting future algos, the order generation layer should simulate worst-case fills across the full proposed order list and guarantee compliance with product limits.
+The third lesson is that execution validation and inventory validation should be stricter. Even profitable strategies should be checked for worst-case fills, final inventory, and whether a nominally market-making product is quietly becoming a directional bet.
 
 The fourth lesson is that manual trading can dominate final scoring. The manual result nearly matched the algo result and ranked first. Future rounds should continue treating manual analysis as a first-class workstream, not a quick final step.
 
@@ -373,4 +355,4 @@ The fourth lesson is that manual trading can dominate final scoring. The manual 
 
 Round 1 was a strong overall result built from one excellent manual submission and one profitable algorithmic submission. The manual side was the standout, earning **+87,995.10** and ranking **1st**. The algorithmic side earned **+89,306.8125** exactly, mostly by accumulating and holding `INTARIAN_PEPPER_ROOT`, with `ASH_COATED_OSMIUM` adding a smaller active-trading contribution.
 
-The final algorithm was directionally right and profitable, but not perfect. Pepper was excellent because it captured the structural drift cleanly. Osmium was useful but messier, with repeated limit warnings and a final position close to the cap. The combined Round 1 result was still very strong: **177,302 XIRECS**, overall position **1694**, and a balanced split between algorithmic and manual profit.
+The final algorithm was directionally right and profitable, but not perfect. Pepper was excellent because it captured the structural drift cleanly. Osmium was useful but messier from an inventory perspective, with a final position close to the cap. The combined Round 1 result was still very strong: **177,302 XIRECS**, overall position **1694**, and a balanced split between algorithmic and manual profit.
