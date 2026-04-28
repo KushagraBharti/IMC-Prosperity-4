@@ -10,4 +10,15 @@ Suggested layout:
 
 Key planning docs:
 
-- `iterative_learning_loop.md`: Round 4 research, strategy iteration, Mark counterparty analysis, and manual Aether workflow.
+- `../../algo_guide.md`: required platform-mechanics source for maximizing official profit; use it when designing structural rewrites and product engines.
+- `iterative_learning_loop.md`: the single active Round 4 playbook for fast experiments, red flags, candidate handling, and next attacks.
+
+Current direction:
+
+- The goal is maximum official profit.
+- Move fast: research, implement, backtest, decide.
+- Full rewrites are allowed, but they are a tool, not the goal.
+- Incremental fixes are allowed when they have clear ROI.
+- Do not create extra markdown files unless they prevent real confusion.
+- Use every relevant mechanism from `algo_guide.md`, especially `traderData`, `own_trades`, `market_trades`, passive fills, instantaneous execution, position-limit behavior, and full order-book information.
+- Prioritize Hydrogel rebuild-or-cut, post-40k regime engines, product-role fixes, Mark mechanics, and passive-fill learning.
