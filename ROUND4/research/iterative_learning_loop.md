@@ -186,6 +186,86 @@ Current known baseline:
 
 This is the benchmark every new Round 4 algorithm must beat or justify failing to beat.
 
+First candidate portal feedback:
+
+| Strategy | Full Kevin | Full Xeeshan | Window Kevin | Window Xeeshan | Official |
+|---|---:|---:|---:|---:|---:|
+| `round4_candidate_1_522830_base.py` | 363,494 | 364,966 | 76,040 | 76,040 | 75,988.86 |
+| `round4_candidate_2_option9_hydrofairoff.py` | 373,294 | 375,070 | 77,496 | 77,496 | 75,728.53 |
+| `round4_candidate_3_option9_nohydro.py` | 373,694 | 374,606 | 77,496 | 77,496 | 75,728.53 |
+
+Stop condition before full loop:
+
+- The tuned candidates lost officially despite winning locally.
+- The first loop task is therefore not general strategy search.
+- The first loop task is portal-alignment repair.
+
+Immediate red flags:
+
+1. `Window Kevin`/`Window Xeeshan` overstates candidate quality. `match-trades=none`, `worse`, and `all` all ranked the tuned candidates above baseline, while official ranked them below baseline.
+2. `VEV_4000` caused the main official loss. Baseline ended short 300 and made 9,382.41; tuned candidates ended short 247 and made 7,844.84.
+3. Candidate 2 and candidate 3 produced identical official fills, so Hydrogel Mark fair/passive toggles were not validated by this portal pair.
+
+The next accepted experiment must specifically address these red flags before starting broad multi-hour parameter search.
+
+User-identified critical red flags from the portal charts:
+
+1. **Portfolio plateau after roughly timestamp 40,000.** All three submitted strategies climb to roughly 70k by around timestamp 40k, then mostly stop compounding. This is a major structural warning. We need exact timestamp-level attribution before assuming the strategy is healthy. The plateau may indicate saturated positions, stale fair values, no late-session edge capture, wrong option TTE/expiry behavior, too little rebalancing, or a strategy that only monetizes the opening regime.
+2. **Hydrogel and some other products are severely underperforming.** Hydrogel is nearly flat in the official product chart while the overall strategy is dominated by the VFE/voucher complex. This must be analyzed product by product, not just as total PnL. For each product we need to identify the edge, whether the code is actually expressing it, and whether the product deserves active trading, passive quoting, inventory targeting, or removal.
+
+Persistent judgment rule:
+
+- Treat official portal output as the highest authority.
+- Treat local backtests as experiment generators, not final proof.
+- If official charts, fills, and product attribution conflict with local backtests, trust the official evidence first.
+- It is acceptable to use trading intuition and product-level reasoning to override a local backtest result when the replay mechanics are visibly inconsistent with official behavior.
+- Every future candidate should explain which red flag it addresses; broad parameter sweeps that do not address the plateau, Hydrogel/product underperformance, or portal/backtest mismatch are lower priority.
+
+First required analysis before the full loop:
+
+1. Build a timestamp-level plateau report: PnL by product at fixed checkpoints, largest drawdowns, incremental PnL before and after 40k, and first timestamp where cumulative PnL enters the plateau band.
+2. Build a product-by-product edge report: final PnL, max PnL, post-40k PnL, final inventory, limit saturation, trade count, average fill, and whether the product is active after 40k.
+3. Diagnose each product's likely role:
+   - core edge,
+   - hedge,
+   - inventory sink,
+   - opening-only opportunity,
+   - dead/flat product,
+   - harmful product.
+4. Only after those reports are understood should the full iterative loop begin.
+
+Initial official plateau findings from `ROUND4/research/outputs/official_plateau`:
+
+- The baseline official run is at 55,018 by timestamp 40,000, crosses 70,000 at timestamp 41,000, and finishes at 75,988.86.
+- Candidate 2/3 are at 54,108 by timestamp 40,000, cross 70,000 at timestamp 41,800, and finish at 75,728.53.
+- Baseline's best post-40k 5k window is 40,000 to 45,000 (+16,282.86). After that, the curve mostly ranges instead of compounding.
+- Baseline's worst post-40k 10k window is 63,200 to 73,200 (-8,911.52).
+- Baseline max official PnL is 79,601.79 at timestamp 85,200, but it gives back roughly 3,613 by the final mark.
+- At timestamp 45,000, baseline is already saturated or near-saturated in most vouchers: `VEV_4000=-300`, `VEV_5200=-300`, `VEV_5300=-300`, `VEV_5400=-300`, `VEV_5500=-300`, `VEV_5000=289`, `VEV_5100=300`.
+- After timestamp 40,000, baseline has zero own trades in `VEV_4000`, `VEV_5200`, `VEV_5300`, `VEV_5400`, and `VEV_5500`; those products are static inventory holds, not ongoing active edge.
+- The plateau is therefore partly structural: the strategy monetizes an early VFE/voucher repricing, hits limits, and then lacks a strong second-phase strategy.
+
+First product-specific attack results:
+
+| Strategy | Full Kevin | Full Xeeshan | Window Kevin | Window Xeeshan | Official |
+|---|---:|---:|---:|---:|---:|
+| `round4_candidate_1_522830_base.py` | 363,494 | 364,966 | 76,040 | 76,040 | 75,988.86 |
+| `round4_candidate_4_vev4000_repair_mid9_hydrofairoff.py` | 377,844 | 379,622 | 76,936 | 76,936 | pending |
+| `round4_candidate_5_static_exit_86600.py` | 377,142 | 378,920 | 77,752 | 77,752 | pending |
+| `round4_candidate_6_hydro_more_mid9.py` | 382,820 | 384,080 | 76,660 | 76,660 | pending |
+
+Candidate meanings:
+
+- Candidate 4 is the clean `VEV_4000` repair: preserve baseline sizing for static voucher shorts, reduce size only for active `VEV_5000`/`VEV_5100`, and keep Hydrogel fair override off.
+- Candidate 5 is the plateau/giveback probe: candidate 4 plus exit `VEV_5200`/`VEV_5300`/`VEV_5400`/`VEV_5500` at timestamp 86,600.
+- Candidate 6 is the Hydrogel diagnostic: candidate 4 plus more aggressive Hydrogel passive/market-making parameters.
+
+Rejected targeted experiments:
+
+- Exiting `VEV_5000`/`VEV_5100` around 85k or 90k hurt badly; those active middle strikes still have useful late-session behavior.
+- Exiting `VEV_4000`/`VEV_4500` at 43k hurt; closing low-strike shorts is too expensive or forfeits too much.
+- Removing Hydrogel and flattening Hydrogel after 40k both hurt full historical backtests.
+
 ## External Research Anchors
 
 The Round 4 research should borrow ideas from market microstructure and option pricing, but only when they can be tested on the actual Prosperity data.
