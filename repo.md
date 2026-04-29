@@ -14,6 +14,8 @@ This repo is the working research and execution workspace for `IMC Prosperity 4`
   Round 3 data, official bundles, round-local research, and the active Round 3 strategy.
 - `ROUND4/`
   Round 4 data, official bundles, round-local research, and the active Round 4 strategy.
+- `ROUND5/`
+  Round 5 data, official bundles, round-local research, and the active Round 5 strategy.
 - `config/`
   Local paths, round metadata, defaults, and tool wiring.
 - `scripts/`
@@ -41,6 +43,8 @@ This repo is the working research and execution workspace for `IMC Prosperity 4`
   `ROUND3/strategies/current_trader.py`
 - Active Round 4 strategy:
   `ROUND4/strategies/current_trader.py`
+- Active Round 5 strategy:
+  `ROUND5/strategies/current_trader.py`
 
 Use round-local folders for everything else:
 
@@ -69,7 +73,7 @@ Roles:
 
 - `Kevin` is the default replay engine.
 - `Xeeshan` is the cross-check replay engine.
-- `Rust` is available as an optional replay engine, but it is slow enough to skip in routine Round 4 testing.
+- `Rust` is available as an optional replay engine, but it is slow enough to skip in routine Round 4/5 testing.
 - `gsgill7` is the default visual inspection tool.
 - `Kevin` visualizer is a secondary viewer.
 - `Chris` is for tutorial-only robustness testing, not portal matching.
@@ -100,6 +104,10 @@ python main.py --round round3 --strategy ROUND3\strategies\current_trader.py
 python main.py --round round4 --strategy ROUND4\strategies\current_trader.py
 ```
 
+```powershell
+python main.py --round round5 --strategy ROUND5\strategies\current_trader.py
+```
+
 Run replay engines individually:
 
 ```powershell
@@ -123,6 +131,11 @@ Run replay engines individually:
 ```powershell
 .\scripts\bt-xeeshan.ps1 round4
 .\scripts\bt-kevin.ps1 round4
+```
+
+```powershell
+.\scripts\bt-xeeshan.ps1 round5
+.\scripts\bt-kevin.ps1 round5
 ```
 
 Open visualizers:
@@ -154,6 +167,10 @@ Package a candidate:
 
 ```powershell
 .\scripts\package-submission.ps1 round4 -Label candidate
+```
+
+```powershell
+.\scripts\package-submission.ps1 round5 -Label candidate
 ```
 
 Investigate official-vs-local gaps:

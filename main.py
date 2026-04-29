@@ -46,7 +46,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--round",
         default=defaults.get("activeRound", "round1"),
-        help="Replay round for the replay backtesters. Examples: tutorial, round1, round2, round3, round4.",
+        help="Replay round for the replay backtesters. Examples: tutorial, round1, round2, round3, round4, round5.",
     )
     parser.add_argument(
         "--days",
@@ -135,6 +135,8 @@ def normalize_round_key(round_key: str) -> str:
         return "round3"
     if normalized in {"4", "round4", "round_4"}:
         return "round4"
+    if normalized in {"5", "round5", "round_5"}:
+        return "round5"
     return normalized
 
 

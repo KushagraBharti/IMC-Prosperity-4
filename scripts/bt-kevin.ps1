@@ -22,7 +22,7 @@ $runDir = New-RunDirectory -Kind "backtests" -Tool "kevin" -Round $roundConfig.K
 $outPath = Join-Path $runDir "kevin.log"
 $summaryPath = Join-Path $runDir "run.json"
 $pythonPath = Get-VenvPython -VenvDir (Get-ToolingConfig).Tools.envs.kevinVenv
-$env:PYTHONPATH = (Join-Path (Get-ToolingConfig).Tools.paths.kevinBacktesterRepo "prosperity4bt")
+$env:PYTHONPATH = (Get-ToolingConfig).Tools.paths.kevinBacktesterRepo
 
 $cmd = @(
     "-m", "prosperity4bt",

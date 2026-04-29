@@ -29,6 +29,8 @@ The short version:
   `ROUND3/strategies/current_trader.py`
 - Round 4:
   `ROUND4/strategies/current_trader.py`
+- Round 5:
+  `ROUND5/strategies/current_trader.py`
 
 Keep candidate variants in round-local folders, not in the active file.
 
@@ -47,7 +49,7 @@ Use the tools in this order:
 5. `Chris`
    Tutorial-only robustness testing, not a Round 1 truth proxy.
 6. `Rust`
-   Optional slow replay engine. Skip it for routine Round 4 testing unless you explicitly need a third local check.
+   Optional slow replay engine. Skip it for routine Round 4/5 testing unless you explicitly need a third local check.
 
 Typical commands:
 
@@ -84,6 +86,14 @@ Use the same Kevin/Xeeshan flow with `round4` when working in Round 4:
 .\scripts\viz-gsgill.ps1
 ```
 
+Use the same Kevin/Xeeshan flow with `round5` when working in Round 5:
+
+```powershell
+.\scripts\bt-kevin.ps1 round5
+.\scripts\bt-xeeshan.ps1 round5
+.\scripts\viz-gsgill.ps1
+```
+
 Integrated run:
 
 ```powershell
@@ -100,6 +110,10 @@ python main.py --round round3 --strategy ROUND3\strategies\current_trader.py
 
 ```powershell
 python main.py --round round4 --strategy ROUND4\strategies\current_trader.py
+```
+
+```powershell
+python main.py --round round5 --strategy ROUND5\strategies\current_trader.py
 ```
 
 ## What Local Replay Is Good For
@@ -260,7 +274,7 @@ Before replacing a candidate that looks promising:
 Use the active round key when archiving later rounds:
 
 ```powershell
-.\scripts\package-submission.ps1 round4 -Label candidate
+.\scripts\package-submission.ps1 round5 -Label candidate
 ```
 
 Also copy or move stable variants into:

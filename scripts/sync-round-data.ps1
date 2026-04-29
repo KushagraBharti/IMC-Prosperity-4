@@ -1,5 +1,5 @@
 param(
-    [ValidateSet("tutorial", "round1", "round2", "round3", "round4")]
+    [ValidateSet("tutorial", "round1", "round2", "round3", "round4", "round5")]
     [string]$Round = "round1"
 )
 
