@@ -22,18 +22,19 @@ Required preconditions:
   - `ROUND5/strategies/round5_candidate_5.py`
 - Kevin and Xeeshan backtests have been run on all five candidates.
 - Candidate diagnostics exist for product PnL, category PnL, day PnL, timestamp-block PnL, inventory, fills, and simulator disagreement.
-- The two best candidates have been selected for robustness, not just one-window PnL.
+- The top three candidates have been selected using score, robustness, repair potential, edge quality, and strategy diversity, not just one-window PnL.
 
 Only then create:
 
 - `ROUND5/strategies/round5_iterative_1.py`
 - `ROUND5/strategies/round5_iterative_2.py`
+- `ROUND5/strategies/round5_iterative_3.py`
 
-These two files are the only files where active strategy logic should be improved during this loop.
+These three files are the only files where active strategy logic should be improved during this loop.
 
 ## Objective
 
-Improve `round5_iterative_1.py` and `round5_iterative_2.py` until no further robust improvements are available.
+Improve `round5_iterative_1.py`, `round5_iterative_2.py`, and `round5_iterative_3.py` until no further robust improvements are available.
 
 The objective is hidden final-round PnL robustness. Public full backtests, portal-window tests, and official submission logs are measurement tools. They are not the true target.
 
@@ -110,6 +111,9 @@ Use Kevin and Xeeshan for normal iteration:
 
 .\scripts\bt-kevin.ps1 round5 -Strategy .\ROUND5\strategies\round5_iterative_2.py
 .\scripts\bt-xeeshan.ps1 round5 -Strategy .\ROUND5\strategies\round5_iterative_2.py
+
+.\scripts\bt-kevin.ps1 round5 -Strategy .\ROUND5\strategies\round5_iterative_3.py
+.\scripts\bt-xeeshan.ps1 round5 -Strategy .\ROUND5\strategies\round5_iterative_3.py
 ```
 
 Use Rust only for final validation or when a candidate is close to submission:
@@ -117,6 +121,7 @@ Use Rust only for final validation or when a candidate is close to submission:
 ```powershell
 .\scripts\bt-rust.ps1 round5 -Strategy .\ROUND5\strategies\round5_iterative_1.py
 .\scripts\bt-rust.ps1 round5 -Strategy .\ROUND5\strategies\round5_iterative_2.py
+.\scripts\bt-rust.ps1 round5 -Strategy .\ROUND5\strategies\round5_iterative_3.py
 ```
 
 If a portal-window helper exists and official submission logs are available, use it. If no official submission exists yet, portal-window analysis begins only after the first portal submission/log is available.
@@ -250,10 +255,11 @@ Make the change in one of:
 
 - `round5_iterative_1.py`
 - `round5_iterative_2.py`
+- `round5_iterative_3.py`
 
 Keep branches distinct unless there is a clear reason to transfer a proven idea from one to the other.
 
-Do not let both files collapse into identical strategies too early. Diversity is valuable because hidden final data is unknown.
+Do not let the three files collapse into identical strategies too early. Diversity is valuable because hidden final data is unknown.
 
 ### Step 5: Backtest
 
@@ -359,6 +365,28 @@ This menu is a minimum. If it does not explain the current failure mode or oppor
 - Liquidity-adjusted threshold model.
 - Regime-conditioned model.
 - Online Kalman/state-space estimate if useful.
+- All-50 opportunistic edge scanner.
+- Product-specific fair-value models.
+- Category-specific fair-value models.
+- Multi-category formula scanner.
+- Dynamic product inclusion/exclusion based on current executable edge.
+
+### All-50 Universe Discipline
+
+Do not let iterative work become artificially narrow. Every iteration should ask whether the strategy is missing high-edge products outside its current trading set.
+
+Required checks:
+
+- Which of the 50 products are modeled?
+- Which of the 50 products are actively traded?
+- Which products are skipped because no edge was found?
+- Which products are skipped only because implementation was inconvenient?
+- Can the current fair-value logic be generalized to more products or categories?
+- Can a product-specific model unlock a product that looks bad under generic logic?
+- Does adding an edge-gated product improve PnL without adding toxic fills?
+- Does the strategy trade too few products relative to the opportunity set?
+
+The goal is not to force all products into every strategy. The goal is to use all 50 products as the signal universe and allow the strategy to trade many products when current edge is real. Broad unmanaged baskets are dangerous, but broad edge-gated scanners are a valid and likely necessary path to leaderboard-scale PnL.
 
 ### Statistical and ML Checks
 
@@ -469,7 +497,7 @@ Do not stop because one improvement worked.
 Stop only when:
 
 - Multiple substantial ideas have been tested.
-- Both iterative branches have been improved or deliberately preserved.
+- All three iterative branches have been improved or deliberately preserved.
 - Remaining ideas are either not improving, too fragile, too simulator-specific, or too overfit.
 - Product-level and category-level failure modes are understood.
 - The final recommendation is defensible under hidden-data uncertainty.

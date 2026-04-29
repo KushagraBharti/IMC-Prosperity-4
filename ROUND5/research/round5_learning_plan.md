@@ -146,6 +146,36 @@ The goal is extreme understanding of product behavior, data-generating structure
 
 Do more than the obvious. If a diagnostic answers one question, ask the next deeper question. If a product looks profitable, identify why. If a product looks noisy, identify whether it is genuinely untradeable or just requires a different representation.
 
+## All-50 Modeling Rule
+
+Round 5 has 50 products for a reason. Do not let the strategy collapse prematurely into one or two narrow products just because the first candidates were easier to implement.
+
+The correct research and strategy posture is:
+
+- Model all 50 products.
+- Build fair-value, signal, liquidity, volatility, and execution diagnostics for all 50.
+- Search for category-specific and product-specific edges across all 10 categories.
+- Allow each product/category to use a different model if the evidence supports it.
+- Use every product as part of the signal universe.
+- Trade selectively only when a product has current positive executable edge.
+
+Important distinction:
+
+- The modeling universe should be all 50 products.
+- The trading universe should be dynamic and edge-gated.
+
+Do not force trades in weak products just to increase coverage. But also do not ignore products without proving they lack edge. A strong final strategy may trade many products, possibly more than half of the universe, if enough products have favorable current edge states. It may also concentrate in fewer products if only those products have real edge. The decision must come from evidence, not from convenience or conservatism.
+
+The ideal Round 5 architecture is an all-50 opportunistic scanner:
+
+- Compute product/category fair values for every product where possible.
+- Compute product-specific signal confidence.
+- Compute spread/depth/execution cost.
+- Trade only when expected edge clears a high threshold.
+- Size aggressively when confidence is high.
+- Skip products when no edge exists.
+- Let the strategy naturally concentrate where edge is strongest.
+
 ## Allowed Tools and Packages
 
 Use the existing environment first:
@@ -206,6 +236,7 @@ Use these locations:
 - Final iterative strategies after candidate selection:
   - `ROUND5/strategies/round5_iterative_1.py`
   - `ROUND5/strategies/round5_iterative_2.py`
+  - `ROUND5/strategies/round5_iterative_3.py`
 
 Candidate filenames must stay neutral. Do not name candidates after assumed strategy families before research proves those families.
 
@@ -761,10 +792,14 @@ Produce:
 
 ## Phase 10: Promotion to Iterative Strategies
 
-Pick the two best candidates using a robust blend:
+Pick the top three candidates using a robust blend. Do not rank candidates by raw PnL alone. A lower-scoring candidate can be promoted if it has clear repair potential, robust product/category structure, useful diversification, or a failure mode that is diagnosable and fixable.
 
 - Strong full-data PnL.
 - Strong Kevin/Xeeshan agreement.
+- Official portal score and portal-window alignment once available.
+- Potential for improvement after diagnosing product-level and execution-level failures.
+- Robustness of the underlying edge, even if first-pass execution is weak.
+- Strategy diversity so all promoted branches do not fail in the same hidden-data regime.
 - Product-level PnL that is not dependent on one tiny window.
 - Day-level stability.
 - Timestamp-block stability.
@@ -774,10 +809,11 @@ Pick the two best candidates using a robust blend:
 - No obvious hardcoding.
 - No fragile dependence on exact public-data artifacts.
 
-Then copy them to:
+Then copy/promote them to:
 
 - `ROUND5/strategies/round5_iterative_1.py`
 - `ROUND5/strategies/round5_iterative_2.py`
+- `ROUND5/strategies/round5_iterative_3.py`
 
 The detailed improvement loop after that is defined in `ROUND5/research/round5_iterative_learning_loop.md`.
 
