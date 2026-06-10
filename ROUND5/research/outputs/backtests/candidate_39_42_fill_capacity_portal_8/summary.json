@@ -1,0 +1,197 @@
+{
+  "args": {
+    "strategies": [
+      "ROUND5/research/probes/fill_capacity/probe_c42_transplant_micro_uv_from39_skipxs.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_hybrid_panel_skipxs.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_hybrid_panel_skipxs_exit.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "portal"
+    ],
+    "jobs": 10,
+    "name": "candidate_39_42_fill_capacity_portal_8",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": true,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "portal",
+    "portal_logs": false,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_c42_c39_hybrid_panel_skipxs.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 126073.0,
+      "duration_sec": 17.62,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_8\\probe_c42_c39_hybrid_panel_skipxs_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_hybrid_panel_skipxs.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 126073.0,
+      "duration_sec": 17.82,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_8\\probe_c42_c39_hybrid_panel_skipxs_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_hybrid_panel_skipxs.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 126073.0,
+      "duration_sec": 17.4,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_8\\probe_c42_c39_hybrid_panel_skipxs_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_hybrid_panel_skipxs.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 126073.0,
+      "duration_sec": 16.88,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_8\\probe_c42_c39_hybrid_panel_skipxs_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_hybrid_panel_skipxs_exit.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 125846.0,
+      "duration_sec": 17.08,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_8\\probe_c42_c39_hybrid_panel_skipxs_exit_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_hybrid_panel_skipxs_exit.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 125846.0,
+      "duration_sec": 16.97,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_8\\probe_c42_c39_hybrid_panel_skipxs_exit_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_hybrid_panel_skipxs_exit.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 125846.0,
+      "duration_sec": 12.45,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_8\\probe_c42_c39_hybrid_panel_skipxs_exit_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_hybrid_panel_skipxs_exit.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 125846.0,
+      "duration_sec": 12.45,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_8\\probe_c42_c39_hybrid_panel_skipxs_exit_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_transplant_micro_uv_from39_skipxs.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 123434.0,
+      "duration_sec": 16.56,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_8\\probe_c42_transplant_micro_uv_from39_skipxs_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_transplant_micro_uv_from39_skipxs.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 123434.0,
+      "duration_sec": 17.45,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_8\\probe_c42_transplant_micro_uv_from39_skipxs_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_transplant_micro_uv_from39_skipxs.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 123434.0,
+      "duration_sec": 16.2,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_8\\probe_c42_transplant_micro_uv_from39_skipxs_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_transplant_micro_uv_from39_skipxs.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 123434.0,
+      "duration_sec": 15.94,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_8\\probe_c42_transplant_micro_uv_from39_skipxs_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": [
+    {
+      "strategy": "probe_c42_transplant_micro_uv_from39_skipxs.py",
+      "scope": "portal",
+      "max_len": 29372,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_c39_hybrid_panel_skipxs.py",
+      "scope": "portal",
+      "max_len": 30589,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_c39_hybrid_panel_skipxs_exit.py",
+      "scope": "portal",
+      "max_len": 30589,
+      "first_above_45k": null,
+      "first_above_50k": null
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "args": {
+    "strategies": [
+      "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\probes\\150k_exec\\probe_c35_stack_anchor_microtri_only.py",
+      "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\probes\\150k_exec\\probe_c35_stack_anchor_uvamber_only.py",
+      "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\probes\\150k_exec\\probe_c35_stack_anchor_both_microtri_uvamber.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "full"
+    ],
+    "jobs": 8,
+    "name": "c35_36_exec_probes_full_remaining40k_isolation",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": false,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "none",
+    "portal_logs": true,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_c35_stack_anchor_both_microtri_uvamber.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 265850.0,
+      "duration_sec": 278.69,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_remaining40k_isolation\\probe_c35_stack_anchor_both_microtri_uvamber_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c35_stack_anchor_both_microtri_uvamber.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 266134.0,
+      "duration_sec": 273.35,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_remaining40k_isolation\\probe_c35_stack_anchor_both_microtri_uvamber_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c35_stack_anchor_microtri_only.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 304976.0,
+      "duration_sec": 274.66,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_remaining40k_isolation\\probe_c35_stack_anchor_microtri_only_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c35_stack_anchor_microtri_only.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 305250.0,
+      "duration_sec": 267.08,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_remaining40k_isolation\\probe_c35_stack_anchor_microtri_only_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c35_stack_anchor_uvamber_only.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 308052.0,
+      "duration_sec": 274.45,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_remaining40k_isolation\\probe_c35_stack_anchor_uvamber_only_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c35_stack_anchor_uvamber_only.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 308082.0,
+      "duration_sec": 265.8,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_remaining40k_isolation\\probe_c35_stack_anchor_uvamber_only_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": []
+}

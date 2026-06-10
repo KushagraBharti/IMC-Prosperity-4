@@ -1,0 +1,103 @@
+{
+  "args": {
+    "strategies": [
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_panel_galaxy_exit_passive.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_panel_galaxy_skip_pebxs.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_panel_galaxy_skipxs_exit_passive.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "full"
+    ],
+    "jobs": 6,
+    "name": "candidate_39_42_fill_capacity_full_3",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": false,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "none",
+    "portal_logs": true,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_exit_passive.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": -20244.0,
+      "duration_sec": 330.45,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_full_3\\probe_c42_c39_panel_galaxy_exit_passive_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_exit_passive.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": -19870.0,
+      "duration_sec": 323.86,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_full_3\\probe_c42_c39_panel_galaxy_exit_passive_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skip_pebxs.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": -19142.0,
+      "duration_sec": 328.6,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_full_3\\probe_c42_c39_panel_galaxy_skip_pebxs_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skip_pebxs.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": -18746.0,
+      "duration_sec": 322.84,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_full_3\\probe_c42_c39_panel_galaxy_skip_pebxs_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skipxs_exit_passive.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": -17214.0,
+      "duration_sec": 332.2,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_full_3\\probe_c42_c39_panel_galaxy_skipxs_exit_passive_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skipxs_exit_passive.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": -16818.0,
+      "duration_sec": 321.72,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_full_3\\probe_c42_c39_panel_galaxy_skipxs_exit_passive_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": []
+}

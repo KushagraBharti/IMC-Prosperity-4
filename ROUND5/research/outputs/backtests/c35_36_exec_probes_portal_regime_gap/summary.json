@@ -1,0 +1,589 @@
+{
+  "args": {
+    "strategies": [
+      "ROUND5/research/probes/150k_exec/probe_regime_robust_snack_regime.py",
+      "ROUND5/research/probes/150k_exec/probe_regime_robust_uv_sleep_gal_regime.py",
+      "ROUND5/research/probes/150k_exec/probe_regime_robust_oxygen_regime.py",
+      "ROUND5/research/probes/150k_exec/probe_regime_robust_all_regime_strict.py",
+      "ROUND5/research/probes/150k_exec/probe_regime_robust_all_regime_loose.py",
+      "ROUND5/research/probes/150k_exec/probe_regime_portal_snack_regime.py",
+      "ROUND5/research/probes/150k_exec/probe_regime_portal_uv_sleep_gal_regime.py",
+      "ROUND5/research/probes/150k_exec/probe_regime_portal_oxygen_regime.py",
+      "ROUND5/research/probes/150k_exec/probe_regime_portal_all_regime_strict.py",
+      "ROUND5/research/probes/150k_exec/probe_regime_portal_all_regime_loose.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "portal"
+    ],
+    "jobs": 10,
+    "name": "c35_36_exec_probes_portal_regime_gap",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": true,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "portal",
+    "portal_logs": false,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_regime_portal_all_regime_loose.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120300.0,
+      "duration_sec": 8.76,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_all_regime_loose_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_all_regime_loose.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 120300.0,
+      "duration_sec": 8.28,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_all_regime_loose_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_all_regime_loose.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120310.0,
+      "duration_sec": 8.61,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_all_regime_loose_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_all_regime_loose.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 120310.0,
+      "duration_sec": 8.28,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_all_regime_loose_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_all_regime_strict.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120300.0,
+      "duration_sec": 8.48,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_all_regime_strict_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_all_regime_strict.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 120300.0,
+      "duration_sec": 8.64,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_all_regime_strict_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_all_regime_strict.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120310.0,
+      "duration_sec": 8.7,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_all_regime_strict_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_all_regime_strict.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 120310.0,
+      "duration_sec": 8.32,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_all_regime_strict_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_oxygen_regime.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120300.0,
+      "duration_sec": 9.31,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_oxygen_regime_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_oxygen_regime.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 120300.0,
+      "duration_sec": 9.22,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_oxygen_regime_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_oxygen_regime.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120310.0,
+      "duration_sec": 8.32,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_oxygen_regime_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_oxygen_regime.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 120310.0,
+      "duration_sec": 8.44,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_oxygen_regime_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_snack_regime.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120300.0,
+      "duration_sec": 8.86,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_snack_regime_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_snack_regime.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 120300.0,
+      "duration_sec": 8.98,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_snack_regime_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_snack_regime.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120310.0,
+      "duration_sec": 9.04,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_snack_regime_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_snack_regime.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 120310.0,
+      "duration_sec": 8.92,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_snack_regime_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_uv_sleep_gal_regime.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120300.0,
+      "duration_sec": 8.93,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_uv_sleep_gal_regime_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_uv_sleep_gal_regime.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 120300.0,
+      "duration_sec": 8.85,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_uv_sleep_gal_regime_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_uv_sleep_gal_regime.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120310.0,
+      "duration_sec": 8.71,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_uv_sleep_gal_regime_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_portal_uv_sleep_gal_regime.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 120310.0,
+      "duration_sec": 9.43,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_portal_uv_sleep_gal_regime_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_all_regime_loose.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 9.42,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_all_regime_loose_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_all_regime_loose.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 9.74,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_all_regime_loose_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_all_regime_loose.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 9.64,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_all_regime_loose_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_all_regime_loose.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 9.61,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_all_regime_loose_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_all_regime_strict.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 9.8,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_all_regime_strict_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_all_regime_strict.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 9.6,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_all_regime_strict_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_all_regime_strict.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 9.47,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_all_regime_strict_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_all_regime_strict.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 9.47,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_all_regime_strict_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_oxygen_regime.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 10.98,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_oxygen_regime_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_oxygen_regime.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 10.73,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_oxygen_regime_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_oxygen_regime.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 9.51,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_oxygen_regime_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_oxygen_regime.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 9.58,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_oxygen_regime_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_snack_regime.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 10.83,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_snack_regime_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_snack_regime.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 11.12,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_snack_regime_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_snack_regime.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 10.75,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_snack_regime_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_snack_regime.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 10.78,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_snack_regime_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_uv_sleep_gal_regime.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 10.82,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_uv_sleep_gal_regime_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_uv_sleep_gal_regime.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 11.08,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_uv_sleep_gal_regime_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_uv_sleep_gal_regime.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 11.07,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_uv_sleep_gal_regime_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_regime_robust_uv_sleep_gal_regime.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 111868.0,
+      "duration_sec": 10.84,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_regime_gap\\probe_regime_robust_uv_sleep_gal_regime_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": [
+    {
+      "strategy": "probe_regime_robust_snack_regime.py",
+      "scope": "portal",
+      "max_len": 30132,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_regime_robust_uv_sleep_gal_regime.py",
+      "scope": "portal",
+      "max_len": 30207,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_regime_robust_oxygen_regime.py",
+      "scope": "portal",
+      "max_len": 30114,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_regime_robust_all_regime_strict.py",
+      "scope": "portal",
+      "max_len": 30547,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_regime_robust_all_regime_loose.py",
+      "scope": "portal",
+      "max_len": 30547,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_regime_portal_snack_regime.py",
+      "scope": "portal",
+      "max_len": 30132,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_regime_portal_uv_sleep_gal_regime.py",
+      "scope": "portal",
+      "max_len": 30207,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_regime_portal_oxygen_regime.py",
+      "scope": "portal",
+      "max_len": 30114,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_regime_portal_all_regime_strict.py",
+      "scope": "portal",
+      "max_len": 30547,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_regime_portal_all_regime_loose.py",
+      "scope": "portal",
+      "max_len": 30547,
+      "first_above_45k": null,
+      "first_above_50k": null
+    }
+  ]
+}

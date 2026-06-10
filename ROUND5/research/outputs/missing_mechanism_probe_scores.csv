@@ -1,0 +1,15 @@
+strategy,mechanism,portal_kevin,portal_kevin_50k,portal_xeeshan,portal_xeeshan_50k,full_kevin,full_xeeshan,notes
+probe_missing_portal_micro_square_anchor_take.py,micro_square_anchor,120828.0,120828.0,120838.0,120838.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_portal_passive_fill_best.py,passive_fill,120300.0,120300.0,120310.0,120310.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_portal_passive_fill_no_peb.py,passive_fill,120300.0,120300.0,120310.0,120310.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_portal_passive_fill_strict.py,passive_fill,120300.0,120300.0,120310.0,120310.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_portal_micro_anchor_plus_fill.py,micro_square_anchor,119776.0,119776.0,119786.0,119786.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_portal_micro_square_anchor_sell.py,micro_square_anchor,119776.0,119776.0,119786.0,119786.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_portal_micro_square_anchor_two.py,micro_square_anchor,119776.0,119776.0,119786.0,119786.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_robust_micro_square_anchor_take.py,micro_square_anchor,112396.0,112396.0,112396.0,112396.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_robust_passive_fill_best.py,passive_fill,111868.0,111868.0,111868.0,111868.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_robust_passive_fill_no_peb.py,passive_fill,111868.0,111868.0,111868.0,111868.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_robust_passive_fill_strict.py,passive_fill,111868.0,111868.0,111868.0,111868.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_robust_micro_anchor_plus_fill.py,micro_square_anchor,111344.0,111344.0,111344.0,111344.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_robust_micro_square_anchor_sell.py,micro_square_anchor,111344.0,111344.0,111344.0,111344.0,,,portal-first; full deferred because no 10k+ mechanism found
+probe_missing_robust_micro_square_anchor_two.py,micro_square_anchor,111344.0,111344.0,111344.0,111344.0,,,portal-first; full deferred because no 10k+ mechanism found

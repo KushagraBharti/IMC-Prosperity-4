@@ -1,0 +1,64 @@
++--------------------- Traceback (most recent call last) ---------------------+
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\kevin-backtester\prosperity4bt\__main__.py:39 in  |
+| run                                                                         |
+|                                                                             |
+|   36     options.merge_timestamps = not original_timestamps                 |
+|   37                                                                        |
+|   38     back_tester = BackTester(options)                                  |
+| > 39     back_tester.run()                                                  |
+|   40                                                                        |
+|   41                                                                        |
+|   42 def __parse_out(out: Optional[Path], no_out: bool) -> Optional[Path]:  |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\kevin-backtester\prosperity4bt\back_tester.py:22  |
+| in run                                                                      |
+|                                                                             |
+|   19     def run(self):                                                     |
+|   20         print(f"running algorithm '{self.options.algorithm_path}'...") |
+|   21                                                                        |
+| > 22         trader_module = self.__load_algorithm()                        |
+|   23         data_reader = self.__get_data_reader(self.options.back_data_di |
+|   24         round_days_options = RoundDayOption.parse(self.options.round_d |
+|   25         merger = ResultMerger(self.options.merge_timestamps, self.opti |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\kevin-backtester\prosperity4bt\back_tester.py:51  |
+| in __load_algorithm                                                         |
+|                                                                             |
+|   48     def __load_algorithm(self) -> Any:                                 |
+|   49         try:                                                           |
+|   50             sys.path.append(str(self.options.algorithm_path.parent))   |
+| > 51             trader_module = import_module(self.options.algorithm_path. |
+|   52         except ModuleNotFoundError as e:                               |
+|   53             print(f"{self.options.algorithm_path} is not a valid algor |
+|   54             sys.exit(1)                                                |
+|                                                                             |
+| C:\ProgramData\anaconda3\Lib\importlib\__init__.py:88 in import_module      |
+|                                                                             |
+|    85             if character != '.':                                      |
+|    86                 break                                                 |
+|    87             level += 1                                                |
+| >  88     return _bootstrap._gcd_import(name[level:], package, level)       |
+|    89                                                                       |
+|    90                                                                       |
+|    91 _RELOADING = {}                                                       |
+| in _gcd_import:1387                                                         |
+| in _find_and_load:1360                                                      |
+| in _find_and_load_unlocked:1331                                             |
+| in _load_unlocked:935                                                       |
+| in exec_module:1023                                                         |
+| in get_code:1161                                                            |
+| in source_to_code:1091                                                      |
+| in _call_with_frames_removed:488                                            |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|  C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading               |
+| Comp\ROUND4\research\outputs\mini_experiments\generated_variants\r4_probe_0 |
+| 12_no_far_zero.py:129                                                       |
+|         "VEV_4000",                                                         |
+|        \u25b2                                                                    |
++-----------------------------------------------------------------------------+
+IndentationError: unexpected indent
+running algorithm 'C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\mini_experiments\generated_variants\r4_probe_012_no_far_zero.py'...

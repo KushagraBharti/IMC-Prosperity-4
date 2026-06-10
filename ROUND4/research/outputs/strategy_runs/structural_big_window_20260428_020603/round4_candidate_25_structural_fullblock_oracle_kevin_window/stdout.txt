@@ -1,0 +1,17 @@
+running algorithm 'C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_25_structural_fullblock_oracle.py'...
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_25_structural_fullblock_oracle.py for round: 4 day: 3
+VEV_5400: 2,700
+VEV_5300: 6,739
+VEV_6500: 24
+VEV_4500: -1,609
+HYDROGEL_PACK: 3,351
+VEV_5500: 938
+VEV_6000: 24
+VEV_5000: 13,241
+VEV_5200: 11,585
+VEV_5100: 14,387
+VEV_4000: -8,438
+VELVETFRUIT_EXTRACT: 11,478
+Total profit: 54,420
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\strategy_runs\structural_big_window_20260428_020603\round4_candidate_25_structural_fullblock_oracle_kevin_window\kevin.log

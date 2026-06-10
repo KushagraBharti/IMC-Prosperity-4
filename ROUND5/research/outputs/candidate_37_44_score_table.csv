@@ -1,0 +1,9 @@
+Strategy,Role,Portal Kevin,Portal Xeeshan,Portal Kevin 50k Cap,Portal Xeeshan 50k Cap,Full Kevin,Full Xeeshan,Max State,Trades,Avg Fill,Official Portal Score
+round5_candidate_37.py,Max portal handwritten integration: fresh breadth + robot extras + MICROCHIP_SQUARE anchor overlay.,123425,123435,123425,123435,158838,158515,32325,1600,2.98,pending
+round5_candidate_38.py,Ablation of 37 without MICROCHIP_SQUARE anchor overlay; tests whether anchor is real.,122897,122907,122897,122907,108699,108376,32325,,,pending
+round5_candidate_39.py,Balanced broad fresh-category branch without robot pair/anchor overlay; stronger full than 37.,121436,121446,121436,121446,254379,254543,31170,1505,2.81,pending
+round5_candidate_40.py,Robot-pair portal branch; tests aggressive ROBOT_DISHES/MOPPING contribution.,121620,121630,121620,121630,114755,114557,31108,,,pending
+round5_candidate_41.py,Robust-full baseline: candidate-35 conservative anchor/micro/UV branch.,111868,111868,111868,111868,379278,379319,29953,,,pending
+round5_candidate_42.py,Robust-full plus panel/micro-anchor branch; best full-history candidate in this batch.,113412,113412,113412,113412,421524,421564,29953,1434,2.66,pending
+round5_candidate_43.py,Conservative snackpack/micro/UV branch; robust-full alternative.,111490,111500,111490,111500,379776,379726,29953,1435,2.67,pending
+round5_candidate_44.py,Very-tight robot portal branch; safer robot-heavy ablation than 40.,121466,121476,121466,121476,120960,120694,30523,,,pending

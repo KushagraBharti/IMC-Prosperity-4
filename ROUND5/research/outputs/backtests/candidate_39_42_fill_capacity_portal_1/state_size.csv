@@ -1,0 +1,11 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c42_qty10_all.py,portal,29953,,
+probe_c42_qty10_anchor10.py,portal,29953,,
+probe_c42_threshold_92.py,portal,29953,,
+probe_c42_threshold_85.py,portal,29953,,
+probe_c42_top_hybrid.py,portal,29953,,
+probe_c42_threshold_92_qty10.py,portal,29953,,
+probe_c42_candidate39_config_micro_anchor.py,portal,31170,,
+probe_c42_candidate39_config_anchor10.py,portal,31170,,
+probe_c42_peb_more_aggressive.py,portal,29953,,
+probe_c42_scale_top_weights.py,portal,29953,,

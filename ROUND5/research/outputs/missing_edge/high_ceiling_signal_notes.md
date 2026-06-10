@@ -1,0 +1,32 @@
+# High Ceiling Signal Notes
+
+- `ROBOT_DISHES` day 4 `ret_10_reversal` hold 1: exec 235500 at pct 70, top1-volume exec -8080, top3-depth exec -8080, proxy 302005, corr 0.223.
+- `ROBOT_DISHES` day 4 `ret_10_reversal` hold 5: exec 235500 at pct 70, top1-volume exec -8080, top3-depth exec -8080, proxy 103694, corr 0.256.
+- `ROBOT_DISHES` day 4 `ret_10_reversal` hold 10: exec 235500 at pct 70, top1-volume exec -8080, top3-depth exec -8080, proxy 59196, corr 0.243.
+- `ROBOT_DISHES` day 4 `ret_10_reversal` hold 25: exec 235500 at pct 70, top1-volume exec -8080, top3-depth exec -8080, proxy 27366, corr 0.214.
+- `ROBOT_DISHES` day 4 `ret_10_reversal` hold 50: exec 235500 at pct 70, top1-volume exec -8080, top3-depth exec -8080, proxy 12184, corr 0.148.
+- `ROBOT_DISHES` day 4 `ret_50_reversal` hold 1: exec 26360 at pct 60, top1-volume exec -8338, top3-depth exec -8416, proxy 47135, corr 0.135.
+- `ROBOT_DISHES` day 4 `ret_50_reversal` hold 5: exec 26360 at pct 60, top1-volume exec -8338, top3-depth exec -8416, proxy 17801, corr 0.153.
+- `ROBOT_DISHES` day 4 `ret_50_reversal` hold 10: exec 26360 at pct 60, top1-volume exec -8338, top3-depth exec -8416, proxy 10388, corr 0.148.
+- `ROBOT_DISHES` day 4 `ret_50_reversal` hold 25: exec 26360 at pct 60, top1-volume exec -8338, top3-depth exec -8416, proxy 3836, corr 0.112.
+- `ROBOT_DISHES` day 4 `ret_50_reversal` hold 50: exec 26360 at pct 60, top1-volume exec -8338, top3-depth exec -8416, proxy -697, corr 0.052.
+- `OXYGEN_SHAKE_GARLIC` day 3 `imbalance` hold 1: exec 0 at pct 95, top1-volume exec 0, top3-depth exec 0, proxy 15555, corr -0.004.
+- `PEBBLES_M` day 3 `imbalance` hold 1: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 9815, corr 0.005.
+- `PANEL_2X4` day 3 `imbalance` hold 1: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 8860, corr -0.005.
+- `SLEEP_POD_LAMB_WOOL` day 2 `imbalance` hold 1: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 8675, corr 0.006.
+- `PEBBLES_XL` day 4 `imbalance` hold 5: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 8590, corr -0.002.
+- `PEBBLES_XL` day 2 `imbalance` hold 25: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 8096, corr -0.004.
+- `PEBBLES_XL` day 2 `imbalance` hold 1: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 8040, corr -0.015.
+- `PEBBLES_XL` day 4 `imbalance` hold 10: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 7910, corr -0.003.
+- `PEBBLES_XL` day 2 `imbalance` hold 10: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 7684, corr -0.011.
+- `MICROCHIP_SQUARE` day 3 `imbalance` hold 25: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 7246, corr 0.012.
+- `PEBBLES_XL` day 4 `imbalance` hold 1: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 6955, corr -0.001.
+- `PEBBLES_M` day 3 `imbalance` hold 5: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 6613, corr 0.014.
+- `PEBBLES_XL` day 2 `imbalance` hold 50: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 6432, corr -0.006.
+- `MICROCHIP_SQUARE` day 3 `imbalance` hold 50: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 6320, corr 0.010.
+- `TRANSLATOR_VOID_BLUE` day 4 `imbalance` hold 1: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 5290, corr -0.014.
+- `OXYGEN_SHAKE_GARLIC` day 2 `imbalance` hold 50: exec 0 at pct 95, top1-volume exec 0, top3-depth exec 0, proxy 4799, corr 0.011.
+- `PANEL_2X4` day 4 `imbalance` hold 5: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 4492, corr -0.001.
+- `MICROCHIP_SQUARE` day 3 `imbalance` hold 10: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 4489, corr -0.005.
+- `GALAXY_SOUNDS_BLACK_HOLES` day 3 `imbalance` hold 1: exec 0 at pct 95, top1-volume exec 0, top3-depth exec 0, proxy 4440, corr -0.011.
+- `MICROCHIP_SQUARE` day 3 `imbalance` hold 1: exec 0 at pct 90, top1-volume exec 0, top3-depth exec 0, proxy 4430, corr -0.003.

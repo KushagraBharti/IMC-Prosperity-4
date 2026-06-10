@@ -1,0 +1,589 @@
+{
+  "args": {
+    "strategies": [
+      "ROUND5/research/probes/fill_capacity/probe_c42_qty10_all.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_qty10_anchor10.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_threshold_92.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_threshold_85.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_top_hybrid.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_threshold_92_qty10.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_candidate39_config_micro_anchor.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_candidate39_config_anchor10.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_peb_more_aggressive.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_scale_top_weights.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "portal"
+    ],
+    "jobs": 10,
+    "name": "candidate_39_42_fill_capacity_portal_1",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": true,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "portal",
+    "portal_logs": false,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_c42_candidate39_config_anchor10.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 121378.0,
+      "duration_sec": 9.88,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_candidate39_config_anchor10_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_candidate39_config_anchor10.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 121378.0,
+      "duration_sec": 9.88,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_candidate39_config_anchor10_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_candidate39_config_anchor10.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 121378.0,
+      "duration_sec": 9.4,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_candidate39_config_anchor10_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_candidate39_config_anchor10.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 121378.0,
+      "duration_sec": 9.39,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_candidate39_config_anchor10_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_candidate39_config_micro_anchor.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 121378.0,
+      "duration_sec": 9.82,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_candidate39_config_micro_anchor_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_candidate39_config_micro_anchor.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 121378.0,
+      "duration_sec": 9.94,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_candidate39_config_micro_anchor_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_candidate39_config_micro_anchor.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 121378.0,
+      "duration_sec": 9.79,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_candidate39_config_micro_anchor_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_candidate39_config_micro_anchor.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 121378.0,
+      "duration_sec": 9.76,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_candidate39_config_micro_anchor_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_peb_more_aggressive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 8.87,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_peb_more_aggressive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_peb_more_aggressive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 8.99,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_peb_more_aggressive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_peb_more_aggressive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 8.72,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_peb_more_aggressive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_peb_more_aggressive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 9.04,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_peb_more_aggressive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_qty10_all.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 9.65,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_qty10_all_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_qty10_all.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 9.36,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_qty10_all_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_qty10_all.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 9.9,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_qty10_all_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_qty10_all.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 9.78,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_qty10_all_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_qty10_anchor10.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 9.39,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_qty10_anchor10_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_qty10_anchor10.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 9.34,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_qty10_anchor10_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_qty10_anchor10.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 9.7,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_qty10_anchor10_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_qty10_anchor10.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 9.84,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_qty10_anchor10_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_scale_top_weights.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 8.84,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_scale_top_weights_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_scale_top_weights.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 8.85,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_scale_top_weights_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_scale_top_weights.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 9.12,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_scale_top_weights_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_scale_top_weights.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 8.92,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_scale_top_weights_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_threshold_85.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 112062.0,
+      "duration_sec": 9.53,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_threshold_85_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_threshold_85.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 112062.0,
+      "duration_sec": 9.42,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_threshold_85_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_threshold_85.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 112062.0,
+      "duration_sec": 9.29,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_threshold_85_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_threshold_85.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 112062.0,
+      "duration_sec": 9.38,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_threshold_85_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_threshold_92.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113040.0,
+      "duration_sec": 9.6,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_threshold_92_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_threshold_92.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113040.0,
+      "duration_sec": 9.62,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_threshold_92_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_threshold_92.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113040.0,
+      "duration_sec": 9.41,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_threshold_92_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_threshold_92.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113040.0,
+      "duration_sec": 9.67,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_threshold_92_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_threshold_92_qty10.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113040.0,
+      "duration_sec": 9.63,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_threshold_92_qty10_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_threshold_92_qty10.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113040.0,
+      "duration_sec": 9.65,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_threshold_92_qty10_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_threshold_92_qty10.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113040.0,
+      "duration_sec": 9.36,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_threshold_92_qty10_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_threshold_92_qty10.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113040.0,
+      "duration_sec": 9.46,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_threshold_92_qty10_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_top_hybrid.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 111158.0,
+      "duration_sec": 9.53,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_top_hybrid_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_top_hybrid.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 111158.0,
+      "duration_sec": 9.52,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_top_hybrid_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_top_hybrid.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 111158.0,
+      "duration_sec": 9.52,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_top_hybrid_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_top_hybrid.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 111158.0,
+      "duration_sec": 9.48,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_1\\probe_c42_top_hybrid_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": [
+    {
+      "strategy": "probe_c42_qty10_all.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_qty10_anchor10.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_threshold_92.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_threshold_85.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_top_hybrid.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_threshold_92_qty10.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_candidate39_config_micro_anchor.py",
+      "scope": "portal",
+      "max_len": 31170,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_candidate39_config_anchor10.py",
+      "scope": "portal",
+      "max_len": 31170,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_peb_more_aggressive.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_scale_top_weights.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    }
+  ]
+}

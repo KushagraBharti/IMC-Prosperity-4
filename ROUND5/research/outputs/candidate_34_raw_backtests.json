@@ -1,0 +1,72 @@
+{
+  "raw_568593": {
+    "state_size": {
+      "max_len": 73832,
+      "first_above_45k": 15800,
+      "first_above_50k": 17900
+    },
+    "kevin_uncapped": {
+      "returncode": 0,
+      "profit": 105940.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\568593_raw_kevin_raw568593_uncapped.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\568593_raw_kevin_raw568593_uncapped_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_uncapped": {
+      "returncode": 0,
+      "profit": 105940.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\568593_raw_xeeshan_raw568593_uncapped.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\568593_raw_xeeshan_raw568593_uncapped_stdout.txt",
+      "stderr_tail": ""
+    },
+    "kevin_capped": {
+      "returncode": 0,
+      "profit": 41486.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\568593_raw_50kcap_kevin_raw568593_50kcap.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\568593_raw_50kcap_kevin_raw568593_50kcap_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_capped": {
+      "returncode": 0,
+      "profit": 41486.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\568593_raw_50kcap_xeeshan_raw568593_50kcap.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\568593_raw_50kcap_xeeshan_raw568593_50kcap_stdout.txt",
+      "stderr_tail": ""
+    }
+  },
+  "round5_candidate_34.py": {
+    "kevin_uncapped": {
+      "returncode": 0,
+      "profit": 105940.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\round5_candidate_34_kevin_portal_uncapped.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\round5_candidate_34_kevin_portal_uncapped_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_uncapped": {
+      "returncode": 0,
+      "profit": 105940.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\round5_candidate_34_xeeshan_portal_uncapped.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\round5_candidate_34_xeeshan_portal_uncapped_stdout.txt",
+      "stderr_tail": ""
+    },
+    "kevin_capped": {
+      "returncode": 0,
+      "profit": 105940.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\round5_candidate_34_50kcap_kevin_portal_50kcap.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\round5_candidate_34_50kcap_kevin_portal_50kcap_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_capped": {
+      "returncode": 0,
+      "profit": 105940.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\round5_candidate_34_50kcap_xeeshan_portal_50kcap.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_31_33_state_repair\\round5_candidate_34_50kcap_xeeshan_portal_50kcap_stdout.txt",
+      "stderr_tail": ""
+    },
+    "state_size": {
+      "max_len": 19364,
+      "first_above_45k": null,
+      "first_above_50k": null
+    }
+  }
+}

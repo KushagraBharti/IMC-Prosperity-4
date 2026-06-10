@@ -1,0 +1,9 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_anchor_robust_translator_sleep_snack_passive.py,portal,29953,,
+probe_anchor_robust_galaxy_oxygen_panel_passive.py,portal,29953,,
+probe_anchor_robust_uv_micro_robot_passive.py,portal,29953,,
+probe_anchor_robust_all_reasonable_passive.py,portal,29953,,
+probe_anchor_portal_translator_sleep_snack_passive.py,portal,29953,,
+probe_anchor_portal_galaxy_oxygen_panel_passive.py,portal,29953,,
+probe_anchor_portal_uv_micro_robot_passive.py,portal,29953,,
+probe_anchor_portal_all_reasonable_passive.py,portal,29953,,

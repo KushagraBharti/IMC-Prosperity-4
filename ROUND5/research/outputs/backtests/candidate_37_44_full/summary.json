@@ -1,0 +1,228 @@
+{
+  "args": {
+    "strategies": [
+      "round5_candidate_37.py",
+      "round5_candidate_38.py",
+      "round5_candidate_39.py",
+      "round5_candidate_40.py",
+      "round5_candidate_41.py",
+      "round5_candidate_42.py",
+      "round5_candidate_43.py",
+      "round5_candidate_44.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "full"
+    ],
+    "jobs": 8,
+    "name": "candidate_37_44_full",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": false,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "none",
+    "portal_logs": true,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "round5_candidate_37.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 158838.0,
+      "duration_sec": 291.52,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_37_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_37.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 158515.0,
+      "duration_sec": 281.81,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_37_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_38.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 108699.0,
+      "duration_sec": 296.15,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_38_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_38.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 108376.0,
+      "duration_sec": 282.29,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_38_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_39.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 254379.0,
+      "duration_sec": 286.65,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_39_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_39.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 254543.0,
+      "duration_sec": 279.65,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_39_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_40.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 114755.0,
+      "duration_sec": 283.96,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_40_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_40.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 114557.0,
+      "duration_sec": 271.55,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_40_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_41.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 379278.0,
+      "duration_sec": 265.81,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_41_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_41.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 379319.0,
+      "duration_sec": 260.65,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_41_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_42.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 421524.0,
+      "duration_sec": 265.58,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_42_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_42.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 421564.0,
+      "duration_sec": 257.25,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_42_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_43.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 379776.0,
+      "duration_sec": 261.47,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_43_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_43.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 379726.0,
+      "duration_sec": 253.38,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_43_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_44.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120960.0,
+      "duration_sec": 262.16,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_44_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "round5_candidate_44.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120694.0,
+      "duration_sec": 257.05,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_37_44_full\\round5_candidate_44_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": []
+}

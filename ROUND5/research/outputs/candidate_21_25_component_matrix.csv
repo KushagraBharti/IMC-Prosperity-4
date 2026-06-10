@@ -1,0 +1,13 @@
+strategy,scope,long_horizon_non_pebbles,other,pebbles,unresolved_non_pebbles,total
+round5_candidate_16.py,full,0.0,0.0,118231.0,0.0,118231.0
+round5_candidate_16.py,portal,0.0,0.0,19935.0,0.0,19935.0
+round5_candidate_21.py,full,65570.0,0.0,0.0,0.0,65570.0
+round5_candidate_21.py,portal,17304.5,0.0,0.0,0.0,17304.5
+round5_candidate_22.py,full,0.0,0.0,0.0,18577.5,18577.5
+round5_candidate_22.py,portal,0.0,0.0,0.0,20426.5,20426.5
+round5_candidate_23.py,full,65570.0,0.0,118231.0,0.0,183801.0
+round5_candidate_23.py,portal,17304.5,0.0,19935.0,0.0,37239.5
+round5_candidate_24.py,full,0.0,0.0,118231.0,12874.0,131105.0
+round5_candidate_24.py,portal,0.0,0.0,19935.0,21824.5,41759.5
+round5_candidate_25.py,full,24589.5,0.0,118231.0,13950.5,156771.0
+round5_candidate_25.py,portal,9990.0,0.0,19935.0,9021.0,38946.0

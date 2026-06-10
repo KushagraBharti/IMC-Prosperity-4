@@ -1,0 +1,5 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c42_microuv_skipxs_panelhybrid.py,portal,29372,,
+probe_c42_microuv_skipxs_panelhybrid_exit.py,portal,29372,,
+probe_c42_uv_skipxs_panelhybrid.py,portal,29372,,
+probe_c42_micro_skipxs_panelhybrid.py,portal,29372,,

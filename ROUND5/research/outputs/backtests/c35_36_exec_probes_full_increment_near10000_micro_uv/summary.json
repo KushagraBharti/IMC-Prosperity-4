@@ -1,0 +1,78 @@
+{
+  "args": {
+    "strategies": [
+      "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\probes\\150k_exec\\probe_increment_vanilla_micro_uv_loose.py",
+      "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\probes\\150k_exec\\probe_increment_snackpack_micro_uv_loose.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "full"
+    ],
+    "jobs": 8,
+    "name": "c35_36_exec_probes_full_increment_near10000_micro_uv",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": false,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "none",
+    "portal_logs": true,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_increment_snackpack_micro_uv_loose.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 265900.0,
+      "duration_sec": 240.28,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_increment_near10000_micro_uv\\probe_increment_snackpack_micro_uv_loose_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_increment_snackpack_micro_uv_loose.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 265963.0,
+      "duration_sec": 235.19,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_increment_near10000_micro_uv\\probe_increment_snackpack_micro_uv_loose_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_increment_vanilla_micro_uv_loose.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 263754.0,
+      "duration_sec": 242.15,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_increment_near10000_micro_uv\\probe_increment_vanilla_micro_uv_loose_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_increment_vanilla_micro_uv_loose.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 263918.0,
+      "duration_sec": 232.51,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_increment_near10000_micro_uv\\probe_increment_vanilla_micro_uv_loose_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": []
+}

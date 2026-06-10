@@ -1,0 +1,4 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c42_transplant_micro_uv_from39_skipxs.py,portal,29372,,
+probe_c42_c39_hybrid_panel_skipxs.py,portal,30589,,
+probe_c42_c39_hybrid_panel_skipxs_exit.py,portal,30589,,

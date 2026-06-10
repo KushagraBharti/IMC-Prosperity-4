@@ -1,0 +1,78 @@
+{
+  "args": {
+    "strategies": [
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_hybrid_panel.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_hybrid_galaxy.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "full"
+    ],
+    "jobs": 4,
+    "name": "candidate_39_42_fill_capacity_full_5",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": false,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "none",
+    "portal_logs": true,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_c42_c39_hybrid_galaxy.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 87666.0,
+      "duration_sec": 250.5,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_full_5\\probe_c42_c39_hybrid_galaxy_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_hybrid_galaxy.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 87782.0,
+      "duration_sec": 243.21,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_full_5\\probe_c42_c39_hybrid_galaxy_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_hybrid_panel.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 189584.0,
+      "duration_sec": 250.0,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_full_5\\probe_c42_c39_hybrid_panel_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_hybrid_panel.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 189996.0,
+      "duration_sec": 242.78,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_full_5\\probe_c42_c39_hybrid_panel_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": []
+}

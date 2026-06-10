@@ -1,0 +1,1139 @@
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\probes\150k_exec\probe_mm_portal_replace_sleep.py on round 5 day 4
+GALAXY_SOUNDS_BLACK_HOLES: 2,221
+GALAXY_SOUNDS_DARK_MATTER: 4,254
+GALAXY_SOUNDS_PLANETARY_RINGS: 4,625
+GALAXY_SOUNDS_SOLAR_FLAMES: 3,246
+GALAXY_SOUNDS_SOLAR_WINDS: 2,208
+MICROCHIP_CIRCLE: 0
+MICROCHIP_OVAL: 4,379
+MICROCHIP_RECTANGLE: 2,666
+MICROCHIP_SQUARE: 4,123
+MICROCHIP_TRIANGLE: 4,089
+OXYGEN_SHAKE_CHOCOLATE: 1,841
+OXYGEN_SHAKE_EVENING_BREATH: 290
+OXYGEN_SHAKE_GARLIC: 3,442
+OXYGEN_SHAKE_MINT: 212
+OXYGEN_SHAKE_MORNING_BREATH: 3,446
+PANEL_1X2: 2,827
+PANEL_1X4: 2,427
+PANEL_2X2: 1,457
+PANEL_2X4: 1,768
+PANEL_4X4: 6,026
+PEBBLES_L: 510
+PEBBLES_M: 1,490
+PEBBLES_S: 11,719
+PEBBLES_XL: 9,560
+PEBBLES_XS: -1,945
+ROBOT_DISHES: 0
+ROBOT_IRONING: 2,524
+ROBOT_LAUNDRY: 0
+ROBOT_MOPPING: 0
+ROBOT_VACUUMING: 1,358
+SLEEP_POD_COTTON: 0
+SLEEP_POD_LAMB_WOOL: 0
+SLEEP_POD_NYLON: 0
+SLEEP_POD_POLYESTER: 0
+SLEEP_POD_SUEDE: 0
+SNACKPACK_CHOCOLATE: 0
+SNACKPACK_PISTACHIO: 538
+SNACKPACK_RASPBERRY: 1,313
+SNACKPACK_STRAWBERRY: 1,169
+SNACKPACK_VANILLA: 365
+TRANSLATOR_ASTRO_BLACK: 2,588
+TRANSLATOR_ECLIPSE_CHARCOAL: 3,674
+TRANSLATOR_GRAPHITE_MIST: 2,630
+TRANSLATOR_SPACE_GRAY: 2,807
+TRANSLATOR_VOID_BLUE: 1,375
+UV_VISOR_AMBER: 4,887
+UV_VISOR_MAGENTA: 0
+UV_VISOR_ORANGE: 3,959
+UV_VISOR_RED: 3,135
+UV_VISOR_YELLOW: 782
+Total profit: 109,984
+
+STDERR:
++--------------------- Traceback (most recent call last) ---------------------+
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\xeeshan-backtester\prosperity4bt\__main__.py:235  |
+| in cli                                                                      |
+|                                                                             |
+|   232                                                                       |
+|   233     if output_file is not None:                                       |
+|   234         merged_results = reduce(lambda a, b: merge_results(a, b, merg |
+| > 235         write_output(output_file, merged_results)                     |
+|   236         print(f"\nSuccessfully saved backtest results to {format_path |
+|   237                                                                       |
+|   238     if vis and output_file is not None:                               |
+|                                                                             |
+| +-------------------------------- locals ---------------------------------+ |
+| |           algorithm = WindowsPath('C:/Users/kushagra/OneDrive/Document… | |
+| |                       Projects/IMC Trading                              | |
+| |                       Comp/ROUND5/research/probes/150k_exec/probe_mm_p… | |
+| |                data = WindowsPath('C:/Users/kushagra/OneDrive/Document… | |
+| |                       Projects/IMC Trading                              | |
+| |                       Comp/ROUND5/research/outputs/official_portal_win… | |
+| |             day_num = 4                                                 | |
+| |                days = ['5-4']                                           | |
+| |         file_reader = <prosperity4bt.file_reader.FileSystemReader       | |
+| |                       object at 0x00000287DB75A120>                     | |
+| |        match_trades = <TradeMatchingMode.all: 'all'>                    | |
+| |           merge_pnl = False                                             | |
+| |      merged_results = BacktestResult(                                   | |
+| |                           round_num=5,                                  | |
+| |                           day_num=4,                                    | |
+| |                           sandbox_logs=[                                | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=0,                          | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=100,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=200,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=300,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=400,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=500,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=600,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=700,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=800,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=900,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               ... +990                                  | |
+| |                           ],                                            | |
+| |                           activity_logs=[                               | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'GALAXY_SOUNDS_BLACK_HOLES',      | |
+| |                                       12129,                            | |
+| |                                       20,                               | |
+| |                                       12127,                            | |
+| |                                       35,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       12145,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'GALAXY_SOUNDS_DARK_MATTER',      | |
+| |                                       10869,                            | |
+| |                                       20,                               | |
+| |                                       10867,                            | |
+| |                                       35,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       10883,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'GALAXY_SOUNDS_PLANETARY_RINGS',  | |
+| |                                       11408,                            | |
+| |                                       20,                               | |
+| |                                       11406,                            | |
+| |                                       35,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       11423,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'GALAXY_SOUNDS_SOLAR_FLAMES',     | |
+| |                                       10636,                            | |
+| |                                       20,                               | |
+| |                                       10635,                            | |
+| |                                       35,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       10650,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'GALAXY_SOUNDS_SOLAR_WINDS',      | |
+| |                                       10749,                            | |
+| |                                       20,                               | |
+| |                                       10748,                            | |
+| |                                       35,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       10763,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'MICROCHIP_CIRCLE',               | |
+| |                                       8531,                             | |
+| |                                       8,                                | |
+| |                                       8530,                             | |
+| |                                       8,                                | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       8539,                             | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'MICROCHIP_OVAL',                 | |
+| |                                       7413,                             | |
+| |                                       8,                                | |
+| |                                       7412,                             | |
+| |                                       8,                                | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       7420,                             | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'MICROCHIP_RECTANGLE',            | |
+| |                                       7827,                             | |
+| |                                       8,                                | |
+| |                                       7826,                             | |
+| |                                       8,                                | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       7834,                             | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'MICROCHIP_SQUARE',               | |
+| |                                       15904,                            | |
+| |                                       8,                                | |
+| |                                       15903,                            | |
+| |                                       8,                                | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       15918,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'MICROCHIP_TRIANGLE',             | |
+| |                                       9016,                             | |
+| |                                       8,                                | |
+| |                                       9015,                             | |
+| |                                       8,                                | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       9024,                             | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ... +49990                                | |
+| |                           ],                                            | |
+| |                           trades=[                                      | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(PEBBLES_L,  << SUBMISSION,     | |
+| |                       11007, 10, 0)                                     | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(PEBBLES_M,  << SUBMISSION,     | |
+| |                       11059, 10, 0)                                     | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(PEBBLES_S,  << SUBMISSION,     | |
+| |                       8998, 10, 0)                                      | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(PEBBLES_XL, SUBMISSION << ,    | |
+| |                       12062, 10, 0)                                     | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(PEBBLES_XS, SUBMISSION << ,    | |
+| |                       6866, 10, 0)                                      | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(SNACKPACK_VANILLA,  <<         | |
+| |                       SUBMISSION, 10013, 10, 0)                         | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(TRANSLATOR_ECLIPSE_CHARCOAL,   | |
+| |                       SUBMISSION << , 9618, 9, 0)                       | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(TRANSLATOR_ECLIPSE_CHARCOAL,   | |
+| |                       SUBMISSION << , 9619, 1, 0)                       | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(MICROCHIP_CIRCLE,  << , 8552,  | |
+| |                       1, 800)                                           | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(MICROCHIP_OVAL,  << , 7470, 1, | |
+| |                       800)                                              | |
+| |                               ),                                        | |
+| |                               ... +1514                                 | |
+| |                           ]                                             | |
+| |                       )                                                 | |
+| |            no_names = False                                             | |
+| |              no_out = False                                             | |
+| |         no_progress = True                                              | |
+| | original_timestamps = False                                             | |
+| |                 out = WindowsPath('C:/Users/kushagra/OneDrive/Document… | |
+| |                       Projects/IMC Trading                              | |
+| |                       Comp/ROUND5/research/outputs/backtests/c35_36_ex… | |
+| |         output_file = WindowsPath('C:/Users/kushagra/OneDrive/Document… | |
+| |                       Projects/IMC Trading                              | |
+| |                       Comp/ROUND5/research/outputs/backtests/c35_36_ex… | |
+| |         parsed_days = [(5, 4)]                                          | |
+| |        print_output = False                                             | |
+| |              result = BacktestResult(                                   | |
+| |                           round_num=5,                                  | |
+| |                           day_num=4,                                    | |
+| |                           sandbox_logs=[                                | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=0,                          | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=100,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=200,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=300,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=400,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=500,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=600,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=700,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=800,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=900,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               ... +990                                  | |
+| |                           ],                                            | |
+| |                           activity_logs=[                               | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'GALAXY_SOUNDS_BLACK_HOLES',      | |
+| |                                       12129,                            | |
+| |                                       20,                               | |
+| |                                       12127,                            | |
+| |                                       35,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       12145,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'GALAXY_SOUNDS_DARK_MATTER',      | |
+| |                                       10869,                            | |
+| |                                       20,                               | |
+| |                                       10867,                            | |
+| |                                       35,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       10883,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'GALAXY_SOUNDS_PLANETARY_RINGS',  | |
+| |                                       11408,                            | |
+| |                                       20,                               | |
+| |                                       11406,                            | |
+| |                                       35,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       11423,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'GALAXY_SOUNDS_SOLAR_FLAMES',     | |
+| |                                       10636,                            | |
+| |                                       20,                               | |
+| |                                       10635,                            | |
+| |                                       35,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       10650,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'GALAXY_SOUNDS_SOLAR_WINDS',      | |
+| |                                       10749,                            | |
+| |                                       20,                               | |
+| |                                       10748,                            | |
+| |                                       35,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       10763,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'MICROCHIP_CIRCLE',               | |
+| |                                       8531,                             | |
+| |                                       8,                                | |
+| |                                       8530,                             | |
+| |                                       8,                                | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       8539,                             | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'MICROCHIP_OVAL',                 | |
+| |                                       7413,                             | |
+| |                                       8,                                | |
+| |                                       7412,                             | |
+| |                                       8,                                | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       7420,                             | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'MICROCHIP_RECTANGLE',            | |
+| |                                       7827,                             | |
+| |                                       8,                                | |
+| |                                       7826,                             | |
+| |                                       8,                                | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       7834,                             | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'MICROCHIP_SQUARE',               | |
+| |                                       15904,                            | |
+| |                                       8,                                | |
+| |                                       15903,                            | |
+| |                                       8,                                | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       15918,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       4,                                | |
+| |                                       0,                                | |
+| |                                       'MICROCHIP_TRIANGLE',             | |
+| |                                       9016,                             | |
+| |                                       8,                                | |
+| |                                       9015,                             | |
+| |                                       8,                                | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       9024,                             | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ... +49990                                | |
+| |                           ],                                            | |
+| |                           trades=[                                      | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(PEBBLES_L,  << SUBMISSION,     | |
+| |                       11007, 10, 0)                                     | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(PEBBLES_M,  << SUBMISSION,     | |
+| |                       11059, 10, 0)                                     | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(PEBBLES_S,  << SUBMISSION,     | |
+| |                       8998, 10, 0)                                      | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(PEBBLES_XL, SUBMISSION << ,    | |
+| |                       12062, 10, 0)                                     | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(PEBBLES_XS, SUBMISSION << ,    | |
+| |                       6866, 10, 0)                                      | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(SNACKPACK_VANILLA,  <<         | |
+| |                       SUBMISSION, 10013, 10, 0)                         | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(TRANSLATOR_ECLIPSE_CHARCOAL,   | |
+| |                       SUBMISSION << , 9618, 9, 0)                       | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(TRANSLATOR_ECLIPSE_CHARCOAL,   | |
+| |                       SUBMISSION << , 9619, 1, 0)                       | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(MICROCHIP_CIRCLE,  << , 8552,  | |
+| |                       1, 800)                                           | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(MICROCHIP_OVAL,  << , 7470, 1, | |
+| |                       800)                                              | |
+| |                               ),                                        | |
+| |                               ... +1514                                 | |
+| |                           ]                                             | |
+| |                       )                                                 | |
+| |             results = [                                                 | |
+| |                           BacktestResult(                               | |
+| |                               round_num=5,                              | |
+| |                               day_num=4,                                | |
+| |                               sandbox_logs=[                            | |
+| |                                   SandboxLogRow(                        | |
+| |                                       timestamp=0,                      | |
+| |                                       sandbox_log='',                   | |
+| |                                       lambda_log=''                     | |
+| |                                   ),                                    | |
+| |                                   SandboxLogRow(                        | |
+| |                                       timestamp=100,                    | |
+| |                                       sandbox_log='',                   | |
+| |                                       lambda_log=''                     | |
+| |                                   ),                                    | |
+| |                                   SandboxLogRow(                        | |
+| |                                       timestamp=200,                    | |
+| |                                       sandbox_log='',                   | |
+| |                                       lambda_log=''                     | |
+| |                                   ),                                    | |
+| |                                   SandboxLogRow(                        | |
+| |                                       timestamp=300,                    | |
+| |                                       sandbox_log='',                   | |
+| |                                       lambda_log=''                     | |
+| |                                   ),                                    | |
+| |                                   SandboxLogRow(                        | |
+| |                                       timestamp=400,                    | |
+| |                                       sandbox_log='',                   | |
+| |                                       lambda_log=''                     | |
+| |                                   ),                                    | |
+| |                                   SandboxLogRow(                        | |
+| |                                       timestamp=500,                    | |
+| |                                       sandbox_log='',                   | |
+| |                                       lambda_log=''                     | |
+| |                                   ),                                    | |
+| |                                   SandboxLogRow(                        | |
+| |                                       timestamp=600,                    | |
+| |                                       sandbox_log='',                   | |
+| |                                       lambda_log=''                     | |
+| |                                   ),                                    | |
+| |                                   SandboxLogRow(                        | |
+| |                                       timestamp=700,                    | |
+| |                                       sandbox_log='',                   | |
+| |                                       lambda_log=''                     | |
+| |                                   ),                                    | |
+| |                                   SandboxLogRow(                        | |
+| |                                       timestamp=800,                    | |
+| |                                       sandbox_log='',                   | |
+| |                                       lambda_log=''                     | |
+| |                                   ),                                    | |
+| |                                   SandboxLogRow(                        | |
+| |                                       timestamp=900,                    | |
+| |                                       sandbox_log='',                   | |
+| |                                       lambda_log=''                     | |
+| |                                   ),                                    | |
+| |                                   ... +990                              | |
+| |                               ],                                        | |
+| |                               activity_logs=[                           | |
+| |                                   ActivityLogRow(                       | |
+| |                                       columns=[                         | |
+| |                                           4,                            | |
+| |                                           0,                            | |
+| |                                           'GALAXY_SOUNDS_BLACK_HOLES',  | |
+| |                                           12129,                        | |
+| |                                           20,                           | |
+| |                                           12127,                        | |
+| |                                           35,                           | |
+| |                                           '',                           | |
+| |                                           '',                           | |
+| |                                           12145,                        | |
+| |                                           ... +7                        | |
+| |                                       ]                                 | |
+| |                                   ),                                    | |
+| |                                   ActivityLogRow(                       | |
+| |                                       columns=[                         | |
+| |                                           4,                            | |
+| |                                           0,                            | |
+| |                                           'GALAXY_SOUNDS_DARK_MATTER',  | |
+| |                                           10869,                        | |
+| |                                           20,                           | |
+| |                                           10867,                        | |
+| |                                           35,                           | |
+| |                                           '',                           | |
+| |                                           '',                           | |
+| |                                           10883,                        | |
+| |                                           ... +7                        | |
+| |                                       ]                                 | |
+| |                                   ),                                    | |
+| |                                   ActivityLogRow(                       | |
+| |                                       columns=[                         | |
+| |                                           4,                            | |
+| |                                           0,                            | |
+| |                                           'GALAXY_SOUNDS_PLANETARY_RIN… | |
+| |                                           11408,                        | |
+| |                                           20,                           | |
+| |                                           11406,                        | |
+| |                                           35,                           | |
+| |                                           '',                           | |
+| |                                           '',                           | |
+| |                                           11423,                        | |
+| |                                           ... +7                        | |
+| |                                       ]                                 | |
+| |                                   ),                                    | |
+| |                                   ActivityLogRow(                       | |
+| |                                       columns=[                         | |
+| |                                           4,                            | |
+| |                                           0,                            | |
+| |                                           'GALAXY_SOUNDS_SOLAR_FLAMES', | |
+| |                                           10636,                        | |
+| |                                           20,                           | |
+| |                                           10635,                        | |
+| |                                           35,                           | |
+| |                                           '',                           | |
+| |                                           '',                           | |
+| |                                           10650,                        | |
+| |                                           ... +7                        | |
+| |                                       ]                                 | |
+| |                                   ),                                    | |
+| |                                   ActivityLogRow(                       | |
+| |                                       columns=[                         | |
+| |                                           4,                            | |
+| |                                           0,                            | |
+| |                                           'GALAXY_SOUNDS_SOLAR_WINDS',  | |
+| |                                           10749,                        | |
+| |                                           20,                           | |
+| |                                           10748,                        | |
+| |                                           35,                           | |
+| |                                           '',                           | |
+| |                                           '',                           | |
+| |                                           10763,                        | |
+| |                                           ... +7                        | |
+| |                                       ]                                 | |
+| |                                   ),                                    | |
+| |                                   ActivityLogRow(                       | |
+| |                                       columns=[                         | |
+| |                                           4,                            | |
+| |                                           0,                            | |
+| |                                           'MICROCHIP_CIRCLE',           | |
+| |                                           8531,                         | |
+| |                                           8,                            | |
+| |                                           8530,                         | |
+| |                                           8,                            | |
+| |                                           '',                           | |
+| |                                           '',                           | |
+| |                                           8539,                         | |
+| |                                           ... +7                        | |
+| |                                       ]                                 | |
+| |                                   ),                                    | |
+| |                                   ActivityLogRow(                       | |
+| |                                       columns=[                         | |
+| |                                           4,                            | |
+| |                                           0,                            | |
+| |                                           'MICROCHIP_OVAL',             | |
+| |                                           7413,                         | |
+| |                                           8,                            | |
+| |                                           7412,                         | |
+| |                                           8,                            | |
+| |                                           '',                           | |
+| |                                           '',                           | |
+| |                                           7420,                         | |
+| |                                           ... +7                        | |
+| |                                       ]                                 | |
+| |                                   ),                                    | |
+| |                                   ActivityLogRow(                       | |
+| |                                       columns=[                         | |
+| |                                           4,                            | |
+| |                                           0,                            | |
+| |                                           'MICROCHIP_RECTANGLE',        | |
+| |                                           7827,                         | |
+| |                                           8,                            | |
+| |                                           7826,                         | |
+| |                                           8,                            | |
+| |                                           '',                           | |
+| |                                           '',                           | |
+| |                                           7834,                         | |
+| |                                           ... +7                        | |
+| |                                       ]                                 | |
+| |                                   ),                                    | |
+| |                                   ActivityLogRow(                       | |
+| |                                       columns=[                         | |
+| |                                           4,                            | |
+| |                                           0,                            | |
+| |                                           'MICROCHIP_SQUARE',           | |
+| |                                           15904,                        | |
+| |                                           8,                            | |
+| |                                           15903,                        | |
+| |                                           8,                            | |
+| |                                           '',                           | |
+| |                                           '',                           | |
+| |                                           15918,                        | |
+| |                                           ... +7                        | |
+| |                                       ]                                 | |
+| |                                   ),                                    | |
+| |                                   ActivityLogRow(                       | |
+| |                                       columns=[                         | |
+| |                                           4,                            | |
+| |                                           0,                            | |
+| |                                           'MICROCHIP_TRIANGLE',         | |
+| |                                           9016,                         | |
+| |                                           8,                            | |
+| |                                           9015,                         | |
+| |                                           8,                            | |
+| |                                           '',                           | |
+| |                                           '',                           | |
+| |                                           9024,                         | |
+| |                                           ... +7                        | |
+| |                                       ]                                 | |
+| |                                   ),                                    | |
+| |                                   ... +49990                            | |
+| |                               ],                                        | |
+| |                               trades=[                                  | |
+| |                                   TradeRow(                             | |
+| |                                       trade=(PEBBLES_L,  << SUBMISSION, | |
+| |                       11007, 10, 0)                                     | |
+| |                                   ),                                    | |
+| |                                   TradeRow(                             | |
+| |                                       trade=(PEBBLES_M,  << SUBMISSION, | |
+| |                       11059, 10, 0)                                     | |
+| |                                   ),                                    | |
+| |                                   TradeRow(                             | |
+| |                                       trade=(PEBBLES_S,  << SUBMISSION, | |
+| |                       8998, 10, 0)                                      | |
+| |                                   ),                                    | |
+| |                                   TradeRow(                             | |
+| |                                       trade=(PEBBLES_XL, SUBMISSION <<  | |
+| |                       , 12062, 10, 0)                                   | |
+| |                                   ),                                    | |
+| |                                   TradeRow(                             | |
+| |                                       trade=(PEBBLES_XS, SUBMISSION <<  | |
+| |                       , 6866, 10, 0)                                    | |
+| |                                   ),                                    | |
+| |                                   TradeRow(                             | |
+| |                                       trade=(SNACKPACK_VANILLA,  <<     | |
+| |                       SUBMISSION, 10013, 10, 0)                         | |
+| |                                   ),                                    | |
+| |                                   TradeRow(                             | |
+| |                                       trade=(TRANSLATOR_ECLIPSE_CHARCO… | |
+| |                       SUBMISSION << , 9618, 9, 0)                       | |
+| |                                   ),                                    | |
+| |                                   TradeRow(                             | |
+| |                                       trade=(TRANSLATOR_ECLIPSE_CHARCO… | |
+| |                       SUBMISSION << , 9619, 1, 0)                       | |
+| |                                   ),                                    | |
+| |                                   TradeRow(                             | |
+| |                                       trade=(MICROCHIP_CIRCLE,  << ,    | |
+| |                       8552, 1, 800)                                     | |
+| |                                   ),                                    | |
+| |                                   TradeRow(                             | |
+| |                                       trade=(MICROCHIP_OVAL,  << ,      | |
+| |                       7470, 1, 800)                                     | |
+| |                                   ),                                    | |
+| |                                   ... +1514                             | |
+| |                               ]                                         | |
+| |                           )                                             | |
+| |                       ]                                                 | |
+| |           round_num = 5                                                 | |
+| |  show_progress_bars = False                                             | |
+| |       trader_module = <module 'probe_mm_portal_replace_sleep' from      | |
+| |                       'C:\\Users\\kushagra\\OneDrive\\Documents\\CS     | |
+| |                       Projects\\IMC Trading                             | |
+| |                       Comp\\ROUND5\\research\\probes\\150k_exec\\probe… | |
+| |             version = None                                              | |
+| |                 vis = False                                             | |
+| +-------------------------------------------------------------------------+ |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\xeeshan-backtester\prosperity4bt\__main__.py:131  |
+| in write_output                                                             |
+|                                                                             |
+|   128 def write_output(output_file: Path, merged_results: BacktestResult) - |
+|   129     output_file.parent.mkdir(parents=True, exist_ok=True)             |
+|   130     with output_file.open("w+", encoding="utf-8") as file:            |
+| > 131         file.write(json.dumps(merged_results.to_dict()))              |
+|   132                                                                       |
+|   133                                                                       |
+|   134 def print_overall_summary(results: list[BacktestResult]) -> None:     |
+|                                                                             |
+| +-------------------------------- locals ---------------------------------+ |
+| |           file = <_io.TextIOWrapper                                     | |
+| |                  name='C:\\Users\\kushagra\\OneDrive\\Documents\\CS     | |
+| |                  Projects\\IMC Trading                                  | |
+| |                  Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_ex… | |
+| |                  mode='w+' encoding='utf-8'>                            | |
+| | merged_results = BacktestResult(                                        | |
+| |                      round_num=5,                                       | |
+| |                      day_num=4,                                         | |
+| |                      sandbox_logs=[                                     | |
+| |                          SandboxLogRow(                                 | |
+| |                              timestamp=0,                               | |
+| |                              sandbox_log='',                            | |
+| |                              lambda_log=''                              | |
+| |                          ),                                             | |
+| |                          SandboxLogRow(                                 | |
+| |                              timestamp=100,                             | |
+| |                              sandbox_log='',                            | |
+| |                              lambda_log=''                              | |
+| |                          ),                                             | |
+| |                          SandboxLogRow(                                 | |
+| |                              timestamp=200,                             | |
+| |                              sandbox_log='',                            | |
+| |                              lambda_log=''                              | |
+| |                          ),                                             | |
+| |                          SandboxLogRow(                                 | |
+| |                              timestamp=300,                             | |
+| |                              sandbox_log='',                            | |
+| |                              lambda_log=''                              | |
+| |                          ),                                             | |
+| |                          SandboxLogRow(                                 | |
+| |                              timestamp=400,                             | |
+| |                              sandbox_log='',                            | |
+| |                              lambda_log=''                              | |
+| |                          ),                                             | |
+| |                          SandboxLogRow(                                 | |
+| |                              timestamp=500,                             | |
+| |                              sandbox_log='',                            | |
+| |                              lambda_log=''                              | |
+| |                          ),                                             | |
+| |                          SandboxLogRow(                                 | |
+| |                              timestamp=600,                             | |
+| |                              sandbox_log='',                            | |
+| |                              lambda_log=''                              | |
+| |                          ),                                             | |
+| |                          SandboxLogRow(                                 | |
+| |                              timestamp=700,                             | |
+| |                              sandbox_log='',                            | |
+| |                              lambda_log=''                              | |
+| |                          ),                                             | |
+| |                          SandboxLogRow(                                 | |
+| |                              timestamp=800,                             | |
+| |                              sandbox_log='',                            | |
+| |                              lambda_log=''                              | |
+| |                          ),                                             | |
+| |                          SandboxLogRow(                                 | |
+| |                              timestamp=900,                             | |
+| |                              sandbox_log='',                            | |
+| |                              lambda_log=''                              | |
+| |                          ),                                             | |
+| |                          ... +990                                       | |
+| |                      ],                                                 | |
+| |                      activity_logs=[                                    | |
+| |                          ActivityLogRow(                                | |
+| |                              columns=[                                  | |
+| |                                  4,                                     | |
+| |                                  0,                                     | |
+| |                                  'GALAXY_SOUNDS_BLACK_HOLES',           | |
+| |                                  12129,                                 | |
+| |                                  20,                                    | |
+| |                                  12127,                                 | |
+| |                                  35,                                    | |
+| |                                  '',                                    | |
+| |                                  '',                                    | |
+| |                                  12145,                                 | |
+| |                                  ... +7                                 | |
+| |                              ]                                          | |
+| |                          ),                                             | |
+| |                          ActivityLogRow(                                | |
+| |                              columns=[                                  | |
+| |                                  4,                                     | |
+| |                                  0,                                     | |
+| |                                  'GALAXY_SOUNDS_DARK_MATTER',           | |
+| |                                  10869,                                 | |
+| |                                  20,                                    | |
+| |                                  10867,                                 | |
+| |                                  35,                                    | |
+| |                                  '',                                    | |
+| |                                  '',                                    | |
+| |                                  10883,                                 | |
+| |                                  ... +7                                 | |
+| |                              ]                                          | |
+| |                          ),                                             | |
+| |                          ActivityLogRow(                                | |
+| |                              columns=[                                  | |
+| |                                  4,                                     | |
+| |                                  0,                                     | |
+| |                                  'GALAXY_SOUNDS_PLANETARY_RINGS',       | |
+| |                                  11408,                                 | |
+| |                                  20,                                    | |
+| |                                  11406,                                 | |
+| |                                  35,                                    | |
+| |                                  '',                                    | |
+| |                                  '',                                    | |
+| |                                  11423,                                 | |
+| |                                  ... +7                                 | |
+| |                              ]                                          | |
+| |                          ),                                             | |
+| |                          ActivityLogRow(                                | |
+| |                              columns=[                                  | |
+| |                                  4,                                     | |
+| |                                  0,                                     | |
+| |                                  'GALAXY_SOUNDS_SOLAR_FLAMES',          | |
+| |                                  10636,                                 | |
+| |                                  20,                                    | |
+| |                                  10635,                                 | |
+| |                                  35,                                    | |
+| |                                  '',                                    | |
+| |                                  '',                                    | |
+| |                                  10650,                                 | |
+| |                                  ... +7                                 | |
+| |                              ]                                          | |
+| |                          ),                                             | |
+| |                          ActivityLogRow(                                | |
+| |                              columns=[                                  | |
+| |                                  4,                                     | |
+| |                                  0,                                     | |
+| |                                  'GALAXY_SOUNDS_SOLAR_WINDS',           | |
+| |                                  10749,                                 | |
+| |                                  20,                                    | |
+| |                                  10748,                                 | |
+| |                                  35,                                    | |
+| |                                  '',                                    | |
+| |                                  '',                                    | |
+| |                                  10763,                                 | |
+| |                                  ... +7                                 | |
+| |                              ]                                          | |
+| |                          ),                                             | |
+| |                          ActivityLogRow(                                | |
+| |                              columns=[                                  | |
+| |                                  4,                                     | |
+| |                                  0,                                     | |
+| |                                  'MICROCHIP_CIRCLE',                    | |
+| |                                  8531,                                  | |
+| |                                  8,                                     | |
+| |                                  8530,                                  | |
+| |                                  8,                                     | |
+| |                                  '',                                    | |
+| |                                  '',                                    | |
+| |                                  8539,                                  | |
+| |                                  ... +7                                 | |
+| |                              ]                                          | |
+| |                          ),                                             | |
+| |                          ActivityLogRow(                                | |
+| |                              columns=[                                  | |
+| |                                  4,                                     | |
+| |                                  0,                                     | |
+| |                                  'MICROCHIP_OVAL',                      | |
+| |                                  7413,                                  | |
+| |                                  8,                                     | |
+| |                                  7412,                                  | |
+| |                                  8,                                     | |
+| |                                  '',                                    | |
+| |                                  '',                                    | |
+| |                                  7420,                                  | |
+| |                                  ... +7                                 | |
+| |                              ]                                          | |
+| |                          ),                                             | |
+| |                          ActivityLogRow(                                | |
+| |                              columns=[                                  | |
+| |                                  4,                                     | |
+| |                                  0,                                     | |
+| |                                  'MICROCHIP_RECTANGLE',                 | |
+| |                                  7827,                                  | |
+| |                                  8,                                     | |
+| |                                  7826,                                  | |
+| |                                  8,                                     | |
+| |                                  '',                                    | |
+| |                                  '',                                    | |
+| |                                  7834,                                  | |
+| |                                  ... +7                                 | |
+| |                              ]                                          | |
+| |                          ),                                             | |
+| |                          ActivityLogRow(                                | |
+| |                              columns=[                                  | |
+| |                                  4,                                     | |
+| |                                  0,                                     | |
+| |                                  'MICROCHIP_SQUARE',                    | |
+| |                                  15904,                                 | |
+| |                                  8,                                     | |
+| |                                  15903,                                 | |
+| |                                  8,                                     | |
+| |                                  '',                                    | |
+| |                                  '',                                    | |
+| |                                  15918,                                 | |
+| |                                  ... +7                                 | |
+| |                              ]                                          | |
+| |                          ),                                             | |
+| |                          ActivityLogRow(                                | |
+| |                              columns=[                                  | |
+| |                                  4,                                     | |
+| |                                  0,                                     | |
+| |                                  'MICROCHIP_TRIANGLE',                  | |
+| |                                  9016,                                  | |
+| |                                  8,                                     | |
+| |                                  9015,                                  | |
+| |                                  8,                                     | |
+| |                                  '',                                    | |
+| |                                  '',                                    | |
+| |                                  9024,                                  | |
+| |                                  ... +7                                 | |
+| |                              ]                                          | |
+| |                          ),                                             | |
+| |                          ... +49990                                     | |
+| |                      ],                                                 | |
+| |                      trades=[                                           | |
+| |                          TradeRow(                                      | |
+| |                              trade=(PEBBLES_L,  << SUBMISSION, 11007,   | |
+| |                  10, 0)                                                 | |
+| |                          ),                                             | |
+| |                          TradeRow(                                      | |
+| |                              trade=(PEBBLES_M,  << SUBMISSION, 11059,   | |
+| |                  10, 0)                                                 | |
+| |                          ),                                             | |
+| |                          TradeRow(                                      | |
+| |                              trade=(PEBBLES_S,  << SUBMISSION, 8998,    | |
+| |                  10, 0)                                                 | |
+| |                          ),                                             | |
+| |                          TradeRow(                                      | |
+| |                              trade=(PEBBLES_XL, SUBMISSION << , 12062,  | |
+| |                  10, 0)                                                 | |
+| |                          ),                                             | |
+| |                          TradeRow(                                      | |
+| |                              trade=(PEBBLES_XS, SUBMISSION << , 6866,   | |
+| |                  10, 0)                                                 | |
+| |                          ),                                             | |
+| |                          TradeRow(                                      | |
+| |                              trade=(SNACKPACK_VANILLA,  << SUBMISSION,  | |
+| |                  10013, 10, 0)                                          | |
+| |                          ),                                             | |
+| |                          TradeRow(                                      | |
+| |                              trade=(TRANSLATOR_ECLIPSE_CHARCOAL,        | |
+| |                  SUBMISSION << , 9618, 9, 0)                            | |
+| |                          ),                                             | |
+| |                          TradeRow(                                      | |
+| |                              trade=(TRANSLATOR_ECLIPSE_CHARCOAL,        | |
+| |                  SUBMISSION << , 9619, 1, 0)                            | |
+| |                          ),                                             | |
+| |                          TradeRow(                                      | |
+| |                              trade=(MICROCHIP_CIRCLE,  << , 8552, 1,    | |
+| |                  800)                                                   | |
+| |                          ),                                             | |
+| |                          TradeRow(                                      | |
+| |                              trade=(MICROCHIP_OVAL,  << , 7470, 1, 800) | |
+| |                          ),                                             | |
+| |                          ... +1514                                      | |
+| |                      ]                                                  | |
+| |                  )                                                      | |
+| |    output_file = WindowsPath('C:/Users/kushagra/OneDrive/Documents/CS   | |
+| |                  Projects/IMC Trading                                   | |
+| |                  Comp/ROUND5/research/outputs/backtests/c35_36_exec_pr… | |
+| +-------------------------------------------------------------------------+ |
++-----------------------------------------------------------------------------+
+OSError: [Errno 28] No space left on device

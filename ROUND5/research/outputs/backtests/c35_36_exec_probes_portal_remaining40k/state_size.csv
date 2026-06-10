@@ -1,0 +1,6 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c35_stack_anchor_microtri_uvamber.py,portal,29953,,
+probe_c35_stack_anchor_robot_dishes.py,portal,29960,,
+probe_c35_stack_clean_anchor_both.py,portal,28805,,
+probe_c36_focus_gap_signals.py,portal,21480,,
+probe_c36_plus_c35_clean_signals.py,portal,40981,,

@@ -1,0 +1,178 @@
+{
+  "args": {
+    "strategies": [
+      "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\probes\\150k_exec\\probe_c35_stack_broad_gated.py",
+      "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\probes\\150k_exec\\probe_sleep_uv_snack.py",
+      "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\probes\\150k_exec\\probe_remaining_unused.py",
+      "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\probes\\150k_exec\\probe_peb_lxs_signal_overlay.py",
+      "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\probes\\150k_exec\\probe_micro_panel_passive.py",
+      "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\probes\\150k_exec\\probe_c35_stack_robust.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "full"
+    ],
+    "jobs": 8,
+    "name": "c35_36_exec_probes_full_promising",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": false,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "none",
+    "portal_logs": true,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_c35_stack_broad_gated.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 343506.0,
+      "duration_sec": 344.99,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_promising\\probe_c35_stack_broad_gated_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c35_stack_broad_gated.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 343522.0,
+      "duration_sec": 338.4,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_promising\\probe_c35_stack_broad_gated_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c35_stack_robust.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 297148.0,
+      "duration_sec": 237.71,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_promising\\probe_c35_stack_robust_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c35_stack_robust.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 297164.0,
+      "duration_sec": 228.26,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_promising\\probe_c35_stack_robust_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_micro_panel_passive.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 301016.0,
+      "duration_sec": 229.76,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_promising\\probe_micro_panel_passive_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_micro_panel_passive.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 301032.0,
+      "duration_sec": 221.38,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_promising\\probe_micro_panel_passive_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_peb_lxs_signal_overlay.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 281286.0,
+      "duration_sec": 310.81,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_promising\\probe_peb_lxs_signal_overlay_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_peb_lxs_signal_overlay.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 281324.0,
+      "duration_sec": 301.94,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_promising\\probe_peb_lxs_signal_overlay_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_remaining_unused.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 301558.0,
+      "duration_sec": 297.96,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_promising\\probe_remaining_unused_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_remaining_unused.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 301574.0,
+      "duration_sec": 290.68,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_promising\\probe_remaining_unused_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_sleep_uv_snack.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 331795.0,
+      "duration_sec": 334.06,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_promising\\probe_sleep_uv_snack_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_sleep_uv_snack.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 331811.0,
+      "duration_sec": 327.6,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_promising\\probe_sleep_uv_snack_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": []
+}

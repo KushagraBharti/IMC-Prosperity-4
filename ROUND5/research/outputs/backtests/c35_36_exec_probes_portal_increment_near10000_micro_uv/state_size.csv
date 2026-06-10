@@ -1,0 +1,8 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_increment_near10000_micro_uv_loose.py,portal,29953,,
+probe_increment_snackpack_micro_uv_loose.py,portal,29953,,
+probe_increment_snackpack_uv_only.py,portal,29364,,
+probe_increment_space_nylon_uv_only.py,portal,29364,,
+probe_increment_vanilla_micro_only.py,portal,29394,,
+probe_increment_vanilla_micro_uv_loose.py,portal,29953,,
+probe_increment_vanilla_uv_only.py,portal,29364,,

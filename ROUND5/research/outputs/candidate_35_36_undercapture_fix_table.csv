@@ -1,0 +1,19 @@
+product,category,candidate35_portal_pnl,best_probe_portal_pnl,best_probe,classification,decision
+PEBBLES_M,PEBBLES,1490.0,3343.0,probe_peb_mlx_boost_passive.py,validated_add,Keep current FV core; mild boost did not produce a superior robust repair.
+PEBBLES_XS,PEBBLES,-1945.0,3674.0,probe_c36_focus_gap_signals.py,gated_add,Do not boost; all aggressive repairs either hurt portal or full.
+PEBBLES_L,PEBBLES,-660.0,510.0,probe_branch_robust_conservative_robot_vtight.py,validated_add,Do not add direct overlay; anchor/FV role only.
+MICROCHIP_SQUARE,MICROCHIP,4123.0,4123.0,probe_c35_stack_broad_gated.py,validated_add,Preserve current config; hybrid retune was toxic.
+MICROCHIP_CIRCLE,MICROCHIP,0.0,236.0,probe_micro_panel_hybrid.py,exclude,Reject for now; passive/hybrid failed despite oracle.
+MICROCHIP_TRIANGLE,MICROCHIP,0.0,4176.0,probe_c35_stack_anchor_microtri_uvamber.py,gated_add,Candidate 36 portal-only/gated; not robust add-on to 35 yet.
+PANEL_2X4,PANEL,0.0,3773.0,probe_c36_more_pebbles.py,validated_add,Validated add via clean stack.
+ROBOT_DISHES,ROBOT,0.0,5700.0,probe_c36_no_panel_extras.py,gated_add,"Hybrid portal signal exists, but not enough/additive; information branch only."
+ROBOT_LAUNDRY,ROBOT,0.0,5180.0,probe_c36_no_uv_extras.py,exclude,Reject in c35 stack; toxic.
+ROBOT_VACUUMING,ROBOT,0.0,1358.5,probe_c35_stack_broad_gated.py,validated_add,Validated low-weight add via clean stack.
+SLEEP_POD_SUEDE,SLEEP_POD,0.0,1989.0,probe_struct_robust_curve_sleep.py,validated_add,Validated add via clean stack.
+UV_VISOR_MAGENTA,UV_VISOR,0.0,136.0,probe_sleep_uv_snack.py,exclude,Reject; tiny portal and bad full proxy.
+SNACKPACK_STRAWBERRY,SNACKPACK,0.0,1169.0,probe_c35_stack_broad_gated.py,validated_add,Validated low-weight add via clean stack.
+SNACKPACK_RASPBERRY,SNACKPACK,0.0,1313.0,probe_branch_robust_conservative_robot_vtight.py,validated_add,Validated low-weight add via clean stack.
+SNACKPACK_PISTACHIO,SNACKPACK,0.0,791.0,probe_struct_robust_leadlag_all_fresh.py,validated_add,Validated low-weight add via clean stack.
+GALAXY_SOUNDS_BLACK_HOLES,GALAXY_SOUNDS,0.0,2880.0,probe_struct_robust_leadlag_trans_galaxy.py,validated_add,Validated add via clean stack.
+TRANSLATOR_ASTRO_BLACK,TRANSLATOR,0.0,2588.0,probe_branch_robust_conservative_robot_vtight.py,validated_add,Validated add via clean stack.
+TRANSLATOR_ECLIPSE_CHARCOAL,TRANSLATOR,-1375.0,3674.0,probe_branch_robust_conservative_robot_vtight.py,validated_add,Validated only through 10k anchor execution; replace negative old signal.

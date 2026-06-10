@@ -1,0 +1,30 @@
+{
+  "non_pebbles_probe_longhorizon_breadth.py": {
+    "kevin_full": {
+      "returncode": 0,
+      "profit": 62069.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_promising_full\\non_pebbles_probe_longhorizon_breadth_kevin_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_promising_full\\non_pebbles_probe_longhorizon_breadth_kevin_full_stdout.txt"
+    },
+    "xeeshan_full": {
+      "returncode": 0,
+      "profit": 62495.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_promising_full\\non_pebbles_probe_longhorizon_breadth_xeeshan_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_promising_full\\non_pebbles_probe_longhorizon_breadth_xeeshan_full_stdout.txt"
+    }
+  },
+  "non_pebbles_probe_longhorizon_microchip.py": {
+    "kevin_full": {
+      "returncode": 0,
+      "profit": 4865.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_promising_full\\non_pebbles_probe_longhorizon_microchip_kevin_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_promising_full\\non_pebbles_probe_longhorizon_microchip_kevin_full_stdout.txt"
+    },
+    "xeeshan_full": {
+      "returncode": 0,
+      "profit": 5291.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_promising_full\\non_pebbles_probe_longhorizon_microchip_xeeshan_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_promising_full\\non_pebbles_probe_longhorizon_microchip_xeeshan_full_stdout.txt"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "args": {
+    "strategies": [
+      "ROUND5/research/probes/c42_pareto/probe_c42_invert_pebxs.py",
+      "ROUND5/research/probes/c42_pareto/probe_c42_invert_pebxs_conservative.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "portal"
+    ],
+    "jobs": 8,
+    "name": "candidate42_pebxs_invert_portal",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": true,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "none",
+    "portal_logs": false,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_c42_invert_pebxs.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 117212.0,
+      "duration_sec": 10.76,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate42_pebxs_invert_portal\\probe_c42_invert_pebxs_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_invert_pebxs.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 117212.0,
+      "duration_sec": 10.8,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate42_pebxs_invert_portal\\probe_c42_invert_pebxs_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_invert_pebxs.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 117212.0,
+      "duration_sec": 10.7,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate42_pebxs_invert_portal\\probe_c42_invert_pebxs_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_invert_pebxs.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 117212.0,
+      "duration_sec": 10.73,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate42_pebxs_invert_portal\\probe_c42_invert_pebxs_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_invert_pebxs_conservative.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 117212.0,
+      "duration_sec": 10.65,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate42_pebxs_invert_portal\\probe_c42_invert_pebxs_conservative_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_invert_pebxs_conservative.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 117212.0,
+      "duration_sec": 10.69,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate42_pebxs_invert_portal\\probe_c42_invert_pebxs_conservative_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_invert_pebxs_conservative.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 117212.0,
+      "duration_sec": 10.69,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate42_pebxs_invert_portal\\probe_c42_invert_pebxs_conservative_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_invert_pebxs_conservative.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 117212.0,
+      "duration_sec": 10.66,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate42_pebxs_invert_portal\\probe_c42_invert_pebxs_conservative_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": []
+}

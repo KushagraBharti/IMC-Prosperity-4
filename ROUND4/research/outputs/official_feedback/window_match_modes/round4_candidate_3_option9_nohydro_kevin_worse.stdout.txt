@@ -1,0 +1,17 @@
+running algorithm 'C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_3_option9_nohydro.py'...
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_3_option9_nohydro.py for round: 4 day: 3
+VEV_5400: 2,496
+VEV_5300: 5,539
+VEV_6500: 0
+VEV_4500: 9,857
+HYDROGEL_PACK: -12
+VEV_5500: 996
+VEV_6000: 0
+VEV_5000: 13,572
+VEV_5200: 8,927
+VEV_5100: 16,148
+VEV_4000: 9,372
+VELVETFRUIT_EXTRACT: 10,022
+Total profit: 76,916
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\official_feedback\window_match_modes\round4_candidate_3_option9_nohydro_kevin_worse.log

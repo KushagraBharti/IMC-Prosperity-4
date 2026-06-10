@@ -1,0 +1,53 @@
+{
+  "args": {
+    "strategies": [
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_panel_galaxy_skipxs_exit_robot.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "full"
+    ],
+    "jobs": 2,
+    "name": "candidate_39_42_fill_capacity_full_4",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": false,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "none",
+    "portal_logs": true,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skipxs_exit_robot.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": -163588.0,
+      "duration_sec": 265.67,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_full_4\\probe_c42_c39_panel_galaxy_skipxs_exit_robot_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skipxs_exit_robot.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": -163672.0,
+      "duration_sec": 260.7,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_full_4\\probe_c42_c39_panel_galaxy_skipxs_exit_robot_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": []
+}

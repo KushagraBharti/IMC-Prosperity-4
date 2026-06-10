@@ -1,0 +1,2434 @@
++--------------------- Traceback (most recent call last) ---------------------+
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\xeeshan-backtester\prosperity4bt\__main__.py:212  |
+| in cli                                                                      |
+|                                                                             |
+|   209                                                                       |
+|   210         reload(trader_module)                                         |
+|   211                                                                       |
+| > 212         result = run_backtest(                                        |
+|   213             trader_module.Trader(),                                   |
+|   214             file_reader,                                              |
+|   215             round_num,                                                |
+|                                                                             |
+| +-------------------------------- locals ---------------------------------+ |
+| |           algorithm = WindowsPath('C:/Users/kushagra/OneDrive/Document… | |
+| |                       Projects/IMC Trading                              | |
+| |                       Comp/ROUND4/research/strategy_experiments/round4… | |
+| |                data = WindowsPath('C:/Users/kushagra/OneDrive/Document… | |
+| |                       Projects/IMC Trading                              | |
+| |                       Comp/ROUND4/research/outputs/strategy_runs/fast_… | |
+| |             day_num = 3                                                 | |
+| |                days = ['4-3']                                           | |
+| |         file_reader = <prosperity4bt.file_reader.FileSystemReader       | |
+| |                       object at 0x000002389477DD30>                     | |
+| |        match_trades = <TradeMatchingMode.all: 'all'>                    | |
+| |           merge_pnl = False                                             | |
+| |              no_out = False                                             | |
+| |         no_progress = True                                              | |
+| | original_timestamps = False                                             | |
+| |                 out = WindowsPath('C:/Users/kushagra/OneDrive/Document… | |
+| |                       Projects/IMC Trading                              | |
+| |                       Comp/ROUND4/research/outputs/strategy_runs/fast_… | |
+| |         output_file = WindowsPath('C:/Users/kushagra/OneDrive/Document… | |
+| |                       Projects/IMC Trading                              | |
+| |                       Comp/ROUND4/research/outputs/strategy_runs/fast_… | |
+| |         parsed_days = [(4, 3)]                                          | |
+| |        print_output = False                                             | |
+| |             results = []                                                | |
+| |           round_num = 4                                                 | |
+| |  show_progress_bars = False                                             | |
+| |       trader_module = <module 'round4_exp_272_vfe_mid_reentry_5250'     | |
+| |                       from                                              | |
+| |                       'C:\\Users\\kushagra\\OneDrive\\Documents\\CS     | |
+| |                       Projects\\IMC Trading                             | |
+| |                       Comp\\ROUND4\\research\\strategy_experiments\\ro… | |
+| |             version = None                                              | |
+| |                 vis = False                                             | |
+| +-------------------------------------------------------------------------+ |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\xeeshan-backtester\prosperity4bt\runner.py:367 in |
+| run_backtest                                                                |
+|                                                                             |
+|   364                 orders, conversions, trader_data = trader.run(state)  |
+|   365         else:                                                         |
+|   366             with redirect_stdout(stdout):                             |
+| > 367                 orders, conversions, trader_data = trader.run(state)  |
+|   368                                                                       |
+|   369         sandbox_row = SandboxLogRow(                                  |
+|   370             timestamp=timestamp,                                      |
+|                                                                             |
+| +-------------------------------- locals ---------------------------------+ |
+| |         conversions = 0                                                 | |
+| |                data = BacktestData(                                     | |
+| |                           round_num=4,                                  | |
+| |                           day_num=3,                                    | |
+| |                           prices=defaultdict(<class 'dict'>, {          | |
+| |                               0: {                                      | |
+| |                                   'VELVETFRUIT_EXTRACT': PriceRow(      | |
+| |                                       day=3,                            | |
+| |                                       timestamp=0,                      | |
+| |                                       product='VELVETFRUIT_EXTRACT',    | |
+| |                                       bid_prices=[5293],                | |
+| |                                       bid_volumes=[64],                 | |
+| |                                       ask_prices=[5298, 5299],          | |
+| |                                       ask_volumes=[22, 42],             | |
+| |                                       mid_price=5295.5,                 | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=0,                      | |
+| |                                       product='VEV_4000',               | |
+| |                                       bid_prices=[1285, 1282],          | |
+| |                                       bid_volumes=[9, 30],              | |
+| |                                       ask_prices=[1307, 1309],          | |
+| |                                       ask_volumes=[9, 30],              | |
+| |                                       mid_price=1296.0,                 | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_5100': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=0,                      | |
+| |                                       product='VEV_5100',               | |
+| |                                       bid_prices=[199],                 | |
+| |                                       bid_volumes=[21],                 | |
+| |                                       ask_prices=[204, 205],            | |
+| |                                       ask_volumes=[7, 14],              | |
+| |                                       mid_price=201.5,                  | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_5200': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=0,                      | |
+| |                                       product='VEV_5200',               | |
+| |                                       bid_prices=[118, 117],            | |
+| |                                       bid_volumes=[7, 14],              | |
+| |                                       ask_prices=[121],                 | |
+| |                                       ask_volumes=[21],                 | |
+| |                                       mid_price=119.5,                  | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_5000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=0,                      | |
+| |                                       product='VEV_5000',               | |
+| |                                       bid_prices=[293],                 | |
+| |                                       bid_volumes=[21],                 | |
+| |                                       ask_prices=[300, 301],            | |
+| |                                       ask_volumes=[7, 14],              | |
+| |                                       mid_price=296.5,                  | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_6000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=0,                      | |
+| |                                       product='VEV_6000',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[21],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[21],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_5500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=0,                      | |
+| |                                       product='VEV_5500',               | |
+| |                                       bid_prices=[6],                   | |
+| |                                       bid_volumes=[21],                 | |
+| |                                       ask_prices=[8],                   | |
+| |                                       ask_volumes=[21],                 | |
+| |                                       mid_price=7.0,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'HYDROGEL_PACK': PriceRow(            | |
+| |                                       day=3,                            | |
+| |                                       timestamp=0,                      | |
+| |                                       product='HYDROGEL_PACK',          | |
+| |                                       bid_prices=[10000, 9998],         | |
+| |                                       bid_volumes=[10, 25],             | |
+| |                                       ask_prices=[10016, 10019],        | |
+| |                                       ask_volumes=[10, 25],             | |
+| |                                       mid_price=10008.0,                | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=0,                      | |
+| |                                       product='VEV_4500',               | |
+| |                                       bid_prices=[787, 785],            | |
+| |                                       bid_volumes=[7, 14],              | |
+| |                                       ask_prices=[804, 806],            | |
+| |                                       ask_volumes=[7, 14],              | |
+| |                                       mid_price=795.5,                  | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_6500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=0,                      | |
+| |                                       product='VEV_6500',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[11],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[11],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   ... +2                                | |
+| |                               },                                        | |
+| |                               100: {                                    | |
+| |                                   'VELVETFRUIT_EXTRACT': PriceRow(      | |
+| |                                       day=3,                            | |
+| |                                       timestamp=100,                    | |
+| |                                       product='VELVETFRUIT_EXTRACT',    | |
+| |                                       bid_prices=[5294, 5293],          | |
+| |                                       bid_volumes=[16, 37],             | |
+| |                                       ask_prices=[5299],                | |
+| |                                       ask_volumes=[53],                 | |
+| |                                       mid_price=5296.5,                 | |
+| |                                       profit_loss=-203.0                | |
+| |                                   ),                                    | |
+| |                                   'HYDROGEL_PACK': PriceRow(            | |
+| |                                       day=3,                            | |
+| |                                       timestamp=100,                    | |
+| |                                       product='HYDROGEL_PACK',          | |
+| |                                       bid_prices=[10000, 9997],         | |
+| |                                       bid_volumes=[11, 28],             | |
+| |                                       ask_prices=[10016, 10018],        | |
+| |                                       ask_volumes=[11, 28],             | |
+| |                                       mid_price=10008.0,                | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=100,                    | |
+| |                                       product='VEV_4000',               | |
+| |                                       bid_prices=[1296, 1285, 1283],    | |
+| |                                       bid_volumes=[4, 8, 20],           | |
+| |                                       ask_prices=[1307, 1310],          | |
+| |                                       ask_volumes=[8, 20],              | |
+| |                                       mid_price=1301.5,                 | |
+| |                                       profit_loss=-525.703125           | |
+| |                                   ),                                    | |
+| |                                   'VEV_5100': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=100,                    | |
+| |                                       product='VEV_5100',               | |
+| |                                       bid_prices=[202, 200, 199],       | |
+| |                                       bid_volumes=[4, 7, 20],           | |
+| |                                       ask_prices=[205],                 | |
+| |                                       ask_volumes=[27],                 | |
+| |                                       mid_price=203.5,                  | |
+| |                                       profit_loss=-66.0283203125        | |
+| |                                   ),                                    | |
+| |                                   'VEV_5200': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=100,                    | |
+| |                                       product='VEV_5200',               | |
+| |                                       bid_prices=[119, 118],            | |
+| |                                       bid_volumes=[4, 27],              | |
+| |                                       ask_prices=[121, 122],            | |
+| |                                       ask_volumes=[7, 20],              | |
+| |                                       mid_price=120.0,                  | |
+| |                                       profit_loss=-49.6669921875        | |
+| |                                   ),                                    | |
+| |                                   'VEV_5000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=100,                    | |
+| |                                       product='VEV_5000',               | |
+| |                                       bid_prices=[297, 294, 293],       | |
+| |                                       bid_volumes=[4, 7, 20],           | |
+| |                                       ask_prices=[301, 302],            | |
+| |                                       ask_volumes=[7, 20],              | |
+| |                                       mid_price=299.0,                  | |
+| |                                       profit_loss=-92.16015625          | |
+| |                                   ),                                    | |
+| |                                   'VEV_6000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=100,                    | |
+| |                                       product='VEV_6000',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[22],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[18],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_5500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=100,                    | |
+| |                                       product='VEV_5500',               | |
+| |                                       bid_prices=[7, 6],                | |
+| |                                       bid_volumes=[4, 18],              | |
+| |                                       ask_prices=[8],                   | |
+| |                                       ask_volumes=[18],                 | |
+| |                                       mid_price=7.5,                    | |
+| |                                       profit_loss=-20.867523193359375   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=100,                    | |
+| |                                       product='VEV_4500',               | |
+| |                                       bid_prices=[796, 788, 786],       | |
+| |                                       bid_volumes=[4, 7, 20],           | |
+| |                                       ask_prices=[805, 807],            | |
+| |                                       ask_volumes=[7, 20],              | |
+| |                                       mid_price=800.5,                  | |
+| |                                       profit_loss=-220.607421875        | |
+| |                                   ),                                    | |
+| |                                   'VEV_6500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=100,                    | |
+| |                                       product='VEV_6500',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[18],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[14],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   ... +2                                | |
+| |                               },                                        | |
+| |                               200: {                                    | |
+| |                                   'VEV_4000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=200,                    | |
+| |                                       product='VEV_4000',               | |
+| |                                       bid_prices=[1286, 1283],          | |
+| |                                       bid_volumes=[14, 25],             | |
+| |                                       ask_prices=[1307, 1310],          | |
+| |                                       ask_volumes=[14, 25],             | |
+| |                                       mid_price=1296.5,                 | |
+| |                                       profit_loss=-906.0078125          | |
+| |                                   ),                                    | |
+| |                                   'VEV_5100': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=200,                    | |
+| |                                       product='VEV_5100',               | |
+| |                                       bid_prices=[200, 199],            | |
+| |                                       bid_volumes=[6, 14],              | |
+| |                                       ask_prices=[205, 206],            | |
+| |                                       ask_volumes=[6, 14],              | |
+| |                                       mid_price=202.5,                  | |
+| |                                       profit_loss=-162.8701171875       | |
+| |                                   ),                                    | |
+| |                                   'VEV_5200': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=200,                    | |
+| |                                       product='VEV_5200',               | |
+| |                                       bid_prices=[118],                 | |
+| |                                       bid_volumes=[20],                 | |
+| |                                       ask_prices=[122],                 | |
+| |                                       ask_volumes=[20],                 | |
+| |                                       mid_price=120.0,                  | |
+| |                                       profit_loss=-113.5390625          | |
+| |                                   ),                                    | |
+| |                                   'VEV_5000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=200,                    | |
+| |                                       product='VEV_5000',               | |
+| |                                       bid_prices=[294],                 | |
+| |                                       bid_volumes=[20],                 | |
+| |                                       ask_prices=[301, 302],            | |
+| |                                       ask_volumes=[6, 14],              | |
+| |                                       mid_price=297.5,                  | |
+| |                                       profit_loss=-224.625              | |
+| |                                   ),                                    | |
+| |                                   'VEV_6000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=200,                    | |
+| |                                       product='VEV_6000',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[21],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[21],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_5500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=200,                    | |
+| |                                       product='VEV_5500',               | |
+| |                                       bid_prices=[7, 6],                | |
+| |                                       bid_volumes=[7, 14],              | |
+| |                                       ask_prices=[8],                   | |
+| |                                       ask_volumes=[21],                 | |
+| |                                       mid_price=7.5,                    | |
+| |                                       profit_loss=-41.64178466796875    | |
+| |                                   ),                                    | |
+| |                                   'HYDROGEL_PACK': PriceRow(            | |
+| |                                       day=3,                            | |
+| |                                       timestamp=200,                    | |
+| |                                       product='HYDROGEL_PACK',          | |
+| |                                       bid_prices=[10000, 9997],         | |
+| |                                       bid_volumes=[10, 20],             | |
+| |                                       ask_prices=[10016, 10018],        | |
+| |                                       ask_volumes=[10, 20],             | |
+| |                                       mid_price=10008.0,                | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=200,                    | |
+| |                                       product='VEV_4500',               | |
+| |                                       bid_prices=[788, 786],            | |
+| |                                       bid_volumes=[6, 14],              | |
+| |                                       ask_prices=[805, 807],            | |
+| |                                       ask_volumes=[6, 14],              | |
+| |                                       mid_price=796.5,                  | |
+| |                                       profit_loss=-501.5703125          | |
+| |                                   ),                                    | |
+| |                                   'VEV_6500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=200,                    | |
+| |                                       product='VEV_6500',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[14],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[14],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_5300': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=200,                    | |
+| |                                       product='VEV_5300',               | |
+| |                                       bid_prices=[57],                  | |
+| |                                       bid_volumes=[21],                 | |
+| |                                       ask_prices=[60],                  | |
+| |                                       ask_volumes=[21],                 | |
+| |                                       mid_price=58.5,                   | |
+| |                                       profit_loss=-68.833251953125      | |
+| |                                   ),                                    | |
+| |                                   ... +2                                | |
+| |                               },                                        | |
+| |                               300: {                                    | |
+| |                                   'VEV_5500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=300,                    | |
+| |                                       product='VEV_5500',               | |
+| |                                       bid_prices=[6],                   | |
+| |                                       bid_volumes=[27],                 | |
+| |                                       ask_prices=[8],                   | |
+| |                                       ask_volumes=[27],                 | |
+| |                                       mid_price=7.0,                    | |
+| |                                       profit_loss=-56.972686767578125   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=300,                    | |
+| |                                       product='VEV_4500',               | |
+| |                                       bid_prices=[788, 786],            | |
+| |                                       bid_volumes=[7, 18],              | |
+| |                                       ask_prices=[805, 807],            | |
+| |                                       ask_volumes=[7, 18],              | |
+| |                                       mid_price=796.5,                  | |
+| |                                       profit_loss=-687.51171875         | |
+| |                                   ),                                    | |
+| |                                   'VEV_6500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=300,                    | |
+| |                                       product='VEV_6500',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[19],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[19],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_5300': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=300,                    | |
+| |                                       product='VEV_5300',               | |
+| |                                       bid_prices=[57],                  | |
+| |                                       bid_volumes=[27],                 | |
+| |                                       ask_prices=[60],                  | |
+| |                                       ask_volumes=[27],                 | |
+| |                                       mid_price=58.5,                   | |
+| |                                       profit_loss=-98.985107421875      | |
+| |                                   ),                                    | |
+| |                                   'VEV_5400': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=300,                    | |
+| |                                       product='VEV_5400',               | |
+| |                                       bid_prices=[20],                  | |
+| |                                       bid_volumes=[27],                 | |
+| |                                       ask_prices=[21],                  | |
+| |                                       ask_volumes=[27],                 | |
+| |                                       mid_price=20.5,                   | |
+| |                                       profit_loss=-29.010498046875      | |
+| |                                   ),                                    | |
+| |                                   'VELVETFRUIT_EXTRACT': PriceRow(      | |
+| |                                       day=3,                            | |
+| |                                       timestamp=300,                    | |
+| |                                       product='VELVETFRUIT_EXTRACT',    | |
+| |                                       bid_prices=[5294, 5293],          | |
+| |                                       bid_volumes=[23, 42],             | |
+| |                                       ask_prices=[5299, 5300],          | |
+| |                                       ask_volumes=[23, 42],             | |
+| |                                       mid_price=5296.5,                 | |
+| |                                       profit_loss=-566.875              | |
+| |                                   ),                                    | |
+| |                                   'HYDROGEL_PACK': PriceRow(            | |
+| |                                       day=3,                            | |
+| |                                       timestamp=300,                    | |
+| |                                       product='HYDROGEL_PACK',          | |
+| |                                       bid_prices=[9996, 9994],          | |
+| |                                       bid_volumes=[10, 20],             | |
+| |                                       ask_prices=[10012, 10015],        | |
+| |                                       ask_volumes=[10, 20],             | |
+| |                                       mid_price=10004.0,                | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=300,                    | |
+| |                                       product='VEV_4000',               | |
+| |                                       bid_prices=[1285, 1283],          | |
+| |                                       bid_volumes=[13, 22],             | |
+| |                                       ask_prices=[1307, 1310],          | |
+| |                                       ask_volumes=[13, 22],             | |
+| |                                       mid_price=1296.0,                 | |
+| |                                       profit_loss=-1372.5               | |
+| |                                   ),                                    | |
+| |                                   'VEV_5100': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=300,                    | |
+| |                                       product='VEV_5100',               | |
+| |                                       bid_prices=[200, 199],            | |
+| |                                       bid_volumes=[7, 18],              | |
+| |                                       ask_prices=[205],                 | |
+| |                                       ask_volumes=[25],                 | |
+| |                                       mid_price=202.5,                  | |
+| |                                       profit_loss=-215.015625           | |
+| |                                   ),                                    | |
+| |                                   'VEV_5200': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=300,                    | |
+| |                                       product='VEV_5200',               | |
+| |                                       bid_prices=[118],                 | |
+| |                                       bid_volumes=[25],                 | |
+| |                                       ask_prices=[122],                 | |
+| |                                       ask_volumes=[25],                 | |
+| |                                       mid_price=120.0,                  | |
+| |                                       profit_loss=-143.021484375        | |
+| |                                   ),                                    | |
+| |                                   ... +2                                | |
+| |                               },                                        | |
+| |                               400: {                                    | |
+| |                                   'VELVETFRUIT_EXTRACT': PriceRow(      | |
+| |                                       day=3,                            | |
+| |                                       timestamp=400,                    | |
+| |                                       product='VELVETFRUIT_EXTRACT',    | |
+| |                                       bid_prices=[5293, 5292],          | |
+| |                                       bid_volumes=[15, 47],             | |
+| |                                       ask_prices=[5298, 5299],          | |
+| |                                       ask_volumes=[15, 47],             | |
+| |                                       mid_price=5295.5,                 | |
+| |                                       profit_loss=-427.5                | |
+| |                                   ),                                    | |
+| |                                   'VEV_4000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=400,                    | |
+| |                                       product='VEV_4000',               | |
+| |                                       bid_prices=[1285, 1282],          | |
+| |                                       bid_volumes=[12, 21],             | |
+| |                                       ask_prices=[1306, 1309],          | |
+| |                                       ask_volumes=[12, 21],             | |
+| |                                       mid_price=1295.5,                 | |
+| |                                       profit_loss=-1677.203125          | |
+| |                                   ),                                    | |
+| |                                   'VEV_5200': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=400,                    | |
+| |                                       product='VEV_5200',               | |
+| |                                       bid_prices=[117],                 | |
+| |                                       bid_volumes=[24],                 | |
+| |                                       ask_prices=[121],                 | |
+| |                                       ask_volumes=[24],                 | |
+| |                                       mid_price=119.0,                  | |
+| |                                       profit_loss=-119.9921875          | |
+| |                                   ),                                    | |
+| |                                   'VEV_5100': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=400,                    | |
+| |                                       product='VEV_5100',               | |
+| |                                       bid_prices=[199, 198],            | |
+| |                                       bid_volumes=[11, 13],             | |
+| |                                       ask_prices=[204],                 | |
+| |                                       ask_volumes=[24],                 | |
+| |                                       mid_price=201.5,                  | |
+| |                                       profit_loss=-207.72265625         | |
+| |                                   ),                                    | |
+| |                                   'VEV_5000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=400,                    | |
+| |                                       product='VEV_5000',               | |
+| |                                       bid_prices=[293, 292],            | |
+| |                                       bid_volumes=[11, 13],             | |
+| |                                       ask_prices=[300, 301],            | |
+| |                                       ask_volumes=[11, 13],             | |
+| |                                       mid_price=296.5,                  | |
+| |                                       profit_loss=-304.525390625        | |
+| |                                   ),                                    | |
+| |                                   'VEV_6000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=400,                    | |
+| |                                       product='VEV_6000',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[28],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[28],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'HYDROGEL_PACK': PriceRow(            | |
+| |                                       day=3,                            | |
+| |                                       timestamp=400,                    | |
+| |                                       product='HYDROGEL_PACK',          | |
+| |                                       bid_prices=[9995, 9993],          | |
+| |                                       bid_volumes=[11, 30],             | |
+| |                                       ask_prices=[10011, 10014],        | |
+| |                                       ask_volumes=[11, 30],             | |
+| |                                       mid_price=10003.0,                | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=400,                    | |
+| |                                       product='VEV_4500',               | |
+| |                                       bid_prices=[787, 785],            | |
+| |                                       bid_volumes=[11, 13],             | |
+| |                                       ask_prices=[804, 806],            | |
+| |                                       ask_volumes=[11, 13],             | |
+| |                                       mid_price=795.5,                  | |
+| |                                       profit_loss=-840.953125           | |
+| |                                   ),                                    | |
+| |                                   'VEV_5500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=400,                    | |
+| |                                       product='VEV_5500',               | |
+| |                                       bid_prices=[6],                   | |
+| |                                       bid_volumes=[28],                 | |
+| |                                       ask_prices=[8],                   | |
+| |                                       ask_volumes=[28],                 | |
+| |                                       mid_price=7.0,                    | |
+| |                                       profit_loss=-70.786376953125      | |
+| |                                   ),                                    | |
+| |                                   'VEV_5400': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=400,                    | |
+| |                                       product='VEV_5400',               | |
+| |                                       bid_prices=[19],                  | |
+| |                                       bid_volumes=[28],                 | |
+| |                                       ask_prices=[21],                  | |
+| |                                       ask_volumes=[28],                 | |
+| |                                       mid_price=20.0,                   | |
+| |                                       profit_loss=-19.8626708984375     | |
+| |                                   ),                                    | |
+| |                                   ... +2                                | |
+| |                               },                                        | |
+| |                               500: {                                    | |
+| |                                   'VELVETFRUIT_EXTRACT': PriceRow(      | |
+| |                                       day=3,                            | |
+| |                                       timestamp=500,                    | |
+| |                                       product='VELVETFRUIT_EXTRACT',    | |
+| |                                       bid_prices=[5292],                | |
+| |                                       bid_volumes=[52],                 | |
+| |                                       ask_prices=[5297, 5298],          | |
+| |                                       ask_volumes=[16, 36],             | |
+| |                                       mid_price=5294.5,                 | |
+| |                                       profit_loss=-309.5                | |
+| |                                   ),                                    | |
+| |                                   'HYDROGEL_PACK': PriceRow(            | |
+| |                                       day=3,                            | |
+| |                                       timestamp=500,                    | |
+| |                                       product='HYDROGEL_PACK',          | |
+| |                                       bid_prices=[9998, 9995],          | |
+| |                                       bid_volumes=[10, 22],             | |
+| |                                       ask_prices=[10014, 10016],        | |
+| |                                       ask_volumes=[10, 22],             | |
+| |                                       mid_price=10006.0,                | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=500,                    | |
+| |                                       product='VEV_4000',               | |
+| |                                       bid_prices=[1284, 1281],          | |
+| |                                       bid_volumes=[15, 27],             | |
+| |                                       ask_prices=[1306, 1308],          | |
+| |                                       ask_volumes=[15, 27],             | |
+| |                                       mid_price=1295.0,                 | |
+| |                                       profit_loss=-1966.375             | |
+| |                                   ),                                    | |
+| |                                   'VEV_5200': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=500,                    | |
+| |                                       product='VEV_5200',               | |
+| |                                       bid_prices=[117],                 | |
+| |                                       bid_volumes=[26],                 | |
+| |                                       ask_prices=[120, 121],            | |
+| |                                       ask_volumes=[8, 18],              | |
+| |                                       mid_price=118.5,                  | |
+| |                                       profit_loss=-120.671875           | |
+| |                                   ),                                    | |
+| |                                   'VEV_5100': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=500,                    | |
+| |                                       product='VEV_5100',               | |
+| |                                       bid_prices=[198],                 | |
+| |                                       bid_volumes=[26],                 | |
+| |                                       ask_prices=[203, 204],            | |
+| |                                       ask_volumes=[8, 18],              | |
+| |                                       mid_price=200.5,                  | |
+| |                                       profit_loss=-215.0546875          | |
+| |                                   ),                                    | |
+| |                                   'VEV_5000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=500,                    | |
+| |                                       product='VEV_5000',               | |
+| |                                       bid_prices=[293, 292],            | |
+| |                                       bid_volumes=[8, 18],              | |
+| |                                       ask_prices=[300],                 | |
+| |                                       ask_volumes=[26],                 | |
+| |                                       mid_price=296.5,                  | |
+| |                                       profit_loss=-335.19140625         | |
+| |                                   ),                                    | |
+| |                                   'VEV_6000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=500,                    | |
+| |                                       product='VEV_6000',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[26],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[26],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=500,                    | |
+| |                                       product='VEV_4500',               | |
+| |                                       bid_prices=[786, 784],            | |
+| |                                       bid_volumes=[8, 18],              | |
+| |                                       ask_prices=[803, 805],            | |
+| |                                       ask_volumes=[8, 18],              | |
+| |                                       mid_price=794.5,                  | |
+| |                                       profit_loss=-997.7421875          | |
+| |                                   ),                                    | |
+| |                                   'VEV_5500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=500,                    | |
+| |                                       product='VEV_5500',               | |
+| |                                       bid_prices=[6],                   | |
+| |                                       bid_volumes=[26],                 | |
+| |                                       ask_prices=[8],                   | |
+| |                                       ask_volumes=[26],                 | |
+| |                                       mid_price=7.0,                    | |
+| |                                       profit_loss=-66.0025634765625     | |
+| |                                   ),                                    | |
+| |                                   'VEV_5400': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=500,                    | |
+| |                                       product='VEV_5400',               | |
+| |                                       bid_prices=[19],                  | |
+| |                                       bid_volumes=[26],                 | |
+| |                                       ask_prices=[21],                  | |
+| |                                       ask_volumes=[26],                 | |
+| |                                       mid_price=20.0,                   | |
+| |                                       profit_loss=-37.9306640625        | |
+| |                                   ),                                    | |
+| |                                   ... +2                                | |
+| |                               },                                        | |
+| |                               600: {                                    | |
+| |                                   'VEV_4000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=600,                    | |
+| |                                       product='VEV_4000',               | |
+| |                                       bid_prices=[1284, 1282],          | |
+| |                                       bid_volumes=[13, 21],             | |
+| |                                       ask_prices=[1306, 1309],          | |
+| |                                       ask_volumes=[13, 21],             | |
+| |                                       mid_price=1295.0,                 | |
+| |                                       profit_loss=-2219.3125            | |
+| |                                   ),                                    | |
+| |                                   'VEV_5200': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=600,                    | |
+| |                                       product='VEV_5200',               | |
+| |                                       bid_prices=[117],                 | |
+| |                                       bid_volumes=[20],                 | |
+| |                                       ask_prices=[121],                 | |
+| |                                       ask_volumes=[20],                 | |
+| |                                       mid_price=119.0,                  | |
+| |                                       profit_loss=-222.35546875         | |
+| |                                   ),                                    | |
+| |                                   'VEV_5100': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=600,                    | |
+| |                                       product='VEV_5100',               | |
+| |                                       bid_prices=[199, 198],            | |
+| |                                       bid_volumes=[7, 13],              | |
+| |                                       ask_prices=[204],                 | |
+| |                                       ask_volumes=[20],                 | |
+| |                                       mid_price=201.5,                  | |
+| |                                       profit_loss=-353.8828125          | |
+| |                                   ),                                    | |
+| |                                   'VEV_5000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=600,                    | |
+| |                                       product='VEV_5000',               | |
+| |                                       bid_prices=[293, 292],            | |
+| |                                       bid_volumes=[7, 13],              | |
+| |                                       ask_prices=[300, 301],            | |
+| |                                       ask_volumes=[7, 13],              | |
+| |                                       mid_price=296.5,                  | |
+| |                                       profit_loss=-500.75390625         | |
+| |                                   ),                                    | |
+| |                                   'VEV_6000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=600,                    | |
+| |                                       product='VEV_6000',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[29],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[29],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'HYDROGEL_PACK': PriceRow(            | |
+| |                                       day=3,                            | |
+| |                                       timestamp=600,                    | |
+| |                                       product='HYDROGEL_PACK',          | |
+| |                                       bid_prices=[9999, 9996],          | |
+| |                                       bid_volumes=[12, 29],             | |
+| |                                       ask_prices=[10015, 10017],        | |
+| |                                       ask_volumes=[12, 29],             | |
+| |                                       mid_price=10007.0,                | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=600,                    | |
+| |                                       product='VEV_4500',               | |
+| |                                       bid_prices=[787, 785],            | |
+| |                                       bid_volumes=[7, 13],              | |
+| |                                       ask_prices=[804, 806],            | |
+| |                                       ask_volumes=[7, 13],              | |
+| |                                       mid_price=795.5,                  | |
+| |                                       profit_loss=-1332.6328125         | |
+| |                                   ),                                    | |
+| |                                   'VEV_5500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=600,                    | |
+| |                                       product='VEV_5500',               | |
+| |                                       bid_prices=[6],                   | |
+| |                                       bid_volumes=[29],                 | |
+| |                                       ask_prices=[8],                   | |
+| |                                       ask_volumes=[29],                 | |
+| |                                       mid_price=7.0,                    | |
+| |                                       profit_loss=-69.17486572265625    | |
+| |                                   ),                                    | |
+| |                                   'VEV_5400': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=600,                    | |
+| |                                       product='VEV_5400',               | |
+| |                                       bid_prices=[19],                  | |
+| |                                       bid_volumes=[29],                 | |
+| |                                       ask_prices=[21],                  | |
+| |                                       ask_volumes=[29],                 | |
+| |                                       mid_price=20.0,                   | |
+| |                                       profit_loss=-88.231689453125      | |
+| |                                   ),                                    | |
+| |                                   'VEV_6500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=600,                    | |
+| |                                       product='VEV_6500',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[18],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[18],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   ... +2                                | |
+| |                               },                                        | |
+| |                               700: {                                    | |
+| |                                   'VEV_4500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=700,                    | |
+| |                                       product='VEV_4500',               | |
+| |                                       bid_prices=[787, 785],            | |
+| |                                       bid_volumes=[8, 12],              | |
+| |                                       ask_prices=[804, 806],            | |
+| |                                       ask_volumes=[8, 12],              | |
+| |                                       mid_price=795.5,                  | |
+| |                                       profit_loss=-1626.625             | |
+| |                                   ),                                    | |
+| |                                   'VEV_5500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=700,                    | |
+| |                                       product='VEV_5500',               | |
+| |                                       bid_prices=[6],                   | |
+| |                                       bid_volumes=[23],                 | |
+| |                                       ask_prices=[8],                   | |
+| |                                       ask_volumes=[23],                 | |
+| |                                       mid_price=7.0,                    | |
+| |                                       profit_loss=-74.13214111328125    | |
+| |                                   ),                                    | |
+| |                                   'VEV_5400': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=700,                    | |
+| |                                       product='VEV_5400',               | |
+| |                                       bid_prices=[20],                  | |
+| |                                       bid_volumes=[23],                 | |
+| |                                       ask_prices=[21],                  | |
+| |                                       ask_volumes=[23],                 | |
+| |                                       mid_price=20.5,                   | |
+| |                                       profit_loss=-153.720458984375     | |
+| |                                   ),                                    | |
+| |                                   'VEV_6500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=700,                    | |
+| |                                       product='VEV_6500',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[13],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[13],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_5300': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=700,                    | |
+| |                                       product='VEV_5300',               | |
+| |                                       bid_prices=[57],                  | |
+| |                                       bid_volumes=[23],                 | |
+| |                                       ask_prices=[60],                  | |
+| |                                       ask_volumes=[23],                 | |
+| |                                       mid_price=58.5,                   | |
+| |                                       profit_loss=-242.4130859375       | |
+| |                                   ),                                    | |
+| |                                   'VELVETFRUIT_EXTRACT': PriceRow(      | |
+| |                                       day=3,                            | |
+| |                                       timestamp=700,                    | |
+| |                                       product='VELVETFRUIT_EXTRACT',    | |
+| |                                       bid_prices=[5293],                | |
+| |                                       bid_volumes=[53],                 | |
+| |                                       ask_prices=[5299],                | |
+| |                                       ask_volumes=[53],                 | |
+| |                                       mid_price=5296.0,                 | |
+| |                                       profit_loss=-525.75               | |
+| |                                   ),                                    | |
+| |                                   'HYDROGEL_PACK': PriceRow(            | |
+| |                                       day=3,                            | |
+| |                                       timestamp=700,                    | |
+| |                                       product='HYDROGEL_PACK',          | |
+| |                                       bid_prices=[9997, 9994],          | |
+| |                                       bid_volumes=[13, 29],             | |
+| |                                       ask_prices=[10013, 10015],        | |
+| |                                       ask_volumes=[13, 29],             | |
+| |                                       mid_price=10005.0,                | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=700,                    | |
+| |                                       product='VEV_4000',               | |
+| |                                       bid_prices=[1285, 1282],          | |
+| |                                       bid_volumes=[14, 29],             | |
+| |                                       ask_prices=[1307, 1309],          | |
+| |                                       ask_volumes=[14, 29],             | |
+| |                                       mid_price=1296.0,                 | |
+| |                                       profit_loss=-2491.34375           | |
+| |                                   ),                                    | |
+| |                                   'VEV_5200': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=700,                    | |
+| |                                       product='VEV_5200',               | |
+| |                                       bid_prices=[118],                 | |
+| |                                       bid_volumes=[20],                 | |
+| |                                       ask_prices=[121, 122],            | |
+| |                                       ask_volumes=[8, 12],              | |
+| |                                       mid_price=119.5,                  | |
+| |                                       profit_loss=-342.67578125         | |
+| |                                   ),                                    | |
+| |                                   'VEV_5100': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=700,                    | |
+| |                                       product='VEV_5100',               | |
+| |                                       bid_prices=[199],                 | |
+| |                                       bid_volumes=[20],                 | |
+| |                                       ask_prices=[204, 205],            | |
+| |                                       ask_volumes=[8, 12],              | |
+| |                                       mid_price=201.5,                  | |
+| |                                       profit_loss=-507.30078125         | |
+| |                                   ),                                    | |
+| |                                   ... +2                                | |
+| |                               },                                        | |
+| |                               800: {                                    | |
+| |                                   'VELVETFRUIT_EXTRACT': PriceRow(      | |
+| |                                       day=3,                            | |
+| |                                       timestamp=800,                    | |
+| |                                       product='VELVETFRUIT_EXTRACT',    | |
+| |                                       bid_prices=[5295, 5294],          | |
+| |                                       bid_volumes=[23, 37],             | |
+| |                                       ask_prices=[5300],                | |
+| |                                       ask_volumes=[60],                 | |
+| |                                       mid_price=5297.5,                 | |
+| |                                       profit_loss=-788.125              | |
+| |                                   ),                                    | |
+| |                                   'VEV_4000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=800,                    | |
+| |                                       product='VEV_4000',               | |
+| |                                       bid_prices=[1286, 1284],          | |
+| |                                       bid_volumes=[10, 20],             | |
+| |                                       ask_prices=[1308, 1311],          | |
+| |                                       ask_volumes=[10, 20],             | |
+| |                                       mid_price=1297.0,                 | |
+| |                                       profit_loss=-2931.375             | |
+| |                                   ),                                    | |
+| |                                   'VEV_5200': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=800,                    | |
+| |                                       product='VEV_5200',               | |
+| |                                       bid_prices=[119],                 | |
+| |                                       bid_volumes=[28],                 | |
+| |                                       ask_prices=[122, 123],            | |
+| |                                       ask_volumes=[6, 22],              | |
+| |                                       mid_price=120.5,                  | |
+| |                                       profit_loss=-552.5625             | |
+| |                                   ),                                    | |
+| |                                   'VEV_5100': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=800,                    | |
+| |                                       product='VEV_5100',               | |
+| |                                       bid_prices=[201, 200],            | |
+| |                                       bid_volumes=[6, 22],              | |
+| |                                       ask_prices=[206],                 | |
+| |                                       ask_volumes=[28],                 | |
+| |                                       mid_price=203.5,                  | |
+| |                                       profit_loss=-786.734375           | |
+| |                                   ),                                    | |
+| |                                   'VEV_5000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=800,                    | |
+| |                                       product='VEV_5000',               | |
+| |                                       bid_prices=[295, 294],            | |
+| |                                       bid_volumes=[6, 22],              | |
+| |                                       ask_prices=[302, 303],            | |
+| |                                       ask_volumes=[6, 22],              | |
+| |                                       mid_price=298.5,                  | |
+| |                                       profit_loss=-997.7890625          | |
+| |                                   ),                                    | |
+| |                                   'VEV_6000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=800,                    | |
+| |                                       product='VEV_6000',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[15],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[15],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=800,                    | |
+| |                                       product='VEV_4500',               | |
+| |                                       bid_prices=[789, 787],            | |
+| |                                       bid_volumes=[6, 22],              | |
+| |                                       ask_prices=[806, 808],            | |
+| |                                       ask_volumes=[6, 22],              | |
+| |                                       mid_price=797.5,                  | |
+| |                                       profit_loss=-2074.15625           | |
+| |                                   ),                                    | |
+| |                                   'VEV_5500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=800,                    | |
+| |                                       product='VEV_5500',               | |
+| |                                       bid_prices=[7],                   | |
+| |                                       bid_volumes=[15],                 | |
+| |                                       ask_prices=[8],                   | |
+| |                                       ask_volumes=[15],                 | |
+| |                                       mid_price=7.5,                    | |
+| |                                       profit_loss=-84.7254638671875     | |
+| |                                   ),                                    | |
+| |                                   'VEV_5400': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=800,                    | |
+| |                                       product='VEV_5400',               | |
+| |                                       bid_prices=[20],                  | |
+| |                                       bid_volumes=[15],                 | |
+| |                                       ask_prices=[21, 22],              | |
+| |                                       ask_volumes=[5, 10],              | |
+| |                                       mid_price=20.5,                   | |
+| |                                       profit_loss=-228.571533203125     | |
+| |                                   ),                                    | |
+| |                                   'VEV_6500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=800,                    | |
+| |                                       product='VEV_6500',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[19],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[19],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   ... +2                                | |
+| |                               },                                        | |
+| |                               900: {                                    | |
+| |                                   'VELVETFRUIT_EXTRACT': PriceRow(      | |
+| |                                       day=3,                            | |
+| |                                       timestamp=900,                    | |
+| |                                       product='VELVETFRUIT_EXTRACT',    | |
+| |                                       bid_prices=[5296, 5294],          | |
+| |                                       bid_volumes=[10, 46],             | |
+| |                                       ask_prices=[5299, 5300],          | |
+| |                                       ask_volumes=[16, 30],             | |
+| |                                       mid_price=5297.5,                 | |
+| |                                       profit_loss=-681.625              | |
+| |                                   ),                                    | |
+| |                                   'HYDROGEL_PACK': PriceRow(            | |
+| |                                       day=3,                            | |
+| |                                       timestamp=900,                    | |
+| |                                       product='HYDROGEL_PACK',          | |
+| |                                       bid_prices=[9992, 9989],          | |
+| |                                       bid_volumes=[14, 24],             | |
+| |                                       ask_prices=[10008, 10010],        | |
+| |                                       ask_volumes=[14, 24],             | |
+| |                                       mid_price=10000.0,                | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_5200': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=900,                    | |
+| |                                       product='VEV_5200',               | |
+| |                                       bid_prices=[118],                 | |
+| |                                       bid_volumes=[22],                 | |
+| |                                       ask_prices=[122],                 | |
+| |                                       ask_volumes=[22],                 | |
+| |                                       mid_price=120.0,                  | |
+| |                                       profit_loss=-508.9296875          | |
+| |                                   ),                                    | |
+| |                                   'VEV_4000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=900,                    | |
+| |                                       product='VEV_4000',               | |
+| |                                       bid_prices=[1286, 1283],          | |
+| |                                       bid_volumes=[11, 19],             | |
+| |                                       ask_prices=[1308, 1310],          | |
+| |                                       ask_volumes=[11, 19],             | |
+| |                                       mid_price=1297.0,                 | |
+| |                                       profit_loss=-2921.6875            | |
+| |                                   ),                                    | |
+| |                                   'VEV_5100': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=900,                    | |
+| |                                       product='VEV_5100',               | |
+| |                                       bid_prices=[200],                 | |
+| |                                       bid_volumes=[22],                 | |
+| |                                       ask_prices=[205, 206],            | |
+| |                                       ask_volumes=[9, 13],              | |
+| |                                       mid_price=202.5,                  | |
+| |                                       profit_loss=-762.203125           | |
+| |                                   ),                                    | |
+| |                                   'VEV_5000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=900,                    | |
+| |                                       product='VEV_5000',               | |
+| |                                       bid_prices=[294],                 | |
+| |                                       bid_volumes=[22],                 | |
+| |                                       ask_prices=[301, 302],            | |
+| |                                       ask_volumes=[9, 13],              | |
+| |                                       mid_price=297.5,                  | |
+| |                                       profit_loss=-1003.0               | |
+| |                                   ),                                    | |
+| |                                   'VEV_6000': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=900,                    | |
+| |                                       product='VEV_6000',               | |
+| |                                       bid_prices=[0],                   | |
+| |                                       bid_volumes=[22],                 | |
+| |                                       ask_prices=[1],                   | |
+| |                                       ask_volumes=[22],                 | |
+| |                                       mid_price=0.5,                    | |
+| |                                       profit_loss=0.0                   | |
+| |                                   ),                                    | |
+| |                                   'VEV_4500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=900,                    | |
+| |                                       product='VEV_4500',               | |
+| |                                       bid_prices=[788, 786],            | |
+| |                                       bid_volumes=[9, 13],              | |
+| |                                       ask_prices=[805, 807],            | |
+| |                                       ask_volumes=[9, 13],              | |
+| |                                       mid_price=796.5,                  | |
+| |                                       profit_loss=-2233.984375          | |
+| |                                   ),                                    | |
+| |                                   'VEV_5500': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=900,                    | |
+| |                                       product='VEV_5500',               | |
+| |                                       bid_prices=[7, 6],                | |
+| |                                       bid_volumes=[5, 17],              | |
+| |                                       ask_prices=[8],                   | |
+| |                                       ask_volumes=[22],                 | |
+| |                                       mid_price=7.5,                    | |
+| |                                       profit_loss=-82.22393798828125    | |
+| |                                   ),                                    | |
+| |                                   'VEV_5400': PriceRow(                 | |
+| |                                       day=3,                            | |
+| |                                       timestamp=900,                    | |
+| |                                       product='VEV_5400',               | |
+| |                                       bid_prices=[20],                  | |
+| |                                       bid_volumes=[22],                 | |
+| |                                       ask_prices=[21],                  | |
+| |                                       ask_volumes=[22],                 | |
+| |                                       mid_price=20.5,                   | |
+| |                                       profit_loss=-215.4052734375       | |
+| |                                   ),                                    | |
+| |                                   ... +2                                | |
+| |                               },                                        | |
+| |                               ... +990                                  | |
+| |                           }),                                           | |
+| |                           trades=defaultdict(<function                  | |
+| |                       create_backtest_data.<locals>.<lambda> at         | |
+| |                       0x0000023896181760>, {                            | |
+| |                               0: defaultdict(<class 'list'>, {          | |
+| |                                   'VELVETFRUIT_EXTRACT': [              | |
+| |                                       (VELVETFRUIT_EXTRACT, Mark 01 <<  | |
+| |                       SUBMISSION, 5293, 42, 0),                         | |
+| |                                       (VELVETFRUIT_EXTRACT, Mark 14 <<  | |
+| |                       SUBMISSION, 5293, 22, 0)                          | |
+| |                                   ],                                    | |
+| |                                   'VEV_4000': [                         | |
+| |                                       (VEV_4000, Mark 14 << SUBMISSION, | |
+| |                       1285, 9, 0),                                      | |
+| |                                       (VEV_4000, Mark 01 << SUBMISSION, | |
+| |                       1282, 30, 0)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_4500': [                         | |
+| |                                       (VEV_4500, Mark 14 << SUBMISSION, | |
+| |                       787, 7, 0),                                       | |
+| |                                       (VEV_4500, Mark 01 << SUBMISSION, | |
+| |                       785, 14, 0)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5000': [                         | |
+| |                                       (VEV_5000, Mark 01 << SUBMISSION, | |
+| |                       293, 14, 0),                                      | |
+| |                                       (VEV_5000, Mark 14 << SUBMISSION, | |
+| |                       293, 7, 0)                                        | |
+| |                                   ],                                    | |
+| |                                   'VEV_5100': [                         | |
+| |                                       (VEV_5100, Mark 01 << SUBMISSION, | |
+| |                       199, 14, 0),                                      | |
+| |                                       (VEV_5100, Mark 14 << SUBMISSION, | |
+| |                       199, 7, 0)                                        | |
+| |                                   ],                                    | |
+| |                                   'VEV_5200': [                         | |
+| |                                       (VEV_5200, Mark 14 << SUBMISSION, | |
+| |                       118, 7, 0),                                       | |
+| |                                       (VEV_5200, Mark 01 << SUBMISSION, | |
+| |                       117, 14, 0)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5300': [                         | |
+| |                                       (VEV_5300, Mark 01 << SUBMISSION, | |
+| |                       57, 14, 0),                                       | |
+| |                                       (VEV_5300, Mark 14 << SUBMISSION, | |
+| |                       57, 7, 0)                                         | |
+| |                                   ],                                    | |
+| |                                   'VEV_5400': [                         | |
+| |                                       (VEV_5400, Mark 01 << SUBMISSION, | |
+| |                       20, 14, 0),                                       | |
+| |                                       (VEV_5400, Mark 14 << SUBMISSION, | |
+| |                       20, 7, 0)                                         | |
+| |                                   ],                                    | |
+| |                                   'VEV_5500': [                         | |
+| |                                       (VEV_5500, Mark 01 << SUBMISSION, | |
+| |                       6, 14, 0),                                        | |
+| |                                       (VEV_5500, Mark 14 << SUBMISSION, | |
+| |                       6, 6, 0)                                          | |
+| |                                   ]                                     | |
+| |                               }),                                       | |
+| |                               100: defaultdict(<class 'list'>, {        | |
+| |                                   'VELVETFRUIT_EXTRACT': [              | |
+| |                                       (VELVETFRUIT_EXTRACT, Mark 14 <<  | |
+| |                       SUBMISSION, 5294, 16, 100),                       | |
+| |                                       (VELVETFRUIT_EXTRACT, Mark 01 <<  | |
+| |                       SUBMISSION, 5293, 37, 100)                        | |
+| |                                   ],                                    | |
+| |                                   'VEV_4000': [                         | |
+| |                                       (VEV_4000, Mark 22 << SUBMISSION, | |
+| |                       1296, 4, 100),                                    | |
+| |                                       (VEV_4000, Mark 14 << SUBMISSION, | |
+| |                       1285, 8, 100),                                    | |
+| |                                       (VEV_4000, Mark 01 << SUBMISSION, | |
+| |                       1283, 20, 100)                                    | |
+| |                                   ],                                    | |
+| |                                   'VEV_4500': [                         | |
+| |                                       (VEV_4500, Mark 22 << SUBMISSION, | |
+| |                       796, 4, 100),                                     | |
+| |                                       (VEV_4500, Mark 14 << SUBMISSION, | |
+| |                       788, 7, 100),                                     | |
+| |                                       (VEV_4500, Mark 01 << SUBMISSION, | |
+| |                       786, 20, 100)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5000': [                         | |
+| |                                       (VEV_5000, Mark 22 << SUBMISSION, | |
+| |                       297, 4, 100),                                     | |
+| |                                       (VEV_5000, Mark 14 << SUBMISSION, | |
+| |                       294, 7, 100),                                     | |
+| |                                       (VEV_5000, Mark 01 << SUBMISSION, | |
+| |                       293, 20, 100)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5100': [                         | |
+| |                                       (VEV_5100, Mark 22 << SUBMISSION, | |
+| |                       202, 4, 100),                                     | |
+| |                                       (VEV_5100, Mark 14 << SUBMISSION, | |
+| |                       200, 7, 100),                                     | |
+| |                                       (VEV_5100, Mark 01 << SUBMISSION, | |
+| |                       199, 20, 100)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5200': [                         | |
+| |                                       (VEV_5200, Mark 22 << SUBMISSION, | |
+| |                       119, 4, 100),                                     | |
+| |                                       (VEV_5200, Mark 01 << SUBMISSION, | |
+| |                       118, 20, 100),                                    | |
+| |                                       (VEV_5200, Mark 14 << SUBMISSION, | |
+| |                       118, 7, 100)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5300': [                         | |
+| |                                       (VEV_5300, Mark 22 << SUBMISSION, | |
+| |                       58, 4, 100),                                      | |
+| |                                       (VEV_5300, Mark 01 << SUBMISSION, | |
+| |                       57, 10, 100),                                     | |
+| |                                       (VEV_5300, Mark 14 << SUBMISSION, | |
+| |                       57, 8, 100)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5400': [                         | |
+| |                                       (VEV_5400, Mark 01 << SUBMISSION, | |
+| |                       20, 10, 100),                                     | |
+| |                                       (VEV_5400, Mark 14 << SUBMISSION, | |
+| |                       20, 8, 100),                                      | |
+| |                                       (VEV_5400, Mark 22 << SUBMISSION, | |
+| |                       20, 4, 100)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5500': [                         | |
+| |                                       (VEV_5500, Mark 22 << SUBMISSION, | |
+| |                       7, 4, 100),                                       | |
+| |                                       (VEV_5500, Mark 01 << SUBMISSION, | |
+| |                       6, 10, 100),                                      | |
+| |                                       (VEV_5500, Mark 14 << SUBMISSION, | |
+| |                       6, 8, 100)                                        | |
+| |                                   ]                                     | |
+| |                               }),                                       | |
+| |                               200: defaultdict(<class 'list'>, {        | |
+| |                                   'VELVETFRUIT_EXTRACT': [              | |
+| |                                       (VELVETFRUIT_EXTRACT, Mark 14 <<  | |
+| |                       SUBMISSION, 5294, 20, 200),                       | |
+| |                                       (VELVETFRUIT_EXTRACT, Mark 01 <<  | |
+| |                       SUBMISSION, 5293, 42, 200)                        | |
+| |                                   ],                                    | |
+| |                                   'VEV_4000': [                         | |
+| |                                       (VEV_4000, Mark 14 << SUBMISSION, | |
+| |                       1286, 14, 200),                                   | |
+| |                                       (VEV_4000, Mark 01 << SUBMISSION, | |
+| |                       1283, 25, 200)                                    | |
+| |                                   ],                                    | |
+| |                                   'VEV_4500': [                         | |
+| |                                       (VEV_4500, Mark 14 << SUBMISSION, | |
+| |                       788, 6, 200),                                     | |
+| |                                       (VEV_4500, Mark 01 << SUBMISSION, | |
+| |                       786, 14, 200)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5000': [                         | |
+| |                                       (VEV_5000, Mark 01 << SUBMISSION, | |
+| |                       294, 14, 200),                                    | |
+| |                                       (VEV_5000, Mark 14 << SUBMISSION, | |
+| |                       294, 6, 200)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5100': [                         | |
+| |                                       (VEV_5100, Mark 14 << SUBMISSION, | |
+| |                       200, 6, 200),                                     | |
+| |                                       (VEV_5100, Mark 01 << SUBMISSION, | |
+| |                       199, 14, 200)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5200': [                         | |
+| |                                       (VEV_5200, Mark 01 << SUBMISSION, | |
+| |                       118, 14, 200),                                    | |
+| |                                       (VEV_5200, Mark 14 << SUBMISSION, | |
+| |                       118, 6, 200)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5300': [                         | |
+| |                                       (VEV_5300, Mark 01 << SUBMISSION, | |
+| |                       57, 14, 200),                                     | |
+| |                                       (VEV_5300, Mark 14 << SUBMISSION, | |
+| |                       57, 7, 200)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5400': [                         | |
+| |                                       (VEV_5400, Mark 01 << SUBMISSION, | |
+| |                       20, 14, 200),                                     | |
+| |                                       (VEV_5400, Mark 14 << SUBMISSION, | |
+| |                       20, 7, 200)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5500': [                         | |
+| |                                       (VEV_5500, Mark 14 << SUBMISSION, | |
+| |                       7, 7, 200),                                       | |
+| |                                       (VEV_5500, Mark 01 << SUBMISSION, | |
+| |                       6, 14, 200)                                       | |
+| |                                   ]                                     | |
+| |                               }),                                       | |
+| |                               300: defaultdict(<class 'list'>, {        | |
+| |                                   'VELVETFRUIT_EXTRACT': [              | |
+| |                                       (VELVETFRUIT_EXTRACT, Mark 14 <<  | |
+| |                       SUBMISSION, 5294, 21, 300)                        | |
+| |                                   ],                                    | |
+| |                                   'VEV_4000': [                         | |
+| |                                       (VEV_4000, Mark 14 << SUBMISSION, | |
+| |                       1285, 13, 300),                                   | |
+| |                                       (VEV_4000, Mark 01 << SUBMISSION, | |
+| |                       1283, 22, 300)                                    | |
+| |                                   ],                                    | |
+| |                                   'VEV_4500': [                         | |
+| |                                       (VEV_4500, Mark 14 << SUBMISSION, | |
+| |                       788, 7, 300),                                     | |
+| |                                       (VEV_4500, Mark 01 << SUBMISSION, | |
+| |                       786, 18, 300)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5000': [                         | |
+| |                                       (VEV_5000, Mark 14 << SUBMISSION, | |
+| |                       294, 7, 300),                                     | |
+| |                                       (VEV_5000, Mark 01 << SUBMISSION, | |
+| |                       293, 18, 300)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5100': [                         | |
+| |                                       (VEV_5100, Mark 14 << SUBMISSION, | |
+| |                       200, 7, 300),                                     | |
+| |                                       (VEV_5100, Mark 01 << SUBMISSION, | |
+| |                       199, 18, 300)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5200': [                         | |
+| |                                       (VEV_5200, Mark 01 << SUBMISSION, | |
+| |                       118, 18, 300),                                    | |
+| |                                       (VEV_5200, Mark 14 << SUBMISSION, | |
+| |                       118, 7, 300)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5300': [                         | |
+| |                                       (VEV_5300, Mark 01 << SUBMISSION, | |
+| |                       57, 19, 300),                                     | |
+| |                                       (VEV_5300, Mark 14 << SUBMISSION, | |
+| |                       57, 8, 300)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5400': [                         | |
+| |                                       (VEV_5400, Mark 01 << SUBMISSION, | |
+| |                       20, 19, 300),                                     | |
+| |                                       (VEV_5400, Mark 14 << SUBMISSION, | |
+| |                       20, 8, 300)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5500': [                         | |
+| |                                       (VEV_5500, Mark 01 << SUBMISSION, | |
+| |                       6, 19, 300),                                      | |
+| |                                       (VEV_5500, Mark 14 << SUBMISSION, | |
+| |                       6, 1, 300)                                        | |
+| |                                   ]                                     | |
+| |                               }),                                       | |
+| |                               400: defaultdict(<class 'list'>, {        | |
+| |                                   'VEV_4000': [                         | |
+| |                                       (VEV_4000, Mark 14 << SUBMISSION, | |
+| |                       1285, 12, 400),                                   | |
+| |                                       (VEV_4000, Mark 01 << SUBMISSION, | |
+| |                       1282, 20, 400)                                    | |
+| |                                   ],                                    | |
+| |                                   'VEV_4500': [                         | |
+| |                                       (VEV_4500, Mark 14 << SUBMISSION, | |
+| |                       787, 11, 400),                                    | |
+| |                                       (VEV_4500, Mark 01 << SUBMISSION, | |
+| |                       785, 13, 400)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5000': [                         | |
+| |                                       (VEV_5000, Mark 14 << SUBMISSION, | |
+| |                       293, 11, 400),                                    | |
+| |                                       (VEV_5000, Mark 01 << SUBMISSION, | |
+| |                       292, 13, 400)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5100': [                         | |
+| |                                       (VEV_5100, Mark 14 << SUBMISSION, | |
+| |                       199, 11, 400),                                    | |
+| |                                       (VEV_5100, Mark 01 << SUBMISSION, | |
+| |                       198, 13, 400)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5200': [                         | |
+| |                                       (VEV_5200, Mark 01 << SUBMISSION, | |
+| |                       117, 13, 400),                                    | |
+| |                                       (VEV_5200, Mark 14 << SUBMISSION, | |
+| |                       117, 11, 400)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5300': [                         | |
+| |                                       (VEV_5300, Mark 01 << SUBMISSION, | |
+| |                       57, 19, 400),                                     | |
+| |                                       (VEV_5300, Mark 14 << SUBMISSION, | |
+| |                       57, 9, 400)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5400': [                         | |
+| |                                       (VEV_5400, Mark 01 << SUBMISSION, | |
+| |                       19, 19, 400),                                     | |
+| |                                       (VEV_5400, Mark 14 << SUBMISSION, | |
+| |                       19, 9, 400)                                       | |
+| |                                   ]                                     | |
+| |                               }),                                       | |
+| |                               500: defaultdict(<class 'list'>, {        | |
+| |                                   'VEV_4000': [                         | |
+| |                                       (VEV_4000, Mark 14 << SUBMISSION, | |
+| |                       1284, 15, 500)                                    | |
+| |                                   ],                                    | |
+| |                                   'VEV_4500': [                         | |
+| |                                       (VEV_4500, Mark 14 << SUBMISSION, | |
+| |                       786, 8, 500),                                     | |
+| |                                       (VEV_4500, Mark 01 << SUBMISSION, | |
+| |                       784, 18, 500)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5000': [                         | |
+| |                                       (VEV_5000, Mark 14 << SUBMISSION, | |
+| |                       293, 8, 500),                                     | |
+| |                                       (VEV_5000, Mark 01 << SUBMISSION, | |
+| |                       292, 18, 500)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5100': [                         | |
+| |                                       (VEV_5100, Mark 01 << SUBMISSION, | |
+| |                       198, 18, 500),                                    | |
+| |                                       (VEV_5100, Mark 14 << SUBMISSION, | |
+| |                       198, 8, 500)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5200': [                         | |
+| |                                       (VEV_5200, Mark 01 << SUBMISSION, | |
+| |                       117, 18, 500),                                    | |
+| |                                       (VEV_5200, Mark 14 << SUBMISSION, | |
+| |                       117, 8, 500)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5300': [                         | |
+| |                                       (VEV_5300, Mark 01 << SUBMISSION, | |
+| |                       57, 16, 500),                                     | |
+| |                                       (VEV_5300, Mark 14 << SUBMISSION, | |
+| |                       57, 10, 500)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5400': [                         | |
+| |                                       (VEV_5400, Mark 01 << SUBMISSION, | |
+| |                       19, 16, 500),                                     | |
+| |                                       (VEV_5400, Mark 14 << SUBMISSION, | |
+| |                       19, 10, 500)                                      | |
+| |                                   ]                                     | |
+| |                               }),                                       | |
+| |                               600: defaultdict(<class 'list'>, {        | |
+| |                                   'VEV_4000': [                         | |
+| |                                       (VEV_4000, Mark 14 << SUBMISSION, | |
+| |                       1284, 13, 600)                                    | |
+| |                                   ],                                    | |
+| |                                   'VEV_4500': [                         | |
+| |                                       (VEV_4500, Mark 14 << SUBMISSION, | |
+| |                       787, 7, 600),                                     | |
+| |                                       (VEV_4500, Mark 01 << SUBMISSION, | |
+| |                       785, 13, 600)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5000': [                         | |
+| |                                       (VEV_5000, Mark 14 << SUBMISSION, | |
+| |                       293, 7, 600),                                     | |
+| |                                       (VEV_5000, Mark 01 << SUBMISSION, | |
+| |                       292, 13, 600)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5100': [                         | |
+| |                                       (VEV_5100, Mark 14 << SUBMISSION, | |
+| |                       199, 7, 600),                                     | |
+| |                                       (VEV_5100, Mark 01 << SUBMISSION, | |
+| |                       198, 13, 600)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5200': [                         | |
+| |                                       (VEV_5200, Mark 01 << SUBMISSION, | |
+| |                       117, 13, 600),                                    | |
+| |                                       (VEV_5200, Mark 14 << SUBMISSION, | |
+| |                       117, 7, 600)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5300': [                         | |
+| |                                       (VEV_5300, Mark 01 << SUBMISSION, | |
+| |                       57, 20, 600),                                     | |
+| |                                       (VEV_5300, Mark 14 << SUBMISSION, | |
+| |                       57, 9, 600)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5400': [                         | |
+| |                                       (VEV_5400, Mark 01 << SUBMISSION, | |
+| |                       19, 20, 600),                                     | |
+| |                                       (VEV_5400, Mark 14 << SUBMISSION, | |
+| |                       19, 9, 600)                                       | |
+| |                                   ]                                     | |
+| |                               }),                                       | |
+| |                               700: defaultdict(<class 'list'>, {        | |
+| |                                   'VEV_4000': [                         | |
+| |                                       (VEV_4000, Mark 14 << SUBMISSION, | |
+| |                       1285, 14, 700)                                    | |
+| |                                   ],                                    | |
+| |                                   'VEV_4500': [                         | |
+| |                                       (VEV_4500, Mark 14 << SUBMISSION, | |
+| |                       787, 8, 700),                                     | |
+| |                                       (VEV_4500, Mark 01 << SUBMISSION, | |
+| |                       785, 12, 700)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5000': [                         | |
+| |                                       (VEV_5000, Mark 14 << SUBMISSION, | |
+| |                       294, 8, 700),                                     | |
+| |                                       (VEV_5000, Mark 01 << SUBMISSION, | |
+| |                       293, 12, 700)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5100': [                         | |
+| |                                       (VEV_5100, Mark 01 << SUBMISSION, | |
+| |                       199, 12, 700),                                    | |
+| |                                       (VEV_5100, Mark 14 << SUBMISSION, | |
+| |                       199, 8, 700)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5200': [                         | |
+| |                                       (VEV_5200, Mark 01 << SUBMISSION, | |
+| |                       118, 12, 700),                                    | |
+| |                                       (VEV_5200, Mark 14 << SUBMISSION, | |
+| |                       118, 8, 700)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5300': [                         | |
+| |                                       (VEV_5300, Mark 01 << SUBMISSION, | |
+| |                       57, 18, 700),                                     | |
+| |                                       (VEV_5300, Mark 14 << SUBMISSION, | |
+| |                       57, 5, 700)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5400': [                         | |
+| |                                       (VEV_5400, Mark 01 << SUBMISSION, | |
+| |                       20, 18, 700),                                     | |
+| |                                       (VEV_5400, Mark 14 << SUBMISSION, | |
+| |                       20, 5, 700)                                       | |
+| |                                   ]                                     | |
+| |                               }),                                       | |
+| |                               800: defaultdict(<class 'list'>, {        | |
+| |                                   'VEV_4000': [                         | |
+| |                                       (VEV_4000, Mark 14 << SUBMISSION, | |
+| |                       1286, 10, 800)                                    | |
+| |                                   ],                                    | |
+| |                                   'VEV_4500': [                         | |
+| |                                       (VEV_4500, Mark 14 << SUBMISSION, | |
+| |                       789, 6, 800),                                     | |
+| |                                       (VEV_4500, Mark 01 << SUBMISSION, | |
+| |                       787, 22, 800)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5000': [                         | |
+| |                                       (VEV_5000, Mark 14 << SUBMISSION, | |
+| |                       295, 6, 800),                                     | |
+| |                                       (VEV_5000, Mark 01 << SUBMISSION, | |
+| |                       294, 22, 800)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5100': [                         | |
+| |                                       (VEV_5100, Mark 14 << SUBMISSION, | |
+| |                       201, 6, 800),                                     | |
+| |                                       (VEV_5100, Mark 01 << SUBMISSION, | |
+| |                       200, 22, 800)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5200': [                         | |
+| |                                       (VEV_5200, Mark 01 << SUBMISSION, | |
+| |                       119, 22, 800),                                    | |
+| |                                       (VEV_5200, Mark 14 << SUBMISSION, | |
+| |                       119, 6, 800)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5300': [                         | |
+| |                                       (VEV_5300, Mark 01 << SUBMISSION, | |
+| |                       58, 10, 800),                                     | |
+| |                                       (VEV_5300, Mark 14 << SUBMISSION, | |
+| |                       58, 5, 800)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5400': [                         | |
+| |                                       (VEV_5400, Mark 01 << SUBMISSION, | |
+| |                       20, 10, 800),                                     | |
+| |                                       (VEV_5400, Mark 14 << SUBMISSION, | |
+| |                       20, 5, 800)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5500': [                         | |
+| |                                       (VEV_5500, Mark 01 << SUBMISSION, | |
+| |                       7, 10, 800),                                      | |
+| |                                       (VEV_5500, Mark 14 << SUBMISSION, | |
+| |                       7, 5, 800)                                        | |
+| |                                   ]                                     | |
+| |                               }),                                       | |
+| |                               900: defaultdict(<class 'list'>, {        | |
+| |                                   'VEV_4000': [                         | |
+| |                                       (VEV_4000, Mark 14 << SUBMISSION, | |
+| |                       1286, 11, 900)                                    | |
+| |                                   ],                                    | |
+| |                                   'VEV_4500': [                         | |
+| |                                       (VEV_4500, Mark 14 << SUBMISSION, | |
+| |                       788, 9, 900),                                     | |
+| |                                       (VEV_4500, Mark 01 << SUBMISSION, | |
+| |                       786, 13, 900)                                     | |
+| |                                   ],                                    | |
+| |                                   'VEV_5000': [                         | |
+| |                                       (VEV_5000, Mark 01 << SUBMISSION, | |
+| |                       294, 13, 900),                                    | |
+| |                                       (VEV_5000, Mark 14 << SUBMISSION, | |
+| |                       294, 9, 900)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5100': [                         | |
+| |                                       (VEV_5100, Mark 01 << SUBMISSION, | |
+| |                       200, 13, 900),                                    | |
+| |                                       (VEV_5100, Mark 14 << SUBMISSION, | |
+| |                       200, 9, 900)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5200': [                         | |
+| |                                       (VEV_5200, Mark 01 << SUBMISSION, | |
+| |                       118, 13, 900),                                    | |
+| |                                       (VEV_5200, Mark 14 << SUBMISSION, | |
+| |                       118, 9, 900)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5300': [                         | |
+| |                                       (VEV_5300, Mark 14 << SUBMISSION, | |
+| |                       58, 5, 900),                                      | |
+| |                                       (VEV_5300, Mark 01 << SUBMISSION, | |
+| |                       57, 17, 900)                                      | |
+| |                                   ],                                    | |
+| |                                   'VEV_5400': [                         | |
+| |                                       (VEV_5400, Mark 01 << SUBMISSION, | |
+| |                       20, 17, 900),                                     | |
+| |                                       (VEV_5400, Mark 14 << SUBMISSION, | |
+| |                       20, 5, 900)                                       | |
+| |                                   ],                                    | |
+| |                                   'VEV_5500': [                         | |
+| |                                       (VEV_5500, Mark 14 << SUBMISSION, | |
+| |                       7, 5, 900)                                        | |
+| |                                   ]                                     | |
+| |                               }),                                       | |
+| |                               ... +781                                  | |
+| |                           }),                                           | |
+| |                           observations={},                              | |
+| |                           products=[                                    | |
+| |                               'HYDROGEL_PACK',                          | |
+| |                               'VELVETFRUIT_EXTRACT',                    | |
+| |                               'VEV_4000',                               | |
+| |                               'VEV_4500',                               | |
+| |                               'VEV_5000',                               | |
+| |                               'VEV_5100',                               | |
+| |                               'VEV_5200',                               | |
+| |                               'VEV_5300',                               | |
+| |                               'VEV_5400',                               | |
+| |                               'VEV_5500',                               | |
+| |                               ... +2                                    | |
+| |                           ],                                            | |
+| |                           profit_loss={                                 | |
+| |                               'HYDROGEL_PACK': 1018.0,                  | |
+| |                               'VELVETFRUIT_EXTRACT': -977659.0,         | |
+| |                               'VEV_4000': 385107.0,                     | |
+| |                               'VEV_4500': 226959.0,                     | |
+| |                               'VEV_5000': -62764.0,                     | |
+| |                               'VEV_5100': 13538.0,                      | |
+| |                               'VEV_5200': 35394.0,                      | |
+| |                               'VEV_5300': 17190.0,                      | |
+| |                               'VEV_5400': 5917.0,                       | |
+| |                               'VEV_5500': 1988.0,                       | |
+| |                               ... +2                                    | |
+| |                           }                                             | |
+| |                       )                                                 | |
+| |             day_num = 3                                                 | |
+| |         file_reader = <prosperity4bt.file_reader.FileSystemReader       | |
+| |                       object at 0x000002389477DD30>                     | |
+| |            no_names = True                                              | |
+| |              orders = {                                                 | |
+| |                           'HYDROGEL_PACK': [],                          | |
+| |                           'VELVETFRUIT_EXTRACT': [                      | |
+| |                               Order(                                    | |
+| |                                   symbol='VELVETFRUIT_EXTRACT',         | |
+| |                                   price=5265,                           | |
+| |                                   quantity=-24                          | |
+| |                               )                                         | |
+| |                           ],                                            | |
+| |                           'VEV_4000': [],                               | |
+| |                           'VEV_4500': [],                               | |
+| |                           'VEV_5000': [                                 | |
+| |                               Order(                                    | |
+| |                                   symbol='VEV_5000',                    | |
+| |                                   price=262,                            | |
+| |                                   quantity=0                            | |
+| |                               )                                         | |
+| |                           ],                                            | |
+| |                           'VEV_5100': [                                 | |
+| |                               Order(                                    | |
+| |                                   symbol='VEV_5100',                    | |
+| |                                   price=170,                            | |
+| |                                   quantity=0                            | |
+| |                               )                                         | |
+| |                           ],                                            | |
+| |                           'VEV_5200': [],                               | |
+| |                           'VEV_5300': [],                               | |
+| |                           'VEV_5400': [],                               | |
+| |                           'VEV_5500': [],                               | |
+| |                           ... +2                                        | |
+| |                       }                                                 | |
+| |        print_output = False                                             | |
+| |              result = BacktestResult(                                   | |
+| |                           round_num=4,                                  | |
+| |                           day_num=3,                                    | |
+| |                           sandbox_logs=[                                | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=0,                          | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=100,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=200,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=300,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=400,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=500,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=600,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=700,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=800,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               SandboxLogRow(                            | |
+| |                                   timestamp=900,                        | |
+| |                                   sandbox_log='',                       | |
+| |                                   lambda_log=''                         | |
+| |                               ),                                        | |
+| |                               ... +709                                  | |
+| |                           ],                                            | |
+| |                           activity_logs=[                               | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       3,                                | |
+| |                                       0,                                | |
+| |                                       'HYDROGEL_PACK',                  | |
+| |                                       10000,                            | |
+| |                                       10,                               | |
+| |                                       9998,                             | |
+| |                                       25,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       10016,                            | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       3,                                | |
+| |                                       0,                                | |
+| |                                       'VELVETFRUIT_EXTRACT',            | |
+| |                                       5293,                             | |
+| |                                       64,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       5298,                             | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       3,                                | |
+| |                                       0,                                | |
+| |                                       'VEV_4000',                       | |
+| |                                       1285,                             | |
+| |                                       9,                                | |
+| |                                       1282,                             | |
+| |                                       30,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       1307,                             | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       3,                                | |
+| |                                       0,                                | |
+| |                                       'VEV_4500',                       | |
+| |                                       787,                              | |
+| |                                       7,                                | |
+| |                                       785,                              | |
+| |                                       14,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       804,                              | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       3,                                | |
+| |                                       0,                                | |
+| |                                       'VEV_5000',                       | |
+| |                                       293,                              | |
+| |                                       21,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       300,                              | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       3,                                | |
+| |                                       0,                                | |
+| |                                       'VEV_5100',                       | |
+| |                                       199,                              | |
+| |                                       21,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       204,                              | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       3,                                | |
+| |                                       0,                                | |
+| |                                       'VEV_5200',                       | |
+| |                                       118,                              | |
+| |                                       7,                                | |
+| |                                       117,                              | |
+| |                                       14,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       121,                              | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       3,                                | |
+| |                                       0,                                | |
+| |                                       'VEV_5300',                       | |
+| |                                       57,                               | |
+| |                                       21,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       59,                               | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       3,                                | |
+| |                                       0,                                | |
+| |                                       'VEV_5400',                       | |
+| |                                       20,                               | |
+| |                                       21,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       21,                               | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ActivityLogRow(                           | |
+| |                                   columns=[                             | |
+| |                                       3,                                | |
+| |                                       0,                                | |
+| |                                       'VEV_5500',                       | |
+| |                                       6,                                | |
+| |                                       21,                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       '',                               | |
+| |                                       8,                                | |
+| |                                       ... +7                            | |
+| |                                   ]                                     | |
+| |                               ),                                        | |
+| |                               ... +8618                                 | |
+| |                           ],                                            | |
+| |                           trades=[                                      | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(VELVETFRUIT_EXTRACT,  <<       | |
+| |                       SUBMISSION, 5293, 64, 0)                          | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(VEV_4000,  << SUBMISSION,      | |
+| |                       1285, 9, 0)                                       | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(VEV_4000,  << SUBMISSION,      | |
+| |                       1282, 30, 0)                                      | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(VEV_4500,  << SUBMISSION, 787, | |
+| |                       7, 0)                                             | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(VEV_4500,  << SUBMISSION, 785, | |
+| |                       14, 0)                                            | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(VEV_5000,  << SUBMISSION, 293, | |
+| |                       18, 0)                                            | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(VEV_5100,  << SUBMISSION, 199, | |
+| |                       18, 0)                                            | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(VEV_5200,  << SUBMISSION, 118, | |
+| |                       7, 0)                                             | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(VEV_5200,  << SUBMISSION, 117, | |
+| |                       14, 0)                                            | |
+| |                               ),                                        | |
+| |                               TradeRow(                                 | |
+| |                                   trade=(VEV_5300,  << SUBMISSION, 57,  | |
+| |                       21, 0)                                            | |
+| |                               ),                                        | |
+| |                               ... +829                                  | |
+| |                           ]                                             | |
+| |                       )                                                 | |
+| |           round_num = 4                                                 | |
+| |         sandbox_row = SandboxLogRow(                                    | |
+| |                           timestamp=71800,                              | |
+| |                           sandbox_log='',                               | |
+| |                           lambda_log=''                                 | |
+| |                       )                                                 | |
+| |   show_progress_bar = False                                             | |
+| |               state = <prosperity4bt.datamodel.TradingState object at   | |
+| |                       0x000002389477E510>                               | |
+| |              stdout = <_io.StringIO object at 0x00000238947816C0>       | |
+| |           timestamp = 71900                                             | |
+| |          timestamps = [                                                 | |
+| |                           0,                                            | |
+| |                           100,                                          | |
+| |                           200,                                          | |
+| |                           300,                                          | |
+| |                           400,                                          | |
+| |                           500,                                          | |
+| |                           600,                                          | |
+| |                           700,                                          | |
+| |                           800,                                          | |
+| |                           900,                                          | |
+| |                           ... +990                                      | |
+| |                       ]                                                 | |
+| | timestamps_iterator = [                                                 | |
+| |                           0,                                            | |
+| |                           100,                                          | |
+| |                           200,                                          | |
+| |                           300,                                          | |
+| |                           400,                                          | |
+| |                           500,                                          | |
+| |                           600,                                          | |
+| |                           700,                                          | |
+| |                           800,                                          | |
+| |                           900,                                          | |
+| |                           ... +990                                      | |
+| |                       ]                                                 | |
+| | trade_matching_mode = <TradeMatchingMode.all: 'all'>                    | |
+| |              trader = <round4_exp_272_vfe_mid_reentry_5250.Trader       | |
+| |                       object at 0x000002389477E120>                     | |
+| |         trader_data = '{"hydro_mark_flow":4.0,"velvet_mark_flow":-4.0,… | |
+| +-------------------------------------------------------------------------+ |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading                |
+| Comp\ROUND4\research\strategy_experiments\round4_exp_272_vfe_mid_reentry_52 |
+| 50.py:273 in run                                                            |
+|                                                                             |
+|   270                                                                       |
+|   271         t_years = self.time_to_expiry_years(timestamp)                |
+|   272         if timestamp >= self.OPTION_TRADE_START_TIMESTAMP:            |
+| > 273             option_orders = self.trade_vouchers_relative(             |
+|   274                 books,                                                |
+|   275                 state.position,                                       |
+|   276                 velvet_fair + self.OPTION_MARK_SPOT_WEIGHT * velvet_m |
+|                                                                             |
+| +-------------------------------- locals ---------------------------------+ |
+| |               books = {                                                 | |
+| |                           'HYDROGEL_PACK': {                            | |
+| |                               'buy_orders': [                           | |
+| |                                   (10033, 14),                          | |
+| |                                   (10031, 23)                           | |
+| |                               ],                                        | |
+| |                               'sell_orders': [                          | |
+| |                                   (10049, -14),                         | |
+| |                                   (10052, -23)                          | |
+| |                               ],                                        | |
+| |                               'best_bid': 10033,                        | |
+| |                               'best_ask': 10049,                        | |
+| |                               'mid': 10041.0,                           | |
+| |                               'imbalance': 0.0,                         | |
+| |                               'has_both_sides': True                    | |
+| |                           },                                            | |
+| |                           'VELVETFRUIT_EXTRACT': {                      | |
+| |                               'buy_orders': [(5263, 60)],               | |
+| |                               'sell_orders': [                          | |
+| |                                   (5268, -17),                          | |
+| |                                   (5269, -43)                           | |
+| |                               ],                                        | |
+| |                               'best_bid': 5263,                         | |
+| |                               'best_ask': 5268,                         | |
+| |                               'mid': 5265.5,                            | |
+| |                               'imbalance': 0.5584415584415584,          | |
+| |                               'has_both_sides': True                    | |
+| |                           },                                            | |
+| |                           'VEV_4000': {                                 | |
+| |                               'buy_orders': [(1255, 9), (1253, 17)],    | |
+| |                               'sell_orders': [                          | |
+| |                                   (1276, -9),                           | |
+| |                                   (1279, -17)                           | |
+| |                               ],                                        | |
+| |                               'best_bid': 1255,                         | |
+| |                               'best_ask': 1276,                         | |
+| |                               'mid': 1265.5,                            | |
+| |                               'imbalance': 0.0,                         | |
+| |                               'has_both_sides': True                    | |
+| |                           },                                            | |
+| |                           'VEV_4500': {                                 | |
+| |                               'buy_orders': [(758, 10), (756, 22)],     | |
+| |                               'sell_orders': [(774, -10), (776, -22)],  | |
+| |                               'best_bid': 758,                          | |
+| |                               'best_ask': 774,                          | |
+| |                               'mid': 766.0,                             | |
+| |                               'imbalance': 0.0,                         | |
+| |                               'has_both_sides': True                    | |
+| |                           },                                            | |
+| |                           'VEV_5000': {                                 | |
+| |                               'buy_orders': [(265, 10), (264, 22)],     | |
+| |                               'sell_orders': [(271, -10), (272, -22)],  | |
+| |                               'best_bid': 265,                          | |
+| |                               'best_ask': 271,                          | |
+| |                               'mid': 268.0,                             | |
+| |                               'imbalance': 0.0,                         | |
+| |                               'has_both_sides': True                    | |
+| |                           },                                            | |
+| |                           'VEV_5100': {                                 | |
+| |                               'buy_orders': [(173, 10), (172, 22)],     | |
+| |                               'sell_orders': [(177, -32)],              | |
+| |                               'best_bid': 173,                          | |
+| |                               'best_ask': 177,                          | |
+| |                               'mid': 175.0,                             | |
+| |                               'imbalance': -0.5238095238095238,         | |
+| |                               'has_both_sides': True                    | |
+| |                           },                                            | |
+| |                           'VEV_5200': {                                 | |
+| |                               'buy_orders': [(96, 10), (95, 22)],       | |
+| |                               'sell_orders': [(99, -32)],               | |
+| |                               'best_bid': 96,                           | |
+| |                               'best_ask': 99,                           | |
+| |                               'mid': 97.5,                              | |
+| |                               'imbalance': -0.5238095238095238,         | |
+| |                               'has_both_sides': True                    | |
+| |                           },                                            | |
+| |                           'VEV_5300': {                                 | |
+| |                               'buy_orders': [(44, 10), (43, 12)],       | |
+| |                               'sell_orders': [(46, -22)],               | |
+| |                               'best_bid': 44,                           | |
+| |                               'best_ask': 46,                           | |
+| |                               'mid': 45.0,                              | |
+| |                               'imbalance': -0.375,                      | |
+| |                               'has_both_sides': True                    | |
+| |                           },                                            | |
+| |                           'VEV_5400': {                                 | |
+| |                               'buy_orders': [(14, 22)],                 | |
+| |                               'sell_orders': [(15, -22)],               | |
+| |                               'best_bid': 14,                           | |
+| |                               'best_ask': 15,                           | |
+| |                               'mid': 14.5,                              | |
+| |                               'imbalance': 0.0,                         | |
+| |                               'has_both_sides': True                    | |
+| |                           },                                            | |
+| |                           'VEV_5500': {                                 | |
+| |                               'buy_orders': [(4, 22)],                  | |
+| |                               'sell_orders': [(5, -22)],                | |
+| |                               'best_bid': 4,                            | |
+| |                               'best_ask': 5,                            | |
+| |                               'mid': 4.5,                               | |
+| |                               'imbalance': 0.0,                         | |
+| |                               'has_both_sides': True                    | |
+| |                           },                                            | |
+| |                           ... +2                                        | |
+| |                       }                                                 | |
+| |               cache = {                                                 | |
+| |                           'hydro_mark_flow': 4.0,                       | |
+| |                           'velvet_mark_flow': -4.0,                     | |
+| |                           'hydro_anchor': 10042.004725318086,           | |
+| |                           'hydro_mid': [                                | |
+| |                               10034.0,                                  | |
+| |                               10032.5,                                  | |
+| |                               10033.0,                                  | |
+| |                               10033.0,                                  | |
+| |                               10035.0,                                  | |
+| |                               10035.0,                                  | |
+| |                               10037.0,                                  | |
+| |                               10037.5,                                  | |
+| |                               10037.0,                                  | |
+| |                               10038.0,                                  | |
+| |                               ... +38                                   | |
+| |                           ],                                            | |
+| |                           'hydro_cash': 1018.0,                         | |
+| |                           'hydro_pnl': 1018.0,                          | |
+| |                           'hydro_pnl_peak': 1368.0,                     | |
+| |                           'hydro_last_pos': 0,                          | |
+| |                           'hydro_seen_trades': [                        | |
+| |                               '4400:10027.0:6.0:Mark 38:SUBMISSION',    | |
+| |                               '8100:10009.0:5.0:SUBMISSION:Mark 38',    | |
+| |                               '18700:10005.0:2.0:SUBMISSION:Mark 38',   | |
+| |                               '19200:10019.0:4.0:Mark 38:SUBMISSION',   | |
+| |                               '19500:10018.0:2.0:Mark 38:SUBMISSION',   | |
+| |                               '22300:10036.0:4.0:Mark 38:SUBMISSION',   | |
+| |                               '22500:10040.0:6.0:Mark 38:SUBMISSION',   | |
+| |                               '23900:10023.0:2.0:SUBMISSION:Mark 38',   | |
+| |                               '24500:10027.0:5.0:SUBMISSION:Mark 38',   | |
+| |                               '25600:10027.0:3.0:SUBMISSION:Mark 38',   | |
+| |                               ... +14                                   | |
+| |                           ],                                            | |
+| |                           'velvet_anchor': 5258.2748762307265,          | |
+| |                           ... +2                                        | |
+| |                       }                                                 | |
+| |          hydro_book = {                                                 | |
+| |                           'buy_orders': [(10033, 14), (10031, 23)],     | |
+| |                           'sell_orders': [(10049, -14), (10052, -23)],  | |
+| |                           'best_bid': 10033,                            | |
+| |                           'best_ask': 10049,                            | |
+| |                           'mid': 10041.0,                               | |
+| |                           'imbalance': 0.0,                             | |
+| |                           'has_both_sides': True                        | |
+| |                       }                                                 | |
+| |          hydro_fair = 10042.006225318086                                | |
+| |        hydro_locked = True                                              | |
+| |   hydro_mark_signal = 4.0                                               | |
+| |           hydro_pos = 0                                                 | |
+| |             results = {                                                 | |
+| |                           'HYDROGEL_PACK': [],                          | |
+| |                           'VELVETFRUIT_EXTRACT': [                      | |
+| |                               Order(                                    | |
+| |                                   symbol='VELVETFRUIT_EXTRACT',         | |
+| |                                   price=5263,                           | |
+| |                                   quantity=-188                         | |
+| |                               )                                         | |
+| |                           ],                                            | |
+| |                           'VEV_4000': [],                               | |
+| |                           'VEV_4500': [],                               | |
+| |                           'VEV_5000': [],                               | |
+| |                           'VEV_5100': [],                               | |
+| |                           'VEV_5200': [],                               | |
+| |                           'VEV_5300': [],                               | |
+| |                           'VEV_5400': [],                               | |
+| |                           'VEV_5500': [],                               | |
+| |                           ... +2                                        | |
+| |                       }                                                 | |
+| |                self = <round4_exp_272_vfe_mid_reentry_5250.Trader       | |
+| |                       object at 0x000002389477E120>                     | |
+| |               state = <prosperity4bt.datamodel.TradingState object at   | |
+| |                       0x000002389477E510>                               | |
+| |             t_years = 0.010761917808219178                              | |
+| |           timestamp = 71900                                             | |
+| |         velvet_book = {                                                 | |
+| |                           'buy_orders': [(5263, 60)],                   | |
+| |                           'sell_orders': [(5268, -17), (5269, -43)],    | |
+| |                           'best_bid': 5263,                             | |
+| |                           'best_ask': 5268,                             | |
+| |                           'mid': 5265.5,                                | |
+| |                           'imbalance': 0.5584415584415584,              | |
+| |                           'has_both_sides': True                        | |
+| |                       }                                                 | |
+| |         velvet_fair = 5260.148982817118                                 | |
+| | velvet_implied_fair = 5262.606250000001                                 | |
+| |  velvet_linear_fair = 5258.442629477479                                 | |
+| |  velvet_mark_signal = -4.0                                              | |
+| |          velvet_pos = 188                                               | |
+| +-------------------------------------------------------------------------+ |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading                |
+| Comp\ROUND4\research\strategy_experiments\round4_exp_272_vfe_mid_reentry_52 |
+| 50.py:601 in trade_vouchers_relative                                        |
+|                                                                             |
+|   598             orders: List[Order] = []                                  |
+|   599                                                                       |
+|   600             timed_exit = self.TIMED_OPTION_EXIT.get(symbol)           |
+| > 601             if timed_exit is not None and timestamp >= timed_exit and |
+|   602                 if position < 0 and book["sell_orders"]:              |
+|   603                     close_price = int(book["sell_orders"][-1][0])     |
+|   604                     orders.append(Order(symbol, close_price, int(-pos |
+|                                                                             |
+| +-------------------------------- locals ---------------------------------+ |
+| |         ask_price = 776                                                 | |
+| |        ask_volume = -22                                                 | |
+| |         bid_price = 756                                                 | |
+| |        bid_volume = 22                                                  | |
+| |              book = {                                                   | |
+| |                         'buy_orders': [(265, 10), (264, 22)],           | |
+| |                         'sell_orders': [(271, -10), (272, -22)],        | |
+| |                         'best_bid': 265,                                | |
+| |                         'best_ask': 271,                                | |
+| |                         'mid': 268.0,                                   | |
+| |                         'imbalance': 0.0,                               | |
+| |                         'has_both_sides': True                          | |
+| |                     }                                                   | |
+| |             books = {                                                   | |
+| |                         'HYDROGEL_PACK': {                              | |
+| |                             'buy_orders': [(10033, 14), (10031, 23)],   | |
+| |                             'sell_orders': [                            | |
+| |                                 (10049, -14),                           | |
+| |                                 (10052, -23)                            | |
+| |                             ],                                          | |
+| |                             'best_bid': 10033,                          | |
+| |                             'best_ask': 10049,                          | |
+| |                             'mid': 10041.0,                             | |
+| |                             'imbalance': 0.0,                           | |
+| |                             'has_both_sides': True                      | |
+| |                         },                                              | |
+| |                         'VELVETFRUIT_EXTRACT': {                        | |
+| |                             'buy_orders': [(5263, 60)],                 | |
+| |                             'sell_orders': [(5268, -17), (5269, -43)],  | |
+| |                             'best_bid': 5263,                           | |
+| |                             'best_ask': 5268,                           | |
+| |                             'mid': 5265.5,                              | |
+| |                             'imbalance': 0.5584415584415584,            | |
+| |                             'has_both_sides': True                      | |
+| |                         },                                              | |
+| |                         'VEV_4000': {                                   | |
+| |                             'buy_orders': [(1255, 9), (1253, 17)],      | |
+| |                             'sell_orders': [(1276, -9), (1279, -17)],   | |
+| |                             'best_bid': 1255,                           | |
+| |                             'best_ask': 1276,                           | |
+| |                             'mid': 1265.5,                              | |
+| |                             'imbalance': 0.0,                           | |
+| |                             'has_both_sides': True                      | |
+| |                         },                                              | |
+| |                         'VEV_4500': {                                   | |
+| |                             'buy_orders': [(758, 10), (756, 22)],       | |
+| |                             'sell_orders': [(774, -10), (776, -22)],    | |
+| |                             'best_bid': 758,                            | |
+| |                             'best_ask': 774,                            | |
+| |                             'mid': 766.0,                               | |
+| |                             'imbalance': 0.0,                           | |
+| |                             'has_both_sides': True                      | |
+| |                         },                                              | |
+| |                         'VEV_5000': {                                   | |
+| |                             'buy_orders': [(265, 10), (264, 22)],       | |
+| |                             'sell_orders': [(271, -10), (272, -22)],    | |
+| |                             'best_bid': 265,                            | |
+| |                             'best_ask': 271,                            | |
+| |                             'mid': 268.0,                               | |
+| |                             'imbalance': 0.0,                           | |
+| |                             'has_both_sides': True                      | |
+| |                         },                                              | |
+| |                         'VEV_5100': {                                   | |
+| |                             'buy_orders': [(173, 10), (172, 22)],       | |
+| |                             'sell_orders': [(177, -32)],                | |
+| |                             'best_bid': 173,                            | |
+| |                             'best_ask': 177,                            | |
+| |                             'mid': 175.0,                               | |
+| |                             'imbalance': -0.5238095238095238,           | |
+| |                             'has_both_sides': True                      | |
+| |                         },                                              | |
+| |                         'VEV_5200': {                                   | |
+| |                             'buy_orders': [(96, 10), (95, 22)],         | |
+| |                             'sell_orders': [(99, -32)],                 | |
+| |                             'best_bid': 96,                             | |
+| |                             'best_ask': 99,                             | |
+| |                             'mid': 97.5,                                | |
+| |                             'imbalance': -0.5238095238095238,           | |
+| |                             'has_both_sides': True                      | |
+| |                         },                                              | |
+| |                         'VEV_5300': {                                   | |
+| |                             'buy_orders': [(44, 10), (43, 12)],         | |
+| |                             'sell_orders': [(46, -22)],                 | |
+| |                             'best_bid': 44,                             | |
+| |                             'best_ask': 46,                             | |
+| |                             'mid': 45.0,                                | |
+| |                             'imbalance': -0.375,                        | |
+| |                             'has_both_sides': True                      | |
+| |                         },                                              | |
+| |                         'VEV_5400': {                                   | |
+| |                             'buy_orders': [(14, 22)],                   | |
+| |                             'sell_orders': [(15, -22)],                 | |
+| |                             'best_bid': 14,                             | |
+| |                             'best_ask': 15,                             | |
+| |                             'mid': 14.5,                                | |
+| |                             'imbalance': 0.0,                           | |
+| |                             'has_both_sides': True                      | |
+| |                         },                                              | |
+| |                         'VEV_5500': {                                   | |
+| |                             'buy_orders': [(4, 22)],                    | |
+| |                             'sell_orders': [(5, -22)],                  | |
+| |                             'best_bid': 4,                              | |
+| |                             'best_ask': 5,                              | |
+| |                             'mid': 4.5,                                 | |
+| |                             'imbalance': 0.0,                           | |
+| |                             'has_both_sides': True                      | |
+| |                         },                                              | |
+| |                         ... +2                                          | |
+| |                     }                                                   | |
+| |           checked = []                                                  | |
+| |             delta = 0.9755055124456629                                  | |
+| |              edge = -4.14899522351152                                   | |
+| |    edge_threshold = 1.5                                                 | |
+| |              fair = 261.4194447134296                                   | |
+| |          fair_adj = 261.4194447134296                                   | |
+| |         net_delta = -493.39186441424647                                 | |
+| |            orders = []                                                  | |
+| | original_position = 294                                                 | |
+| |          position = 294                                                 | |
+| |         positions = {                                                   | |
+| |                         'VELVETFRUIT_EXTRACT': 188,                     | |
+| |                         'VEV_4000': -300,                               | |
+| |                         'VEV_4500': -288,                               | |
+| |                         'VEV_5000': 294,                                | |
+| |                         'VEV_5100': -6,                                 | |
+| |                         'VEV_5200': -300,                               | |
+| |                         'VEV_5300': -300,                               | |
+| |                         'VEV_5400': -300,                               | |
+| |                         'VEV_5500': -300,                               | |
+| |                         'HYDROGEL_PACK': 0,                             | |
+| |                         ... +2                                          | |
+| |                     }                                                   | |
+| |           results = {}                                                  | |
+| |              self = <round4_exp_272_vfe_mid_reentry_5250.Trader object  | |
+| |                     at 0x000002389477E120>                              | |
+| |             sigma = 0.25                                                | |
+| |         spot_fair = 5260.148982817118                                   | |
+| |            strike = 5000                                                | |
+| |            symbol = 'VEV_5000'                                          | |
+| |           t_years = 0.010761917808219178                                | |
+| |        timed_exit = 71900                                               | |
+| |         timestamp = 71900                                               | |
+| +-------------------------------------------------------------------------+ |
++-----------------------------------------------------------------------------+
+NameError: name 'cache' is not defined
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\strategy_experiments\round4_exp_272_vfe_mid_reentry_5250.py on round 4 day 3

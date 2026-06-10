@@ -1,0 +1,477 @@
+{
+  "args": {
+    "strategies": [
+      "ROUND5/research/probes/150k_exec/probe_anchor_robust_translator_sleep_snack_passive.py",
+      "ROUND5/research/probes/150k_exec/probe_anchor_robust_galaxy_oxygen_panel_passive.py",
+      "ROUND5/research/probes/150k_exec/probe_anchor_robust_uv_micro_robot_passive.py",
+      "ROUND5/research/probes/150k_exec/probe_anchor_robust_all_reasonable_passive.py",
+      "ROUND5/research/probes/150k_exec/probe_anchor_portal_translator_sleep_snack_passive.py",
+      "ROUND5/research/probes/150k_exec/probe_anchor_portal_galaxy_oxygen_panel_passive.py",
+      "ROUND5/research/probes/150k_exec/probe_anchor_portal_uv_micro_robot_passive.py",
+      "ROUND5/research/probes/150k_exec/probe_anchor_portal_all_reasonable_passive.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "portal"
+    ],
+    "jobs": 10,
+    "name": "c35_36_exec_probes_portal_broad_anchor_passive",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": true,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "portal",
+    "portal_logs": false,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_anchor_portal_all_reasonable_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 27120.0,
+      "duration_sec": 8.94,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_all_reasonable_passive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_all_reasonable_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 27120.0,
+      "duration_sec": 9.01,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_all_reasonable_passive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_all_reasonable_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 27130.0,
+      "duration_sec": 7.57,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_all_reasonable_passive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_all_reasonable_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 27130.0,
+      "duration_sec": 7.49,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_all_reasonable_passive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_galaxy_oxygen_panel_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 74156.0,
+      "duration_sec": 8.88,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_galaxy_oxygen_panel_passive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_galaxy_oxygen_panel_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 74156.0,
+      "duration_sec": 8.91,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_galaxy_oxygen_panel_passive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_galaxy_oxygen_panel_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 74166.0,
+      "duration_sec": 8.81,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_galaxy_oxygen_panel_passive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_galaxy_oxygen_panel_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 74166.0,
+      "duration_sec": 9.13,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_galaxy_oxygen_panel_passive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_translator_sleep_snack_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 96354.0,
+      "duration_sec": 17.15,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_translator_sleep_snack_passive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_translator_sleep_snack_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 96354.0,
+      "duration_sec": 17.15,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_translator_sleep_snack_passive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_translator_sleep_snack_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 96364.0,
+      "duration_sec": 16.72,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_translator_sleep_snack_passive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_translator_sleep_snack_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 96364.0,
+      "duration_sec": 16.61,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_translator_sleep_snack_passive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_uv_micro_robot_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 97210.0,
+      "duration_sec": 8.92,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_uv_micro_robot_passive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_uv_micro_robot_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 97210.0,
+      "duration_sec": 9.0,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_uv_micro_robot_passive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_uv_micro_robot_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 97220.0,
+      "duration_sec": 9.0,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_uv_micro_robot_passive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_portal_uv_micro_robot_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 97220.0,
+      "duration_sec": 9.0,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_portal_uv_micro_robot_passive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_all_reasonable_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 18929.0,
+      "duration_sec": 17.04,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_all_reasonable_passive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_all_reasonable_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 18929.0,
+      "duration_sec": 17.13,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_all_reasonable_passive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_all_reasonable_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 18929.0,
+      "duration_sec": 17.14,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_all_reasonable_passive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_all_reasonable_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 18929.0,
+      "duration_sec": 17.24,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_all_reasonable_passive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_galaxy_oxygen_panel_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 65724.0,
+      "duration_sec": 14.28,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_galaxy_oxygen_panel_passive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_galaxy_oxygen_panel_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 65724.0,
+      "duration_sec": 14.34,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_galaxy_oxygen_panel_passive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_galaxy_oxygen_panel_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 65724.0,
+      "duration_sec": 14.04,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_galaxy_oxygen_panel_passive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_galaxy_oxygen_panel_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 65724.0,
+      "duration_sec": 14.23,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_galaxy_oxygen_panel_passive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_translator_sleep_snack_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 88846.0,
+      "duration_sec": 14.29,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_translator_sleep_snack_passive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_translator_sleep_snack_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 88846.0,
+      "duration_sec": 14.15,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_translator_sleep_snack_passive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_translator_sleep_snack_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 88846.0,
+      "duration_sec": 13.83,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_translator_sleep_snack_passive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_translator_sleep_snack_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 88846.0,
+      "duration_sec": 14.72,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_translator_sleep_snack_passive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_uv_micro_robot_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 88094.0,
+      "duration_sec": 14.88,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_uv_micro_robot_passive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_uv_micro_robot_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 88094.0,
+      "duration_sec": 14.19,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_uv_micro_robot_passive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_uv_micro_robot_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 88094.0,
+      "duration_sec": 17.19,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_uv_micro_robot_passive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_anchor_robust_uv_micro_robot_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 88094.0,
+      "duration_sec": 17.05,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_portal_broad_anchor_passive\\probe_anchor_robust_uv_micro_robot_passive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": [
+    {
+      "strategy": "probe_anchor_robust_translator_sleep_snack_passive.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_anchor_robust_galaxy_oxygen_panel_passive.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_anchor_robust_uv_micro_robot_passive.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_anchor_robust_all_reasonable_passive.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_anchor_portal_translator_sleep_snack_passive.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_anchor_portal_galaxy_oxygen_panel_passive.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_anchor_portal_uv_micro_robot_passive.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_anchor_portal_all_reasonable_passive.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    }
+  ]
+}

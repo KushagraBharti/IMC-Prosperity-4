@@ -1,0 +1,161 @@
++--------------------- Traceback (most recent call last) ---------------------+
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\xeeshan-backtester\prosperity4bt\__main__.py:191  |
+| in cli                                                                      |
+|                                                                             |
+|   188         sys.exit(1)                                                   |
+|   189                                                                       |
+|   190     try:                                                              |
+| > 191         trader_module = parse_algorithm(algorithm)                    |
+|   192     except ModuleNotFoundError as e:                                  |
+|   193         print(f"{algorithm} is not a valid algorithm file: {e}")      |
+|   194         sys.exit(1)                                                   |
+|                                                                             |
+| +-------------------------------- locals ---------------------------------+ |
+| |           algorithm = WindowsPath('C:/Users/kushagra/OneDrive/Document… | |
+| |                       Projects/IMC Trading                              | |
+| |                       Comp/ROUND4/research/outputs/mini_experiments/ge… | |
+| |                data = WindowsPath('C:/Users/kushagra/OneDrive/Document… | |
+| |                       Projects/IMC Trading                              | |
+| |                       Comp/ROUND4/research/outputs/strategy_runs/r4_wi… | |
+| |                days = ['4-3']                                           | |
+| |        match_trades = <TradeMatchingMode.all: 'all'>                    | |
+| |           merge_pnl = False                                             | |
+| |              no_out = False                                             | |
+| |         no_progress = True                                              | |
+| | original_timestamps = False                                             | |
+| |                 out = WindowsPath('C:/Users/kushagra/OneDrive/Document… | |
+| |                       Projects/IMC Trading                              | |
+| |                       Comp/ROUND4/research/outputs/strategy_runs/r4_wi… | |
+| |        print_output = False                                             | |
+| |             version = None                                              | |
+| |                 vis = False                                             | |
+| +-------------------------------------------------------------------------+ |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\xeeshan-backtester\prosperity4bt\__main__.py:21   |
+| in parse_algorithm                                                          |
+|                                                                             |
+|    18                                                                       |
+|    19 def parse_algorithm(algorithm: Path) -> Any:                          |
+|    20     sys.path.append(str(algorithm.parent))                            |
+| >  21     return import_module(algorithm.stem)                              |
+|    22                                                                       |
+|    23                                                                       |
+|    24 def parse_data(data_root: Optional[Path]) -> FileReader:              |
+|                                                                             |
+| +-------------------------------- locals ---------------------------------+ |
+| | algorithm = WindowsPath('C:/Users/kushagra/OneDrive/Documents/CS        | |
+| |             Projects/IMC Trading                                        | |
+| |             Comp/ROUND4/research/outputs/mini_experiments/generated_va… | |
+| +-------------------------------------------------------------------------+ |
+|                                                                             |
+| C:\ProgramData\anaconda3\Lib\importlib\__init__.py:88 in import_module      |
+|                                                                             |
+|    85             if character != '.':                                      |
+|    86                 break                                                 |
+|    87             level += 1                                                |
+| >  88     return _bootstrap._gcd_import(name[level:], package, level)       |
+|    89                                                                       |
+|    90                                                                       |
+|    91 _RELOADING = {}                                                       |
+|                                                                             |
+| +------------------- locals -------------------+                            |
+| |   level = 0                                  |                            |
+| |    name = 'r4_probe_010_active_mid_vouchers' |                            |
+| | package = None                               |                            |
+| +----------------------------------------------+                            |
+| in _gcd_import:1387                                                         |
+| +------------------- locals -------------------+                            |
+| |   level = 0                                  |                            |
+| |    name = 'r4_probe_010_active_mid_vouchers' |                            |
+| | package = None                               |                            |
+| +----------------------------------------------+                            |
+| in _find_and_load:1360                                                      |
+| +-------------------- locals --------------------+                          |
+| | module = <object object at 0x00000284AF3F0050> |                          |
+| |   name = 'r4_probe_010_active_mid_vouchers'    |                          |
+| +------------------------------------------------+                          |
+| in _find_and_load_unlocked:1331                                             |
+| +-------------------------------- locals ---------------------------------+ |
+| |        name = 'r4_probe_010_active_mid_vouchers'                        | |
+| |      parent = ''                                                        | |
+| | parent_spec = None                                                      | |
+| |        path = None                                                      | |
+| |        spec = ModuleSpec(name='r4_probe_010_active_mid_vouchers',       | |
+| |               loader=<_frozen_importlib_external.SourceFileLoader       | |
+| |               object at 0x00000284B3A92450>,                            | |
+| |               origin='C:\\Users\\kushagra\\OneDrive\\Documents\\CS      | |
+| |               Projects\\IMC Trading                                     | |
+| |               Comp\\ROUND4\\research\\outputs\\mini_experiments\\gener… | |
+| +-------------------------------------------------------------------------+ |
+| in _load_unlocked:935                                                       |
+| +-------------------------------- locals ---------------------------------+ |
+| | module = <module 'r4_probe_010_active_mid_vouchers' from                | |
+| |          'C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC    | |
+| |          Trading                                                        | |
+| |          Comp\\ROUND4\\research\\outputs\\mini_experiments\\generated_… | |
+| |   spec = ModuleSpec(name='r4_probe_010_active_mid_vouchers',            | |
+| |          loader=<_frozen_importlib_external.SourceFileLoader object at  | |
+| |          0x00000284B3A92450>,                                           | |
+| |          origin='C:\\Users\\kushagra\\OneDrive\\Documents\\CS           | |
+| |          Projects\\IMC Trading                                          | |
+| |          Comp\\ROUND4\\research\\outputs\\mini_experiments\\generated_… | |
+| +-------------------------------------------------------------------------+ |
+| in exec_module:1023                                                         |
+| +-------------------------------- locals ---------------------------------+ |
+| | module = <module 'r4_probe_010_active_mid_vouchers' from                | |
+| |          'C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC    | |
+| |          Trading                                                        | |
+| |          Comp\\ROUND4\\research\\outputs\\mini_experiments\\generated_… | |
+| |   self = <_frozen_importlib_external.SourceFileLoader object at         | |
+| |          0x00000284B3A92450>                                            | |
+| +-------------------------------------------------------------------------+ |
+| in get_code:1161                                                            |
+| +-------------------------------- locals ---------------------------------+ |
+| | bytecode_path = 'C:\\Users\\kushagra\\OneDrive\\Documents\\CS           | |
+| |                 Projects\\IMC Trading Comp\\ROUND4\\researc'+106        | |
+| |  check_source = True                                                    | |
+| |      fullname = 'r4_probe_010_active_mid_vouchers'                      | |
+| |    hash_based = False                                                   | |
+| |          self = <_frozen_importlib_external.SourceFileLoader object at  | |
+| |                 0x00000284B3A92450>                                     | |
+| |  source_bytes = b'from __future__ import annotations\r\n\r\nimport      | |
+| |                 json\r\nimport math\r\nfrom dataclasses'+35742          | |
+| |   source_hash = None                                                    | |
+| |  source_mtime = 1777335010                                              | |
+| |   source_path = 'C:\\Users\\kushagra\\OneDrive\\Documents\\CS           | |
+| |                 Projects\\IMC Trading Comp\\ROUND4\\researc'+81         | |
+| |            st = {'mtime': 1777335010.3486497, 'size': 35822}            | |
+| +-------------------------------------------------------------------------+ |
+| in source_to_code:1091                                                      |
+| +-------------------------------- locals ---------------------------------+ |
+| | _optimize = -1                                                          | |
+| |      data = b'from __future__ import annotations\r\n\r\nimport          | |
+| |             json\r\nimport math\r\nfrom dataclasses'+35742              | |
+| |      path = 'C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC | |
+| |             Trading Comp\\ROUND4\\researc'+81                           | |
+| |      self = <_frozen_importlib_external.SourceFileLoader object at      | |
+| |             0x00000284B3A92450>                                         | |
+| +-------------------------------------------------------------------------+ |
+| in _call_with_frames_removed:488                                            |
+| +-------------------------------- locals ---------------------------------+ |
+| | args = (                                                                | |
+| |            b'from __future__ import annotations\r\n\r\nimport           | |
+| |        json\r\nimport math\r\nfrom dataclasses'+35742,                  | |
+| |            'C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC  | |
+| |        Trading Comp\\ROUND4\\researc'+81,                               | |
+| |            'exec'                                                       | |
+| |        )                                                                | |
+| |    f = <built-in function compile>                                      | |
+| | kwds = {'dont_inherit': True, 'optimize': -1}                           | |
+| +-------------------------------------------------------------------------+ |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|  C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading               |
+| Comp\ROUND4\research\outputs\mini_experiments\generated_variants\r4_probe_0 |
+| 10_active_mid_vouchers.py:129                                               |
+|         "VEV_4000",                                                         |
+|        \u25b2                                                                    |
++-----------------------------------------------------------------------------+
+IndentationError: unexpected indent

@@ -1,0 +1,309 @@
+{
+  "args": {
+    "strategies": [
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_panel_galaxy_exit_passive.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_panel_galaxy_exit_taker.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_panel_galaxy_improve2.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_panel_galaxy_skip_pebxs.py",
+      "ROUND5/research/probes/fill_capacity/probe_c42_c39_panel_galaxy_skipxs_exit_passive.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "portal"
+    ],
+    "jobs": 10,
+    "name": "candidate_39_42_fill_capacity_portal_4",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": true,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "portal",
+    "portal_logs": false,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_exit_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 125014.0,
+      "duration_sec": 34.79,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_exit_passive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_exit_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 125014.0,
+      "duration_sec": 34.88,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_exit_passive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_exit_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 125014.0,
+      "duration_sec": 34.53,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_exit_passive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_exit_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 125014.0,
+      "duration_sec": 34.59,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_exit_passive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_exit_taker.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 80202.0,
+      "duration_sec": 34.62,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_exit_taker_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_exit_taker.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 80202.0,
+      "duration_sec": 34.79,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_exit_taker_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_exit_taker.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 80220.0,
+      "duration_sec": 34.76,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_exit_taker_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_exit_taker.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 80220.0,
+      "duration_sec": 34.09,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_exit_taker_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_improve2.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 123996.0,
+      "duration_sec": 34.73,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_improve2_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_improve2.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 123996.0,
+      "duration_sec": 34.63,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_improve2_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_improve2.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 123996.0,
+      "duration_sec": 16.42,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_improve2_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_improve2.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 123996.0,
+      "duration_sec": 16.14,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_improve2_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skip_pebxs.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 126476.0,
+      "duration_sec": 16.01,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_skip_pebxs_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skip_pebxs.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 126476.0,
+      "duration_sec": 16.0,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_skip_pebxs_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skip_pebxs.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 126476.0,
+      "duration_sec": 16.13,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_skip_pebxs_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skip_pebxs.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 126476.0,
+      "duration_sec": 16.16,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_skip_pebxs_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skipxs_exit_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 126959.0,
+      "duration_sec": 16.03,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_skipxs_exit_passive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skipxs_exit_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 126959.0,
+      "duration_sec": 16.1,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_skipxs_exit_passive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skipxs_exit_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 126959.0,
+      "duration_sec": 15.95,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_skipxs_exit_passive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skipxs_exit_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 126959.0,
+      "duration_sec": 16.01,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_39_42_fill_capacity_portal_4\\probe_c42_c39_panel_galaxy_skipxs_exit_passive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": [
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_exit_passive.py",
+      "scope": "portal",
+      "max_len": 31170,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_exit_taker.py",
+      "scope": "portal",
+      "max_len": 31170,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_improve2.py",
+      "scope": "portal",
+      "max_len": 31170,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skip_pebxs.py",
+      "scope": "portal",
+      "max_len": 30589,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_c42_c39_panel_galaxy_skipxs_exit_passive.py",
+      "scope": "portal",
+      "max_len": 30589,
+      "first_above_45k": null,
+      "first_above_50k": null
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_peb_robust_quadratic.py,portal,29977,,
+probe_peb_robust_quadratic_aggressive_mxl.py,portal,29977,,
+probe_peb_robust_quadratic_passive_mxl.py,portal,29977,,
+probe_peb_robust_quadratic_taker_mxl.py,portal,29977,,
+probe_peb_portal_quadratic.py,portal,29977,,
+probe_peb_portal_quadratic_aggressive_mxl.py,portal,29977,,
+probe_peb_portal_quadratic_passive_mxl.py,portal,29977,,
+probe_peb_portal_quadratic_taker_mxl.py,portal,29977,,

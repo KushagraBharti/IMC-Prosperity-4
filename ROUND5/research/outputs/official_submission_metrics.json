@@ -1,0 +1,694 @@
+{
+  "round5_candidate_1.py": {
+    "activities_hash": "7717e3b4f856dbef9aba631e578095d706f5a1225d2dfeee3d7729cc6b3fb20f",
+    "avg_1000_markout": {
+      "PEBBLES_L": 7.0,
+      "PEBBLES_M": -21.25,
+      "PEBBLES_XL": 131.0,
+      "PEBBLES_XS": 6.5
+    },
+    "best_windows": [
+      [
+        69200,
+        207.515625,
+        245.255859375
+      ],
+      [
+        66600,
+        173.53125,
+        -4.1796875
+      ],
+      [
+        66800,
+        170.642578125,
+        166.462890625
+      ],
+      [
+        45400,
+        167.326171875,
+        -196.44140625
+      ],
+      [
+        97800,
+        161.28515625,
+        2089.18359375
+      ]
+    ],
+    "buy_qty": {
+      "PEBBLES_L": 6,
+      "PEBBLES_M": 2,
+      "PEBBLES_XL": 2,
+      "PEBBLES_XS": 2
+    },
+    "final_positions": {
+      "PEBBLES_L": 2,
+      "PEBBLES_M": 0,
+      "PEBBLES_XL": 2,
+      "PEBBLES_XS": 2
+    },
+    "graph_points": 500,
+    "limit_hits": {
+      "PEBBLES_L": 0,
+      "PEBBLES_M": 0,
+      "PEBBLES_XL": 0,
+      "PEBBLES_XS": 0
+    },
+    "market_hash": "e2e01d120324f039e1b97e395c54edc213b97c5c9588ec4b63e450cae16ff4df",
+    "max_abs_pos": {
+      "PEBBLES_L": 4,
+      "PEBBLES_M": 2,
+      "PEBBLES_XL": 2,
+      "PEBBLES_XS": 2
+    },
+    "nonempty_logs": 0,
+    "official_day": [
+      4
+    ],
+    "official_score": 1864.23828125,
+    "own_trade_count": 9,
+    "product_pnl": {
+      "PEBBLES_L": 644.0,
+      "PEBBLES_M": -104.0,
+      "PEBBLES_XL": 1410.0,
+      "PEBBLES_XS": -85.0
+    },
+    "product_trade_count": {
+      "PEBBLES_L": 5,
+      "PEBBLES_M": 2,
+      "PEBBLES_XL": 1,
+      "PEBBLES_XS": 1
+    },
+    "reconstructed_pnl": 1865.0,
+    "sell_qty": {
+      "PEBBLES_L": 4,
+      "PEBBLES_M": 2
+    },
+    "strategy": "round5_candidate_1.py",
+    "submission_id": "559965",
+    "timestamp_max": 99900,
+    "timestamp_min": 0,
+    "worst_windows": [
+      [
+        73400,
+        -202.662109375,
+        -129.841796875
+      ],
+      [
+        55200,
+        -156.474609375,
+        -181.353515625
+      ],
+      [
+        63200,
+        -151.083984375,
+        -461.12109375
+      ],
+      [
+        59800,
+        -139.71875,
+        -363.044921875
+      ],
+      [
+        61400,
+        -128.8828125,
+        -456.6953125
+      ]
+    ]
+  },
+  "round5_candidate_2.py": {
+    "activities_hash": "8311d33185cabe88690be0549e66f3e548561394ebea453103339ee29c1f3a47",
+    "avg_1000_markout": {
+      "MICROCHIP_OVAL": -3.4091945288753798,
+      "PEBBLES_L": -1.3043478260869565,
+      "ROBOT_IRONING": -2.8329032258064517,
+      "ROBOT_LAUNDRY": -3.5985559566787004,
+      "SLEEP_POD_SUEDE": -3.557077625570776,
+      "TRANSLATOR_ASTRO_BLACK": -3.6708299758259466,
+      "TRANSLATOR_GRAPHITE_MIST": -5.174764890282131,
+      "UV_VISOR_ORANGE": -0.9787234042553191
+    },
+    "best_windows": [
+      [
+        62600,
+        789.4541015625,
+        -21291.275390625
+      ],
+      [
+        40600,
+        786.080078125,
+        -9918.6640625
+      ],
+      [
+        12000,
+        702.76171875,
+        -500.09375
+      ],
+      [
+        38600,
+        680.51953125,
+        -9987.93359375
+      ],
+      [
+        73400,
+        674.890625,
+        -27788.5703125
+      ]
+    ],
+    "buy_qty": {
+      "MICROCHIP_OVAL": 713,
+      "PEBBLES_L": 19,
+      "ROBOT_IRONING": 823,
+      "ROBOT_LAUNDRY": 726,
+      "SLEEP_POD_SUEDE": 143,
+      "TRANSLATOR_ASTRO_BLACK": 660,
+      "TRANSLATOR_GRAPHITE_MIST": 680,
+      "UV_VISOR_ORANGE": 33
+    },
+    "final_positions": {
+      "MICROCHIP_OVAL": 9,
+      "PEBBLES_L": -3,
+      "ROBOT_IRONING": 9,
+      "ROBOT_LAUNDRY": -9,
+      "SLEEP_POD_SUEDE": 3,
+      "TRANSLATOR_ASTRO_BLACK": -9,
+      "TRANSLATOR_GRAPHITE_MIST": -9,
+      "UV_VISOR_ORANGE": -5
+    },
+    "graph_points": 500,
+    "limit_hits": {
+      "MICROCHIP_OVAL": 1235,
+      "PEBBLES_L": 1,
+      "ROBOT_IRONING": 1491,
+      "ROBOT_LAUNDRY": 1312,
+      "SLEEP_POD_SUEDE": 148,
+      "TRANSLATOR_ASTRO_BLACK": 1175,
+      "TRANSLATOR_GRAPHITE_MIST": 1204,
+      "UV_VISOR_ORANGE": 15
+    },
+    "market_hash": "e2e01d120324f039e1b97e395c54edc213b97c5c9588ec4b63e450cae16ff4df",
+    "max_abs_pos": {
+      "MICROCHIP_OVAL": 10,
+      "PEBBLES_L": 9,
+      "ROBOT_IRONING": 10,
+      "ROBOT_LAUNDRY": 10,
+      "SLEEP_POD_SUEDE": 10,
+      "TRANSLATOR_ASTRO_BLACK": 10,
+      "TRANSLATOR_GRAPHITE_MIST": 10,
+      "UV_VISOR_ORANGE": 10
+    },
+    "nonempty_logs": 0,
+    "official_day": [
+      4
+    ],
+    "official_score": -37335.30859375,
+    "own_trade_count": 7146,
+    "product_pnl": {
+      "MICROCHIP_OVAL": -8731.5,
+      "PEBBLES_L": -2054.0,
+      "ROBOT_IRONING": -3349.0,
+      "ROBOT_LAUNDRY": -8781.5,
+      "SLEEP_POD_SUEDE": 151.5,
+      "TRANSLATOR_ASTRO_BLACK": -4756.0,
+      "TRANSLATOR_GRAPHITE_MIST": -8191.0,
+      "UV_VISOR_ORANGE": -1630.0
+    },
+    "product_trade_count": {
+      "MICROCHIP_OVAL": 1336,
+      "PEBBLES_L": 23,
+      "ROBOT_IRONING": 1570,
+      "ROBOT_LAUNDRY": 1394,
+      "SLEEP_POD_SUEDE": 222,
+      "TRANSLATOR_ASTRO_BLACK": 1257,
+      "TRANSLATOR_GRAPHITE_MIST": 1296,
+      "UV_VISOR_ORANGE": 48
+    },
+    "reconstructed_pnl": -37341.5,
+    "sell_qty": {
+      "MICROCHIP_OVAL": 704,
+      "PEBBLES_L": 22,
+      "ROBOT_IRONING": 814,
+      "ROBOT_LAUNDRY": 735,
+      "SLEEP_POD_SUEDE": 140,
+      "TRANSLATOR_ASTRO_BLACK": 669,
+      "TRANSLATOR_GRAPHITE_MIST": 689,
+      "UV_VISOR_ORANGE": 38
+    },
+    "strategy": "round5_candidate_2.py",
+    "submission_id": "560036",
+    "timestamp_max": 99900,
+    "timestamp_min": 0,
+    "worst_windows": [
+      [
+        33600,
+        -889.6025390625,
+        -7732.4345703125
+      ],
+      [
+        41400,
+        -870.84375,
+        -10609.5859375
+      ],
+      [
+        67400,
+        -856.06640625,
+        -23597.796875
+      ],
+      [
+        84600,
+        -829.93359375,
+        -33097.6640625
+      ],
+      [
+        42600,
+        -764.0234375,
+        -12533.265625
+      ]
+    ]
+  },
+  "round5_candidate_3.py": {
+    "activities_hash": "0a452a9c42f4ac7d1b84965c0a0602309bdf76fcc38a09fe4bc21933f01194bf",
+    "avg_1000_markout": {
+      "OXYGEN_SHAKE_CHOCOLATE": -2.5303738317757007,
+      "PANEL_1X4": -0.7796610169491526,
+      "PEBBLES_L": -3.590909090909091,
+      "PEBBLES_XL": 12.57920792079208,
+      "ROBOT_LAUNDRY": -6.368181818181818
+    },
+    "best_windows": [
+      [
+        66600,
+        1547.81640625,
+        4454.59375
+      ],
+      [
+        65400,
+        1380.2421875,
+        3460.5390625
+      ],
+      [
+        7000,
+        1355.478515625,
+        891.12890625
+      ],
+      [
+        75400,
+        1220.84765625,
+        7248.9375
+      ],
+      [
+        33000,
+        1182.21875,
+        -1449.08203125
+      ]
+    ],
+    "buy_qty": {
+      "OXYGEN_SHAKE_CHOCOLATE": 102,
+      "PANEL_1X4": 58,
+      "PEBBLES_L": 24,
+      "PEBBLES_XL": 71,
+      "ROBOT_LAUNDRY": 82
+    },
+    "final_positions": {
+      "OXYGEN_SHAKE_CHOCOLATE": -10,
+      "PANEL_1X4": -10,
+      "PEBBLES_L": -6,
+      "PEBBLES_XL": -10,
+      "ROBOT_LAUNDRY": -10
+    },
+    "graph_points": 500,
+    "limit_hits": {
+      "OXYGEN_SHAKE_CHOCOLATE": 48,
+      "PANEL_1X4": 30,
+      "PEBBLES_L": 2,
+      "PEBBLES_XL": 25,
+      "ROBOT_LAUNDRY": 29
+    },
+    "market_hash": "e2e01d120324f039e1b97e395c54edc213b97c5c9588ec4b63e450cae16ff4df",
+    "max_abs_pos": {
+      "OXYGEN_SHAKE_CHOCOLATE": 10,
+      "PANEL_1X4": 10,
+      "PEBBLES_L": 10,
+      "PEBBLES_XL": 10,
+      "ROBOT_LAUNDRY": 10
+    },
+    "nonempty_logs": 0,
+    "official_day": [
+      4
+    ],
+    "official_score": -890.34375,
+    "own_trade_count": 585,
+    "product_pnl": {
+      "OXYGEN_SHAKE_CHOCOLATE": -3214.0,
+      "PANEL_1X4": 2022.0,
+      "PEBBLES_L": 2007.0,
+      "PEBBLES_XL": 3273.0,
+      "ROBOT_LAUNDRY": -4982.0
+    },
+    "product_trade_count": {
+      "OXYGEN_SHAKE_CHOCOLATE": 214,
+      "PANEL_1X4": 126,
+      "PEBBLES_L": 33,
+      "PEBBLES_XL": 101,
+      "ROBOT_LAUNDRY": 111
+    },
+    "reconstructed_pnl": -894.0,
+    "sell_qty": {
+      "OXYGEN_SHAKE_CHOCOLATE": 112,
+      "PANEL_1X4": 68,
+      "PEBBLES_L": 30,
+      "PEBBLES_XL": 81,
+      "ROBOT_LAUNDRY": 92
+    },
+    "strategy": "round5_candidate_3.py",
+    "submission_id": "560076",
+    "timestamp_max": 99900,
+    "timestamp_min": 0,
+    "worst_windows": [
+      [
+        86200,
+        -1348.609375,
+        3525.30078125
+      ],
+      [
+        19200,
+        -1057.060546875,
+        -3196.166015625
+      ],
+      [
+        25800,
+        -1052.3125,
+        -3962.9609375
+      ],
+      [
+        67400,
+        -948.68359375,
+        4576.44140625
+      ],
+      [
+        44400,
+        -948.27734375,
+        -316.81640625
+      ]
+    ]
+  },
+  "round5_candidate_4.py": {
+    "activities_hash": "466b42b9037ad0248a877909c8c2d4a1f4ffc933a3086c329fffc53431fbec67",
+    "avg_1000_markout": {
+      "ROBOT_DISHES": -2.332116788321168,
+      "ROBOT_IRONING": -2.8181818181818183,
+      "SNACKPACK_CHOCOLATE": -1.9444444444444444,
+      "SNACKPACK_RASPBERRY": 3.823529411764706,
+      "SNACKPACK_VANILLA": 3.0
+    },
+    "best_windows": [
+      [
+        74400,
+        421.9375,
+        3597.78125
+      ],
+      [
+        89400,
+        417.453125,
+        2632.5234375
+      ],
+      [
+        57400,
+        399.98828125,
+        3423.087890625
+      ],
+      [
+        77200,
+        378.1171875,
+        3495.234375
+      ],
+      [
+        53600,
+        373.271484375,
+        2552.12890625
+      ]
+    ],
+    "buy_qty": {
+      "ROBOT_DISHES": 106,
+      "ROBOT_IRONING": 28,
+      "SNACKPACK_CHOCOLATE": 14,
+      "SNACKPACK_RASPBERRY": 18,
+      "SNACKPACK_VANILLA": 10
+    },
+    "final_positions": {
+      "ROBOT_DISHES": -10,
+      "ROBOT_IRONING": 10,
+      "SNACKPACK_CHOCOLATE": 8,
+      "SNACKPACK_RASPBERRY": 8,
+      "SNACKPACK_VANILLA": 8
+    },
+    "graph_points": 500,
+    "limit_hits": {
+      "ROBOT_DISHES": 60,
+      "ROBOT_IRONING": 18,
+      "SNACKPACK_CHOCOLATE": 4,
+      "SNACKPACK_RASPBERRY": 8,
+      "SNACKPACK_VANILLA": 2
+    },
+    "market_hash": "e2e01d120324f039e1b97e395c54edc213b97c5c9588ec4b63e450cae16ff4df",
+    "max_abs_pos": {
+      "ROBOT_DISHES": 10,
+      "ROBOT_IRONING": 10,
+      "SNACKPACK_CHOCOLATE": 10,
+      "SNACKPACK_RASPBERRY": 10,
+      "SNACKPACK_VANILLA": 10
+    },
+    "nonempty_logs": 0,
+    "official_day": [
+      4
+    ],
+    "official_score": 2821.4765625,
+    "own_trade_count": 216,
+    "product_pnl": {
+      "ROBOT_DISHES": 1201.0,
+      "ROBOT_IRONING": 3106.0,
+      "SNACKPACK_CHOCOLATE": 901.0,
+      "SNACKPACK_RASPBERRY": -1040.0,
+      "SNACKPACK_VANILLA": -1340.0
+    },
+    "product_trade_count": {
+      "ROBOT_DISHES": 143,
+      "ROBOT_IRONING": 33,
+      "SNACKPACK_CHOCOLATE": 12,
+      "SNACKPACK_RASPBERRY": 20,
+      "SNACKPACK_VANILLA": 8
+    },
+    "reconstructed_pnl": 2828.0,
+    "sell_qty": {
+      "ROBOT_DISHES": 116,
+      "ROBOT_IRONING": 18,
+      "SNACKPACK_CHOCOLATE": 6,
+      "SNACKPACK_RASPBERRY": 10,
+      "SNACKPACK_VANILLA": 2
+    },
+    "strategy": "round5_candidate_4.py",
+    "submission_id": "560128",
+    "timestamp_max": 99900,
+    "timestamp_min": 0,
+    "worst_windows": [
+      [
+        76400,
+        -520.2265625,
+        3370.2109375
+      ],
+      [
+        92400,
+        -482.9375,
+        2020.2265625
+      ],
+      [
+        89200,
+        -448.8046875,
+        2215.0703125
+      ],
+      [
+        45000,
+        -448.509765625,
+        1803.529296875
+      ],
+      [
+        69400,
+        -438.0859375,
+        2802.3984375
+      ]
+    ]
+  },
+  "round5_candidate_5.py": {
+    "activities_hash": "ba83c2b9a39ca94fc31d1ebfa1f4783dfe64bd0868062b4473df68dfe53d9b31",
+    "avg_1000_markout": {
+      "MICROCHIP_OVAL": -3.018939393939394,
+      "OXYGEN_SHAKE_EVENING_BREATH": -3.1538461538461537,
+      "PEBBLES_L": 13.352941176470589,
+      "PEBBLES_XL": 2.3055555555555554,
+      "ROBOT_IRONING": 3.5,
+      "ROBOT_LAUNDRY": 0.3790322580645161,
+      "SLEEP_POD_SUEDE": -2.577777777777778,
+      "SNACKPACK_STRAWBERRY": 11.73076923076923,
+      "TRANSLATOR_ASTRO_BLACK": -2.0405405405405403,
+      "TRANSLATOR_GRAPHITE_MIST": 2.35,
+      "UV_VISOR_ORANGE": 0.07954545454545454
+    },
+    "best_windows": [
+      [
+        7000,
+        1532.875,
+        1649.798828125
+      ],
+      [
+        62600,
+        1405.7060546875,
+        2004.2763671875
+      ],
+      [
+        46000,
+        1238.064453125,
+        -654.90625
+      ],
+      [
+        82200,
+        1228.248046875,
+        6490.439453125
+      ],
+      [
+        73200,
+        1166.904296875,
+        450.7119140625
+      ]
+    ],
+    "buy_qty": {
+      "MICROCHIP_OVAL": 107,
+      "OXYGEN_SHAKE_EVENING_BREATH": 45,
+      "PEBBLES_L": 19,
+      "PEBBLES_XL": 115,
+      "ROBOT_IRONING": 84,
+      "ROBOT_LAUNDRY": 107,
+      "SLEEP_POD_SUEDE": 43,
+      "SNACKPACK_STRAWBERRY": 12,
+      "TRANSLATOR_ASTRO_BLACK": 84,
+      "TRANSLATOR_GRAPHITE_MIST": 34,
+      "UV_VISOR_ORANGE": 34
+    },
+    "final_positions": {
+      "MICROCHIP_OVAL": 10,
+      "OXYGEN_SHAKE_EVENING_BREATH": 5,
+      "PEBBLES_L": 7,
+      "PEBBLES_XL": -1,
+      "ROBOT_IRONING": 10,
+      "ROBOT_LAUNDRY": -9,
+      "SLEEP_POD_SUEDE": 6,
+      "SNACKPACK_STRAWBERRY": 5,
+      "TRANSLATOR_ASTRO_BLACK": -7,
+      "TRANSLATOR_GRAPHITE_MIST": -5,
+      "UV_VISOR_ORANGE": -5
+    },
+    "graph_points": 500,
+    "limit_hits": {
+      "MICROCHIP_OVAL": 46,
+      "OXYGEN_SHAKE_EVENING_BREATH": 8,
+      "PEBBLES_L": 1,
+      "PEBBLES_XL": 47,
+      "ROBOT_IRONING": 27,
+      "ROBOT_LAUNDRY": 33,
+      "SLEEP_POD_SUEDE": 6,
+      "SNACKPACK_STRAWBERRY": 0,
+      "TRANSLATOR_ASTRO_BLACK": 35,
+      "TRANSLATOR_GRAPHITE_MIST": 8,
+      "UV_VISOR_ORANGE": 8
+    },
+    "market_hash": "e2e01d120324f039e1b97e395c54edc213b97c5c9588ec4b63e450cae16ff4df",
+    "max_abs_pos": {
+      "MICROCHIP_OVAL": 10,
+      "OXYGEN_SHAKE_EVENING_BREATH": 10,
+      "PEBBLES_L": 9,
+      "PEBBLES_XL": 10,
+      "ROBOT_IRONING": 10,
+      "ROBOT_LAUNDRY": 10,
+      "SLEEP_POD_SUEDE": 10,
+      "SNACKPACK_STRAWBERRY": 8,
+      "TRANSLATOR_ASTRO_BLACK": 10,
+      "TRANSLATOR_GRAPHITE_MIST": 10,
+      "UV_VISOR_ORANGE": 10
+    },
+    "nonempty_logs": 0,
+    "official_day": [
+      4
+    ],
+    "official_score": 899.14453125,
+    "own_trade_count": 836,
+    "product_pnl": {
+      "MICROCHIP_OVAL": -3482.0,
+      "OXYGEN_SHAKE_EVENING_BREATH": 1749.0,
+      "PEBBLES_L": -1111.0,
+      "PEBBLES_XL": 3740.0,
+      "ROBOT_IRONING": -786.0,
+      "ROBOT_LAUNDRY": -1574.5,
+      "SLEEP_POD_SUEDE": 2662.0,
+      "SNACKPACK_STRAWBERRY": 1114.0,
+      "TRANSLATOR_ASTRO_BLACK": -1951.0,
+      "TRANSLATOR_GRAPHITE_MIST": 1193.0,
+      "UV_VISOR_ORANGE": -659.0
+    },
+    "product_trade_count": {
+      "MICROCHIP_OVAL": 132,
+      "OXYGEN_SHAKE_EVENING_BREATH": 53,
+      "PEBBLES_L": 17,
+      "PEBBLES_XL": 146,
+      "ROBOT_IRONING": 99,
+      "ROBOT_LAUNDRY": 132,
+      "SLEEP_POD_SUEDE": 46,
+      "SNACKPACK_STRAWBERRY": 13,
+      "TRANSLATOR_ASTRO_BLACK": 111,
+      "TRANSLATOR_GRAPHITE_MIST": 42,
+      "UV_VISOR_ORANGE": 45
+    },
+    "reconstructed_pnl": 894.5,
+    "sell_qty": {
+      "MICROCHIP_OVAL": 97,
+      "OXYGEN_SHAKE_EVENING_BREATH": 40,
+      "PEBBLES_L": 12,
+      "PEBBLES_XL": 116,
+      "ROBOT_IRONING": 74,
+      "ROBOT_LAUNDRY": 116,
+      "SLEEP_POD_SUEDE": 37,
+      "SNACKPACK_STRAWBERRY": 7,
+      "TRANSLATOR_ASTRO_BLACK": 91,
+      "TRANSLATOR_GRAPHITE_MIST": 39,
+      "UV_VISOR_ORANGE": 39
+    },
+    "strategy": "round5_candidate_5.py",
+    "submission_id": "560155",
+    "timestamp_max": 99900,
+    "timestamp_min": 0,
+    "worst_windows": [
+      [
+        33000,
+        -1495.2734375,
+        354.59765625
+      ],
+      [
+        93200,
+        -1285.3271484375,
+        1034.0
+      ],
+      [
+        21800,
+        -1276.140625,
+        -206.40625
+      ],
+      [
+        97800,
+        -1235.2177734375,
+        743.63671875
+      ],
+      [
+        89400,
+        -1208.30078125,
+        1499.5048828125
+      ]
+    ]
+  }
+}

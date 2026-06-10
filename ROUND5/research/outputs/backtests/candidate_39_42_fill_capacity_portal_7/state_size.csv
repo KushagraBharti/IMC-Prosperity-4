@@ -1,0 +1,8 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c42_transplant_uv_from39.py,portal,29953,,
+probe_c42_transplant_micro_from39.py,portal,29953,,
+probe_c42_transplant_snack_from39.py,portal,29953,,
+probe_c42_transplant_micro_uv_from39.py,portal,29953,,
+probe_c42_transplant_uv_from39_skipxs.py,portal,29372,,
+probe_c42_transplant_micro_from39_skipxs.py,portal,29372,,
+probe_c42_transplant_micro_uv_from39_skipxs.py,portal,29372,,

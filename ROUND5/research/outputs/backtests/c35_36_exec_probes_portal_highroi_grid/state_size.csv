@@ -1,0 +1,10 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_grid_micro_uv_loose.py,portal,29953,,
+probe_grid_micro_uv_micro_loose_uv_med.py,portal,29953,,
+probe_grid_micro_uv_micro_med_uv_loose.py,portal,29953,,
+probe_grid_micro_uv_micro_only_loose.py,portal,29394,,
+probe_grid_micro_uv_passive_loose.py,portal,29953,,
+probe_grid_micro_uv_uv_only_loose.py,portal,29364,,
+probe_c36_no_micro_extras.py,portal,16653,,
+probe_c36_no_uv_extras.py,portal,17450,,
+probe_c36_no_panel_extras.py,portal,15454,,

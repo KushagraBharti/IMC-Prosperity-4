@@ -1,0 +1,7 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c42_pure_hybrid_panel.py,portal,29953,,
+probe_c42_pure_skip_pebxs.py,portal,29372,,
+probe_c42_pure_exit_passive.py,portal,29953,,
+probe_c42_pure_skipxs_exit_passive.py,portal,29372,,
+probe_c42_pure_hybrid_panel_skipxs.py,portal,29372,,
+probe_c42_pure_hybrid_panel_skipxs_exit.py,portal,29372,,

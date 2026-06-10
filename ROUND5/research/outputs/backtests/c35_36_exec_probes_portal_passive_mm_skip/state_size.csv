@@ -1,0 +1,13 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_mm_robust_skip_panel.py,portal,30083,,
+probe_mm_robust_skip_sleep.py,portal,30122,,
+probe_mm_robust_skip_trans_gal.py,portal,30323,,
+probe_mm_robust_skip_oxygen_snack.py,portal,30329,,
+probe_mm_robust_skip_micro.py,portal,30086,,
+probe_mm_robust_skip_all_nonrobot.py,portal,31131,,
+probe_mm_portal_skip_panel.py,portal,30083,,
+probe_mm_portal_skip_sleep.py,portal,30122,,
+probe_mm_portal_skip_trans_gal.py,portal,30323,,
+probe_mm_portal_skip_oxygen_snack.py,portal,30329,,
+probe_mm_portal_skip_micro.py,portal,30086,,
+probe_mm_portal_skip_all_nonrobot.py,portal,31131,,

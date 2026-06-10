@@ -1,0 +1,18 @@
+product,category,candidate35_portal_pnl,best_probe_portal_pnl,best_probe,classification,oracle_capacity_units,practical_engine_proxy,coverage_role,notes
+MICROCHIP_CIRCLE,MICROCHIP,0.0,236.0,probe_micro_panel_hybrid.py,exclude,296057.0,1885.0,exclude,Passive/hybrid probes were toxic or portal-only; high oracle not executable yet.
+MICROCHIP_TRIANGLE,MICROCHIP,0.0,4176.0,probe_c35_stack_anchor_microtri_uvamber.py,gated_add,17064172.75,2485.0,active_trade,"Portal-upside hybrid adds about +4.2k, but full score drops materially; use only in portal/upside branch or with stronger gate."
+PANEL_2X4,PANEL,0.0,3773.0,probe_c36_more_pebbles.py,validated_add,124782302.5,2505.0,active_trade,Previously unused by 35; clean probes add about +1.8k portal and full stays strong.
+UV_VISOR_AMBER,UV_VISOR,0.0,4887.0,probe_grid_micro_uv_uv_only_loose.py,gated_add,67393530.0,3710.0,active_trade,"Portal-upside hybrid adds about +4.9k, but full score drops materially; use only in portal/upside branch or with stronger gate."
+UV_VISOR_MAGENTA,UV_VISOR,0.0,136.0,probe_sleep_uv_snack.py,exclude,7245362.0,2380.0,exclude,Tiny portal contribution in broad probes and negative full proxy; do not include robust branch.
+ROBOT_DISHES,ROBOT,0.0,5700.0,probe_c36_no_panel_extras.py,gated_add,63108839.0,3235.0,active_trade,Hybrid adds about +2.3k portal but crushes full score; likely execution/fill edge that needs a dedicated gate.
+ROBOT_MOPPING,ROBOT,0.0,1622.0,probe_c36_focus_gap_signals.py,gated_add,116594740.25,490.0,active_trade,Small/unstable; candidate 36 uses it but c35 add-on is not convincing.
+ROBOT_LAUNDRY,ROBOT,0.0,5180.0,probe_c36_no_uv_extras.py,exclude,859236.5,2975.0,exclude,Toxic in c35-compatible probes despite c36 portal positives; do not add to robust stack.
+ROBOT_VACUUMING,ROBOT,0.0,1358.5,probe_c35_stack_broad_gated.py,validated_add,15768240.0,910.0,active_trade,Clean c35 stack converts it into +1.36k portal and full remains strong.
+SLEEP_POD_SUEDE,SLEEP_POD,0.0,1989.0,probe_struct_robust_curve_sleep.py,validated_add,566912.0,2150.0,active_trade,Previously unused; clean stack adds +1.88k portal and survives full validation.
+TRANSLATOR_ASTRO_BLACK,TRANSLATOR,0.0,2588.0,probe_branch_robust_conservative_robot_vtight.py,validated_add,40747800.5,-70.0,active_trade,Previously unused; clean stack adds +2.59k portal with strong full result.
+GALAXY_SOUNDS_BLACK_HOLES,GALAXY_SOUNDS,0.0,2880.0,probe_struct_robust_leadlag_trans_galaxy.py,validated_add,29468696.25,1290.0,active_trade,Previously unused; clean stack adds about +2.2k portal and full remains strong.
+SNACKPACK_RASPBERRY,SNACKPACK,0.0,1313.0,probe_branch_robust_conservative_robot_vtight.py,validated_add,4345471.75,950.0,active_trade,Clean stack converts it to +1.31k portal and full improves.
+SNACKPACK_STRAWBERRY,SNACKPACK,0.0,1169.0,probe_c35_stack_broad_gated.py,validated_add,21589364.0,2000.0,active_trade,Clean stack converts it to +1.17k portal and full improves.
+SNACKPACK_CHOCOLATE,SNACKPACK,0.0,1754.5,probe_struct_portal_leadlag_all_fresh.py,exclude,9185556.0,735.0,exclude,Only tiny/zero portal result as direct/anchor add; do not carry except in information probes.
+SNACKPACK_VANILLA,SNACKPACK,0.0,713.5,probe_pivot_robust_resid_all_fresh.py,gated_add,1155866.5,245.0,active_trade,"Weak alone, but as a 10k anchor it helps the loose portal-upside branch reach 120.3k; not a robust default."
+SNACKPACK_PISTACHIO,SNACKPACK,0.0,791.0,probe_struct_robust_leadlag_all_fresh.py,validated_add,11590206.0,320.0,active_trade,Clean stack converts it to +0.54k portal and full improves; low weight only.

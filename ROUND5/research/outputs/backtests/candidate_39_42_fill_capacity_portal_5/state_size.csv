@@ -1,0 +1,4 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c42_c39_panel_galaxy_skipxs_exit_robot.py,portal,31745,,
+probe_c42_c39_panel_galaxy_skipxs_exit_pruned_low.py,portal,24318,,
+probe_c42_c39_panel_galaxy_trans_skipxs_exit.py,portal,30589,,

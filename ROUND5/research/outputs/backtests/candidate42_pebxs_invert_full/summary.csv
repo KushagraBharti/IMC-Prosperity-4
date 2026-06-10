@@ -1,0 +1,3 @@
+strategy,tool,suite,capped,profit,returncode,duration_sec,trade_count,filled_quantity,avg_fill_quantity,json_log,stdout
+probe_c42_invert_pebxs.py,kevin,full,False,422588.0,0,274.12,,,,,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\outputs\backtests\candidate42_pebxs_invert_full\probe_c42_invert_pebxs_kevin_full_stdout.txt
+probe_c42_invert_pebxs.py,xeeshan,full,False,422650.0,0,275.81,,,,,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\outputs\backtests\candidate42_pebxs_invert_full\probe_c42_invert_pebxs_xeeshan_full_stdout.txt

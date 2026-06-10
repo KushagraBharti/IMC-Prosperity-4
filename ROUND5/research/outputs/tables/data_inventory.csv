@@ -1,0 +1,4 @@
+day,price_rows,products,timestamps,min_timestamp,max_timestamp,median_spacing,min_spacing,max_spacing,trade_rows,trade_products
+2,500000,50,10000,0,999900,100.0,100.0,100.0,11090,50
+3,500000,50,10000,0,999900,100.0,100.0,100.0,12320,50
+4,500000,50,10000,0,999900,100.0,100.0,100.0,11975,50

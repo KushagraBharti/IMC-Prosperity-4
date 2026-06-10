@@ -1,0 +1,78 @@
+{
+  "args": {
+    "strategies": [
+      "ROUND5/research/probes/150k_exec/probe_branch_portal_vanilla_micro_uv_robot_vtight.py",
+      "ROUND5/research/probes/150k_exec/probe_branch_portal_vanilla_micro_uv_robot_pair.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "full"
+    ],
+    "jobs": 8,
+    "name": "c35_36_exec_probes_full_two_branch_robot",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": false,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "none",
+    "portal_logs": true,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_branch_portal_vanilla_micro_uv_robot_pair.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 114755.0,
+      "duration_sec": 405.2,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_two_branch_robot\\probe_branch_portal_vanilla_micro_uv_robot_pair_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_branch_portal_vanilla_micro_uv_robot_pair.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 114557.0,
+      "duration_sec": 392.11,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_two_branch_robot\\probe_branch_portal_vanilla_micro_uv_robot_pair_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_branch_portal_vanilla_micro_uv_robot_vtight.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120960.0,
+      "duration_sec": 393.76,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_two_branch_robot\\probe_branch_portal_vanilla_micro_uv_robot_vtight_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_branch_portal_vanilla_micro_uv_robot_vtight.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 0,
+      "profit": 120694.0,
+      "duration_sec": 382.51,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\c35_36_exec_probes_full_two_branch_robot\\probe_branch_portal_vanilla_micro_uv_robot_vtight_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": []
+}

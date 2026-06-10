@@ -1,0 +1,9 @@
+| Strategy | Kevin Full | Xeeshan Full | Portal Window Kevin | Portal Window Xeeshan | Rust Full | Official Portal Score |
+|---|---:|---:|---:|---:|---:|---:|
+| round5_candidate_1.py | 4238 | 4238 | 1865.00 | 1865.00 |  | 1864.24 |
+| round5_candidate_2.py | -1007708 | -1007817 | -38530.00 | -38568.00 |  | -37335.31 |
+| round5_candidate_3.py | 19338 | 19331 | -894.00 | -894.00 |  | -890.34 |
+| round5_candidate_4.py | -105458 | -105462 | 2828.00 | 2828.00 |  | 2821.48 |
+| round5_candidate_5.py | -54298 | -54318 | 902.00 | 894.00 |  | 899.14 |
+
+Rust Full skipped: Round 5 Rust replay was not used for routine candidates because the repo workflow reserves it for finalists and Kevin/Xeeshan plus official logs are sufficient for this diagnostic pass.

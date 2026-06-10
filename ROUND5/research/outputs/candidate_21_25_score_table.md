@@ -1,0 +1,9 @@
+| Strategy | Kevin Full | Xeeshan Full | Portal Window Kevin | Portal Window Xeeshan | Rust Full | Official Portal Score |
+|---|---:|---:|---:|---:|---:|---:|
+| round5_candidate_21.py | 65570.00 | 65972.00 | 17304.00 | 17304.00 |  | pending |
+| round5_candidate_22.py | 18578.00 | 18578.00 | 20426.00 | 20426.00 |  | pending |
+| round5_candidate_23.py | 183801.00 | 183847.00 | 37240.00 | 37240.00 |  | pending |
+| round5_candidate_24.py | 131105.00 | 130749.00 | 41760.00 | 41760.00 |  | pending |
+| round5_candidate_25.py | 156771.00 | 156415.00 | 38946.00 | 38946.00 |  | pending |
+
+Rust Full skipped: not needed for this controlled integration batch.

@@ -1,0 +1,8 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_grid_robust_micro_uv_conservative_hybrid.py,portal,29953,,
+probe_grid_robust_micro_uv_micro_hybrid_uv_passive.py,portal,29953,,
+probe_grid_robust_micro_uv_passive_medium.py,portal,29953,,
+probe_grid_robust_micro_uv_uv_hybrid_micro_passive.py,portal,29953,,
+probe_grid_robust_micro_uv_uv_only_medium.py,portal,29364,,
+probe_increment_snackpack_micro_uv_conservative.py,portal,29953,,
+probe_increment_vanilla_micro_uv_conservative.py,portal,29953,,

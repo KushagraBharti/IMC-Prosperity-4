@@ -1,0 +1,7 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c42_c39_hybrid_panel_galaxy.py,portal,31170,,
+probe_c42_c39_hybrid_panel_extra0.py,portal,31170,,
+probe_c42_c39_hybrid_panel_core.py,portal,31170,,
+probe_c42_c39_hybrid_panel_core_extra0.py,portal,31170,,
+probe_c39_hybrid_panel.py,portal,31170,,
+probe_c37_hybrid_panel.py,portal,32325,,

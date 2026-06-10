@@ -1,0 +1,6 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c42_c39_panel_galaxy_exit_passive.py,portal,31170,,
+probe_c42_c39_panel_galaxy_exit_taker.py,portal,31170,,
+probe_c42_c39_panel_galaxy_improve2.py,portal,31170,,
+probe_c42_c39_panel_galaxy_skip_pebxs.py,portal,30589,,
+probe_c42_c39_panel_galaxy_skipxs_exit_passive.py,portal,30589,,

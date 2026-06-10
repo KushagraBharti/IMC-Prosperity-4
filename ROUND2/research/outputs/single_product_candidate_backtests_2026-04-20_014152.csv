@@ -1,0 +1,7 @@
+name,path,xeeshan_total,xeeshan_osmium,xeeshan_pepper,kevin_total,kevin_osmium,kevin_pepper,rust_total,rust_osmium,rust_pepper,rust_own_trades,average
+pepper_only_baseline,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND2\strategies\pepper_only_baseline.py,79362.0,0.0,238165.0,79362.0,0.0,238165.0,238165.0,0.0,238165.0,26,132296.33
+pepper_only_residual_harvest,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND2\strategies\pepper_only_residual_harvest.py,79362.0,0.0,238165.0,79362.0,0.0,238165.0,238165.0,0.0,238165.0,26,132296.33
+pepper_only_adaptive,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND2\strategies\pepper_only_adaptive.py,79332.0,0.0,238144.0,79332.0,0.0,238135.0,238135.0,0.0,238135.0,25,132266.33
+osmium_only_legacy,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND2\strategies\osmium_only_legacy.py,10332.0,29482.0,0.0,10104.0,28439.0,0.0,28663.0,28663.0,0.0,2494,16366.33
+osmium_only_simple10002,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND2\strategies\osmium_only_simple10002.py,9899.0,28988.0,0.0,9755.0,28259.0,0.0,28427.0,28427.0,0.0,1694,16027.0
+osmium_only_adaptive,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND2\strategies\osmium_only_adaptive.py,5803.0,13625.0,0.0,5225.0,12447.0,0.0,12861.0,12861.0,0.0,2419,7963.0

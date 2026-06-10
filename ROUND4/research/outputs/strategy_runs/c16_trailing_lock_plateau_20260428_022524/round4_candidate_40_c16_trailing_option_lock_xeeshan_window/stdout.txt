@@ -1,0 +1,16 @@
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_40_c16_trailing_option_lock.py on round 4 day 3
+HYDROGEL_PACK: 1,283
+VELVETFRUIT_EXTRACT: 11,581
+VEV_4000: 7,304
+VEV_4500: 9,164
+VEV_5000: 14,027
+VEV_5100: 15,438
+VEV_5200: 9,544
+VEV_5300: 5,816
+VEV_5400: 2,463
+VEV_5500: 788
+VEV_6000: 24
+VEV_6500: 24
+Total profit: 77,456
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\strategy_runs\c16_trailing_lock_plateau_20260428_022524\round4_candidate_40_c16_trailing_option_lock_xeeshan_window\xeeshan.log

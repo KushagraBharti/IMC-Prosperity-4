@@ -1,0 +1,5 @@
+Strategy,Base,Portal Kevin,Portal Xeeshan,Full Kevin,Full Xeeshan,Portal Max traderData,Official Safe,Reset Verdict
+round5_candidate_31.py,568114.py,87593,87633,95145,95404,13951,yes,portal-strong control; full positive but day2/day3 fragile
+round5_candidate_32.py,round5_candidate_30.py,70713,70713,250247,250263,15535,yes,best full-history robust base
+round5_candidate_33.py,round5_candidate_29.py,85930,85930,244734,244750,23777,yes,best portal/full blend; broader and noisier than 32
+round5_candidate_34.py,568593.py,105940,105940,-49854,-49708,19364,yes,highest portal-window score but full-history fragile

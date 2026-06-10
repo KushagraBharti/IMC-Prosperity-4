@@ -1,0 +1,52 @@
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_35_c16_dynamic_pnl_delta_lock.py on round 4 day 1
+HYDROGEL_PACK: -6,336
+VELVETFRUIT_EXTRACT: 46,886
+VEV_4000: 14,472
+VEV_4500: 10,836
+VEV_5000: 67,643
+VEV_5100: 4,892
+VEV_5200: 774
+VEV_5300: 445
+VEV_5400: -267
+VEV_5500: 150
+VEV_6000: 150
+VEV_6500: 150
+Total profit: 139,796
+
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_35_c16_dynamic_pnl_delta_lock.py on round 4 day 2
+HYDROGEL_PACK: 1,824
+VELVETFRUIT_EXTRACT: -50,952
+VEV_4000: 12,311
+VEV_4500: 17,305
+VEV_5000: -13,449
+VEV_5100: -28,874
+VEV_5200: -28,693
+VEV_5300: -1,013
+VEV_5400: -1,224
+VEV_5500: -300
+VEV_6000: 150
+VEV_6500: 150
+Total profit: -92,766
+
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_35_c16_dynamic_pnl_delta_lock.py on round 4 day 3
+HYDROGEL_PACK: 1,345
+VELVETFRUIT_EXTRACT: 1,590
+VEV_4000: 24,684
+VEV_4500: 9,827
+VEV_5000: 9,206
+VEV_5100: 19,084
+VEV_5200: -2,251
+VEV_5300: 5,795
+VEV_5400: 4,267
+VEV_5500: 1,578
+VEV_6000: 150
+VEV_6500: 150
+Total profit: 75,425
+
+Profit summary:
+Round 4 day 1: 139,796
+Round 4 day 2: -92,766
+Round 4 day 3: 75,425
+Total profit: 122,455
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\strategy_runs\c16_dynamic_plateau_fix_20260428_021607\round4_candidate_35_c16_dynamic_pnl_delta_lock_xeeshan_full\xeeshan.log

@@ -1,0 +1,6 @@
+"pepper","osmium","xeeshan","kevin","rust","avg","note"
+"pepper_only_baseline","osmium_only_legacy","267647","266604","266828","267026.33","reconstructs 314134/314178 local"
+"pepper_only_residual_harvest","osmium_only_legacy","267647","266604","266828","267026.33","same as baseline pepper locally"
+"pepper_only_adaptive","osmium_only_legacy","267626","266574","266798","266999.33","slightly below current full strategy"
+"pepper_only_baseline","osmium_only_simple10002","267153","266424","266592","266723","reconstructs 345731 local"
+"pepper_only_baseline","osmium_only_adaptive","251790","250612","251026","251142.67","dominated by other combos"

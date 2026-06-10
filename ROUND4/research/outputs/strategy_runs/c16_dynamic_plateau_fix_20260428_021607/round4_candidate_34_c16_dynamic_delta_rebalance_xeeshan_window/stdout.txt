@@ -1,0 +1,16 @@
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_34_c16_dynamic_delta_rebalance.py on round 4 day 3
+HYDROGEL_PACK: 1,283
+VELVETFRUIT_EXTRACT: -11,746
+VEV_4000: 9,057
+VEV_4500: 9,843
+VEV_5000: 2,533
+VEV_5100: 6,413
+VEV_5200: -2,268
+VEV_5300: 5,795
+VEV_5400: 2,467
+VEV_5500: 938
+VEV_6000: 24
+VEV_6500: 24
+Total profit: 24,364
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\strategy_runs\c16_dynamic_plateau_fix_20260428_021607\round4_candidate_34_c16_dynamic_delta_rebalance_xeeshan_window\xeeshan.log

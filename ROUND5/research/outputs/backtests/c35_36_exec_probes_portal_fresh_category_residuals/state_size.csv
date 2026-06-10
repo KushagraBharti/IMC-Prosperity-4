@@ -1,0 +1,11 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_pivot_robust_resid_sleep_curve.py,portal,32388,,
+probe_pivot_robust_resid_panel_curve.py,portal,32804,,
+probe_pivot_robust_resid_translator_galaxy_curve.py,portal,34111,,
+probe_pivot_robust_resid_oxygen_snack_curve.py,portal,34030,,
+probe_pivot_robust_resid_all_fresh.py,portal,43767,,
+probe_pivot_portal_resid_sleep_curve.py,portal,32388,,
+probe_pivot_portal_resid_panel_curve.py,portal,32804,,
+probe_pivot_portal_resid_translator_galaxy_curve.py,portal,34111,,
+probe_pivot_portal_resid_oxygen_snack_curve.py,portal,34030,,
+probe_pivot_portal_resid_all_fresh.py,portal,43767,,

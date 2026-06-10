@@ -1,0 +1,72 @@
+{
+  "unresolved_probe_portal_best_all.py": {
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": 10227.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_portal_best_all_kevin_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_portal_best_all_kevin_portal_stdout.txt"
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": 10227.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_portal_best_all_xeeshan_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_portal_best_all_xeeshan_portal_stdout.txt"
+    }
+  },
+  "unresolved_probe_full_best_all.py": {
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": -6824.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_full_best_all_kevin_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_full_best_all_kevin_portal_stdout.txt"
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": -6824.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_full_best_all_xeeshan_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_full_best_all_xeeshan_portal_stdout.txt"
+    }
+  },
+  "unresolved_probe_sleep.py": {
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": 4380.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_sleep_kevin_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_sleep_kevin_portal_stdout.txt"
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": 4380.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_sleep_xeeshan_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_sleep_xeeshan_portal_stdout.txt"
+    }
+  },
+  "unresolved_probe_translator_galaxy_uv.py": {
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": -494.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_translator_galaxy_uv_kevin_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_translator_galaxy_uv_kevin_portal_stdout.txt"
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": -494.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_translator_galaxy_uv_xeeshan_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_translator_galaxy_uv_xeeshan_portal_stdout.txt"
+    }
+  },
+  "unresolved_probe_micro_robot_panel.py": {
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": 3400.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_micro_robot_panel_kevin_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_micro_robot_panel_kevin_portal_stdout.txt"
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": 3400.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_micro_robot_panel_xeeshan_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_micro_robot_panel_xeeshan_portal_stdout.txt"
+    }
+  }
+}

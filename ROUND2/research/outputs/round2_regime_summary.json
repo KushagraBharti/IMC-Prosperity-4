@@ -1,0 +1,60 @@
+{
+  "pepper_logistic": [
+    {
+      "product": "INTARIAN_PEPPER_ROOT",
+      "test_day": -1,
+      "samples": 5589,
+      "up_rate": 0.5904455179817498,
+      "accuracy": 0.7983539094650206,
+      "auc": 0.8849324172259954,
+      "mean_predicted_up_prob": 0.592559518763963
+    },
+    {
+      "product": "INTARIAN_PEPPER_ROOT",
+      "test_day": 0,
+      "samples": 5477,
+      "up_rate": 0.5895563264560891,
+      "accuracy": 0.8008033595033778,
+      "auc": 0.8811733412391484,
+      "mean_predicted_up_prob": 0.5964847783130957
+    },
+    {
+      "product": "INTARIAN_PEPPER_ROOT",
+      "test_day": 1,
+      "samples": 5653,
+      "up_rate": 0.5952591544312754,
+      "accuracy": 0.8050592605696091,
+      "auc": 0.8859855412047091,
+      "mean_predicted_up_prob": 0.5863253994190103
+    }
+  ],
+  "osmium_logistic": [
+    {
+      "product": "ASH_COATED_OSMIUM",
+      "test_day": -1,
+      "samples": 6260,
+      "up_rate": 0.5027156549520767,
+      "accuracy": 0.7808306709265176,
+      "auc": 0.8620952184382946,
+      "mean_predicted_up_prob": 0.4931377656368851
+    },
+    {
+      "product": "ASH_COATED_OSMIUM",
+      "test_day": 0,
+      "samples": 6327,
+      "up_rate": 0.4977082345503398,
+      "accuracy": 0.7747747747747747,
+      "auc": 0.8595071287377636,
+      "mean_predicted_up_prob": 0.5028739822962323
+    },
+    {
+      "product": "ASH_COATED_OSMIUM",
+      "test_day": 1,
+      "samples": 6220,
+      "up_rate": 0.4972668810289389,
+      "accuracy": 0.7758842443729903,
+      "auc": 0.857178402266132,
+      "mean_predicted_up_prob": 0.5022878820815491
+    }
+  ]
+}

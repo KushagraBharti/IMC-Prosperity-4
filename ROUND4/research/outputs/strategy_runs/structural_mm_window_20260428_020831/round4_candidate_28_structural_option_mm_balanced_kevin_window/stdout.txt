@@ -1,0 +1,17 @@
+running algorithm 'C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_28_structural_option_mm_balanced.py'...
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_28_structural_option_mm_balanced.py for round: 4 day: 3
+VEV_5400: 2,467
+VEV_5300: 5,821
+VEV_6500: 24
+VEV_4500: 9,831
+HYDROGEL_PACK: 1,749
+VEV_5500: 938
+VEV_6000: 24
+VEV_5000: 15,461
+VEV_5200: 9,639
+VEV_5100: 16,336
+VEV_4000: 9,108
+VELVETFRUIT_EXTRACT: 12,758
+Total profit: 84,155
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\strategy_runs\structural_mm_window_20260428_020831\round4_candidate_28_structural_option_mm_balanced_kevin_window\kevin.log

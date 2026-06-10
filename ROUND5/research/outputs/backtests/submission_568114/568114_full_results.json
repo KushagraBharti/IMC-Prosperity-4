@@ -1,0 +1,18 @@
+[
+  {
+    "tool": "kevin",
+    "returncode": 0,
+    "profit": 95145.0,
+    "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\submission_568114\\568114_kevin_full.log",
+    "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\submission_568114\\568114_kevin_full_stdout.txt",
+    "stderr_tail": ""
+  },
+  {
+    "tool": "xeeshan",
+    "returncode": 0,
+    "profit": 95404.0,
+    "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\submission_568114\\568114_xeeshan_full.log",
+    "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\submission_568114\\568114_xeeshan_full_stdout.txt",
+    "stderr_tail": ""
+  }
+]

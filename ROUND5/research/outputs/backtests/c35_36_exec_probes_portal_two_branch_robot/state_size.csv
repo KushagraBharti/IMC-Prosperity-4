@@ -1,0 +1,6 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_branch_portal_vanilla_micro_uv_robot_vtight.py,portal,30523,,
+probe_branch_portal_vanilla_micro_uv_robot_passive.py,portal,30523,,
+probe_branch_portal_vanilla_micro_uv_robot_pair.py,portal,31108,,
+probe_branch_robust_conservative_robot_vtight.py,portal,30523,,
+probe_branch_robust_conservative_robot_pair.py,portal,31108,,

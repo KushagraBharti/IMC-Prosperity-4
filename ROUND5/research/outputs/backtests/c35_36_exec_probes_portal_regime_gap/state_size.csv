@@ -1,0 +1,11 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_regime_robust_snack_regime.py,portal,30132,,
+probe_regime_robust_uv_sleep_gal_regime.py,portal,30207,,
+probe_regime_robust_oxygen_regime.py,portal,30114,,
+probe_regime_robust_all_regime_strict.py,portal,30547,,
+probe_regime_robust_all_regime_loose.py,portal,30547,,
+probe_regime_portal_snack_regime.py,portal,30132,,
+probe_regime_portal_uv_sleep_gal_regime.py,portal,30207,,
+probe_regime_portal_oxygen_regime.py,portal,30114,,
+probe_regime_portal_all_regime_strict.py,portal,30547,,
+probe_regime_portal_all_regime_loose.py,portal,30547,,

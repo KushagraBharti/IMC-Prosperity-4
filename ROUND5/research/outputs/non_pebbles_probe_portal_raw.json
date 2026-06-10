@@ -1,0 +1,86 @@
+{
+  "non_pebbles_probe_microchip.py": {
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": 2063.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_microchip_kevin_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_microchip_kevin_portal_stdout.txt"
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": 2063.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_microchip_xeeshan_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_microchip_xeeshan_portal_stdout.txt"
+    }
+  },
+  "non_pebbles_probe_robot.py": {
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": -744.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_robot_kevin_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_robot_kevin_portal_stdout.txt"
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": -744.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_robot_xeeshan_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_robot_xeeshan_portal_stdout.txt"
+    }
+  },
+  "non_pebbles_probe_uv_oxygen_panel.py": {
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": 587.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_uv_oxygen_panel_kevin_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_uv_oxygen_panel_kevin_portal_stdout.txt"
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": 587.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_uv_oxygen_panel_xeeshan_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_uv_oxygen_panel_xeeshan_portal_stdout.txt"
+    }
+  },
+  "non_pebbles_probe_breadth.py": {
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": -7752.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_breadth_kevin_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_breadth_kevin_portal_stdout.txt"
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": -7752.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_breadth_xeeshan_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_breadth_xeeshan_portal_stdout.txt"
+    }
+  },
+  "non_pebbles_probe_longhorizon_breadth.py": {
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": 17304.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_longhorizon_breadth_kevin_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_longhorizon_breadth_kevin_portal_stdout.txt"
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": 17304.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_longhorizon_breadth_xeeshan_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_longhorizon_breadth_xeeshan_portal_stdout.txt"
+    }
+  },
+  "non_pebbles_probe_longhorizon_microchip.py": {
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": 9564.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_longhorizon_microchip_kevin_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_longhorizon_microchip_kevin_portal_stdout.txt"
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": 9564.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_longhorizon_microchip_xeeshan_portal.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\non_pebbles_probes\\non_pebbles_probe_longhorizon_microchip_xeeshan_portal_stdout.txt"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+segment,product,mark,recommended_weight,avg_score,evidence_rows,total_events,family
+late,VEV_5200,Mark 22,-0.322,-0.6440616210608502,3,140,static_short
+late,VEV_5300,Mark 14,0.323,0.6459788658155732,3,89,static_short
+late,VEV_5400,Mark 14,-0.3311,-0.6622807017543859,3,30,static_short
+post40,VEV_5200,Mark 22,-0.322,-0.6440616210608502,3,140,static_short
+post40,VEV_5300,Mark 14,0.323,0.6459788658155732,3,89,static_short
+post40,VEV_5400,Mark 14,-0.3841,-0.7681159420289855,3,36,static_short

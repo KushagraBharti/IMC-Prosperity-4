@@ -1,0 +1,78 @@
+{
+  "args": {
+    "strategies": [
+      "ROUND5/research/probes/150k_exec/probe_hand_portal_fresh_robot.py",
+      "ROUND5/research/probes/150k_exec/probe_hand_portal_fresh_robot_micro_anchor.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "full"
+    ],
+    "jobs": 4,
+    "name": "hand_integrated_mechanism_full",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": false,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "none",
+    "portal_logs": true,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_hand_portal_fresh_robot.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 2,
+      "profit": null,
+      "duration_sec": 1.27,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_full\\probe_hand_portal_fresh_robot_kevin_full_stdout.txt",
+      "stderr_tail": "Usage: python -m prosperity4bt [OPTIONS] ALGORITHM DAYS...\nTry 'python -m prosperity4bt --help' for help.\n+- Error ---------------------------------------------------------------------+\n| Invalid value for '--data': Directory                                       |\n| 'C:\\\\Users\\\\kushagra\\\\OneDrive\\\\Documents\\\\CS Projects\\\\IMC Trading         |\n| Comp\\\\outputs\\\\tool-data\\\\kevin' does not exist.                            |\n+-----------------------------------------------------------------------------+\n"
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 2,
+      "profit": null,
+      "duration_sec": 1.05,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_full\\probe_hand_portal_fresh_robot_xeeshan_full_stdout.txt",
+      "stderr_tail": "Usage: python -m prosperity4bt [OPTIONS] ALGORITHM DAYS...\nTry 'python -m prosperity4bt --help' for help.\n+- Error ---------------------------------------------------------------------+\n| Invalid value for '--data': Directory                                       |\n| 'C:\\\\Users\\\\kushagra\\\\OneDrive\\\\Documents\\\\CS Projects\\\\IMC Trading         |\n| Comp\\\\outputs\\\\tool-data\\\\xeeshan' does not exist.                          |\n+-----------------------------------------------------------------------------+\n"
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot_micro_anchor.py",
+      "tool": "kevin",
+      "suite": "full",
+      "capped": false,
+      "returncode": 2,
+      "profit": null,
+      "duration_sec": 1.27,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_full\\probe_hand_portal_fresh_robot_micro_anchor_kevin_full_stdout.txt",
+      "stderr_tail": "Usage: python -m prosperity4bt [OPTIONS] ALGORITHM DAYS...\nTry 'python -m prosperity4bt --help' for help.\n+- Error ---------------------------------------------------------------------+\n| Invalid value for '--data': Directory                                       |\n| 'C:\\\\Users\\\\kushagra\\\\OneDrive\\\\Documents\\\\CS Projects\\\\IMC Trading         |\n| Comp\\\\outputs\\\\tool-data\\\\kevin' does not exist.                            |\n+-----------------------------------------------------------------------------+\n"
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot_micro_anchor.py",
+      "tool": "xeeshan",
+      "suite": "full",
+      "capped": false,
+      "returncode": 2,
+      "profit": null,
+      "duration_sec": 1.05,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_full\\probe_hand_portal_fresh_robot_micro_anchor_xeeshan_full_stdout.txt",
+      "stderr_tail": "Usage: python -m prosperity4bt [OPTIONS] ALGORITHM DAYS...\nTry 'python -m prosperity4bt --help' for help.\n+- Error ---------------------------------------------------------------------+\n| Invalid value for '--data': Directory                                       |\n| 'C:\\\\Users\\\\kushagra\\\\OneDrive\\\\Documents\\\\CS Projects\\\\IMC Trading         |\n| Comp\\\\outputs\\\\tool-data\\\\xeeshan' does not exist.                          |\n+-----------------------------------------------------------------------------+\n"
+    }
+  ],
+  "state": []
+}

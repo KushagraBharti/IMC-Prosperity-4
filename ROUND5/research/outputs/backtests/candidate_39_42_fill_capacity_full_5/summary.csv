@@ -1,0 +1,5 @@
+strategy,tool,suite,capped,profit,returncode,duration_sec,trade_count,filled_quantity,avg_fill_quantity,json_log,stdout
+probe_c42_c39_hybrid_galaxy.py,kevin,full,False,87666.0,0,250.5,,,,,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\outputs\backtests\candidate_39_42_fill_capacity_full_5\probe_c42_c39_hybrid_galaxy_kevin_full_stdout.txt
+probe_c42_c39_hybrid_galaxy.py,xeeshan,full,False,87782.0,0,243.21,,,,,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\outputs\backtests\candidate_39_42_fill_capacity_full_5\probe_c42_c39_hybrid_galaxy_xeeshan_full_stdout.txt
+probe_c42_c39_hybrid_panel.py,kevin,full,False,189584.0,0,250.0,,,,,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\outputs\backtests\candidate_39_42_fill_capacity_full_5\probe_c42_c39_hybrid_panel_kevin_full_stdout.txt
+probe_c42_c39_hybrid_panel.py,xeeshan,full,False,189996.0,0,242.78,,,,,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\outputs\backtests\candidate_39_42_fill_capacity_full_5\probe_c42_c39_hybrid_panel_xeeshan_full_stdout.txt

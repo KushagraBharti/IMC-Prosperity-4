@@ -1,0 +1,9 @@
+
+STDERR:
+Usage: python -m prosperity4bt [OPTIONS] ALGORITHM DAYS...
+Try 'python -m prosperity4bt --help' for help.
++- Error ---------------------------------------------------------------------+
+| Invalid value for '--data': Directory                                       |
+| 'C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading         |
+| Comp\\outputs\\tool-data\\xeeshan' does not exist.                          |
++-----------------------------------------------------------------------------+

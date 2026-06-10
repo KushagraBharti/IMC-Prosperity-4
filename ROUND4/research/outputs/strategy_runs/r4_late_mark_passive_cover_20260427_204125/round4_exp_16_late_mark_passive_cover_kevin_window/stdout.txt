@@ -1,0 +1,17 @@
+running algorithm 'C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_exp_16_late_mark_passive_cover.py'...
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_exp_16_late_mark_passive_cover.py for round: 4 day: 3
+VEV_5400: 2,464
+VEV_5300: 5,487
+VEV_6500: 24
+VEV_4500: 9,831
+HYDROGEL_PACK: 498
+VEV_5500: 938
+VEV_6000: 24
+VEV_5000: 13,572
+VEV_5200: 8,844
+VEV_5100: 16,089
+VEV_4000: 9,057
+VELVETFRUIT_EXTRACT: 10,102
+Total profit: 76,930
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\strategy_runs\r4_late_mark_passive_cover_20260427_204125\round4_exp_16_late_mark_passive_cover_kevin_window\kevin.log

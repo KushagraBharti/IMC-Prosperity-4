@@ -1,0 +1,50 @@
+running algorithm 'C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_36_c16_delta_penalty.py'...
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_36_c16_delta_penalty.py for round: 4 day: 1
+VEV_4500: 7,236
+VEV_5500: 150
+VEV_5200: 774
+VEV_5100: 1,051
+VEV_4000: 8,124
+VEV_5400: -267
+VEV_5300: 445
+VEV_6500: 0
+VEV_5000: 54,954
+VEV_6000: 0
+HYDROGEL_PACK: -6,336
+VELVETFRUIT_EXTRACT: 46,778
+Total profit: 112,910
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_36_c16_delta_penalty.py for round: 4 day: 2
+VEV_6000: 0
+VELVETFRUIT_EXTRACT: 21,558
+HYDROGEL_PACK: 1,792
+VEV_5500: -300
+VEV_6500: 0
+VEV_5400: -1,224
+VEV_4500: 13,354
+VEV_5100: 9,172
+VEV_4000: 1,563
+VEV_5000: 17,872
+VEV_5300: -1,013
+VEV_5200: -2,277
+Total profit: 60,497
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_36_c16_delta_penalty.py for round: 4 day: 3
+VEV_5400: 4,267
+VEV_5300: 5,795
+VEV_6500: 0
+VEV_4500: 10,848
+HYDROGEL_PACK: 1,339
+VEV_5500: 1,598
+VEV_6000: 0
+VEV_5000: 32,977
+VEV_5200: 9,541
+VEV_5100: 28,827
+VEV_4000: 19,614
+VELVETFRUIT_EXTRACT: 19,078
+Total profit: 133,884
+Profit summary:
+Round 4 day 1: 112,910
+Round 4 day 2: 60,497
+Round 4 day 3: 133,884
+Total profit: 307,290
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\strategy_runs\c16_portfolio_aware_plateau_20260428_022111\round4_candidate_36_c16_delta_penalty_kevin_full\kevin.log

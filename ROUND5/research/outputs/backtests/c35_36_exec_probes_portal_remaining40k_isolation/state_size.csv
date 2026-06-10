@@ -1,0 +1,4 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c35_stack_anchor_microtri_only.py,portal,29394,,
+probe_c35_stack_anchor_uvamber_only.py,portal,29364,,
+probe_c35_stack_anchor_both_microtri_uvamber.py,portal,29953,,

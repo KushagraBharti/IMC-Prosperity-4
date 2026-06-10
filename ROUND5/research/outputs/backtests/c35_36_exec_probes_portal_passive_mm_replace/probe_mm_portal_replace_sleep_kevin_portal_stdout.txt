@@ -1,0 +1,91 @@
+running algorithm 'C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\probes\150k_exec\probe_mm_portal_replace_sleep.py'...
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\probes\150k_exec\probe_mm_portal_replace_sleep.py for round: 5 day: 4
+PEBBLES_M: 1,490
+SNACKPACK_RASPBERRY: 1,313
+PEBBLES_L: 510
+TRANSLATOR_VOID_BLUE: 1,375
+UV_VISOR_RED: 3,135
+GALAXY_SOUNDS_SOLAR_FLAMES: 3,246
+GALAXY_SOUNDS_BLACK_HOLES: 2,221
+SNACKPACK_CHOCOLATE: 0
+UV_VISOR_AMBER: 4,887
+MICROCHIP_TRIANGLE: 4,089
+OXYGEN_SHAKE_EVENING_BREATH: 290
+UV_VISOR_YELLOW: 782
+OXYGEN_SHAKE_CHOCOLATE: 1,841
+UV_VISOR_ORANGE: 3,959
+GALAXY_SOUNDS_DARK_MATTER: 4,254
+TRANSLATOR_GRAPHITE_MIST: 2,630
+SNACKPACK_VANILLA: 355
+OXYGEN_SHAKE_MORNING_BREATH: 3,446
+PEBBLES_XS: -1,945
+PANEL_1X4: 2,427
+PANEL_1X2: 2,827
+SLEEP_POD_COTTON: 0
+PEBBLES_S: 11,719
+PEBBLES_XL: 9,560
+OXYGEN_SHAKE_GARLIC: 3,442
+OXYGEN_SHAKE_MINT: 212
+MICROCHIP_CIRCLE: 0
+ROBOT_VACUUMING: 1,358
+MICROCHIP_OVAL: 4,379
+ROBOT_IRONING: 2,524
+SLEEP_POD_SUEDE: 0
+MICROCHIP_SQUARE: 4,123
+ROBOT_LAUNDRY: 0
+SNACKPACK_STRAWBERRY: 1,169
+TRANSLATOR_ASTRO_BLACK: 2,588
+TRANSLATOR_ECLIPSE_CHARCOAL: 3,674
+ROBOT_MOPPING: 0
+GALAXY_SOUNDS_SOLAR_WINDS: 2,208
+ROBOT_DISHES: 0
+UV_VISOR_MAGENTA: 0
+SLEEP_POD_POLYESTER: 0
+MICROCHIP_RECTANGLE: 2,666
+PANEL_4X4: 6,026
+PANEL_2X4: 1,768
+PANEL_2X2: 1,457
+SNACKPACK_PISTACHIO: 538
+SLEEP_POD_NYLON: 0
+TRANSLATOR_SPACE_GRAY: 2,807
+SLEEP_POD_LAMB_WOOL: 0
+GALAXY_SOUNDS_PLANETARY_RINGS: 4,625
+Total profit: 109,974
+
+STDERR:
++--------------------- Traceback (most recent call last) ---------------------+
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\kevin-backtester\prosperity4bt\__main__.py:39 in  |
+| run                                                                         |
+|                                                                             |
+|   36     options.merge_timestamps = not original_timestamps                 |
+|   37                                                                        |
+|   38     back_tester = BackTester(options)                                  |
+| > 39     back_tester.run()                                                  |
+|   40                                                                        |
+|   41                                                                        |
+|   42 def __parse_out(out: Optional[Path], no_out: bool) -> Optional[Path]:  |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\kevin-backtester\prosperity4bt\back_tester.py:41  |
+| in run                                                                      |
+|                                                                             |
+|   38         merged_result = merger.merge(results)                          |
+|   39                                                                        |
+|   40         if self.options.output_file is not None:                       |
+| > 41             OutputFileWriter.write_to_file(self.options.output_file, m |
+|   42             print(f"\nSuccessfully saved backtest results to {self.__f |
+|   43                                                                        |
+|   44             if self.options.show_visualizer:                           |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\kevin-backtester\prosperity4bt\tools\output_file_ |
+| writer.py:12 in write_to_file                                               |
+|                                                                             |
+|    9     def write_to_file(output_file: Path, result: BacktestResult):      |
+|   10         output_file.parent.mkdir(parents=True, exist_ok=True)          |
+|   11         with output_file.open("w+", encoding="utf-8") as file:         |
+| > 12             file.write(json.dumps(result.to_dict()))                   |
+|   13                                                                        |
++-----------------------------------------------------------------------------+
+OSError: [Errno 28] No space left on device

@@ -1,0 +1,5 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c35_anchor_only.py,portal,23955,,
+probe_c35_stack_clean_anchor.py,portal,28805,,
+probe_c35_stack_clean_no_snack.py,portal,28470,,
+probe_c35_stack_clean.py,portal,30386,,

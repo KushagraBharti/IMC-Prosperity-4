@@ -1,0 +1,11 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_microfill_robust_override_fresh_broad.py,portal,18537,,
+probe_microfill_robust_override_fresh_panel_sleep.py,portal,23567,,
+probe_microfill_robust_override_fresh_trans_gal_oxy_snack.py,portal,24917,,
+probe_microfill_robust_override_fresh_conservative_join.py,portal,18537,,
+probe_microfill_robust_override_fresh_aggressive.py,portal,18537,,
+probe_microfill_portal_override_fresh_broad.py,portal,18537,,
+probe_microfill_portal_override_fresh_panel_sleep.py,portal,23567,,
+probe_microfill_portal_override_fresh_trans_gal_oxy_snack.py,portal,24917,,
+probe_microfill_portal_override_fresh_conservative_join.py,portal,18537,,
+probe_microfill_portal_override_fresh_aggressive.py,portal,18537,,

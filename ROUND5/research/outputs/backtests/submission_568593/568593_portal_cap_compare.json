@@ -1,0 +1,30 @@
+[
+  {
+    "label": "uncapped",
+    "tool": "kevin",
+    "profit": 105940.0,
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "label": "uncapped",
+    "tool": "xeeshan",
+    "profit": 105940.0,
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "label": "50kcap",
+    "tool": "kevin",
+    "profit": 41486.0,
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "label": "50kcap",
+    "tool": "xeeshan",
+    "profit": 41486.0,
+    "returncode": 0,
+    "stderr": ""
+  }
+]

@@ -1,0 +1,5 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c35_anchor_snackpack_near10000.py,portal,28805,,
+probe_c35_anchor_space_nylon.py,portal,28805,,
+probe_c35_anchor_vanilla_only.py,portal,28805,,
+probe_c35_anchor_near10000_all.py,portal,28805,,

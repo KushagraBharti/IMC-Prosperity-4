@@ -1,0 +1,152 @@
+{
+  "round5_candidate_11.py": {
+    "kevin_full": {
+      "returncode": 0,
+      "profit": 9028.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_11_kevin_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_11_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_full": {
+      "returncode": 0,
+      "profit": 9028.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_11_xeeshan_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_11_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": -631.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_11_kevin_portal_day4.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_11_kevin_portal_day4_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": -631.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_11_xeeshan_portal_day4.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_11_xeeshan_portal_day4_stdout.txt",
+      "stderr_tail": ""
+    }
+  },
+  "round5_candidate_12.py": {
+    "kevin_full": {
+      "returncode": 0,
+      "profit": 81253.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_12_kevin_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_12_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_full": {
+      "returncode": 0,
+      "profit": 81253.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_12_xeeshan_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_12_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": 10202.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_12_kevin_portal_day4.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_12_kevin_portal_day4_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": 10202.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_12_xeeshan_portal_day4.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_12_xeeshan_portal_day4_stdout.txt",
+      "stderr_tail": ""
+    }
+  },
+  "round5_candidate_13.py": {
+    "kevin_full": {
+      "returncode": 0,
+      "profit": 101009.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_13_kevin_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_13_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_full": {
+      "returncode": 0,
+      "profit": 100874.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_13_xeeshan_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_13_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": 18470.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_13_kevin_portal_day4.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_13_kevin_portal_day4_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": 18470.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_13_xeeshan_portal_day4.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_13_xeeshan_portal_day4_stdout.txt",
+      "stderr_tail": ""
+    }
+  },
+  "round5_candidate_14.py": {
+    "kevin_full": {
+      "returncode": 0,
+      "profit": -29302.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_14_kevin_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_14_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_full": {
+      "returncode": 0,
+      "profit": -29302.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_14_xeeshan_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_14_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": 1448.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_14_kevin_portal_day4.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_14_kevin_portal_day4_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": 1448.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_14_xeeshan_portal_day4.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_14_xeeshan_portal_day4_stdout.txt",
+      "stderr_tail": ""
+    }
+  },
+  "round5_candidate_15.py": {
+    "kevin_full": {
+      "returncode": 0,
+      "profit": 45193.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_15_kevin_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_15_kevin_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_full": {
+      "returncode": 0,
+      "profit": 45193.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_15_xeeshan_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_15_xeeshan_full_stdout.txt",
+      "stderr_tail": ""
+    },
+    "kevin_portal": {
+      "returncode": 0,
+      "profit": 3589.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_15_kevin_portal_day4.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_15_kevin_portal_day4_stdout.txt",
+      "stderr_tail": ""
+    },
+    "xeeshan_portal": {
+      "returncode": 0,
+      "profit": 3589.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_15_xeeshan_portal_day4.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\candidate_11_15\\round5_candidate_15_xeeshan_portal_day4_stdout.txt",
+      "stderr_tail": ""
+    }
+  }
+}

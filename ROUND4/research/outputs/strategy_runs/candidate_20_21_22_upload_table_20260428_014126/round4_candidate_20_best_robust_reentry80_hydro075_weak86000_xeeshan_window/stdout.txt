@@ -1,0 +1,16 @@
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_20_best_robust_reentry80_hydro075_weak86000.py on round 4 day 3
+HYDROGEL_PACK: 1,749
+VELVETFRUIT_EXTRACT: 12,758
+VEV_4000: 9,057
+VEV_4500: 9,831
+VEV_5000: 15,461
+VEV_5100: 16,311
+VEV_5200: 9,639
+VEV_5300: 5,821
+VEV_5400: 2,467
+VEV_5500: 938
+VEV_6000: 24
+VEV_6500: 24
+Total profit: 84,080
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\strategy_runs\candidate_20_21_22_upload_table_20260428_014126\round4_candidate_20_best_robust_reentry80_hydro075_weak86000_xeeshan_window\xeeshan.log

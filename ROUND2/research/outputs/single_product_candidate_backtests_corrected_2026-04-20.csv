@@ -1,0 +1,7 @@
+strategy,xeeshan_total,xeeshan_pepper,xeeshan_osmium,kevin_total,kevin_pepper,kevin_osmium,rust_total,rust_pepper,rust_osmium,rust_own_trades,avg_total
+pepper_only_baseline,238165,238165,0,238165,238165,0,238165,238165,0,26,238165
+pepper_only_residual_harvest,238165,238165,0,238165,238165,0,238165,238165,0,26,238165
+pepper_only_adaptive,238144,238144,0,238135,238135,0,238135,238135,0,25,238138
+osmium_only_legacy,29482,0,29482,28439,0,28439,28663,0,28663,2494,28861.33
+osmium_only_simple10002,28988,0,28988,28259,0,28259,28427,0,28427,1694,28558
+osmium_only_adaptive,13625,0,13625,12447,0,12447,12861,0,12861,2419,12977.67

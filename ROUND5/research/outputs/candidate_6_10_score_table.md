@@ -1,0 +1,9 @@
+| Strategy | Kevin Full | Xeeshan Full | Portal Window Kevin | Portal Window Xeeshan | Rust Full | Official Portal Score |
+|---|---:|---:|---:|---:|---:|---:|
+| round5_candidate_6.py | 5685.00 | 5685.00 | 3382.00 | 3382.00 |  | pending |
+| round5_candidate_7.py | -27558.00 | -27558.00 | 5574.00 | 5574.00 |  | pending |
+| round5_candidate_8.py | -164044.00 | -164026.00 | 3535.00 | 3535.00 |  | pending |
+| round5_candidate_9.py | -70884.00 | -70892.00 | 8302.00 | 8267.00 |  | pending |
+| round5_candidate_10.py | -9805.00 | -9805.00 | 4051.00 | 4051.00 |  | pending |
+
+Rust Full skipped: not fast enough to justify routine batch scoring; Kevin/Xeeshan plus official-window replay are the active comparison tools.

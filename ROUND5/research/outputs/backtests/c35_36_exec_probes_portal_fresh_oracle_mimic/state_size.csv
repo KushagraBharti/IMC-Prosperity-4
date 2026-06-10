@@ -1,0 +1,11 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_pivot_robust_panel_oracle.py,portal,29871,,
+probe_pivot_robust_trans_galaxy_oracle.py,portal,28840,,
+probe_pivot_robust_sleep_oxygen_oracle.py,portal,28133,,
+probe_pivot_robust_snack_oracle.py,portal,31170,,
+probe_pivot_robust_fresh_oracle_all.py,portal,28155,,
+probe_pivot_portal_panel_oracle.py,portal,29871,,
+probe_pivot_portal_trans_galaxy_oracle.py,portal,28840,,
+probe_pivot_portal_sleep_oxygen_oracle.py,portal,28133,,
+probe_pivot_portal_snack_oracle.py,portal,31170,,
+probe_pivot_portal_fresh_oracle_all.py,portal,28155,,

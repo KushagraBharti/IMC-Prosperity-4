@@ -1,0 +1,7 @@
+strategy,xeeshan_total,xeeshan_pepper,xeeshan_osmium,kevin_total,kevin_pepper,kevin_osmium,rust_total,rust_pepper,rust_osmium,rust_own_trades,average
+round2_pepper_03_regime_markov,238252.0,238252.0,0.0,238252.0,238252.0,0.0,238252.0,238252.0,0.0,34,238252.0
+round2_pepper_02_residual_swing,238201.0,238201.0,0.0,238201.0,238201.0,0.0,238201.0,238201.0,0.0,28,238201.0
+round2_pepper_01_carry_max,238004.0,238004.0,0.0,238004.0,238004.0,0.0,238004.0,238004.0,0.0,23,238004.0
+round2_osmium_02_mean_reversion_taker,6881.0,0.0,6881.0,6881.0,0.0,6881.0,6881.0,0.0,6881.0,719,6881.0
+round2_osmium_03_regime_mm,49480.0,0.0,49480.0,48820.0,0.0,48820.0,48820.0,0.0,48820.0,1871,49040.0
+round2_osmium_01_guarded_specialist,49865.0,0.0,49865.0,48867.0,0.0,48867.0,48867.0,0.0,48867.0,2361,49199.67

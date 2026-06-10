@@ -1,0 +1,477 @@
+{
+  "args": {
+    "strategies": [
+      "ROUND5/research/probes/150k_exec/probe_hand_portal_fresh_micro_anchor.py",
+      "ROUND5/research/probes/150k_exec/probe_hand_portal_robot_micro_anchor.py",
+      "ROUND5/research/probes/150k_exec/probe_hand_portal_fresh_robot.py",
+      "ROUND5/research/probes/150k_exec/probe_hand_portal_fresh_robot_micro_anchor.py",
+      "ROUND5/research/probes/150k_exec/probe_hand_portal_fresh_micro_anchor_passive.py",
+      "ROUND5/research/probes/150k_exec/probe_hand_portal_fresh_robot_micro_anchor_passive.py",
+      "ROUND5/research/probes/150k_exec/probe_hand_robust_panel_micro_anchor.py",
+      "ROUND5/research/probes/150k_exec/probe_hand_robust_panel_micro_deweighted_anchor.py"
+    ],
+    "tools": [
+      "kevin",
+      "xeeshan"
+    ],
+    "suites": [
+      "portal"
+    ],
+    "jobs": 10,
+    "name": "hand_integrated_mechanism_probes",
+    "reuse": false,
+    "dry_run": false,
+    "cap_check": true,
+    "cap_suites": [
+      "portal"
+    ],
+    "state": "portal",
+    "portal_logs": false,
+    "full_logs": false,
+    "timeout": 1200
+  },
+  "runs": [
+    {
+      "strategy": "probe_hand_portal_fresh_micro_anchor.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 121964.0,
+      "duration_sec": 9.59,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_micro_anchor_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_micro_anchor.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 121964.0,
+      "duration_sec": 9.38,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_micro_anchor_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_micro_anchor.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 121974.0,
+      "duration_sec": 9.27,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_micro_anchor_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_micro_anchor.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 121974.0,
+      "duration_sec": 9.4,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_micro_anchor_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_micro_anchor_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 121964.0,
+      "duration_sec": 9.07,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_micro_anchor_passive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_micro_anchor_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 121964.0,
+      "duration_sec": 8.98,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_micro_anchor_passive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_micro_anchor_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 121974.0,
+      "duration_sec": 9.55,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_micro_anchor_passive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_micro_anchor_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 121974.0,
+      "duration_sec": 9.45,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_micro_anchor_passive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 122897.0,
+      "duration_sec": 9.94,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_robot_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 122897.0,
+      "duration_sec": 9.92,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_robot_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 122907.0,
+      "duration_sec": 9.61,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_robot_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 122907.0,
+      "duration_sec": 9.33,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_robot_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot_micro_anchor.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 123425.0,
+      "duration_sec": 9.79,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_robot_micro_anchor_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot_micro_anchor.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 123425.0,
+      "duration_sec": 9.67,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_robot_micro_anchor_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot_micro_anchor.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 123435.0,
+      "duration_sec": 9.47,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_robot_micro_anchor_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot_micro_anchor.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 123435.0,
+      "duration_sec": 9.74,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_robot_micro_anchor_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot_micro_anchor_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 123425.0,
+      "duration_sec": 9.61,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_robot_micro_anchor_passive_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot_micro_anchor_passive.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 123425.0,
+      "duration_sec": 9.71,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_robot_micro_anchor_passive_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot_micro_anchor_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 123435.0,
+      "duration_sec": 9.69,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_robot_micro_anchor_passive_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot_micro_anchor_passive.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 123435.0,
+      "duration_sec": 9.76,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_fresh_robot_micro_anchor_passive_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_robot_micro_anchor.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 122148.0,
+      "duration_sec": 9.75,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_robot_micro_anchor_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_robot_micro_anchor.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 122148.0,
+      "duration_sec": 9.6,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_robot_micro_anchor_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_robot_micro_anchor.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 122158.0,
+      "duration_sec": 9.29,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_robot_micro_anchor_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_portal_robot_micro_anchor.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 122158.0,
+      "duration_sec": 9.62,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_portal_robot_micro_anchor_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_robust_panel_micro_anchor.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 9.02,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_robust_panel_micro_anchor_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_robust_panel_micro_anchor.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 9.22,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_robust_panel_micro_anchor_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_robust_panel_micro_anchor.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 8.85,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_robust_panel_micro_anchor_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_robust_panel_micro_anchor.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 8.82,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_robust_panel_micro_anchor_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_robust_panel_micro_deweighted_anchor.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 8.81,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_robust_panel_micro_deweighted_anchor_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_robust_panel_micro_deweighted_anchor.py",
+      "tool": "kevin",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 8.75,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_robust_panel_micro_deweighted_anchor_50kcap_kevin_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_robust_panel_micro_deweighted_anchor.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": false,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 7.67,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_robust_panel_micro_deweighted_anchor_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    },
+    {
+      "strategy": "probe_hand_robust_panel_micro_deweighted_anchor.py",
+      "tool": "xeeshan",
+      "suite": "portal",
+      "capped": true,
+      "returncode": 0,
+      "profit": 113412.0,
+      "duration_sec": 7.6,
+      "json_log": "",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\hand_integrated_mechanism_probes\\probe_hand_robust_panel_micro_deweighted_anchor_50kcap_xeeshan_portal_stdout.txt",
+      "stderr_tail": ""
+    }
+  ],
+  "state": [
+    {
+      "strategy": "probe_hand_portal_fresh_micro_anchor.py",
+      "scope": "portal",
+      "max_len": 31170,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_hand_portal_robot_micro_anchor.py",
+      "scope": "portal",
+      "max_len": 31108,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot.py",
+      "scope": "portal",
+      "max_len": 32325,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot_micro_anchor.py",
+      "scope": "portal",
+      "max_len": 32325,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_micro_anchor_passive.py",
+      "scope": "portal",
+      "max_len": 31170,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_hand_portal_fresh_robot_micro_anchor_passive.py",
+      "scope": "portal",
+      "max_len": 32325,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_hand_robust_panel_micro_anchor.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    },
+    {
+      "strategy": "probe_hand_robust_panel_micro_deweighted_anchor.py",
+      "scope": "portal",
+      "max_len": 29953,
+      "first_above_45k": null,
+      "first_above_50k": null
+    }
+  ]
+}

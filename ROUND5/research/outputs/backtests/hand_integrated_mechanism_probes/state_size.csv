@@ -1,0 +1,9 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_hand_portal_fresh_micro_anchor.py,portal,31170,,
+probe_hand_portal_robot_micro_anchor.py,portal,31108,,
+probe_hand_portal_fresh_robot.py,portal,32325,,
+probe_hand_portal_fresh_robot_micro_anchor.py,portal,32325,,
+probe_hand_portal_fresh_micro_anchor_passive.py,portal,31170,,
+probe_hand_portal_fresh_robot_micro_anchor_passive.py,portal,32325,,
+probe_hand_robust_panel_micro_anchor.py,portal,29953,,
+probe_hand_robust_panel_micro_deweighted_anchor.py,portal,29953,,

@@ -1,0 +1,8 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c35_anchor_both_micro_uv_conservative.py,portal,29953,,
+probe_c35_anchor_both_micro_uv_medium.py,portal,29953,,
+probe_c35_anchor_both_robot_dishes_tight.py,portal,29376,,
+probe_c35_anchor_both_robot_dishes_very_tight.py,portal,29376,,
+probe_c35_anchor_translator_family.py,portal,28805,,
+probe_c35_anchor_pebbles_family.py,portal,28805,,
+probe_c35_anchor_all_reasonable.py,portal,28805,,

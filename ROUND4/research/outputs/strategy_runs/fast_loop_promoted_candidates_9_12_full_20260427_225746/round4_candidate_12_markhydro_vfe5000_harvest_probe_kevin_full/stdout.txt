@@ -1,0 +1,50 @@
+running algorithm 'C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_12_markhydro_vfe5000_harvest_probe.py'...
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_12_markhydro_vfe5000_harvest_probe.py for round: 4 day: 1
+VEV_4500: 8,884
+VEV_5500: 150
+VEV_5200: 774
+VEV_5100: 4,892
+VEV_4000: 14,472
+VEV_5400: -267
+VEV_5300: 445
+VEV_6500: 0
+VEV_5000: -80
+VEV_6000: 0
+HYDROGEL_PACK: -6,759
+VELVETFRUIT_EXTRACT: -1,683
+Total profit: 20,828
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_12_markhydro_vfe5000_harvest_probe.py for round: 4 day: 2
+VEV_6000: 0
+VELVETFRUIT_EXTRACT: 6,426
+HYDROGEL_PACK: -1,970
+VEV_5500: -300
+VEV_6500: 0
+VEV_5400: -1,224
+VEV_4500: 17,223
+VEV_5100: 4,998
+VEV_4000: 12,311
+VEV_5000: 4,697
+VEV_5300: -1,013
+VEV_5200: -2,277
+Total profit: 38,871
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_12_markhydro_vfe5000_harvest_probe.py for round: 4 day: 3
+VEV_5400: 4,267
+VEV_5300: 5,795
+VEV_6500: 0
+VEV_4500: 9,770
+HYDROGEL_PACK: 655
+VEV_5500: 1,578
+VEV_6000: 0
+VEV_5000: 14,508
+VEV_5200: 9,541
+VEV_5100: 28,997
+VEV_4000: 24,684
+VELVETFRUIT_EXTRACT: 11,755
+Total profit: 111,550
+Profit summary:
+Round 4 day 1: 20,828
+Round 4 day 2: 38,871
+Round 4 day 3: 111,550
+Total profit: 171,249
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\strategy_runs\fast_loop_promoted_candidates_9_12_full_20260427_225746\round4_candidate_12_markhydro_vfe5000_harvest_probe_kevin_full\kevin.log

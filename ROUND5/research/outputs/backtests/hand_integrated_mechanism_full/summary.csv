@@ -1,0 +1,5 @@
+strategy,tool,suite,capped,profit,returncode,duration_sec,trade_count,filled_quantity,avg_fill_quantity,json_log,stdout
+probe_hand_portal_fresh_robot.py,kevin,full,False,,2,1.27,,,,,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\outputs\backtests\hand_integrated_mechanism_full\probe_hand_portal_fresh_robot_kevin_full_stdout.txt
+probe_hand_portal_fresh_robot.py,xeeshan,full,False,,2,1.05,,,,,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\outputs\backtests\hand_integrated_mechanism_full\probe_hand_portal_fresh_robot_xeeshan_full_stdout.txt
+probe_hand_portal_fresh_robot_micro_anchor.py,kevin,full,False,,2,1.27,,,,,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\outputs\backtests\hand_integrated_mechanism_full\probe_hand_portal_fresh_robot_micro_anchor_kevin_full_stdout.txt
+probe_hand_portal_fresh_robot_micro_anchor.py,xeeshan,full,False,,2,1.05,,,,,C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND5\research\outputs\backtests\hand_integrated_mechanism_full\probe_hand_portal_fresh_robot_micro_anchor_xeeshan_full_stdout.txt

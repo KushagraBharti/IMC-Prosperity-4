@@ -1,0 +1,17 @@
+running algorithm 'C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\strategy_experiments\round4_exp_414_reentry80000_hydro075_weak86000_exit_vfe95500_5000_5100_92400.py'...
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\strategy_experiments\round4_exp_414_reentry80000_hydro075_weak86000_exit_vfe95500_5000_5100_92400.py for round: 4 day: 3
+VEV_5400: 2,467
+VEV_5300: 5,821
+VEV_6500: 24
+VEV_4500: 9,831
+HYDROGEL_PACK: 1,749
+VEV_5500: 938
+VEV_6000: 24
+VEV_5000: 15,781
+VEV_5200: 9,639
+VEV_5100: 16,477
+VEV_4000: 9,057
+VELVETFRUIT_EXTRACT: 12,984
+Total profit: 84,792
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\strategy_runs\plock_20260428_014851\round4_exp_414_reentry80000_hydro075_weak86000_exit_vfe95500_5000_5100_92400_kevin_window\kevin.log

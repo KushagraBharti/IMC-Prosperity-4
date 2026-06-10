@@ -1,0 +1,52 @@
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_exp_13_mark_inventory_cover.py on round 4 day 1
+HYDROGEL_PACK: 12,747
+VELVETFRUIT_EXTRACT: 46,714
+VEV_4000: -46,946
+VEV_4500: 10,836
+VEV_5000: 74,673
+VEV_5100: 4,892
+VEV_5200: -201,678
+VEV_5300: -308,497
+VEV_5400: -152,121
+VEV_5500: 150
+VEV_6000: 150
+VEV_6500: 150
+Total profit: -558,930
+
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_exp_13_mark_inventory_cover.py on round 4 day 2
+HYDROGEL_PACK: 4,376
+VELVETFRUIT_EXTRACT: 25,409
+VEV_4000: -28,813
+VEV_4500: 17,305
+VEV_5000: 20,482
+VEV_5100: 4,998
+VEV_5200: -62,271
+VEV_5300: -307,010
+VEV_5400: -158,180
+VEV_5500: -300
+VEV_6000: 150
+VEV_6500: 150
+Total profit: -483,704
+
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_exp_13_mark_inventory_cover.py on round 4 day 3
+HYDROGEL_PACK: 9,755
+VELVETFRUIT_EXTRACT: 16,625
+VEV_4000: -51,049
+VEV_4500: 9,770
+VEV_5000: 21,822
+VEV_5100: 30,723
+VEV_5200: 4,461
+VEV_5300: -111,135
+VEV_5400: -91,082
+VEV_5500: 1,578
+VEV_6000: 150
+VEV_6500: 150
+Total profit: -158,232
+
+Profit summary:
+Round 4 day 1: -558,930
+Round 4 day 2: -483,704
+Round 4 day 3: -158,232
+Total profit: -1,200,866
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\strategy_runs\r4_mark_inventory_20260427_203213\round4_exp_13_mark_inventory_cover_xeeshan_full\xeeshan.log

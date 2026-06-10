@@ -1,0 +1,11 @@
+strategy,scope,max_len,first_above_45k,first_above_50k
+probe_c42_c39_hybrid_panel.py,portal,31170,,
+probe_c42_c39_hybrid_micro.py,portal,31170,,
+probe_c42_c39_hybrid_galaxy.py,portal,31170,,
+probe_c42_c39_hybrid_uv.py,portal,31170,,
+probe_c42_c39_hybrid_sleep.py,portal,31170,,
+probe_c42_c39_hybrid_oxygen.py,portal,31170,,
+probe_c42_c39_hybrid_translator.py,portal,31170,,
+probe_c42_c39_hybrid_snack.py,portal,31170,,
+probe_c42_c39_hybrid_top_extra0.py,portal,31170,,
+probe_c42_c39_relaxed_hybrid_pmg_uv.py,portal,31170,,

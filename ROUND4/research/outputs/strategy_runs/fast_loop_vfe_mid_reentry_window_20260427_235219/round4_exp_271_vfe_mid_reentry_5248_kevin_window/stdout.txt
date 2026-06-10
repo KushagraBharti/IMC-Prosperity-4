@@ -1,0 +1,88 @@
++--------------------- Traceback (most recent call last) ---------------------+
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\kevin-backtester\prosperity4bt\__main__.py:39 in  |
+| run                                                                         |
+|                                                                             |
+|   36     options.merge_timestamps = not original_timestamps                 |
+|   37                                                                        |
+|   38     back_tester = BackTester(options)                                  |
+| > 39     back_tester.run()                                                  |
+|   40                                                                        |
+|   41                                                                        |
+|   42 def __parse_out(out: Optional[Path], no_out: bool) -> Optional[Path]:  |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\kevin-backtester\prosperity4bt\back_tester.py:31  |
+| in run                                                                      |
+|                                                                             |
+|   28         for round in round_days_options:                               |
+|   29             for day in round.days:                                     |
+|   30                 print(f"Backtesting {self.options.algorithm_path} for  |
+| > 31                 result = self.__run_test(trader_module, data_reader, r |
+|   32                 results.append(result)                                 |
+|   33                 SummaryPrinter.print_day_summary(result)               |
+|   34                                                                        |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\kevin-backtester\prosperity4bt\back_tester.py:81  |
+| in __run_test                                                               |
+|                                                                             |
+|   78             self.options.show_progress,                                |
+|   79             self.options.print_output,                                 |
+|   80             self.options.trade_matching_mode)                          |
+| > 81         result = test_runner.run()                                     |
+|   82         return result                                                  |
+|   83                                                                        |
+|   84                                                                        |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\kevin-backtester\prosperity4bt\test_runner.py:46  |
+| in run                                                                      |
+|                                                                             |
+|    43         timestamps_iterator = tqdm(timestamps, ascii=True) if self.sh |
+|    44         for timestamp in timestamps_iterator:                         |
+|    45             state = self.__initialize_trade_state(state, data, timest |
+| >  46             orders = self.__run_trader(state, result, timestamp)      |
+|    47                                                                       |
+|    48             # self.__validate_orders(orders)                          |
+|    49             self.__create_activity_logs(state, data, result)          |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS                                     |
+| Projects\prosperity-tools\kevin-backtester\prosperity4bt\test_runner.py:66  |
+| in __run_trader                                                             |
+|                                                                             |
+|    63                 orders, conversions, trader_data = self.trader.run(st |
+|    64         else:                                                         |
+|    65             with redirect_stdout(stdout):                             |
+| >  66                 orders, conversions, trader_data = self.trader.run(st |
+|    67                                                                       |
+|    68         state.traderData = trader_data                                |
+|    69                                                                       |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading                |
+| Comp\ROUND4\research\strategy_experiments\round4_exp_271_vfe_mid_reentry_52 |
+| 48.py:273 in run                                                            |
+|                                                                             |
+|   270                                                                       |
+|   271         t_years = self.time_to_expiry_years(timestamp)                |
+|   272         if timestamp >= self.OPTION_TRADE_START_TIMESTAMP:            |
+| > 273             option_orders = self.trade_vouchers_relative(             |
+|   274                 books,                                                |
+|   275                 state.position,                                       |
+|   276                 velvet_fair + self.OPTION_MARK_SPOT_WEIGHT * velvet_m |
+|                                                                             |
+| C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading                |
+| Comp\ROUND4\research\strategy_experiments\round4_exp_271_vfe_mid_reentry_52 |
+| 48.py:601 in trade_vouchers_relative                                        |
+|                                                                             |
+|   598             orders: List[Order] = []                                  |
+|   599                                                                       |
+|   600             timed_exit = self.TIMED_OPTION_EXIT.get(symbol)           |
+| > 601             if timed_exit is not None and timestamp >= timed_exit and |
+|   602                 if position < 0 and book["sell_orders"]:              |
+|   603                     close_price = int(book["sell_orders"][-1][0])     |
+|   604                     orders.append(Order(symbol, close_price, int(-pos |
++-----------------------------------------------------------------------------+
+NameError: name 'cache' is not defined
+running algorithm 'C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\strategy_experiments\round4_exp_271_vfe_mid_reentry_5248.py'...
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\strategy_experiments\round4_exp_271_vfe_mid_reentry_5248.py for round: 4 day: 3

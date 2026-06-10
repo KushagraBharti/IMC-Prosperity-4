@@ -1,0 +1,44 @@
+[
+  {
+    "candidate": 28,
+    "tool": "kevin",
+    "profit": 40372.0,
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "candidate": 28,
+    "tool": "xeeshan",
+    "profit": 40372.0,
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "candidate": 29,
+    "tool": "kevin",
+    "profit": 32921.0,
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "candidate": 29,
+    "tool": "xeeshan",
+    "profit": 32921.0,
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "candidate": 30,
+    "tool": "kevin",
+    "profit": 48960.0,
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "candidate": 30,
+    "tool": "xeeshan",
+    "profit": 48960.0,
+    "returncode": 0,
+    "stderr": ""
+  }
+]

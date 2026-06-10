@@ -1,0 +1,4 @@
+strategy,original_local_portal,official_portal,local_with_50k_cap,first_timestamp_above_50k,max_traderdata_len,local_submission_trades,official_submission_trades
+round5_candidate_28.py,45395,40362.72265625,40372,57800,53234,91,81
+round5_candidate_29.py,85930,32916.0625,32921,20600,130164,164,45
+round5_candidate_30.py,70713,48950.0830078125,48960,30600,90766,120,96

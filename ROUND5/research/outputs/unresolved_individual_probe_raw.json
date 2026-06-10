@@ -1,0 +1,142 @@
+{
+  "TRANSLATOR_SPACE_GRAY": {
+    "kevin": {
+      "returncode": 0,
+      "profit": -3044.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": -3044.0
+    }
+  },
+  "GALAXY_SOUNDS_SOLAR_WINDS": {
+    "kevin": {
+      "returncode": 0,
+      "profit": -884.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": -884.0
+    }
+  },
+  "UV_VISOR_ORANGE": {
+    "kevin": {
+      "returncode": 0,
+      "profit": 4249.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": 4249.0
+    }
+  },
+  "GALAXY_SOUNDS_DARK_MATTER": {
+    "kevin": {
+      "returncode": 0,
+      "profit": -3903.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": -3903.0
+    }
+  },
+  "TRANSLATOR_ASTRO_BLACK": {
+    "kevin": {
+      "returncode": 0,
+      "profit": -916.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": -916.0
+    }
+  },
+  "MICROCHIP_RECTANGLE": {
+    "kevin": {
+      "returncode": 0,
+      "profit": 859.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": 859.0
+    }
+  },
+  "TRANSLATOR_VOID_BLUE": {
+    "kevin": {
+      "returncode": 0,
+      "profit": 1375.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": 1375.0
+    }
+  },
+  "SLEEP_POD_POLYESTER": {
+    "kevin": {
+      "returncode": 0,
+      "profit": 1976.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": 1976.0
+    }
+  },
+  "PANEL_2X4": {
+    "kevin": {
+      "returncode": 0,
+      "profit": 1768.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": 1768.0
+    }
+  },
+  "ROBOT_MOPPING": {
+    "kevin": {
+      "returncode": 0,
+      "profit": 1622.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": 1622.0
+    }
+  },
+  "SLEEP_POD_NYLON": {
+    "kevin": {
+      "returncode": 0,
+      "profit": 760.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": 760.0
+    }
+  },
+  "SLEEP_POD_LAMB_WOOL": {
+    "kevin": {
+      "returncode": 0,
+      "profit": 408.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": 408.0
+    }
+  },
+  "SLEEP_POD_COTTON": {
+    "kevin": {
+      "returncode": 0,
+      "profit": 1235.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": 1235.0
+    }
+  },
+  "TRANSLATOR_GRAPHITE_MIST": {
+    "kevin": {
+      "returncode": 0,
+      "profit": 2630.0
+    },
+    "xeeshan": {
+      "returncode": 0,
+      "profit": 2630.0
+    }
+  }
+}

@@ -1,0 +1,50 @@
+running algorithm 'C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_9_mark_stale_inventory_offload.py'...
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_9_mark_stale_inventory_offload.py for round: 4 day: 1
+VEV_4500: 10,776
+VEV_5500: 150
+VEV_5200: -154,361
+VEV_5100: 4,892
+VEV_4000: 14,472
+VEV_5400: -70,095
+VEV_5300: -155,100
+VEV_6500: 0
+VEV_5000: 75,071
+VEV_6000: 0
+HYDROGEL_PACK: 12,233
+VELVETFRUIT_EXTRACT: 46,606
+Total profit: -215,356
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_9_mark_stale_inventory_offload.py for round: 4 day: 2
+VEV_6000: 0
+VELVETFRUIT_EXTRACT: 25,351
+HYDROGEL_PACK: 4,435
+VEV_5500: -300
+VEV_6500: 0
+VEV_5400: -71,368
+VEV_4500: 17,223
+VEV_5100: 4,998
+VEV_4000: 12,311
+VEV_5000: 21,082
+VEV_5300: -150,496
+VEV_5200: -79,274
+Total profit: -216,038
+Backtesting C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\strategies\round4_candidate_9_mark_stale_inventory_offload.py for round: 4 day: 3
+VEV_5400: -42,257
+VEV_5300: -48,478
+VEV_6500: 0
+VEV_4500: 9,770
+HYDROGEL_PACK: 10,106
+VEV_5500: 1,578
+VEV_6000: 0
+VEV_5000: 21,567
+VEV_5200: 6,972
+VEV_5100: 29,985
+VEV_4000: 24,328
+VELVETFRUIT_EXTRACT: 16,154
+Total profit: 29,725
+Profit summary:
+Round 4 day 1: -215,356
+Round 4 day 2: -216,038
+Round 4 day 3: 29,725
+Total profit: -401,670
+
+Successfully saved backtest results to C:\Users\kushagra\OneDrive\Documents\CS Projects\IMC Trading Comp\ROUND4\research\outputs\strategy_runs\r4_candidate9_mark_offload_20260427_205256\round4_candidate_9_mark_stale_inventory_offload_kevin_full\kevin.log

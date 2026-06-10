@@ -1,0 +1,44 @@
+{
+  "unresolved_probe_portal_best_all.py": {
+    "kevin_full": {
+      "returncode": 0,
+      "profit": 33771.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_portal_best_all_kevin_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_portal_best_all_kevin_full_stdout.txt"
+    },
+    "xeeshan_full": {
+      "returncode": 0,
+      "profit": 33771.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_portal_best_all_xeeshan_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_portal_best_all_xeeshan_full_stdout.txt"
+    }
+  },
+  "unresolved_probe_sleep.py": {
+    "kevin_full": {
+      "returncode": 0,
+      "profit": 1456.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_sleep_kevin_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_sleep_kevin_full_stdout.txt"
+    },
+    "xeeshan_full": {
+      "returncode": 0,
+      "profit": 1456.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_sleep_xeeshan_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_sleep_xeeshan_full_stdout.txt"
+    }
+  },
+  "unresolved_probe_micro_robot_panel.py": {
+    "kevin_full": {
+      "returncode": 0,
+      "profit": -20403.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_micro_robot_panel_kevin_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_micro_robot_panel_kevin_full_stdout.txt"
+    },
+    "xeeshan_full": {
+      "returncode": 0,
+      "profit": -20403.0,
+      "log": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_micro_robot_panel_xeeshan_full.log",
+      "stdout": "C:\\Users\\kushagra\\OneDrive\\Documents\\CS Projects\\IMC Trading Comp\\ROUND5\\research\\outputs\\backtests\\unresolved_edge_probes\\unresolved_probe_micro_robot_panel_xeeshan_full_stdout.txt"
+    }
+  }
+}

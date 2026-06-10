@@ -1,0 +1,51 @@
+product,category,classification,strategy_role,classification_reason
+GALAXY_SOUNDS_DARK_MATTER,GALAXY_SOUNDS,not_currently_capturable,exclude,prior executable replay status was `no standalone edge found` despite high oracle/proxy; do not integrate without a new mechanism.
+GALAXY_SOUNDS_BLACK_HOLES,GALAXY_SOUNDS,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+GALAXY_SOUNDS_PLANETARY_RINGS,GALAXY_SOUNDS,conditional_edge,basket-only,edge appears in a component/probe but is too small or unstable to call standalone strategy-grade.
+GALAXY_SOUNDS_SOLAR_WINDS,GALAXY_SOUNDS,not_currently_capturable,exclude,"prior executable replay status was `no standalone edge found` despite high oracle/proxy; do not integrate without a new mechanism. Portal block stability is weak, so timestamp-block concentration is a major overfit risk."
+GALAXY_SOUNDS_SOLAR_FLAMES,GALAXY_SOUNDS,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+SLEEP_POD_SUEDE,SLEEP_POD,conditional_edge,basket-only,edge appears in a component/probe but is too small or unstable to call standalone strategy-grade.
+SLEEP_POD_LAMB_WOOL,SLEEP_POD,conditional_edge,regime-only,portal/integration PnL is positive but full-history attribution is weak or negative; treat as portal-fragile and gate hard.
+SLEEP_POD_POLYESTER,SLEEP_POD,conditional_edge,basket-only,edge appears in a component/probe but is too small or unstable to call standalone strategy-grade.
+SLEEP_POD_NYLON,SLEEP_POD,conditional_edge,basket-only,edge appears in a component/probe but is too small or unstable to call standalone strategy-grade.
+SLEEP_POD_COTTON,SLEEP_POD,validated_edge,standalone-tradable,positive integrated/formal replay attribution on portal and full-history support.
+MICROCHIP_CIRCLE,MICROCHIP,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+MICROCHIP_OVAL,MICROCHIP,validated_edge,standalone-tradable,positive integrated/formal replay attribution on portal and full-history support.
+MICROCHIP_SQUARE,MICROCHIP,conditional_edge,regime-only,portal/integration PnL is positive but full-history attribution is weak or negative; treat as portal-fragile and gate hard.
+MICROCHIP_RECTANGLE,MICROCHIP,conditional_edge,regime-only,portal/integration PnL is positive but full-history attribution is weak or negative; treat as portal-fragile and gate hard.
+MICROCHIP_TRIANGLE,MICROCHIP,conditional_edge,basket-only,edge appears in a component/probe but is too small or unstable to call standalone strategy-grade.
+PEBBLES_XS,PEBBLES,validated_edge,standalone-tradable,candidate 16/23/24/25 validates all five through online synthetic fair-value market making; some individual PnL can be negative but category edge is structural.
+PEBBLES_S,PEBBLES,validated_edge,standalone-tradable,candidate 16/23/24/25 validates all five through online synthetic fair-value market making; some individual PnL can be negative but category edge is structural.
+PEBBLES_M,PEBBLES,validated_edge,standalone-tradable,candidate 16/23/24/25 validates all five through online synthetic fair-value market making; some individual PnL can be negative but category edge is structural.
+PEBBLES_L,PEBBLES,validated_edge,standalone-tradable,candidate 16/23/24/25 validates all five through online synthetic fair-value market making; some individual PnL can be negative but category edge is structural.
+PEBBLES_XL,PEBBLES,validated_edge,standalone-tradable,candidate 16/23/24/25 validates all five through online synthetic fair-value market making; some individual PnL can be negative but category edge is structural.
+ROBOT_VACUUMING,ROBOT,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+ROBOT_MOPPING,ROBOT,conditional_edge,basket-only,edge appears in a component/probe but is too small or unstable to call standalone strategy-grade.
+ROBOT_DISHES,ROBOT,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+ROBOT_LAUNDRY,ROBOT,conditional_edge,regime-only,portal/integration PnL is positive but full-history attribution is weak or negative; treat as portal-fragile and gate hard.
+ROBOT_IRONING,ROBOT,validated_edge,standalone-tradable,positive integrated/formal replay attribution on portal and full-history support.
+UV_VISOR_YELLOW,UV_VISOR,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+UV_VISOR_AMBER,UV_VISOR,conditional_edge,basket-only,edge appears in a component/probe but is too small or unstable to call standalone strategy-grade.
+UV_VISOR_ORANGE,UV_VISOR,validated_edge,standalone-tradable,positive integrated/formal replay attribution on portal and full-history support.
+UV_VISOR_RED,UV_VISOR,conditional_edge,regime-only,targeted portal replay is positive but full-history replay failed; this is portal-fragile.
+UV_VISOR_MAGENTA,UV_VISOR,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+TRANSLATOR_SPACE_GRAY,TRANSLATOR,not_currently_capturable,exclude,prior executable replay status was `no standalone edge found` despite high oracle/proxy; do not integrate without a new mechanism.
+TRANSLATOR_ASTRO_BLACK,TRANSLATOR,conditional_edge,signal/anchor-only,prior individual probe status was `too weak alone`; keep only gated or as a basket component.
+TRANSLATOR_ECLIPSE_CHARCOAL,TRANSLATOR,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+TRANSLATOR_GRAPHITE_MIST,TRANSLATOR,conditional_edge,regime-only,portal/integration PnL is positive but full-history attribution is weak or negative; treat as portal-fragile and gate hard.
+TRANSLATOR_VOID_BLUE,TRANSLATOR,conditional_edge,basket-only,edge appears in a component/probe but is too small or unstable to call standalone strategy-grade.
+PANEL_1X2,PANEL,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+PANEL_2X2,PANEL,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+PANEL_1X4,PANEL,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+PANEL_2X4,PANEL,conditional_edge,regime-only,portal/integration PnL is positive but full-history attribution is weak or negative; treat as portal-fragile and gate hard.
+PANEL_4X4,PANEL,validated_edge,standalone-tradable,targeted portal replay probe is material and full-history replay is positive.
+OXYGEN_SHAKE_MORNING_BREATH,OXYGEN_SHAKE,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+OXYGEN_SHAKE_EVENING_BREATH,OXYGEN_SHAKE,conditional_edge,basket-only,"full-history attribution is positive but portal-window capture is small; preserve only for robustness/diversification, not portal upside."
+OXYGEN_SHAKE_MINT,OXYGEN_SHAKE,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+OXYGEN_SHAKE_CHOCOLATE,OXYGEN_SHAKE,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+OXYGEN_SHAKE_GARLIC,OXYGEN_SHAKE,validated_edge,standalone-tradable,targeted portal replay probe is material and full-history replay is positive.
+SNACKPACK_CHOCOLATE,SNACKPACK,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+SNACKPACK_VANILLA,SNACKPACK,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+SNACKPACK_PISTACHIO,SNACKPACK,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+SNACKPACK_STRAWBERRY,SNACKPACK,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
+SNACKPACK_RASPBERRY,SNACKPACK,not_currently_capturable,exclude,"large analytical oracle/proxy remains, but no executable replay has confirmed capture; treat as not currently capturable, not a tradable edge."
